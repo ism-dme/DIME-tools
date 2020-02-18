@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../dme_repos/trunk/schemas/mei-DME.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../../dme_repos/trunk/schemas/mei-DME.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei meiversion="3.0.0" xml:id="dme92517025-f4c2-4231-a1c3-b70f02802d61" xmlns="http://www.music-encoding.org/ns/mei">
+	<meiHead meiversion="3.0.0">
+		<fileDesc>
+			<titleStmt>
+				<title label="NMA digital" type="unit">an example</title>
+			</titleStmt>
+			<pubStmt/>
+		</fileDesc>
+	</meiHead>
+	<music meiversion="3.0.0">
+		<body>
+			<mdiv n="2a" xml:id="mdiv_">
+				<score xml:id="score_">
+					<scoreDef key.mode="major" key.pname="b" key.sig="2f" meter.count="3" meter.unit="4" xml:id="scoreDef_01">
+						<staffGrp barthru="true" symbol="bracket" xml:id="staffGrp_84">
+							<staffDef clef.line="2" clef.shape="G" lines="5" n="1" xml:id="staffDef_90"/>
+						</staffGrp>
+					</scoreDef>
+					<section label="menuetto_A" xml:id="section_A_m1-5">
+						<measure n="4" xml:id="m4_k_">
+							<staff n="1" xml:id="staff_282">
+								<layer n="1" xml:id="layer_288">
+									<beam xml:id="beam_294">
+										<note accid.ges="f" dur="8" oct="4" pname="e" xml:id="note_300"/>
+										<note accid="n" dur="8" oct="4" pname="e" xml:id="note_306"/>
+									</beam>
+									<note accid.ges="n" dur="4" oct="4" pname="e" xml:id="note_312"/>
+									<beam xml:id="beam_318">
+										<note accid.ges="n" dots="1" dur="8" oct="4" pname="e" xml:id="note_324"/>
+										<note accid.ges="n" dur="16" oct="4" pname="e" xml:id="note_336"/>
+									</beam>
+								</layer>
+							</staff>
+							<tie endid="#note_324" startid="#note_312" xml:id="tie_342"/>
+						</measure>
+					</section>
+				</score>
+			</mdiv>
+		</body>
+	</music>
+</mei>
