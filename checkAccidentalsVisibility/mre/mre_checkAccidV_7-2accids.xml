@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../../../../schemas/mei-DME.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://dme.mozarteum.at/DME/schemata/mei-DME.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://dme.mozarteum.at/DME/schemata/mei-DME.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <mei meiversion="3.0.0" xmlns="http://www.music-encoding.org/ns/mei">
 	<meiHead meiversion="3.0.0">
 		<fileDesc>
@@ -31,11 +32,11 @@
 										<note accid.ges="s" doxml.id="d28e3165" dur="8" oct="4" pname="g" tstamp="2.5" xml:id="note_20370"/>
 										<note accid.ges="s" doxml.id="d28e3167" dur="8" oct="4" pname="f" tstamp="3" xml:id="note_20376">
 											<app xml:id="app_">
-												<lem source="#source_" xml:id="lem_">
+												<lem source="#source_a" xml:id="lem_">
 													<accid accid="n" xml:id="accid_20376a"/>
 													<accid accid="s" xml:id="accid_20376b"/>
 												</lem>
-												<rdg source="#source_" xml:id="rdg_">
+												<rdg source="#source_b" xml:id="rdg_">
 													<accid accid="n" xml:id="accid_20376c"/>
 												</rdg>
 											</app>
