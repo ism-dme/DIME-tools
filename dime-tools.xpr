@@ -11562,5 +11562,6 @@ ${caret}</String>
             <file name="xslt/checkAccidentalsVisibility.xsl"/>
         </folder>
         <folder path="."/>
+        <file name="lib/DIME-tools/DIME-tools.xml"/>
     </projectTree>
 </project>
