@@ -2,36 +2,44 @@
 <dimeTools xmlns="http://www.mozarteum.at/ns/dme">
 	<div>
 		<h1>Options for DIME Tools</h1>
-		<contents class="contents"><span>NAVIGATION:</span> <ul class="contents__ul">			
-				<li><a href="#create-IDs"> create-IDs</a></li>
-				<li><a href="#updateVersion"> updateVersion</a></li>				
-				<li><a href="#figuredBass"> figured bass</a></li>
-				<li><a href="#diff"> DIFF (DIME alternative texts only)</a></li>
+		<contents class="contents">
+			<span>NAVIGATION:</span>
+			<ul class="contents__ul">
+				<li>
+					<a href="#create-IDs"> create-IDs</a>
+				</li>
+				<li>
+					<a href="#updateVersion"> updateVersion</a>
+				</li>
+				<li>
+					<a href="#figuredBass"> figured bass</a>
+				</li>
+				<li>
+					<a href="#diff"> DIFF (DIME alternative texts only)</a>
+				</li>
 			</ul>
 		</contents>
-	</div>	
+	</div>
 	<div xml:id="create-IDs">
 		<h2>CREATE-IDs</h2>
-		<parameters>			
+		<parameters>
 			<parameter xml:id="recount_measures">1</parameter>
 			<parameter xml:id="all">1</parameter>
 			<parameter xml:id="els2apply"/>
-			<parameter xml:id="els2exclude"/>			
-		</parameters>		
+			<parameter xml:id="els2exclude"/>
+		</parameters>
 	</div>
 	<div xml:id="updateVersion">
 		<h2>UPDATE VERSION</h2>
 		<parameters>
 			<parameter xml:id="freeInput"/>
 			<parameter type="patch" xml:id="update"/>
-		</parameters>		
-	</div>	
+		</parameters>
+	</div>
 	<div xml:id="figuredBass">
 		<h2>Figured Bass</h2>
 		<parameters>
-			<file class="transform" file="../example.xml"/>
 			<file class="config" file="../example.xml"/>
-			<button name="fb"/>
 		</parameters>
 	</div>
 	<div xml:id="diff">

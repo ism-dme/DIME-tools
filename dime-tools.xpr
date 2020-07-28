@@ -8111,6 +8111,21 @@ ${caret}</String>
                         <scenarioAssociation-array>
                             <scenarioAssociation>
                                 <field name="url">
+                                    <String>../../dme_repos/trunk/edition/165_2625/dmeref_165-001_2626.xml</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>fb</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>XSL</String>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
                                     <String>../../../../dme_repos/branches/dev-os/edition/331_4091/dmeref_331-002_4100.xml</String>
                                 </field>
                                 <field name="scenarioIds">
@@ -9393,6 +9408,114 @@ ${caret}</String>
                                             </field>
                                             <field name="value">
                                                 <String>${ask('input voice(s)', generic, '|1|2.2|')}</String>
+                                            </field>
+                                            <field name="hasXPathValue">
+                                                <Boolean>false</Boolean>
+                                            </field>
+                                        </transformationParameter>
+                                    </list>
+                                </field>
+                                <field name="cascadingStylesheets">
+                                    <String-array/>
+                                </field>
+                                <field name="xslTransformer">
+                                    <String>Saxon-EE</String>
+                                </field>
+                                <field name="extensionURLs">
+                                    <String-array/>
+                                </field>
+                            </scenario>
+                            <scenario>
+                                <field name="advancedOptionsMap">
+                                    <null/>
+                                </field>
+                                <field name="name">
+                                    <String>fb</String>
+                                </field>
+                                <field name="baseURL">
+                                    <String></String>
+                                </field>
+                                <field name="footerURL">
+                                    <String></String>
+                                </field>
+                                <field name="fOPMethod">
+                                    <String>pdf</String>
+                                </field>
+                                <field name="fOProcessorName">
+                                    <String>Apache FOP</String>
+                                </field>
+                                <field name="headerURL">
+                                    <String></String>
+                                </field>
+                                <field name="inputXSLURL">
+                                    <String>${pdu}/fb/fb.xsl</String>
+                                </field>
+                                <field name="inputXMLURL">
+                                    <String>${currentFileURL}</String>
+                                </field>
+                                <field name="defaultScenario">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="isFOPPerforming">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="type">
+                                    <String>XSL</String>
+                                </field>
+                                <field name="saveAs">
+                                    <Boolean>true</Boolean>
+                                </field>
+                                <field name="openInBrowser">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="outputFile">
+                                    <File>${cfne}</File>
+                                </field>
+                                <field name="outputResource">
+                                    <String>${cfne}</String>
+                                </field>
+                                <field name="openOtherLocationInBrowser">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="locationToOpenInBrowserURL">
+                                    <null/>
+                                </field>
+                                <field name="openInEditor">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="showInHTMLPane">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="showInXMLPane">
+                                    <Boolean>true</Boolean>
+                                </field>
+                                <field name="showInSVGPane">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="showInResultSetPane">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="useXSLTInput">
+                                    <Boolean>true</Boolean>
+                                </field>
+                                <field name="xsltParams">
+                                    <list>
+                                        <transformationParameter>
+                                            <field name="paramDescription">
+                                                <paramDescriptor>
+                                                    <field name="localName">
+                                                        <String>userHomeDirectory</String>
+                                                    </field>
+                                                    <field name="prefix">
+                                                        <null/>
+                                                    </field>
+                                                    <field name="namespace">
+                                                        <null/>
+                                                    </field>
+                                                </paramDescriptor>
+                                            </field>
+                                            <field name="value">
+                                                <String>${home}</String>
                                             </field>
                                             <field name="hasXPathValue">
                                                 <Boolean>false</Boolean>
