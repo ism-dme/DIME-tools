@@ -2,28 +2,14 @@
 <dimeTools xmlns="http://www.mozarteum.at/ns/dme">
 	<div>
 		<h1>Options for DIME Tools</h1>
-		<contents class="contents"><span>NAVIGATION:</span> <ul class="contents__ul">
-			<li><a href="#DOXconvX"> DOXconvX</a></li>
+		<contents class="contents"><span>NAVIGATION:</span> <ul class="contents__ul">			
 				<li><a href="#create-IDs"> create-IDs</a></li>
-				<li><a href="#updateVersion"> updateVersion</a></li>
-				<li><a href="#mergeStaves"> merge staves</a></li>
+				<li><a href="#updateVersion"> updateVersion</a></li>				
 				<li><a href="#figuredBass"> figured bass</a></li>
-				<li><a href="#diff"> diff for alternative texts</a></li>
+				<li><a href="#diff"> DIFF (DIME alternative texts only)</a></li>
 			</ul>
 		</contents>
-	</div>
-	<div xml:id="DOXconvX">
-		<h2>DOXconvX (DOX conversion extended)</h2>
-		<parameters>			
-			<parameter xml:id="meiHead">1</parameter>
-			<parameter xml:id="genre">orchestral</parameter>
-			<parameter xml:id="pages"/>
-			<parameter xml:id="Clarinetto"/>
-			<parameter xml:id="Clarino"/>
-			<parameter xml:id="Corno"/>			
-		</parameters>
-		<p>Achtung! Dieses Stylesheet wird jetzt über Transformationszenario angewendet. Füge hier die Optionen ein, wechsele zu dem bearbeitenden File und wende das Szenario "DOXconvX_USE-OPTIONS" an.</p>
-	</div>
+	</div>	
 	<div xml:id="create-IDs">
 		<h2>CREATE-IDs</h2>
 		<parameters>			
@@ -31,26 +17,15 @@
 			<parameter xml:id="all">1</parameter>
 			<parameter xml:id="els2apply"/>
 			<parameter xml:id="els2exclude"/>			
-		</parameters>
-		<p>Achtung! Dieses Stylesheet wird jetzt über Transformationszenario angewendet. Füge hier die Optionen ein, wechsele zu dem bearbeitenden File und wende das Szenario "Create-IDs_USE-OPTIONS" an.</p>
+		</parameters>		
 	</div>
 	<div xml:id="updateVersion">
 		<h2>UPDATE VERSION</h2>
 		<parameters>
 			<parameter xml:id="freeInput"/>
 			<parameter type="patch" xml:id="update"/>
-		</parameters>
-		<p>For more information see the ticket #6081.</p>
-	</div>
-	<div xml:id="mergeStaves">
-		<h2>MERGE STAVES</h2>
-		<parameters>
-			<file class="transform" file="../example.xml"/>
-			<parameter n="1" xml:id="staff_min"/>
-			<parameter n="2" xml:id="staff_max"/>
-			<button name="mergeStaves"/>
-		</parameters>
-	</div>
+		</parameters>		
+	</div>	
 	<div xml:id="figuredBass">
 		<h2>Figured Bass</h2>
 		<parameters>
