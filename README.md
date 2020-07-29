@@ -1,9 +1,14 @@
 # DIME-tools
-This repository contains source code for tools which were developed in the context of the *Digital Interactive Mozart Edition* (currently contains only *checkAccidentalsVisibility*).
+This repository contains selected tools which were developed in the context of the [Digital Interactive Mozart Edition][1] and which might be useful for other projects. Those covers XML transformations with XSLT and validations with schematron. 
 
 
-## Usage
-The most convinient way is to open the oXygen project file ( `dime-tools.xpr`  ) which contains all transformation scenarios and needed settings.
-The folder `docs` contains documentation (open checkAccidentalsVisibility.html in your browser).
 
-The folder `mre` contains minimal running test files which are mainly encoded as correct MEI examples. In order to play around with the functionality of the tool make changes there.
+## Usage guide
+The most convinient way is to open the project file ( `dime-tools.xpr`  ) with the oXygen XML editor. The project contains the transformation and validation scenarios as well as needed settings (in particular, the document type association *DIME-tools_options*). 
+
+Every XSLT-based tool contains documentation which is placed in the main stylesheet. For better readability it is recommended to use the oXygen built-in documentation generation.
+
+
+
+
+[1]: https://dme.mozarteum.at/en/music/edition/
