@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<?xml-stylesheet type="text/css" href="../../frameworks/styleguide/css/styleguideActions.css"?>
+<topic id="topic_yrp_jwk_p2b">
+	<title>annot</title>
+	<body>
+		<section id="section_svm_5wk_p2b">
+			<p>
+				<codeph>annot</codeph>
+				 is used in 'body' in - at least - three ways:
+				<ol id="ol_ibs_xxf_qgb">
+					<li>as a grouping device for 'app', 'choice', 'supplied', 'handShift', etc.
+						<ul id="ul_xhv_fyf_qgb">
+							<li>
+								<p>
+									<dl audience="rules">
+										<dlhead>
+											<dthd>Rule</dthd>
+											<ddhd>checkAttributeValue</ddhd>
+										</dlhead>
+										<dlentry>
+											<dt>element</dt>
+											<dd>mei:body//mei:annot[@plist]</dd>
+										</dlentry>
+										<dlentry>
+											<dt>attribute</dt>
+											<dd>type</dd>
+										</dlentry>
+										<dlentry>
+											<dt>attrValue</dt>
+											<dd>
+												<ol id="ol_kgk_mth_qgb">
+													<li>
+														<b>appGrp</b>
+													</li>
+													<li>
+														<b>choiceGrp</b>
+													</li>
+													<li>
+														<b>suppGrp</b>
+													</li>
+													<li>
+														<b>handshift</b>
+													</li>
+												</ol>
+											</dd>
+										</dlentry>
+										<dlentry>
+											<dt>phase</dt>
+											<dd>refTexts_music, altTexts_music</dd>
+										</dlentry>
+										<dlentry>
+											<dt>message</dt>
+											<dd> (for annot used as grouping device with @plist).</dd>
+										</dlentry>
+									</dl>
+								</p>
+							</li>
+							
+						</ul>
+					</li>
+					<li> as a text-bearing element, a comment:
+						<ul id="ul_r2x_yyf_qgb">
+							<li>required
+								<ul id="ul_jbj_zyf_qgb">
+									<li>@staff or @startid (if the annotation relates to a section possibly spanning several measures: @startid (upper element farthest to the left); @endid (upper element farthest to the right) - potentially identical; - @staff - It is possible to select the staves with the @stave attribut; in the MoVi rendering the section will be highlighted)</li>
+									<li>
+										<p>
+											<dl audience="rules">
+												<dlhead>
+													<dthd>Rule</dthd>
+													<ddhd>checkAttributeValue</ddhd>
+												</dlhead>
+												<dlentry>
+													<dt>element</dt>
+													<dd>mei:body//mei:annot[not(@plist)]</dd>
+												</dlentry>
+												<dlentry>
+													<dt>attribute</dt>
+													<dd>type</dd>
+												</dlentry>
+												<dlentry>
+													<dt>attrValue</dt>
+													<dd>
+														<ol id="ol_yry_sbg_qgb">
+															<li>
+																<b>NMA-note</b>
+															</li>
+															<li>
+																<b>DME-comment</b>
+															</li>
+															<li>
+																<b>DME-observation</b>
+															</li>
+															<li>
+																<b>DME-reference</b>
+															</li>
+														</ol>
+													</dd>
+												</dlentry>
+												<dlentry>
+													<dt>phase</dt>
+													<dd>refTexts_music</dd>
+												</dlentry>
+												<dlentry>
+													<dt>message</dt>
+													<dd> (for annot used as text with no @plist).</dd>
+												</dlentry>
+											</dl>
+										</p>
+									</li>
+									<li>
+										<p>
+											<dl audience="rules">
+												<dlhead>
+													<dthd>Rule</dthd>
+													<ddhd>checkAttributeValue</ddhd>
+												</dlhead>
+												<dlentry>
+													<dt>element</dt>
+													<dd>mei:body//mei:annot[not(@plist)]</dd>
+												</dlentry>
+												<dlentry>
+													<dt>attribute</dt>
+													<dd>type</dd>
+												</dlentry>
+												<dlentry>
+													<dt>attrValue</dt>
+													<dd>
+														<ol>
+															<li>
+																<b>DME-comment</b>
+															</li>
+															<li>
+																<b>DME-observation</b>
+															</li>
+															<li>
+																<b>DME-reference</b>
+															</li>
+														</ol>
+													</dd>
+												</dlentry>
+												<dlentry>
+													<dt>phase</dt>
+													<dd>altTexts_music</dd>
+												</dlentry>
+												<dlentry>
+													<dt>message</dt>
+													<dd> (for annot used as text with no @plist).</dd>
+												</dlentry>
+											</dl>
+										</p>
+									</li>
+								</ul>
+							</li>
+							<li>optional
+								<ul id="ul_myy_ndg_qgb">
+									<li>
+										<p>@tstamp, @tstamp2, @xml:lang</p>
+									</li>
+									<li>
+										<p>possible convention for xml:ids in #2: 'comment'underline'3digits_for_measure''2digits_for_counter'undeline'language' e.g. "comment_07301_EN" resolves as comment #1 in m. 73, in English   </p>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li> as a marker, flag, or milestone element </li>
+				</ol>
+			</p>
+		</section>
+	</body>
+</topic>
