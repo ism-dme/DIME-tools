@@ -4,7 +4,7 @@
 	<doc scope="stylesheet">
 		<desc>
 			<i>Versions</i>: <p>
-				<b>1.1.0</b> (08.07.2020) <ul> <li>add @sameas support</li>
+				<b>1.1.0</b> (08.07.2020) <ul> <li>add @sameas and @copyof support</li>
 					<li><b>internal</b>:include basic.xsl, changelLog.xsl</li>
 				</ul>
 			</p>
@@ -12,12 +12,7 @@
 				<b>1.0.0</b> (25.10.2018) <ul>
 					<li>Initial version</li>
 				</ul>
-			</p>
-			<p><ul>
-					<li>08.07.2020: <i>1.1.0</i></li>
-					<li>25.10.2018: <i>1.0.0</i></li>
-				</ul>
-			</p>
+			</p>			
 		</desc>
 	</doc>
 

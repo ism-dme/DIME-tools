@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet exclude-result-prefixes="xs math xd mei uuid dme" version="3.0" xmlns:dme="http://www.mozarteum.at/ns/dme" xmlns:functx="http://www.functx.com" xmlns:math="http://www.w3.org/2005/xpath-functions/math" xmlns:mei="http://www.music-encoding.org/ns/mei" xmlns:uuid="java:java.util.UUID" xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xpath-default-namespace="http://www.music-encoding.org/ns/mei">
+<xsl:stylesheet exclude-result-prefixes="xs math xd mei uuid dme" version="3.0" xmlns:dme="http://www.mozarteum.at/ns/dme" xmlns:functx="http://www.functx.com" xmlns:math="http://www.w3.org/2005/xpath-functions/math" xmlns:mei="http://www.music-encoding.org/ns/mei" xmlns:uuid="java:java.util.UUID" xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"  xpath-default-namespace="http://www.music-encoding.org/ns/mei">
 	<doc scope="stylesheet" xmlns="http://www.oxygenxml.com/ns/doc/xsl">
-		<desc>
-			<p>
-				<ul>
-					<li>Adds/replaces @tstamp's for elements with @dur and for &lt;beatRpt&gt;, &lt;halfmRpt&gt;</li>
-					<li>For &lt;bTrem&gt;, &lt;fTrem&gt; no @tstamp's are added</li>
-					<li>Descendants of &lt;chord&gt; do not get @tstamp</li>
-					<li>If the checked &lt;layer&gt; is related to app/choice (as ancestor or descendant), no calculations in this layer are performed, instead a warning message appears and @tstamp's should be checked mannually</li>
+		<desc><p><i>Adds/replaces @tstamps</i></p>
+			<p>Exceptions (no @tstamps are added): 
+				<ul>					
+					<li>&lt;bTrem&gt;, &lt;fTrem&gt;</li>
+					<li>Descendants of a &lt;chord&gt; </li>
+					<li>&lt;layer&gt;s which have &lt;app&gt; or &lt;choice&gt; as ancestor or descendant</li>
 				</ul>
-			</p>
+			</p>			
+			<p><b>Disclaimer</b>: The stylesheet uses an algorithm developed by <b>Johannes Kepper</b>, cf. : <ul><li>addIDs_and_tstamps.xsl (2014)</li><li>fixTstamps.xsl (2018)</li></ul> </p>
+			<p>
+				<b>Modificated by: </b>Oleksii Sapov</p>
 			<p><i>Current version</i> is <b id="version">1.1.0</b>. For more info see the <b>changeLog</b> below.</p>
-			<p><b>Disclaimer</b>: The stylesheet is a merge of two stylesheets by <b>Johannes Kepper</b>: <ul><li>addIDs_and_tstamps.xsl (2014)</li><li>fixTstamps.xsl (2018)</li></ul> It was adopted for the needs of the DIME by <b>Oleksii Sapov</b> on Oct 25, 2018</p>
 		</desc>
 	</doc>
 	<xsl:include href="../lib/functions/functx-1.0-doc-2007-01.xsl"/>
@@ -60,7 +61,7 @@ NOTHING-->
 		<xsl:param name="meter.unit" tunnel="yes"/>
 
 		<xsl:variable as="element()*" name="events">
-			<xsl:call-template name="TvEvents"/>
+			<xsl:call-template name="vEvents"/>
 		</xsl:variable>
 
 		<xsl:variable as="xs:double*" name="durations" select="dme:durations($events, $meter.count, $meter.unit)"/>
@@ -95,18 +96,24 @@ NOTHING-->
 
 	<xd:doc>
 		<xd:desc>
-			<xd:p>Returns sequence of elements which fulfill the following constraints: <xd:ul>
+			<xd:p>Returns sequence of the elements which fulfill the following constraints: <xd:ul>
 					<xd:li>have @dur</xd:li>
-					<xd:li>fot not have ancestor chord</xd:li>
-					<xd:li>belong to $exceptions</xd:li>
+					<xd:li>are not descendant of a &lt;chord&gt;</xd:li>
+					<xd:li>belong to the $exceptions</xd:li>
 				</xd:ul></xd:p>
 		</xd:desc>
 	</xd:doc>
-	<xsl:template name="TvEvents">
+	<xsl:template name="vEvents">
 		<xsl:for-each select=".//*">
 			<xsl:choose>
 				<xsl:when test="@sameas">
-					<xsl:variable name="reference" select="id(substring-after(@sameas, '#'))"/>
+					<xsl:variable name="reference" select="substring-after(@sameas, '#') => id()"/>
+					<xsl:if test="$reference[(@dur and not(ancestor::chord) and not(@grace)) or (local-name() = $exceptions)]">
+						<xsl:sequence select="functx:add-attributes(., xs:QName('dur'), $reference/@dur)"/>
+					</xsl:if>
+				</xsl:when>
+				<xsl:when test="@copyof">
+					<xsl:variable name="reference" select="substring-after(@copyof, '#') => id()"/>
 					<xsl:if test="$reference[(@dur and not(ancestor::chord) and not(@grace)) or (local-name() = $exceptions)]">
 						<xsl:sequence select="functx:add-attributes(., xs:QName('dur'), $reference/@dur)"/>
 					</xsl:if>
@@ -122,7 +129,7 @@ NOTHING-->
 
 	<xd:doc>
 		<xd:desc>
-			<xd:p>if $constraints1 or $constraints2 are true, the template calcTstamps is applied, otherwise the node is copied.</xd:p>
+			<xd:p>if $constraints1 or $constraints2 is true, the template calcTstamps is applied, otherwise the node is copied.</xd:p>
 		</xd:desc>
 	</xd:doc>
 	<xsl:template match="layer//*" mode="events">

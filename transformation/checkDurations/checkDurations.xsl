@@ -1,40 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<stylesheet exclude-result-prefixes="xs math xd mei uuid dme" version="3.0" xmlns="http://www.w3.org/1999/XSL/Transform" xmlns:dme="http://www.mozarteum.at/ns/dme" xmlns:map="http://www.w3.org/2005/xpath-functions/map" xmlns:math="http://www.w3.org/2005/xpath-functions/math" xmlns:mei="http://www.music-encoding.org/ns/mei" xmlns:uuid="java:java.util.UUID" xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xpath-default-namespace="http://www.music-encoding.org/ns/mei">
-	<xd:doc scope="stylesheet">
-		<xd:desc>
-			<xd:p>
-				<xd:i>Checks if the sum of the element durations in a &lt;layer&gt; is equal to the expected number according to the current meter.</xd:i>
-			</xd:p>
-			<xd:p><xd:b>Note</xd:b>: The &lt;layer&gt;s in the following measures are not processed: <xd:ul>
-				<xd:li>uncomplete measures (@metcon='false')</xd:li>
-				<xd:li>those which have &lt;mRest&gt;, &lt;app&gt;, &lt;choice&gt; or &lt;tuplet&gt; as descendants</xd:li>
-			</xd:ul>
-			</xd:p>
-			<xd:p><xd:b>User guide:</xd:b> The stylesheet outputs a <xd:i>wrong_durations.txt</xd:i> in the same folder as the file to which the transformation was applied. This output file contatins the list of the @xml:id of the &lt;layer&gt;s where the durations are possibly wrong. Note that the XML-file itself is not changes in any way.</xd:p>			
-			<xd:p><xd:b>Disclaimer</xd:b> Some parts of the stylesheet (e.g. <xd:i>dme:durations()</xd:i>) are taken frome the stylesheet for calculating the timestamps developed by Johannes Kepper.</xd:p>
-			<xd:p><xd:i>Current version</xd:i>: <xd:b id="version">1.0.0</xd:b>. For more info see the <xd:b>changeLog</xd:b> below.</xd:p>
-			<xd:p>
-				<xd:b>Author: </xd:b>Oleksii Sapov</xd:p>
-		</xd:desc>
-	</xd:doc>
+<stylesheet exclude-result-prefixes="xs math xd mei uuid dme" version="3.0" xmlns="http://www.w3.org/1999/XSL/Transform" xmlns:dme="http://www.mozarteum.at/ns/dme" xmlns:functx="http://www.functx.com" xmlns:map="http://www.w3.org/2005/xpath-functions/map" xmlns:math="http://www.w3.org/2005/xpath-functions/math" xmlns:mei="http://www.music-encoding.org/ns/mei" xmlns:uuid="java:java.util.UUID" xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xpath-default-namespace="http://www.music-encoding.org/ns/mei">
+
+	<doc scope="stylesheet" xmlns="http://www.oxygenxml.com/ns/doc/xsl">
+		<desc>
+			<p>
+				<i>Checks if the sum of the event durations (e.g. &lt;note&gt;, &lt;rest&gt;) in a &lt;layer&gt; is correct.</i>
+			</p>
+			<p>The stylesheet outputs a file (<i>wrong_durations.txt</i>) which contains a list of @xml:ids of the &lt;layer&gt;s where the durations are possibly wrong.</p>
+			<p>The events in the following &lt;layer&gt;s are not considered:<ul>
+					<li>Descendants of uncomplete measures (@metcon='false')</li>
+					<li>&lt;layer&gt;s which have &lt;mRest&gt;, &lt;app&gt;, &lt;choice&gt; or &lt;tuplet&gt; as descendants</li>
+					<li>&lt;layer&gt;[@sameas]</li>
+				</ul>
+			</p>
+			<p><b>Disclaimer</b>: The stylesheet is based on <i>addTstamps.xsl</i> which in turn uses the algorithm for calculating the timestamps developed by Johannes Kepper.</p>
+			<p><i>Current version</i>: <b id="version">1.0.1</b>. For more info see the <b>changeLog</b>.</p>
+			<p>
+				<b>Author: </b>Oleksii Sapov</p>
+		</desc>
+	</doc>
+	<include href="../lib/functions/functx-1.0-doc-2007-01.xsl"/>
 	<import href="changeLog.xsl"/>
 
 	<variable name="exceptions" select="'beatRpt', 'halfmRpt'"/>
 	<variable name="break" select="'&#xA;'"/>
 
-
-	<!--TODO: 
-NOTHING-->
-
 	<xd:doc>
 		<xd:desc/>
-
 	</xd:doc>
 	<template match="/">
 
 		<variable as="text()*" name="wrong_durations">
 			<call-template name="layers">
-				<with-param name="layers" select="//layer[not(ancestor::measure[@metcon = 'false'])][not(descendant::mRest | descendant::app | descendant::choice)][not(descendant::tuplet)]"/>
+				<with-param name="layers" select="//layer[not(@sameas)][not(ancestor::measure[@metcon = 'false'])][not(descendant::mRest | descendant::app | descendant::choice)][not(descendant::tuplet)]"/>
 			</call-template>
 		</variable>
 
@@ -60,7 +58,10 @@ NOTHING-->
 
 		<variable as="xs:integer" name="meter.count" select="preceding::scoreDef[@meter.count][1]/@meter.count cast as xs:integer"/>
 		<variable as="xs:integer" name="meter.unit" select="preceding::scoreDef[@meter.unit][1]/@meter.unit cast as xs:integer"/>
-		<variable name="events" select=".//*[(@dur and not(ancestor::chord) and not(@grace)) or (local-name() = $exceptions)]"/>
+		<!--<variable name="events" select=".//*[(@dur and not(ancestor::chord) and not(@grace)) or (local-name() = $exceptions)]"/>-->
+		<variable as="element()*" name="events">
+			<call-template name="vEvents"/>
+		</variable>
 		<variable as="xs:double*" name="durations" select="dme:durations($events, $meter.count, $meter.unit)"/>
 
 		<variable name="expectedCount" select="(1 div $meter.unit) * $meter.count"/>
@@ -71,6 +72,39 @@ NOTHING-->
 
 	</template>
 
+
+	<xd:doc>
+		<xd:desc>
+			<xd:p>Returns sequence of the elements which fulfill the following constraints: <xd:ul>
+					<xd:li>have @dur</xd:li>
+					<xd:li>are not descendant of a &lt;chord&gt;</xd:li>
+					<xd:li>belong to the $exceptions</xd:li>
+				</xd:ul></xd:p>
+		</xd:desc>
+	</xd:doc>
+	<template name="vEvents">
+		<for-each select=".//*">
+			<choose>
+				<when test="@sameas">
+					<variable name="reference" select="substring-after(@sameas, '#') => id()"/>
+					<if test="$reference[(@dur and not(ancestor::chord) and not(@grace)) or (local-name() = $exceptions)]">
+						<sequence select="functx:add-attributes(., QName('http://www.music-encoding.org/ns/mei', 'mei:dur'), $reference/@dur)"/>
+					</if>
+				</when>
+				<when test="@copyof">
+					<variable name="reference" select="substring-after(@copyof, '#') => id()"/>
+					<if test="$reference[(@dur and not(ancestor::chord) and not(@grace)) or (local-name() = $exceptions)]">
+						<sequence select="functx:add-attributes(., QName('http://www.music-encoding.org/ns/mei', 'mei:dur'), $reference/@dur)"/>
+					</if>
+				</when>
+				<otherwise>
+					<if test=".[(@dur and not(ancestor::chord) and not(@grace)) or (local-name() = $exceptions)]">
+						<sequence select="."/>
+					</if>
+				</otherwise>
+			</choose>
+		</for-each>
+	</template>
 
 	<xd:doc>
 		<xd:desc/>
@@ -84,10 +118,11 @@ NOTHING-->
 		<param name="meter.unit"/>
 
 		<for-each select="$events">
+			<variable as="attribute()?" name="dur_attr" select="@*[local-name() = 'dur']"/>
 			<variable as="xs:double" name="dur">
 				<choose>
-					<when test="@dur">
-						<value-of select="1 div number(@dur)"/>
+					<when test="$dur_attr">
+						<value-of select="1 div number($dur_attr)"/>
 					</when>
 					<when test="local-name() = 'beatRpt'">
 						<value-of select="1 div $meter.unit"/>
