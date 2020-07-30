@@ -11,21 +11,21 @@
 			</p>			
 			<p><b>Disclaimer</b>: The stylesheet uses an algorithm developed by <b>Johannes Kepper</b>, cf. : <ul><li>addIDs_and_tstamps.xsl (2014)</li><li>fixTstamps.xsl (2018)</li></ul> </p>
 			<p>
-				<b>Modificated by: </b>Oleksii Sapov</p>
+				<b>Modified by: </b>Oleksii Sapov</p>
 			<p><i>Current version</i> is <b id="version">1.1.0</b>. For more info see the <b>changeLog</b> below.</p>
 		</desc>
 	</doc>
 	<xsl:include href="../lib/functions/functx-1.0-doc-2007-01.xsl"/>
 	<xsl:include href="../lib/basic.xsl"/>
 	<xsl:import href="changeLog.xsl"/>
+	
+	
 	<xsl:variable name="exceptions" select="'beatRpt', 'halfmRpt'"/>
 
-	<!--TODO: 
-NOTHING-->
+	
 
 	<xd:doc>
 		<xd:desc/>
-
 	</xd:doc>
 	<xsl:template match="/">
 
