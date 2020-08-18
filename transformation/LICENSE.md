@@ -1,1 +1,1 @@
-This project is published under a [Creative Commons CC BY-NC-SA 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)
+This project is currently published under [Educational Community License 2.0]  (https://opensource.org/licenses/ECL-2.0). It may change. Please, check the updates to this topic.

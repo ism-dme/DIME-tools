@@ -23,7 +23,7 @@ ___
 
 
 ## Disclaimer
-The project uses following parts from the [Intelligent Integrated Style Guide][2] by Syncro Soft SRL (2018):
+The project uses following parts from the [Intelligent Integrated Style Guide][2] by Syncro Soft SRL (2018) licensed under [Apache 2.0] [4] license.:
 
 - the `styleguide` framework
 - the `src` folder. The files in this folder were modified to meet the project needs, in particular, in order to be able to define the *unique rules* 
@@ -32,3 +32,4 @@ ___
 [1]: https://dme.mozarteum.at/en/music/edition/
 [2]: https://github.com/oxygenxml/integrated-styleguide
 [3]: https://music-encoding.org/guidelines/v3/content/
+[4]: https://www.apache.org/licenses/LICENSE-2.0
