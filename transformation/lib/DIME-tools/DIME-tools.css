@@ -1,0 +1,250 @@
+@namespace oxy "http://www.oxygenxml.com/extensions/author";
+@namespace xml "https://www.w3.org/XML/1998/namespace";
+/* @import "normalize.css"; */
+/*=========== _GLOBAL START===========*/
+oxy|document {
+  /* background-image:url("images/background.png"); */
+  background-repeat: repeat-x;
+  background-position: top;
+  background-color: #2C363B;
+}
+dimeTools {
+  /* position: relative; */
+  font-family: arial, sans-serif, 'times new roman';
+  font-size: 1em;
+  line-height: 1.2;
+  width: 800px;
+  margin: 0 auto;
+  border: 1px solid;
+}
+h1, h2 {
+  width: 70%;
+  margin: auto;
+  padding-top: 0.7rem;
+  text-align: center;
+  font-weight: bold;
+  color: black;
+}
+h1 {
+  font-size: 2em;
+}
+h2 {
+  font-size: 1.5em;
+  margin-bottom: 1.5rem;
+}
+div {
+  background-color: #fff;
+  color: black;
+  border: outset;
+  width: 100%;
+}
+a:hover {
+  color: #6b9282;
+  border: 1px dotted silver;
+  padding: 0;
+}
+a {
+  content: url('../pct/link.png');
+  link: attr(href);
+}
+* {
+  display: block;
+  margin-top: 5px;
+}
+p {
+  width: 90%;
+  padding: 0.5rem;
+  margin: 1rem auto 1rem auto;
+  background-color: #f1f3f4;
+  color: black;
+}
+span {
+  margin: 1rem;
+  color: #cfd186;
+}
+/*=========== _GLOBAL END ===========*/
+.contents {
+  background-color: #2C363B;
+  font-family: arial, sans-serif, 'times new roman';
+  color: #fff;
+  margin: 2em;
+  padding: 2em;
+}
+.contents__ul {
+    display: block;
+  }
+.contents__ul li {
+    display: list-item;
+    list-style: square;
+    padding-left: 20px;
+    margin-left: 20px;
+  }
+/*===========PARAMETERS GLOBAL START===========*/
+div>parameters {
+  /* margin: 5%; */
+  width: 70%;
+  margin: 1rem auto 1rem auto;
+}
+parameters>parameter {
+  border: solid;
+  border-width: thin;
+  padding: 0.5rem;
+  visibility: -oxy-collapse-text;
+}
+.transform {
+  content:
+    oxy_label(text, "Choose a file to transform: ", width, 28em, text-align, left) oxy_urlChooser(edit, "@file", columns, 22);
+}
+.config {
+  content:
+    oxy_label(text, "Choose a configuration file: ", width, 28em, text-align, left) oxy_urlChooser(edit, "@file", columns, 22);
+}
+file {
+  /* margin: 0.5em;
+  padding: 0.5em; */
+  background-color: grey;
+  width: 0.5em;
+  font-size: 1em;
+  /* margin-left: 5em; */
+}
+/*===========PARAMETERS GLOBAL END===========*/
+/*=========== DOXconvX ==========*/
+parameter[xml|id="meiHead"]:before {
+  content:
+    oxy_label(text, "Don't use the external meiHead (Werk-header)", width, 20em, text-align, left) "  "
+    oxy_checkbox(edit, "#text",
+      values, "0",
+      uncheckedValues, "1");
+  visibility: -oxy-collapse-text;
+}
+parameter[xml|id="genre"]:before {
+  content:
+    oxy_label(text, "Genre:", width, 120px, text-align, left) oxy_combobox(edit, "#text",
+      editable, true,
+      values, "orchestral, chamber, piano, opera");
+}
+parameter[xml|id="Clarinetto"]:before {
+  content:
+    oxy_label(text, "Clarinetto:", width, 25px, text-align, left) oxy_combobox(edit, "#text",
+      editable, true,
+      values, "none, Si♭/B, La/A, Do/C, Si/H");
+}
+parameter[xml|id="Clarino"]:before {
+  content:
+    oxy_label(text, "Clarino:", width, 25px, text-align, left) oxy_combobox(edit, "#text",
+      editable, true,
+      values, "none, Si♭/B, Mi♭/Es, Re/D, Do/C");
+}
+parameter[xml|id="Corno"]:before {
+  content:
+    oxy_label(text, "Corno:", width, 25px, text-align, left) oxy_combobox(edit, "#text",
+      editable, true,
+      values, "none, Fa/F, Mi♭/Es, Do/C");
+}
+parameter[xml|id="pages"]:before {
+  content:
+    oxy_label(text, "Movement pages:", width, 120px, text-align, left) "  "
+    oxy_textfield(edit, "#text", columns, 4, tooltip, "e.g. 2-15");
+  visibility: -oxy-collapse-text;
+}
+/*=========== DOXconvX END ==========*/
+/*=========== CREATE-IDs ==========*/
+parameter[xml|id="all"]:before {
+  content:
+    oxy_label(text, "Apply for all elements in the <body>", width, 20em, text-align, left) "  "
+    oxy_checkbox(edit, "#text",
+      values, "1",
+      uncheckedValues, "0");
+  visibility: -oxy-collapse-text;
+}
+parameter[xml|id="els2apply"]:before {
+  content:
+    oxy_label(text, "Apply only to (-moz-element names):", width, 120px, text-align, left) "  "
+    oxy_textfield(edit, "#text", columns, 20, tooltip, "multiple entries are comma separated: note,rest,...");
+  content:
+    oxy_label(text, "Apply only to (element names):", width, 120px, text-align, left) "  "
+    oxy_textfield(edit, "#text", columns, 20, tooltip, "multiple entries are comma separated: note,rest,...");
+}
+parameter[xml|id="els2exclude"]:before {
+  content:
+    oxy_label(text, "Exclude elements: ", width, 120px, text-align, left) "  "
+    oxy_textfield(edit, "#text", columns, 20, tooltip, "multiple entries are comma separated: note,rest,...");
+  visibility: -oxy-collapse-text;
+}
+parameter[xml|id="recount_measures"]:before {
+  content:
+    oxy_label(text, "Recount measures (@n)", width, 20em, text-align, left) "  "
+    oxy_checkbox(edit, "#text",
+      values, "1",
+      uncheckedValues, "0");
+  visibility: -oxy-collapse-text;
+}
+/*=========== CREATE-IDs END ===========*/
+parameter[xml|id = "staff_min"]:before {
+	content: oxy_label(text, "The staff to be merged IN (a lower number):", width, 20em, text-align, left) "  "
+ oxy_textfield(edit, "#text", columns, 3, tooltip, "e.g. 1");
+	visibility: visible;
+}
+parameter[xml|id = "staff_max"]:before {
+	content: oxy_label(text, "The staff to be merged (a higher number):", width, 20em, text-align, left) "  "
+ oxy_textfield(
+edit, "#text", columns, 3, tooltip, "e.g. 2");
+	visibility: visible;
+}
+button[name = "mergeStaves"]:before {
+	font-size: 1.5em;
+	margin: 0.5em;
+	padding: 1em;
+	display: block;
+	margin-left: 5em;
+	background-color: transparent;
+	content: 
+	oxy_button(actionID, 'mergeStaves');
+}
+button[name = "fb"]:before {
+	font-size: 1.5em;
+	margin: 0.5em;
+	padding: 1em;
+	display: block;
+	margin-left: 5em;
+	background-color: transparent;
+	content: 
+	oxy_button(actionID, 'fb');
+	
+}
+/*=========== DIFF ===========*/
+.base {
+  content:
+    oxy_label(text, "Choose the base file (dmeref): ", width, 28em, text-align, left) oxy_urlChooser(edit, "@file", columns, 22);
+}
+.compare {
+  content:
+    oxy_label(text, "Choose the compared file (dmeedt): ", width, 28em, text-align, left) oxy_urlChooser(edit, "@file", columns, 22);
+}
+button[name="diff"]:before {
+  font-size: 1.5em;
+  margin: 0.5em;
+  padding: 1em;
+  display: block;
+  margin-left: 5em;
+  background-color: transparent;
+  content:
+    oxy_button(actionID, 'diff');
+}
+/*=========== DIFF END ===========*/
+/*===========PARAMETERS updateVersion START ===========*/
+parameter[xml|id="freeInput"] {
+  content: oxy_label(text, "Input your update description here:  ", width, 120px, text-align, left) oxy_textfield(edit, "#text", columns, 40, tooltip, "this message will be put into the first paragraph of the <change> element");
+  visibility: visible;
+}
+parameter[xml|id="freeInput"] {
+  visibility: -oxy-collapse-text;
+}
+parameter[xml|id="update"]:before {
+  content: "Choose the update type:"
+    oxy_combobox(edit, "@type",
+      editable, true,
+      values, "patch, minor, major"
+    );
+}
+/*===========PARAMETERS updateVersion END ===========*/

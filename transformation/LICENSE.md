@@ -1,0 +1,1 @@
+This project is currently published under [Educational Community License 2.0]  (https://opensource.org/licenses/ECL-2.0). It may change. Please, check the updates to this topic.
