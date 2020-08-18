@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="chengelog">
+	<title>changeLog</title>
+	<body>
+		<div>
+			<p>
+				<b>2020-07-</b>
+				<ul id="ul_clh_c4x_j">
+					<li>deprecate: e</li>
+					<li>add: check_references: check for //music//ref/@target </li>
+					<li>internal: 
+					</li>
+				</ul>
+			</p>
+			<p>
+				<b>2020-07-13</b>
+				<ul id="ul_clh_c4x_jlb">
+					<li>deprecate: &lt;lem>, &lt;rdg> must have @source with the prefedined value</li>
+					<li>add: <ul id="ul_c4w_kwg_3mb">
+							<li>Checks if &lt;tie> should be a &lt;slur> (because its reference has &lt;artic> or @artic. )</li>
+							<li>The name of the element with @sameas and the name of the pointed element must match.</li>
+						</ul></li>
+					<li>internal: <ul id="ul_f3g_mwg_3mb">
+							<li>reorganized the transformation <i>extractRules</i></li>
+							<li>reorganized documentation</li>
+						</ul></li>
+				</ul>
+			</p>
+		</div>
+		<div>
+			<p>
+				<b> 2020-04-17</b>
+				<ul id="ul_clh_c4x_jl2">
+					<li>deprecate the rule <i>supplied &lt;slur> may have @lform</i></li>
+					<li>&lt;corr> must have @resp. Values: #DME-editors, #NMA-editors</li>
+				</ul>
+			</p>
+		</div>
+	</body>
+</topic>

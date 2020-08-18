@@ -1,0 +1,72 @@
+@namespace oxy "http://www.oxygenxml.com/extensions/author";
+
+tbody {
+	background-color: rgb(178, 185, 196);
+	font-size: 1.2em;
+
+}
+thead {
+	color: #7f7307;
+}
+
+thead entry,
+tbody entry:nth-child(1),
+tbody entry:nth-child(2),
+tbody entry:nth-child(7) {
+	text-align: center;
+	vertical-align: middle;
+}
+
+/*measure*/
+tbody entry:nth-child(1) {
+	color: #800000;
+	font-weight: bold;
+}
+
+tbody entry:nth-child(3) li:nth-child(1),
+tbody entry:nth-child(3) li:nth-child(2),
+tbody entry:nth-child(3) li:nth-child(3) {
+
+	content: 
+	oxy_textfield(
+edit, "#text", 
+values, "♯, ♭, ♮, 𝄫 ,raisedSix &#xea5c;,raisedFour &#xea56;,empty,doubleSharp &#xe263;  " );
+	visibility: -oxy-collapse-text;
+}
+
+
+/*extender*/
+tbody entry:nth-child(4) li:nth-child(1),
+tbody entry:nth-child(4) li:nth-child(2),
+tbody entry:nth-child(4) li:nth-child(3) {
+	content: 
+	oxy_checkbox(
+edit, "#text", 
+values, "true", 
+uncheckedValues, "false"
+ resultSeparator, ","
+ labels, "extender");
+	/*display: inline;*/
+	visibility: -oxy-collapse-text;
+}
+
+tbody entry:nth-child(5) li {
+		content: 
+	oxy_textfield(
+edit, "#text", 
+values, "0m+, 1m+");
+	visibility: -oxy-collapse-text;
+	visibility: -oxy-collapse-text;
+}
+/*f-values*/
+tbody entry:nth-child(6) {
+	content: 
+	oxy_combobox(
+edit, "#text", 
+editable, true, 
+values, "no, harm, f1; f2; f3, other");
+
+	display: inline;
+	visibility: -oxy-collapse-text;
+	background-color: rgb(178, 185, 196);
+}

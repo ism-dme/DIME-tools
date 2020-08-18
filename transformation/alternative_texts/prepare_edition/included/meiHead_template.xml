@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<titleStmt xml:id="fd_titstmt">
+	<title authURI="//dme.mozarteum.at" authority="KVonline" label="Edition des Erstdrucks" type="unit" xml:id="fd_tit_1" xml:lang="DE">dmeref</title>
+	<title authURI="//dme.mozarteum.at" authority="KVonline" label="Edition of the first print" type="unit" xml:id="fd_tit_2" xml:lang="EN">dmeref</title>
+	<title type="file" xml:id="fd_tit_3">Filename</title>
+	<title analog="dc:description" type="subordinate" xml:id="fd_tit_4" xml:lang="EN">Digital Edition</title>
+	<author>
+		<persName authURI="//d-nb.info/gnd/118584596" authority="GND" codedval="118584596" label="MI-PID_39409" role="composer" xml:id="WAM">Wolfgang Amadé Mozart</persName>
+	</author>
+	<funder n="1" xml:id="ISM">
+		<corpName authURI="//d-nb.info/gnd/37019-8" authority="GND" codedval="37019-8">Internationale Stiftung Mozarteum Salzburg</corpName>
+		<address>
+			<addrLine>
+				<settlement authURI="//www.geonames.org/2766824" authority="GeoNames">Salzburg</settlement>
+			</addrLine>
+			<addrLine>
+				<country>Austria</country>
+			</addrLine>
+		</address>
+	</funder>
+	<funder n="2" xml:id="PHI">
+		<corpName authURI="//d-nb.info/dnbn/330242865" authority="GND" codedval="330242865">The Packard Humanities Institute</corpName>
+		<address>
+			<addrLine>
+				<settlement authURI="//www.geonames.org/5368335" authority="GeoNames">Los Altos</settlement>
+			</addrLine>
+			<addrLine>
+				<country>California, USA</country>
+			</addrLine>
+		</address>
+	</funder>
+</titleStmt>
