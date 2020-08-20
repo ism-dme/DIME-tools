@@ -1,28 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet exclude-result-prefixes="xs math xd mei uuid dme" version="3.0" xmlns:dme="http://www.mozarteum.at/ns/dme" xmlns:functx="http://www.functx.com" xmlns:math="http://www.w3.org/2005/xpath-functions/math" xmlns:mei="http://www.music-encoding.org/ns/mei" xmlns:uuid="java:java.util.UUID" xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"  xpath-default-namespace="http://www.music-encoding.org/ns/mei">
+<xsl:stylesheet exclude-result-prefixes="xs math xd mei uuid dme" version="3.0" xmlns:dme="http://www.mozarteum.at/ns/dme" xmlns:functx="http://www.functx.com" xmlns:math="http://www.w3.org/2005/xpath-functions/math" xmlns:mei="http://www.music-encoding.org/ns/mei" xmlns:uuid="java:java.util.UUID" xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xpath-default-namespace="http://www.music-encoding.org/ns/mei">
 	<doc scope="stylesheet" xmlns="http://www.oxygenxml.com/ns/doc/xsl">
-		<desc><p><i>Adds/replaces @tstamps</i></p>
-			<p>Exceptions (no @tstamps are added): 
-				<ul>					
+		<desc>
+			<p>
+				<i>Adds / replaces @tstamps</i>
+			</p>
+			<p>Exceptions (no @tstamps are added): <ul>
 					<li>&lt;bTrem&gt;, &lt;fTrem&gt;</li>
-					<li>Descendants of a &lt;chord&gt; </li>
+					<li>Descendants of &lt;chord&gt; </li>
 					<li>&lt;layer&gt;s which have &lt;app&gt; or &lt;choice&gt; as ancestor or descendant</li>
 				</ul>
-			</p>			
-			<p><b>Disclaimer</b>: The stylesheet uses an algorithm developed by <b>Johannes Kepper</b>, cf. : <ul><li>addIDs_and_tstamps.xsl (2014)</li><li>fixTstamps.xsl (2018)</li></ul> </p>
-			<p>
-				<b>Modified by: </b>Oleksii Sapov</p>
-			<p><i>Current version</i> is <b id="version">1.1.0</b>. For more info see the <b>changeLog</b> below.</p>
+			</p>
+			<p><i>Current version</i>: <b id="version">1.1.0</b>. For more info see <b>changeLog</b>.</p>
+			<p><b>Contributors</b>: Johannes Kepper, Oleksii Sapov.</p>
+			<p><b>Copyright</b>: 2020 Internationale Stiftung Mozarteum Salzburg.</p>
+			<p>Licensed under the Educational Community License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at http://www.osedu.org/licenses/ECL-2.0</p>
+			<p>Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.</p>
 		</desc>
 	</doc>
 	<xsl:include href="../lib/functions/functx-1.0-doc-2007-01.xsl"/>
 	<xsl:include href="../lib/basic.xsl"/>
 	<xsl:import href="changeLog.xsl"/>
-	
-	
+
+
 	<xsl:variable name="exceptions" select="'beatRpt', 'halfmRpt'"/>
 
-	
+
 
 	<xd:doc>
 		<xd:desc/>
