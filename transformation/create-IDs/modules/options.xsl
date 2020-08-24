@@ -3,7 +3,7 @@
 
 
 	<xsl:template name="options">
-		<xsl:variable name="optionsGUI" select="doc('../../lib/DIME-tools/DIME-tools.xml')//id('create-IDs')/dme:parameters"/>
+		<xsl:variable name="optionsGUI" select="doc('../../options/options.xml')//id('create-IDs')/dme:parameters"/>
 
 		<xsl:map>	
 			<xsl:map-entry key="'recount_measures'" select="$optionsGUI/id('recount_measures')/string(text())"/>

@@ -6,11 +6,11 @@
 		<fileDesc>
 			<titleStmt xml:id="fd_titstmt">
 				<title authURI="https://dme.mozarteum.at" authority="KVonline" label="NMA digital" type="unit" xml:id="fd_tit_1" xml:lang="DE">Sinfonie in g, 3. Satz, KV 550/03</title>
-				<title authority="ISMIDW" codedval="6318" label="version1" type="subordinate" xml:id="fd_tit_1.1_DE" xml:lang="DE">1. Fassung </title>
-				<title authority="ISMIDW" codedval="6309" label="version2" type="subordinate" xml:id="fd_tit_1.2_DE" xml:lang="DE">2. Fassung </title>
+				<title authority="ISMIDW" codedval="6318" label="version1" type="subordinate" xml:id="fd_tit_1.1_DE" xml:lang="DE">1. Fassung</title>
+				<title authority="ISMIDW" codedval="6309" label="version2" type="subordinate" xml:id="fd_tit_1.2_DE" xml:lang="DE">2. Fassung</title>
 				<title authURI="https://dme.mozarteum.at" authority="KVonline" label="NMA digital" type="unit" xml:id="fd_tit_2" xml:lang="EN">Symphony in g, 3rd mvt., K. 550/03</title>
-				<title authority="ISMIDW" codedval="6318" label="version1" type="subordinate" xml:id="fd_tit_2.1_EN" xml:lang="EN">Version 1 </title>
-				<title authority="ISMIDW" codedval="6309" label="version2" type="subordinate" xml:id="fd_tit_2.2_EN" xml:lang="EN">Version 2 </title>
+				<title authority="ISMIDW" codedval="6318" label="version1" type="subordinate" xml:id="fd_tit_2.1_EN" xml:lang="EN">Version 1</title>
+				<title authority="ISMIDW" codedval="6309" label="version2" type="subordinate" xml:id="fd_tit_2.2_EN" xml:lang="EN">Version 2</title>
 				<title type="file" xml:id="fd_tit_3">
 					<ref target="dme.mozarteum.at/movi/file/550/3" targettype="file_location">dmeref_550-003_6314.xml</ref>
 				</title>
@@ -49,8 +49,9 @@
 			</titleStmt>
 			<editionStmt>
 				<edition>
-					<identifier type="version">1.0.0</identifier>
-					<date isodate="2019-11-22" type="release"/>
+					<identifier type="version">1.0.1</identifier>
+					<date isodate="2019-11-25" type="release"/>
+					<date isodate="2020-02-21" type="update"/>
 				</edition>
 				<respStmt n="1">
 					<resp>Digital remastering by:</resp>
@@ -60,6 +61,7 @@
 					<resp>Proofreading by:</resp>
 					<persName analog="#OS" xml:id="pr.p1">Oleksii Sapov</persName>
 					<persName analog="#ND" xml:id="pr.p2">Norbert Dubowy</persName>
+					<persName analog="#TR" xml:id="pr.p3">Till Reininghaus</persName>
 				</respStmt>
 			</editionStmt>
 			<pubStmt>
@@ -112,8 +114,8 @@
 						</editor>
 					</titleStmt>
 					<editionStmt>
-						<edition xml:lang="DE">[erste Auflage]</edition>
-						<edition xml:lang="EN">[first edition]</edition>
+						<edition xml:lang="DE">[Erste Auflage]</edition>
+						<edition xml:lang="EN">[First edition]</edition>
 						<edition xml:id="digital_image1">
 							<ref label="version 1" target="https://dme.mozarteum.at/DME/nma/nma_cont.php?vsep=111&amp;p1=99&amp;l=1" targettype="website">
 								<repository>NMA Online</repository>
@@ -156,7 +158,7 @@
 						</contentItem>
 					</contents>
 					<notesStmt>
-						<annot label="version 1" n="1">Mozart, Wolfgang Amadeus. Neue Ausgabe sämtlicher Werke, Serie IV, Orchesterwerke, Werkgruppe 11, Sinfonien Band 9. Ed. H. C. Robbins Landon. Kassel: Bärenreiter, 1957, p. 63-124.</annot>
+						<annot label="version 1" n="1">Mozart, Wolfgang Amadeus. Neue Ausgabe sämtlicher Werke, Serie IV, Orchesterwerke, Werkgruppe 11, Sinfonien, Band 9. Ed. H. C. Robbins Landon. Kassel: Bärenreiter, 1957, p. 63-124.</annot>
 						<annot label="version 1" n="2">Menuetto &lt;mit Trio&gt;, p. 99-103.</annot>
 					</notesStmt>
 				</source>
@@ -172,8 +174,8 @@
 						</editor>
 					</titleStmt>
 					<editionStmt>
-						<edition xml:lang="DE">[erste Auflage]</edition>
-						<edition xml:lang="EN">[first edition]</edition>
+						<edition xml:lang="DE">[Erste Auflage]</edition>
+						<edition xml:lang="EN">[First edition]</edition>
 						<edition xml:id="digital_image2">
 							<ref label="version 2" target="https://dme.mozarteum.at/DME/nma/nma_cont.php?vsep=111&amp;p1=161&amp;l=1" targettype="website">
 								<repository>NMA Online</repository>
@@ -216,7 +218,7 @@
 						</contentItem>
 					</contents>
 					<notesStmt>
-						<annot label="version 2" n="1">Mozart, Wolfgang Amadeus. Neue Ausgabe sämtlicher Werke, Serie IV, Orchesterwerke, Werkgruppe 11, Sinfonien Band 9. Ed. H. C. Robbins Landon. Kassel: Bärenreiter, 1957, p. 125-186.</annot>
+						<annot label="version 2" n="1">Mozart, Wolfgang Amadeus. Neue Ausgabe sämtlicher Werke, Serie IV, Orchesterwerke, Werkgruppe 11, Sinfonien, Band 9. Ed. H. C. Robbins Landon. Kassel: Bärenreiter, 1957, p. 125-186.</annot>
 						<annot label="version 2" n="2">Menuetto &lt;mit Trio&gt;, p. 161-165.</annot>
 					</notesStmt>
 				</source>
@@ -271,7 +273,7 @@
 						</contentItem>
 					</contents>
 					<notesStmt>
-						<annot label="version 1" n="1">Mozart, Wolfgang Amadeus. Neue Ausgabe sämtlicher Werke, Serie IV, Orchesterwerke, Werkgruppe 11, Sinfonien Band 9. Ed. H. C. Robbins Landon. Zweite, durchgesehene Auflage. Kassel: Bärenreiter, 1997, p. 63-124.</annot>
+						<annot label="version 1" n="1">Mozart, Wolfgang Amadeus. Neue Ausgabe sämtlicher Werke, Serie IV, Orchesterwerke, Werkgruppe 11, Sinfonien, Band 9. Ed. H. C. Robbins Landon. Zweite, durchgesehene Auflage. Kassel: Bärenreiter, 1997, p. 63-124.</annot>
 						<annot label="version 1" n="2">Menuetto &lt;mit Trio&gt;, p. 99-103.</annot>
 					</notesStmt>
 				</source>
@@ -326,7 +328,7 @@
 						</contentItem>
 					</contents>
 					<notesStmt>
-						<annot label="version 2" n="1">Mozart, Wolfgang Amadeus. Neue Ausgabe sämtlicher Werke, Serie IV, Orchesterwerke, Werkgruppe 11, Sinfonien Band 9. Ed. H. C. Robbins Landon. Zweite, durchgesehene Auflage. Kassel: Bärenreiter, 1997, p. 125-186.</annot>
+						<annot label="version 2" n="1">Mozart, Wolfgang Amadeus. Neue Ausgabe sämtlicher Werke, Serie IV, Orchesterwerke, Werkgruppe 11, Sinfonien, Band 9. Ed. H. C. Robbins Landon. Zweite, durchgesehene Auflage. Kassel: Bärenreiter, 1997, p. 125-186.</annot>
 						<annot label="version 2" n="2">Menuetto &lt;mit Trio&gt;, p. 161-165.</annot>
 					</notesStmt>
 				</source>
@@ -337,8 +339,8 @@
 						<author analog="#HCRL">H. C. Robbins Landon</author>
 					</titleStmt>
 					<editionStmt>
-						<edition xml:lang="DE">[auf Seite i/70-71 zusammengestellte Berichtigungen zum Notenband]</edition>
-						<edition xml:lang="EN">[corrigenda to the music edition reported on p. i/70-71]</edition>
+						<edition xml:lang="DE">[Auf Seite i/70-71 zusammengestellte Berichtigungen zum Notenband]</edition>
+						<edition xml:lang="EN">[Corrigenda to the music edition reported on p. i/70-71]</edition>
 					</editionStmt>
 					<pubStmt>
 						<publisher analog="#BV">Bärenreiter</publisher>
@@ -367,7 +369,7 @@
 						</biblScope>
 					</seriesStmt>
 					<notesStmt>
-						<annot n="1">Landon, H. C. Robbins. Wolfgang Amadeus Mozart, Neue Ausgabe sämtlicher Werke, Kritische Berichte, Serie IV: Orchesterwerke, Werkgruppe 11: Sinfonien Band 9. Kassel: Bärenreiter, 1963.</annot>
+						<annot n="1">Landon, H. C. Robbins. Wolfgang Amadeus Mozart, Neue Ausgabe sämtlicher Werke, Kritische Berichte, Serie IV: Orchesterwerke, Werkgruppe 11: Sinfonien, Band 9. Kassel: Bärenreiter, 1963.</annot>
 					</notesStmt>
 				</source>
 			</sourceDesc>
@@ -392,7 +394,7 @@
 					<p>Adds an empty second layer or a second layer with mRest depending on the mode. Developed by <persName analog="#OS">Oleksii Sapov</persName>.</p>
 				</application>
 			</appInfo>
-			<editorialDecl label="Editor's Note" xml:lang="EN">
+			<editorialDecl label="Editor’s Note" xml:lang="EN">
 				<p>This is the encoding of the 3rd movement of K. 550 according to the <rend rend="italic">Neue Mozart Ausgabe</rend> IV/11/9 (ed. H. C. Robbins Landon, 1957; second edition, 1997). The symphony in g minor K. 550 is available in two authentic versions. Mozart altered the original scoring by providing additional clarinet parts while modifying the oboe parts. The first version (without clarinets) and the second version (with clarinets) are both published in full score in NMA IV/11/9. The present digital edition combines these versions in one single encoding. Both versions of the first edition are encoded as 'source_1' and 'source_2', those of the second edition as 'source_3' and 'source_4' with the second edition as the accepted reading. Corrigenda reported in the corresponding Critical Report (H. C. Robbins Landon, 1963) on page i/70-71 and marked as 'source_5' have already been worked into the second edition.</p>
 				<p>The NMA edition is primarily based on Mozart’s autograph score (NMA siglum A), which is preserved at the Archiv der Gesellschaft der Musikfreunde, Vienna, call number A 159 (XIII 6137). Along with the full score, this item includes two autograph addenda: the first addendum consists in one folio with alternative measures for the 2nd movement; the second addendum contains additional parts for clarinet and revised oboe parts, which constitute the second version. As a secondary source, the editor consulted the first print edition published by André, Offenbach am Main, in 1794 (NMA siglum B) as well as the first print edition of the second version, published likewise by André in 1805 (NMA siglum C). Both of them are not considered in the variant readings of the Critical Report.</p>
 				<p>In the digital edition, the diacritic markup of editorial interventions used in the NMA print edition (i.e. small size, italics, brackets, dashed line form) are coded as additions; as such they are marked as decisions by the editors of the NMA (@resp). Wherever possible the markup of additions affects the smallest unit that can be individually addressed, usually an element. In some cases, a distinction between supplied and un-supplied elements is made through a &lt;choice&gt; element. With the exception of possible corrections of obvious printing errors (marked in the code as such) the coding of the musical text is faithful to the aforementioned NMA editions. Some normalizations have been applied; for a full description of the editorial principles see the <ref target="https://dme.mozarteum.at/musik/edition/#200" targettype="website">Editorial Guidelines of the DME Music Editions</ref>.</p>
@@ -405,11 +407,11 @@
 							<rend fontweight="bold">Bibliography</rend>
 						</head>
 						<bibl>Landon, H. C. Robbins. <rend fontstyle="italic">Wolfgang Amadeus Mozart, Neue Ausgabe sämtlicher Werke, Kritische Berichte, Serie IV, Werkgruppe 11, Band 9</rend>. Kassel: Bärenreiter, 1963.</bibl>
-						<bibl>Mozart, Wolfgang Amadeus. <rend fontstyle="italic">Neue Ausgabe sämtlicher Werke, Serie IV, Werkgruppe 11, Sinfonien Band 9</rend>. Ed. H. C. Robbins Landon. Kassel: Bärenreiter, 1957.</bibl>
-						<bibl>Mozart, Wolfgang Amadeus. <rend fontstyle="italic">Neue Ausgabe sämtlicher Werke, Serie IV, Werkgruppe 11, Sinfonien Band 9</rend>. Ed. H. C. Robbins Landon. Zweite, durchgesehene Auflage. Kassel: Bärenreiter, 1997.</bibl>
+						<bibl>Mozart, Wolfgang Amadeus. <rend fontstyle="italic">Neue Ausgabe sämtlicher Werke, Serie IV, Werkgruppe 11, Sinfonien, Band 9</rend>. Ed. H. C. Robbins Landon. Kassel: Bärenreiter, 1957.</bibl>
+						<bibl>Mozart, Wolfgang Amadeus. <rend fontstyle="italic">Neue Ausgabe sämtlicher Werke, Serie IV, Werkgruppe 11, Sinfonien, Band 9</rend>. Ed. H. C. Robbins Landon. Zweite, durchgesehene Auflage. Kassel: Bärenreiter, 1997.</bibl>
 					</biblList>
 				</p>
-				<p>Last revision: <date isodate="2019-11-22"/>
+				<p>Last revision: <date isodate="2020-02-21"/>
 				</p>
 			</editorialDecl>
 			<projectDesc>
@@ -485,7 +487,8 @@
 									<identifier authURI="https://www.rism.info/" authority="RISM" type="library_siglum">A-Wgm</identifier>
 									<identifier type="shelfmark">A 159 (XIII 6137)</identifier>
 								</physLoc>
-								<annot n="1" xml:lang="DE">Das Autograph gibt die 1. Fassung der Sinfonie wieder. Zwei autographe Nachträge werden in einer Tasche aufbewahrt, die auf der Innenseite des hinteren Umschlags angebracht ist. Der erste Nachtrag umfasst 1 Blatt, auf dem Mozart die Varianten zum 2. Satz notiert hat. Die entsprechenden Stellen sind im Autograph markiert. Der zweite Nachtrag umfasst die autographe Bläserpartitur mit den nachkomponierten Klarinetten und den geänderten Oboen für die 2. Fassung.</annot>
+								<annot n="1" xml:lang="DE">Das Autograph gibt die 1. Fassung der Sinfonie wieder. Zwei autographe Nachträge werden in einer Tasche aufbewahrt, die auf der Innenseite des hinteren Umschlags angebracht ist. Der erste Nachtrag umfasst ein Blatt, auf dem Mozart die Varianten zum 2. Satz notiert hat. Die entsprechenden Stellen sind im Autograph markiert. Der zweite Nachtrag umfasst die autographe Bläserpartitur mit den nachkomponierten Klarinettenstimmen und den geänderten Oboenstimmen für die 2. Fassung.</annot>
+								<annot n="2" xml:lang="EN">The autograph score contains the 1st version of the symphony. Two autograph supplements are kept in a pocket attached to the inside of the back cover. The first addendum consists of one sheet on which Mozart notated the variants for the 2nd movement. The corresponding positions are marked in the autograph. The second addendum comprises the autograph score of the wind instruments with the later composed clarinet parts and the modified oboe parts for the 2nd version.</annot>
 								<biblScope label="range" unit="folio">1-44 (score)</biblScope>
 								<biblScope label="range" unit="folio">1 (first addendum)</biblScope>
 								<biblScope label="range" unit="folio">1-8 (second addendum)</biblScope>
@@ -634,11 +637,10 @@
 			</work>
 		</workDesc>
 		<revisionDesc>
-			<change n="1" resp="#FK">
+			<change isodate="2019-08-28" n="1" resp="#FK">
 				<changeDesc>
 					<p>File converted from Dox to DoxML using <ptr target="#parseDox2XML.xsl_v0.2.0"/>.</p>
 				</changeDesc>
-				<date notafter="2019-08-28"/>
 			</change>
 			<change isodate="2019-08-28" n="2" resp="#JoKep">
 				<changeDesc>
@@ -657,30 +659,44 @@
 			</change>
 			<change isodate="2019-10-15" n="5" resp="#IC">
 				<changeDesc>
-					<p>revised and updated according to workflow_1.1</p>
+					<p>revised and updated according to workflow_1.1, version 2</p>
 				</changeDesc>
 			</change>
 			<change isodate="2019-10-30" n="6" resp="#OS">
 				<changeDesc>
-					<p>proofreading according to workflow_1.2</p>
+					<p>proofreading according to workflow_1.2, version 2</p>
 				</changeDesc>
 			</change>
 			<change isodate="2019-11-14" n="7" resp="#ND">
 				<changeDesc>
-					<p>final review, workflow 1.3</p>
+					<p>final review, workflow 1.3, version 2</p>
 				</changeDesc>
 			</change>
-			<change isodate="2019-12-02" n="8" resp="#OS">
+			<change isodate="2019-11-15" n="8" resp="#IC">
+				<changeDesc>
+					<p>revised and updated according to workflow_1.1, version 1 of the symphony</p>
+				</changeDesc>
+			</change>
+			<change isodate="2019-11-25" n="9" resp="#DME-editors">
+				<changeDesc>
+					<p>release version 2 of the symphony, file version 1.0.0</p>
+				</changeDesc>
+			</change>
+			<change isodate="2019-12-02" n="10" resp="#OS">
 				<changeDesc>
 					<p>proofreading, 1st version</p>
 				</changeDesc>
 			</change>
-			<!-- Release -->
-			<!--<change n="6">				
+			<change isodate="2020-01-28" n="11" resp="#TR">
 				<changeDesc>
-					<p/>
+					<p>final review, workflow 1.3, version 1 of the symphony</p>
 				</changeDesc>
-			</change>-->
+			</change>
+			<change isodate="2020-02-21" n="12" resp="#DME-editors">
+				<changeDesc>
+					<p>release versions 1 and 2 of the symphony combined, upgrade file version 1.0.1</p>
+				</changeDesc>
+			</change>
 		</revisionDesc>
 	</meiHead>
 	<music meiversion="3.0.0">
@@ -994,7 +1010,7 @@
 										<staffDef n="4" xml:id="staffDef_P4_sc01-01"/>
 									</staffGrp>
 									<staffGrp symbol="bracket" xml:id="staffGrp_03-01">
-										<staffDef n="5" xml:id="staffDef_P5_sc01-01"/>
+										<staffDef key.sig="0" n="5" xml:id="staffDef_P5_sc01-01"/>
 									</staffGrp>
 									<staffGrp barthru="true" symbol="bracket" xml:id="staffGrp_04-01">
 										<staffGrp symbol="brace" xml:id="staffGrp_05-01">
@@ -4006,7 +4022,7 @@
 									</layer>
 									<layer n="2" xml:id="layer_15582">
 										<note dots="1" doxml.id="d28e2981" dur="2" oct="3" pname="g" stem.sameas="#note_15570" tstamp="1" xml:id="note_15588"/>
-										<clef sameas="#clef_15576" tstamp="3" xml:id="clef_15594"/>
+										<clef sameas="#clef_15576" xml:id="clef_15594"/>
 									</layer>
 								</staff>
 								<staff dme.parts="10" n="6" xml:id="staff_15600">
@@ -4626,12 +4642,12 @@
 									</layer>
 									<layer n="2" xml:id="layer_17856">
 										<note accid.ges="f" doxml.id="d28e3378" dur="4" oct="4" pname="b" tstamp="1" xml:id="note_17862"/>
-										<app xml:id="app_">
-											<rdg corresp="#ISMIDW6309" label="version-2_6309" n="2" source="#source_2 #source_4" xml:id="rdg2_">
+										<app xml:id="app_17868">
+											<rdg corresp="#ISMIDW6309" label="version-2_6309" n="2" source="#source_2 #source_4" xml:id="rdg2_17868">
 												<rest doxml.id="d28e3380b" sameas="#rest_17844" tstamp="2" xml:id="rest_17868"/>
 												<rest doxml.id="d28e3383b" sameas="#rest_17850" tstamp="3" xml:id="rest_17874"/>
 											</rdg>
-											<rdg corresp="#ISMIDW6318" label="version-1_6318" n="1" source="#source_1 #source_3" xml:id="rdg1_">
+											<rdg corresp="#ISMIDW6318" label="version-1_6318" n="1" source="#source_1 #source_3" xml:id="rdg1_17868">
 												<rest doxml.id="d28e3422b" dur="4" oloc="4" ploc="f" tstamp="2" xml:id="rest_17922a"/>
 												<rest doxml.id="d28e3429" dur="4" oloc="4" ploc="c" tstamp="3" xml:id="rest_17928a"/>
 											</rdg>
@@ -5481,7 +5497,7 @@
 								<dynam doxml.id="d28e4307" staff="6" startid="#note_20388" xml:id="dynam_20442">p</dynam>
 								<app xml:id="app_20502">
 									<rdg corresp="#ISMIDW6309" label="version-2_6309" n="2" source="#source_2 #source_4" xml:id="rdg2_20502">
-										<dir doxml.id="d28e3987" place="above" staff="3" tstamp="1" xml:id="dir_20502">
+										<dir doxml.id="d28e3987" layer="1 2" place="above" staff="3" tstamp="1" xml:id="dir_20502">
 											<rend fontstyle="normal" halign="center" xml:id="rend_20502">Clarinetti tacent<lb xml:id="clarinetti_tacent"/>&#8195;</rend>
 										</dir>
 									</rdg>
@@ -7019,7 +7035,7 @@
 									</layer>
 								</staff>
 								<supplied resp="#NMA-editors" xml:id="supplied_26532">
-									<slur endid="#note_26418" lform="dotted" staff="3" startid="#note_26412" xml:id="slur_26538"/>
+									<slur endid="#note_26418" staff="3" startid="#note_26412" xml:id="slur_26538"/>
 								</supplied>
 							</measure>
 							<measure facs="#zoneOf_measure73a #zoneOf_measure73b" n="25" xml:id="m25_k550_003_b">
@@ -7092,7 +7108,7 @@
 								<slur endid="#note_26628" staff="2" startid="#note_26604" xml:id="slur_26808"/>
 								<slur endid="#note_26664" staff="2" startid="#note_26640" xml:id="slur_26814"/>
 								<supplied resp="#NMA-editors" xml:id="supplied_26826">
-									<slur endid="#note_26688" lform="dotted" staff="3" startid="#note_26682" xml:id="slur_26832"/>
+									<slur endid="#note_26688" staff="3" startid="#note_26682" xml:id="slur_26832"/>
 								</supplied>
 								<slur endid="#note_26706" staff="3" startid="#note_26700" xml:id="slur_26838"/>
 							</measure>
@@ -7225,7 +7241,7 @@
 								</staff>
 								<slur endid="#note_27252" staff="4" startid="#note_27246" xml:id="slur_27372"/>
 								<supplied resp="#NMA-editors" xml:id="supplied_27378">
-									<slur endid="#note_27270" lform="dotted" staff="4" startid="#note_27264" xml:id="slur_27384"/>
+									<slur endid="#note_27270" staff="4" startid="#note_27264" xml:id="slur_27384"/>
 								</supplied>
 							</measure>
 							<measure facs="#zoneOf_measure76a #zoneOf_measure76b" n="28" xml:id="m28_k550_003_b">
@@ -7345,7 +7361,7 @@
 								</staff>
 								<slur endid="#note_27720" staff="4" startid="#note_27714" xml:id="slur_27840"/>
 								<supplied resp="#NMA-editors" xml:id="supplied_27846">
-									<slur endid="#note_27738" lform="dotted" staff="4" startid="#note_27732" xml:id="slur_27852"/>
+									<slur endid="#note_27738" staff="4" startid="#note_27732" xml:id="slur_27852"/>
 								</supplied>
 							</measure>
 							<measure facs="#zoneOf_measure78a #zoneOf_measure78b" n="30" xml:id="m30_k550_003_b">
@@ -7559,7 +7575,7 @@
 								</staff>
 								<slur endid="#note_28836" staff="4" startid="#note_28530" xml:id="slur_28692"/>
 								<supplied resp="#NMA-editors" xml:id="supplied_28698">
-									<slur endid="#note_28860" lform="dotted" staff="4" startid="#note_28554" xml:id="slur_28704"/>
+									<slur endid="#note_28860" staff="4" startid="#note_28554" xml:id="slur_28704"/>
 								</supplied>
 							</measure>
 							<sb xml:id="sb_28710"/>
@@ -7701,10 +7717,10 @@
 								<slur endid="#note_29130" staff="4" startid="#note_29124" xml:id="slur_29304"/>
 								<slur endid="#note_29496" staff="4" startid="#note_29136" xml:id="slur_29310"/>
 								<supplied resp="#NMA-editors" xml:id="supplied_29316">
-									<slur endid="#note_29154" lform="dotted" staff="4" startid="#note_29148" xml:id="slur_29322"/>
+									<slur endid="#note_29154" staff="4" startid="#note_29148" xml:id="slur_29322"/>
 								</supplied>
 								<supplied resp="#NMA-editors" xml:id="supplied_29328">
-									<slur endid="#note_29520" lform="dotted" staff="4" startid="#note_29160" xml:id="slur_29334"/>
+									<slur endid="#note_29520" staff="4" startid="#note_29160" xml:id="slur_29334"/>
 								</supplied>
 							</measure>
 							<measure facs="#zoneOf_measure83a #zoneOf_measure83b" n="35" xml:id="m35_k550_003_b">
@@ -7862,7 +7878,7 @@
 								<slur endid="#note_29748" staff="3" startid="#note_29736" xml:id="slur_29964"/>
 								<slur endid="#note_29772" staff="4" startid="#note_29766" xml:id="slur_29970"/>
 								<supplied resp="#NMA-editors" xml:id="supplied_29976">
-									<slur endid="#note_29796" lform="dotted" staff="4" startid="#note_29790" xml:id="slur_29982"/>
+									<slur endid="#note_29796" staff="4" startid="#note_29790" xml:id="slur_29982"/>
 								</supplied>
 							</measure>
 							<measure facs="#zoneOf_measure85a #zoneOf_measure85b" n="37" xml:id="m37_k550_003_b">

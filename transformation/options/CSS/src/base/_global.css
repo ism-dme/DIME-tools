@@ -1,0 +1,73 @@
+/*=========== _GLOBAL START===========*/
+oxy|document {
+  /* background-image:url("images/background.png"); */
+  background-repeat: repeat-x;
+  background-position: top;
+  background-color: $moviDarkGreen;
+}
+
+dimeTools {
+  /* position: relative; */
+  font-family: arial, sans-serif, 'times new roman';
+  font-size: 1em;
+  line-height: 1.2;
+  width: 800px;
+  margin: 0 auto;
+  border: 1px solid;
+}
+
+h1, h2 {
+  width: 70%;
+  margin: auto;
+  padding-top: 0.7rem;
+  text-align: center;
+  font-weight: bold;
+  color: black;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin-bottom: 1.5rem;
+}
+
+div {
+  background-color: $moviLight;
+  color: black;
+  border: outset;
+  width: 100%;
+}
+
+a:hover {
+  color: $moviGreen;
+  border: 1px dotted silver;
+  padding: 0;
+}
+
+a {
+  content: url('../../lib/pct/link.png');
+  link: attr(href);  
+}
+
+* {
+  display: block;
+  margin-top: 5px;
+}
+
+p {
+  width: 90%;
+  padding: 0.5rem;
+  margin: 1rem auto 1rem auto;
+  background-color: #f1f3f4;
+  color: black;
+}
+
+span {
+  margin: 1rem;
+  color: #cfd186;
+}
+
+/*=========== _GLOBAL END ===========*/

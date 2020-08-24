@@ -1,0 +1,33 @@
+/*=========== CREATE-IDs ==========*/
+parameter[xml|id="all"]:before {
+  content:
+    oxy_label(text, "Apply for all elements in the <body>", width, 20em, text-align, left) "  "
+    oxy_checkbox(edit, "#text",
+      values, "1",
+      uncheckedValues, "0");
+  visibility: -oxy-collapse-text;
+}
+
+parameter[xml|id="els2apply"]:before {
+  content:
+    oxy_label(text, "Apply only to (element names):", width, 120px, text-align, left) "  "
+    oxy_textfield(edit, "#text", columns, 20, tooltip, "multiple entries are comma separated: note,rest,...");
+}
+
+parameter[xml|id="els2exclude"]:before {
+  content:
+    oxy_label(text, "Exclude elements: ", width, 120px, text-align, left) "  "
+    oxy_textfield(edit, "#text", columns, 20, tooltip, "multiple entries are comma separated: note,rest,...");
+  visibility: -oxy-collapse-text;
+}
+
+parameter[xml|id="recount_measures"]:before {
+  content:
+    oxy_label(text, "Recount measures (@n)", width, 20em, text-align, left) "  "
+    oxy_checkbox(edit, "#text",
+      values, "1",
+      uncheckedValues, "0");
+  visibility: -oxy-collapse-text;
+}
+
+/*=========== CREATE-IDs END ===========*/

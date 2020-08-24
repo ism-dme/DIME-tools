@@ -1,12 +1,9 @@
 # DIME-Schematron 
-___
 
-The present schematron rules are an extension of the [MEI 3.0][3] (DIME-customized) schema and its embedded schematron rules. Although, there are many project specific rules, some of them may be useful for the MEI validation in general.
-
-___
+These schematron rules contain some project specific constraints as well as rules which are not covered in the [MEI 3.0](https://music-encoding.org/guidelines/v3/content/) (DIME-customized) schema and its embedded schematron rules. 
 
 ## Usage Notes
-The most convinient way to use the oXygen XML editor project file ( `validation.xpr` ) which contains all needed settings.
+The most convinient way is to use the oXygen XML editor project file ( `validation.xpr` ) which contains all needed settings.
 
 * To validate an MEI file use  `src/rules/main.sch` 
 * Making changes:
@@ -17,19 +14,3 @@ The most convinient way to use the oXygen XML editor project file ( `validation.
 * For generating the documenatation, two separate transformation scenarios are used:
   1. `docs_unique-rules`  (should be applied on `uniqueRules.sch`) 
   2. `docs_framework` (should be applied on `styleguide.ditamap`)
-
-
-___
-
-
-## Disclaimer
-The project uses following parts from the [Intelligent Integrated Style Guide][2] by Syncro Soft SRL (2018) licensed under [Apache 2.0] [4] license.:
-
-- the `styleguide` framework
-- the `src` folder. The files in this folder were modified to meet the project needs, in particular, in order to be able to define the *unique rules* 
-___
-
-[1]: https://dme.mozarteum.at/en/music/edition/
-[2]: https://github.com/oxygenxml/integrated-styleguide
-[3]: https://music-encoding.org/guidelines/v3/content/
-[4]: https://www.apache.org/licenses/LICENSE-2.0
