@@ -1,38 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet exclude-result-prefixes="xs xd dme functx dita mei map array" version="3.0" xmlns:array="http://www.w3.org/2005/xpath-functions/array" xmlns:dita="http://dita-ot.sourceforge.net" xmlns:dme="http://www.mozarteum.at/ns/dme" xmlns:functx="http://www.functx.com" xmlns:map="http://www.w3.org/2005/xpath-functions/map" xmlns:mei="http://www.music-encoding.org/ns/mei" xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xpath-default-namespace="http://www.music-encoding.org/ns/mei">
 
-	<xd:doc scope="stylesheet">
-		<xd:desc>
-			<xd:p>
-				<xd:b>Description:</xd:b>
-				<xd:i>Adds @layer="1 2" to &lt;dynam>, &lt;dir>, &lt;fermata>, &lt;trill>, &lt;turn>, &lt;slur>, &lt;tie>.</xd:i>
-			</xd:p>
-			<xd:p><xd:b>Specifications</xd:b>: <xd:ul>
-					<xd:li>1. &lt;dynam>, &lt;dir>, &lt;fermata>, &lt;trill>, &lt;turn>: In presence of two layers, these control events must have always an @layer: either @layer="1 2" (common control event) or @layer="1"/@layer="2" (control event related only to one of the two layers, but missing in the other layer)</xd:li>
-					<xd:li>2. &lt;slur>, &lt;tie&gt; In presence of two layers, these control events must have @layer="1 2" only when the main element which they relate to is pointed by @sameas (&lt;tie>) or @stem.sameas (&lt;slur>), that is for &lt;slur> or &lt;tie&gt; in passages "a 2" (unisono passages). Otherwise they never have a @layer. If there exists a rest in other layer on the same @tstamp as pointed element no @layer is added.</xd:li>
-				</xd:ul>
-			</xd:p>
-			<xd:p>
-				<xd:b>Author: </xd:b>Oleksii Sapov</xd:p>
-			<xd:p>
-				<xd:b>Created on: </xd:b>June, 19 2019<xd:ul>
-					<xd:li>
-						<xd:i>Versions</xd:i>: <xd:ul>
-							<xd:li>18.06.2019 : <xd:i>1.0.0</xd:i></xd:li>
-							<xd:li>24.06.2019 : <xd:i>1.0.1</xd:i></xd:li>
-							<xd:li>25.09.2019 : <xd:i>1.0.2</xd:i></xd:li>
-							<xd:li>03.10.2019 : <xd:i>1.0.3</xd:i></xd:li>
-							<xd:li>05.11.2019 : <xd:i>1.1.0</xd:i></xd:li>
-						</xd:ul>
-					</xd:li>
-				</xd:ul>
-			</xd:p>
-		</xd:desc>
-	</xd:doc>
+	<doc xmlns="http://www.oxygenxml.com/ns/doc/xsl" scope="stylesheet">
+		<desc>
+			<p>
+				<i>Adds @layer="1 2" to &lt;dynam>, &lt;dir>, &lt;fermata>, &lt;trill>, &lt;turn>, &lt;slur>, &lt;tie>.</i>
+			</p>
+			<p><b>Specifications</b>: <ul>
+					<li>&lt;dynam>, &lt;dir>, &lt;fermata>, &lt;trill>, &lt;turn>: In presence of two layers, these control events must have always an @layer: either @layer="1 2" (common control event) or @layer="1"/@layer="2" (control event related only to one of the two layers, but missing in the other layer)</li>
+					<li>&lt;slur>, &lt;tie&gt; In presence of two layers, these control events must have @layer="1 2" only when the main element which they relate to is pointed by @sameas (&lt;tie>) or @stem.sameas (&lt;slur>), that is for &lt;slur> or &lt;tie&gt; in passages "a 2" (unisono). Otherwise they never have a @layer. If there exists a &lt;rest&gt; in other &lt;layer&gt; on the same @tstamp as pointed element no @layer is added.</li>
+				</ul>			
+			</p>	
+			<pre> </pre>
+			<p><b>Current version</b>: <b id="version">1.1.0</b>. For the details see changeLog.</p>
+			<p><b>Contributors</b>: Oleksii Sapov. <pre/> <b>Copyright</b>: 2020 Internationale Stiftung Mozarteum Salzburg.<pre/>Licensed under the Educational Community License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at <a href="https://opensource.org/licenses/ECL-2.0">https://opensource.org/licenses/ECL-2.0</a><pre/>Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.</p>		
+		</desc>
+	</doc>
+	
 	<xsl:include href="../lib/basic.xsl"/>
 	<xsl:include href="../lib/functions/functx-1.0-doc-2007-01.xsl"/>
 	<xsl:include href="../lib/applicationChanges.xsl"/>
 	<xsl:include href="../lib/templates.xsl"/>
+	<xsl:import href="changeLog.xsl"/>
 
 
 	<xsl:variable as="xs:string*" name="controlEvents">

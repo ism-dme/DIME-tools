@@ -4,19 +4,19 @@
 	<doc scope="stylesheet" xmlns="http://www.oxygenxml.com/ns/doc/xsl">
 		<desc>
 			<p>
-				<i>Checks if the sum of the event durations (e.g. &lt;note&gt;, &lt;rest&gt;) in a &lt;layer&gt; is correct.</i>
+				<i>Checks if the sum of the durations for the elements with @tstamp in a &lt;layer&gt; is correct.</i>
 			</p>
-			<p>The stylesheet outputs a file (<i>wrong_durations.txt</i>) which contains a list of @xml:ids of the &lt;layer&gt;s where the durations are possibly wrong.</p>
+			<p>The stylesheet outputs the file <i>wrong_durations.txt</i> which contains a list of the &lt;layer&gt;s/@xml:ids where the durations are possibly wrong.</p>
 			<p>The events in the following &lt;layer&gt;s are not considered:<ul>
 					<li>Descendants of uncomplete measures (@metcon='false')</li>
 					<li>&lt;layer&gt;s which have &lt;mRest&gt;, &lt;app&gt;, &lt;choice&gt; or &lt;tuplet&gt; as descendants</li>
 					<li>&lt;layer&gt;[@sameas]</li>
 				</ul>
 			</p>
-			<p><b>Disclaimer</b>: The stylesheet is based on <i>addTstamps.xsl</i> which in turn uses the algorithm for calculating the timestamps developed by Johannes Kepper.</p>
-			<p><i>Current version</i>: <b id="version">1.0.1</b>. For more info see the <b>changeLog</b>.</p>
-			<p>
-				<b>Author: </b>Oleksii Sapov</p>
+			<pre> </pre>
+			<p><b>Current version</b>: <b id="version">1.0.1</b>. For the details see changeLog.</p>
+			<p><b>Contributors</b>: Oleksii Sapov, Johannes Kepper. <pre/>
+				<b>Copyright</b>: 2020 Internationale Stiftung Mozarteum Salzburg.<pre/>Licensed under the Educational Community License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at <a href="https://opensource.org/licenses/ECL-2.0">https://opensource.org/licenses/ECL-2.0</a><pre/>Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.</p>
 		</desc>
 	</doc>
 	<include href="../lib/functions/functx-1.0-doc-2007-01.xsl"/>

@@ -8,11 +8,11 @@
 			<p><b>Usage notes</b>:<ul>
 					<li>Copy and rename the file <i>./config/config_template.dita</i>. (Either leave it in the same directory or adjust the paths for CSS and Schematron.)</li>
 					<li>Fill in the table</li>
-					<li>Add this file as configuration by using the <i>../lib/DIME-tools/DIME-tools.xml</i></li>
-					<li>Apply the transformation scenario <i>fb</i> to the MEI file.</li></ul></p>
-			<p><i>Current version</i>: <b id="version">1.2.0</b>. For more info see the <b>changeLog</b>.</p>
-			<p>
-				<b>Author: </b>Oleksii Sapov</p>
+					<li>Add this file as configuration by using the <i>../options/options.xml</i></li>
+					<li>Apply the transformation scenario <i>fb</i> to the MEI file</li></ul></p>
+			<pre> </pre>
+			<p><b>Current version</b>: <b id="version">1.2.0</b>. For the details see changeLog.</p>
+			<p><b>Contributors</b>: Oleksii Sapov.<pre/><b>Copyright</b>: 2020 Internationale Stiftung Mozarteum Salzburg.<pre/>Licensed under the Educational Community License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at <a href="https://opensource.org/licenses/ECL-2.0">https://opensource.org/licenses/ECL-2.0</a><pre/>Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.</p>		
 		</desc>
 	</doc>
 
@@ -21,7 +21,7 @@
 	<import href="changeLog.xsl"/>
 
 	<variable as="document-node()" name="config">
-		<variable name="configRelPathAttr" select="doc('../lib/DIME-tools/DIME-tools.xml')//id('figuredBass')//@file"/>
+		<variable name="configRelPathAttr" select="doc('../options/options.xml')//id('figuredBass')//@file"/>
 		<variable name="optionsURI" select="base-uri($configRelPathAttr)"/>
 		<variable name="configURI" select="resolve-uri($configRelPathAttr, $optionsURI)"/>
 		<sequence select="doc($configURI)"/>

@@ -11,13 +11,12 @@
 					<li>&lt;layer&gt;s which have &lt;app&gt; or &lt;choice&gt; as ancestor or descendant</li>
 				</ul>
 			</p>
-			<p><i>Current version</i>: <b id="version">1.1.0</b>. For more info see <b>changeLog</b>.</p>
-			<p><b>Contributors</b>: Johannes Kepper, Oleksii Sapov.</p>
-			<p><b>Copyright</b>: 2020 Internationale Stiftung Mozarteum Salzburg.</p>
-			<p>Licensed under the Educational Community License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at http://www.osedu.org/licenses/ECL-2.0</p>
-			<p>Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.</p>
+			<pre> </pre>
+			<p><b>Current version</b>: <b id="version">1.1.0</b>. For the details see changeLog.</p>			
+			<p><b>Contributors</b>: Johannes Kepper, Oleksii Sapov. <pre/> <b>Copyright</b>: 2020 Internationale Stiftung Mozarteum Salzburg.<pre/>Licensed under the Educational Community License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at <a href="https://opensource.org/licenses/ECL-2.0">https://opensource.org/licenses/ECL-2.0</a><pre/>Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.</p>		
 		</desc>
 	</doc>
+	
 	<xsl:include href="../lib/functions/functx-1.0-doc-2007-01.xsl"/>
 	<xsl:include href="../lib/basic.xsl"/>
 	<xsl:import href="changeLog.xsl"/>

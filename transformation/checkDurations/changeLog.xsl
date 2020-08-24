@@ -3,7 +3,7 @@
 
 	<doc xmlns="http://www.oxygenxml.com/ns/doc/xsl" scope="stylesheet">
 		<desc>
-			<p>
+			<b>Versions</b>: <p>
 				<b>1.0.1</b> (30.07.2020) <ul>
 					<li>Add @sameas and @copyof support.</li>
 				</ul>
@@ -20,5 +20,4 @@
 			</p>
 		</desc>
 	</doc>
-
 </xsl:stylesheet>

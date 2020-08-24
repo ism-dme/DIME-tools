@@ -4,7 +4,7 @@
 		<xd:desc>
 			<xd:p>
 				<xd:p>
-					<xd:i>Most of functions and templates for the comparison.</xd:i>
+					<xd:i>Most of the functions and templates for the comparison.</xd:i>
 				</xd:p>
 			</xd:p>
 		</xd:desc>
@@ -270,7 +270,7 @@
 	<xsl:template name="recognSplitMerged">
 		<xsl:param name="els1"/>
 		<xsl:param name="els2"/>
-		<!--The paarameter $starts-with is needed to knwo how to write the csv entries according to base or compared files and how to add edtType-->
+		<!--The paarameter $starts-with is needed to know how to write the csv entries according to the base or compared files and how to add edtType-->
 		<xsl:param name="starts-with"/>
 
 		<xsl:for-each select="$els1">
