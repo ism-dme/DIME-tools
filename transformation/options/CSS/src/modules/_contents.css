@@ -1,0 +1,18 @@
+.contents {
+  background-color: $moviDarkGreen;
+  font-family: arial, sans-serif, 'times new roman';
+  color: $moviLight;
+  margin: 2em;
+  padding: 2em;
+
+  &__ul {
+    display: block;
+  }
+
+  &__ul li {
+    display: list-item;
+    list-style: square;
+    padding-left: 20px;
+    margin-left: 20px;
+  }
+}

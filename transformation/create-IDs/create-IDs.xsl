@@ -1,57 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet exclude-result-prefixes="xs xd dme functx mei map xl" version="3.0" xmlns:dme="http://www.mozarteum.at/ns/dme" xmlns:functx="http://www.functx.com" xmlns:map="http://www.w3.org/2005/xpath-functions/map" xmlns:mei="http://www.music-encoding.org/ns/mei" xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl" xmlns:xl="http://www.w3.org/1999/xlink" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xpath-default-namespace="http://www.music-encoding.org/ns/mei">
-	<xd:doc scope="stylesheet">
-		<xd:desc>
-			<xd:p>Adds <xd:i>@xml:id</xd:i>s to all elements in &lt;body> due to the following guidelines.</xd:p>
-			<xd:p><xd:i>Normal case</xd:i>: <xd:i>{local-name()}_{$newIDs}</xd:i>, e.g. <xd:b>"note_295"</xd:b>. Note that the numeric value increments by <xd:i>6</xd:i>, e.g. the next element would have the ID: <xd:b>"layer_301"</xd:b></xd:p>
-			<xd:p><xd:i>Special cases</xd:i>: <xd:ul>
-					<xd:li>&lt;zone&gt; <xd:ul>
-							<xd:li>Example: <xd:b>zoneOf_m1_k556_001</xd:b></xd:li>
-							<xd:li>Syntax: 'zoneOf_'{xml:id of the measure which corresponds via its @facs to the current ID}</xd:li>
-						</xd:ul> are processed. Syntax: 'zoneOf_'{xml:id of the measure which corresponds via its @facs to the current ID}</xd:li>
-					<xd:li><xd:b>&lt;mdiv&gt;</xd:b>, <xd:b>&lt;score&gt;</xd:b>: <xd:ul>
-							<xd:li>Example: <xd:b>"mdiv_581004"</xd:b></xd:li>
-							<xd:li>Syntax: <xd:i>{local-name()}_{$Knumber *format:three-digit*}{$partsCounter *format:three-digit*}</xd:i></xd:li>
-							<xd:li>If there are more then one &lt;mdiv&gt;, a suffix is added: <xd:i>_{$mdivCounter}</xd:i>, e.g. "mdiv_581004<xd:b>_01</xd:b>"</xd:li>
-						</xd:ul>
-					</xd:li>
-					<xd:li><xd:b>&lt;scoreDef&gt;, &lt;staffGrp&gt;</xd:b>: <xd:ul>
-							<xd:li>Example: <xd:b>"scoreDef_02"</xd:b> or <xd:b>"staffGrp_15"</xd:b></xd:li>
-							<xd:li>Syntax:<xd:i>{local-name()}{$scoreDef_#Counter *format:two-digit*}</xd:i>
-							</xd:li>
-							<xd:li>Note that the elements are counted through the file incrementally.</xd:li>
-						</xd:ul>
-					</xd:li>
-					<xd:li><xd:b>&lt;staffDef&gt;</xd:b>: <xd:ul>
-							<xd:li>Example: <xd:b>"staffDef_P1"</xd:b></xd:li>
-							<xd:li>Syntax: <xd:i>{local-name()}_P *abbreviation: <xd:i>parts</xd:i>*{$stafDefCounter *format:incremental digits*}</xd:i></xd:li>
-							<xd:li>If thre are more then one &lt;scoreDef&gt;, a suffix is added <xd:i>_sc{$scoreDefCounter *format:two-digit*}, e.g. "staffDef_P1<xd:b>_sc02</xd:b>". </xd:i>The ID stands then for the first part in the second scoreDef.</xd:li>
-						</xd:ul></xd:li>
-					<xd:li><xd:b>&lt;label&gt;, &lt;lb&gt;</xd:b> (descendants of &lt;staffDef> only): <xd:ul>
-							<xd:li>Example: <xd:b>"label_P1"</xd:b>, <xd:b>"lb_P1_sc01"</xd:b></xd:li>
-							<xd:li>Syntax: <xd:i>{local-name()}_P *abbreviation: <xd:i>parts</xd:i>*{$stafDefCounter *format:incremental digits*}</xd:i></xd:li>
-							<xd:li>If thre are more then one &lt;scoreDef&gt;, a suffix is added <xd:i>_sc{$scoreDefCounter *format:two-digit*}, e.g. "staffDef_P1<xd:b>_sc02</xd:b>".</xd:i> The ID stands then for the &lt;label>/&lt;lb> in first part in the second &lt;scoreDef&gt;.</xd:li>
-						</xd:ul></xd:li>
-					<xd:li><xd:b>&lt;layerDef&gt;</xd:b>: <xd:ul>
-							<xd:li>Example: <xd:b>"layerDef_P1"</xd:b>, <xd:b>"layerDef_P1_sc01" </xd:b>(if there are more then one &lt;scoreDef&gt;s).</xd:li>
-							<xd:li>Syntax: <xd:i>{local-name()}_P *abbreviation: <xd:i>parts</xd:i>*{$stafDefCounter *format:incremental digits*}</xd:i></xd:li>
-							<xd:li>If thre are more then one &lt;scoreDef&gt;, a suffix is added <xd:i>_sc{$scoreDefCounter *format:two-digit*}</xd:i>, e.g. <xd:i>"layerDef_P1<xd:b>_sc02</xd:b>"</xd:i>. This ID stands for the &lt;layerDef&lt; of the first <xd:i>part</xd:i> in the second &lt;scoreDef&gt;.</xd:li>
-						</xd:ul></xd:li>
-				</xd:ul>
-			</xd:p>
-			<xd:p>The companion of the stylesheet is DIME-tools.xml which provides a GUI for the input.</xd:p>
-			<xd:p>Options: <xd:ul>
-					<xd:li>(Re)count measures before</xd:li>
-					<xd:li>Choose only particular elements to add the IDs</xd:li>
-					<xd:li>Exclude particular elements</xd:li>
-				</xd:ul>
-			</xd:p>
-			<xd:p><xd:b>Note:</xd:b> Set the file name due to the DIME guidelines: 'dmeref_{xxx-xxx}_{xxxx}.xml'</xd:p>
-			<xd:p>
-				<xd:b>Author: </xd:b>Oleksii Sapov</xd:p>
-			<xd:p><xd:i>Current Version</xd:i>: <xd:b>1.1.3</xd:b>. For more info see changeLog.</xd:p>
-		</xd:desc>
-	</xd:doc>
+	<doc scope="stylesheet" xmlns="http://www.oxygenxml.com/ns/doc/xsl">
+		<desc>
+			<p>Adds <i>@xml:id</i>s to the elements in &lt;body> according to the following guidelines.</p>
+			<p><i>Normal case</i>: <i>{local-name()}_{$newID}</i>, e.g. <b>note_295</b>. Note that the numeric value increments by <i>6</i>, e.g. the next element would have the ID: <b>layer_301</b></p>
+			<p><i>Special cases</i>: <ul>
+					<li><b>&lt;zone&gt;</b> <ul>
+							<li>Example: <b>zoneOf_m1_k556_001</b></li>
+							<li>Syntax: 'zoneOf_'{xml:id of the measure which corresponds via its @facs to the current ID}</li>
+						</ul> are processed. Syntax: 'zoneOf_'{xml:id of the measure which corresponds via its @facs to the current ID}</li>
+					<li><b>&lt;mdiv&gt;</b>, <b>&lt;score&gt;</b>: <ul>
+							<li>Example: <b>"mdiv_581004"</b></li>
+							<li>Syntax: <i>{local-name()}_{$Knumber *format:three-digit*}{$partsCounter *format:three-digit*}</i></li>
+							<li>If there are more than one &lt;mdiv&gt;, a suffix is added: <i>_{$mdivCounter}</i>, e.g. "mdiv_581004<b>_01</b>"</li>
+						</ul>
+					</li>
+					<li><b>&lt;scoreDef&gt;, &lt;staffGrp&gt;</b>: <ul>
+							<li>Example: <b>"scoreDef_02"</b> or <b>"staffGrp_15"</b></li>
+							<li>Syntax:<i>{local-name()}{$scoreDef_#Counter *format:two-digit*}</i>
+							</li>
+							<li>Note that the elements are counted through the file incrementally.</li>
+						</ul>
+					</li>
+					<li><b>&lt;staffDef&gt;</b>: <ul>
+							<li>Example: <b>"staffDef_P1"</b></li>
+							<li>Syntax: <i>{local-name()}_P *abbreviation: <i>parts</i>*{$stafDefCounter *format:incremental digits*}</i></li>
+							<li>If thre are more than one &lt;scoreDef&gt;, a suffix is added <i>_sc{$scoreDefCounter *format:two-digit*}, e.g. "staffDef_P1<b>_sc02</b>". </i>The ID stands then for the first part in the second scoreDef.</li>
+						</ul></li>
+					<li><b>&lt;label&gt;, &lt;lb&gt;</b> (descendants of &lt;staffDef> only): <ul>
+							<li>Example: <b>"label_P1"</b>, <b>"lb_P1_sc01"</b></li>
+							<li>Syntax: <i>{local-name()}_P *abbreviation: <i>parts</i>*{$stafDefCounter *format:incremental digits*}</i></li>
+							<li>If thre are more than one &lt;scoreDef&gt;, a suffix is added <i>_sc{$scoreDefCounter *format:two-digit*}, e.g. "staffDef_P1<b>_sc02</b>".</i> The ID stands then for the &lt;label>/&lt;lb> in first part in the second &lt;scoreDef&gt;.</li>
+						</ul></li>
+					<li><b>&lt;layerDef&gt;</b>: <ul>
+							<li>Example: <b>"layerDef_P1"</b>, <b>"layerDef_P1_sc01" </b>(if there are more than one &lt;scoreDef&gt;s).</li>
+							<li>Syntax: <i>{local-name()}_P *abbreviation: <i>parts</i>*{$stafDefCounter *format:incremental digits*}</i></li>
+							<li>If there are more than one &lt;scoreDef&gt;, a suffix is added <i>_sc{$scoreDefCounter *format:two-digit*}</i>, e.g. <i>"layerDef_P1<b>_sc02</b>"</i>. This ID stands for the &lt;layerDef&gt; of the first <i>part</i> in the second &lt;scoreDef&gt;.</li>
+						</ul></li>
+				</ul>
+			</p>
+			<p>Options (should be configured in options.xml): <ul>
+					<li>Recount measures</li>
+					<li>Include or exclude particular elements</li>					
+				</ul>
+			</p>
+			<p><b>Note:</b> Some <i>special cases</i> described abot require file naming of the DIME 'dmeref_{xxx-xxx}_{xxxx}.xml'. You may exclude these elements or change the behaviour.</p>
+			<p><i>Current Version</i>: <b>1.1.3</b>. For more info see changeLog.</p>
+			<p><b>Contributors</b>: Oleksii Sapov<p/></p>
+			<p><b>Copyright</b>: 2020 Internationale Stiftung Mozarteum Salzburg.</p>
+			<p>Licensed under the Educational Community License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at http://www.osedu.org/licenses/ECL-2.0</p>
+			<p>Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.</p>
+		</desc>
+	</doc>
 	<xsl:param name="fileName"/>
 
 	<xsl:include href="../lib/basic.xsl"/>
