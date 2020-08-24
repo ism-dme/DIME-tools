@@ -4,12 +4,13 @@
 	<doc scope="stylesheet" xmlns="http://www.oxygenxml.com/ns/doc/xsl">
 		<desc>
 			<p>
-				<i>If &lt;slur&gt; or &lt;dynam&gt; points to a &lt;note&gt; which is part of a &lt;chord&gt;, the value of @startid/@endid is replaced by &lt;chord&gt;@xml:id .</i>
+				<i>If &lt;slur&gt; or &lt;dynam&gt; points to a &lt;note&gt; which is a &lt;chord&gt; descendant, the value of @startid/@endid is replaced by the &lt;chord&gt;@xml:id .</i>
 			</p>
 			<p><b>Note</b>: If there exist more than one &lt;slur&gt; which starts/ends from/at &lt;chord&gt; the &lt;note&gt;-reference will be preserved.</p>
-			<p><i>Current version</i> is <b id="version">1.1.0</b>. For more info see the <b>changeLog</b> below.</p>
-			<p>
-				<b>Author: </b>Oleksii Sapov</p>
+			<pre> </pre>
+			<p><b>Current version</b>: <b id="version">1.1.0</b>. For the details see changeLog.</p>
+			<p><b>Contributors</b>: Oleksii Sapov. <pre/>
+				<b>Copyright</b>: 2020 Internationale Stiftung Mozarteum Salzburg.<pre/>Licensed under the Educational Community License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at <a href="https://opensource.org/licenses/ECL-2.0">https://opensource.org/licenses/ECL-2.0</a><pre/>Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.</p>
 		</desc>
 	</doc>
 

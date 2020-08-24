@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet exclude-result-prefixes="xs xd dme functx dita mei map array" version="3.0" xmlns:array="http://www.w3.org/2005/xpath-functions/array" xmlns:dita="http://dita-ot.sourceforge.net" xmlns:dme="http://www.mozarteum.at/ns/dme" xmlns:functx="http://www.functx.com" xmlns:map="http://www.w3.org/2005/xpath-functions/map" xmlns:mei="http://www.music-encoding.org/ns/mei" xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xpath-default-namespace="http://www.music-encoding.org/ns/mei">
 
-	<xd:doc scope="stylesheet">
-		<xd:desc>
-			<xd:p>
-				<xd:b>Description:</xd:b>
-				<xd:i>Updates the version of DIME-files.</xd:i>
-			</xd:p>
-			<xd:p>The update description and update type are set in DIME-tools.xml</xd:p>
-			<xd:p>
-				<xd:b>Author: </xd:b>Oleksii Sapov</xd:p>
-			<xd:p>
-				<xd:b>Created on: </xd:b>Feb., 27, 2020.<xd:ul>
-					<xd:li>
-						<xd:i>Versions</xd:i>: <xd:ul>
-							<xd:li>Feb. 27, 2020: <xd:i>1.0.0</xd:i></xd:li>
-						</xd:ul>
-					</xd:li>
-				</xd:ul>
-			</xd:p>
-		</xd:desc>
-	</xd:doc>
-	<xsl:include href="../lib/basic.xsl"/>	
-	<xsl:include href="../lib/applicationChanges.xsl"/>	
+	<doc xmlns="http://www.oxygenxml.com/ns/doc/xsl" scope="stylesheet">
+		<desc>
+			<p>				
+				<i>Updates the file version in the &lt;meiHead&gt;.</i>
+			</p>
+			<p>Description and type can be set in options.xml</p>					
+			<pre> </pre>
+			<p>
+				<b>Created on: </b>Feb., 27, 2020.<ul>
+					<li>
+						<i>Versions</i>: <ul>
+							<li>Feb. 27, 2020: <i>1.0.0</i></li>
+						</ul>
+					</li>
+				</ul>
+			</p>
+			<p><b>Contributors</b>: Oleksii Sapov.<pre/><b>Copyright</b>: 2020 Internationale Stiftung Mozarteum Salzburg.<pre/>Licensed under the Educational Community License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at <a href="https://opensource.org/licenses/ECL-2.0">https://opensource.org/licenses/ECL-2.0</a><pre/>Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.</p>		
+		</desc>
+	</doc>
+	
+	<xsl:include href="../lib/basic.xsl"/>
+	<xsl:include href="../lib/applicationChanges.xsl"/>
 
 	<xsl:template match="/">
 		<xsl:apply-templates mode="updateVersion"/>
@@ -30,7 +30,7 @@
 
 
 	<xsl:variable as="map(xs:string, xs:string)" name="parametersDIMEtools">
-		<xsl:variable name="allParams" select="doc('../lib/DIME-tools/DIME-tools.xml')//id('updateVersion')/dme:parameters"/>
+		<xsl:variable name="allParams" select="doc('../options/options.xml')//id('updateVersion')/dme:parameters"/>
 		<xsl:call-template name="params">
 			<xsl:with-param name="allParams" select="$allParams"/>
 		</xsl:call-template>
@@ -83,11 +83,18 @@
 	<xsl:template match="editionStmt/edition/date[@type = 'update']" mode="updateVersion"/>
 
 	<xsl:template name="currVersion">
+		<xsl:if test="empty(//editionStmt//identifier[@type = 'version']/data())">
+			<xsl:message>
+				<xsl:value-of select="'No current version specified.'"/>
+			</xsl:message>
+		</xsl:if>
+		
 		<xsl:sequence select=" 
 			let $input := //editionStmt//identifier[@type='version']/data(),
 			$array := tokenize($input, '[.]')			
 			return 
 			array{$array}"/>
+		
 	</xsl:template>
 
 	<xsl:template name="updateType">
@@ -132,7 +139,7 @@
 	</xd:doc>
 	<xsl:template match="change[not(following-sibling::change)]" mode="updateVersion">
 		<xsl:copy-of select="."/>
-		
+
 		<change isodate="{current-date()}" xmlns="http://www.music-encoding.org/ns/mei">
 			<xsl:attribute name="n" select="number(@n) + 1"/>
 			<xsl:attribute name="resp" select="concat('#', dme:respPerson('initials'))"/>
@@ -144,7 +151,7 @@
 				<p>Update to version <xsl:value-of select="$version"/>.</p>
 			</changeDesc>
 		</change>
-		
+
 	</xsl:template>
 	<xsl:variable name="currentStylesheet" select="doc('')"/>
 </xsl:stylesheet>

@@ -34,6 +34,8 @@
 		<item>plist</item>
 		<item>analog</item>
 		<item>stem.sameas</item>
+		<item>facs</item>
+		<item>target</item>
 	</list>
 	<list used-by="extractVoice.xsl" xml:id="controlEvents">
 		<item>dynam</item>
@@ -57,7 +59,7 @@
 		<item>mfp</item>
 		<item>sf</item>
 		<item>sfz</item>
-		<item>rfz</item>	
+		<item>rfz</item>
 		<item>sfp</item>
 	</list>
 	<list xml:id="dynams_2">
@@ -71,6 +73,7 @@
 		<item>decresc.</item>
 		<item>calando</item>
 		<item>diminuendo</item>
+		<item>dim.</item>
 		<item>mancando</item>
 		<item>sempre p</item>
 		<item>più f</item>
@@ -115,11 +118,11 @@
 		<item class="brass" xml:id="ba">
 			<name xml:lang="EN">horn</name>
 			<name label.abbr="Cor." xml:lang="IT">Corno</name>
-			<transposition trans.diat="-1" trans.semi="-2" xml:id="ba_b">Si♭ alto/B hoch</transposition>
-			<transposition trans.diat="-3" trans.semi="-5" xml:id="ba_g">Sol/G</transposition>
-			<transposition trans.diat="-4" trans.semi="-7" xml:id="ba_f">Fa/F</transposition>
-			<transposition trans.diat="-5" trans.semi="-9" xml:id="ba_es">Mi♭/Es</transposition>
-			<transposition xml:id="ba_c">Do/C</transposition>
+			<transposition label.abbr="Cor. (B)" trans.diat="-1" trans.semi="-2" xml:id="ba_b">Si♭ alto/B hoch</transposition>
+			<transposition label.abbr="Cor. (G)" trans.diat="-3" trans.semi="-5" xml:id="ba_g">Sol/G</transposition>
+			<transposition label.abbr="Cor. (F)" trans.diat="-4" trans.semi="-7" xml:id="ba_f">Fa/F</transposition>
+			<transposition label.abbr="Cor. (Es)" trans.diat="-5" trans.semi="-9" xml:id="ba_es">Mi♭/Es</transposition>
+			<transposition label.abbr="Cor. (C)" xml:id="ba_c">Do/C</transposition>
 		</item>
 		<item class="brass" xml:id="bb">
 			<name xml:lang="EN">trumpet</name>
@@ -347,7 +350,7 @@
 		</item>
 		<item class="strings, bowed" xml:id="sd">
 			<name xml:lang="EN">double bass</name>
-			<name label.abbr="B." xml:lang="IT">Basso</name>
+			<name label.abbr="Bs." xml:lang="IT">Basso</name>
 		</item>
 		<item class="strings, bowed" xml:id="se">
 			<name xml:lang="EN">viol</name>
@@ -431,7 +434,7 @@
 		</item>
 		<item class="voices" xml:id="vf">
 			<name xml:lang="EN">bass</name>
-			<name label.abbr="B" xml:lang="IT">Basso</name>
+			<name label.abbr="B." xml:lang="IT">Basso</name>
 		</item>
 		<item class="voices" xml:id="vg">
 			<name xml:lang="EN">counter tenor</name>
