@@ -10288,6 +10288,21 @@ ${caret}</String>
         </options>
     </meta>
     <projectTree name="transformation.xpr">
+        <folder masterFiles="true" name="Master Files">
+            <file name="@layer_1-2/@layer_1-2.xsl"/>
+            <file name="addTstamps/addTstamps.xsl"/>
+            <file name="attr2elem_accid-artic/attr2elem_accid-artic.xsl"/>
+            <file name="checkAccidentalsVisibility/checkAccidentalsVisibility.xsl"/>
+            <file name="checkDurations/checkDurations.xsl"/>
+            <file name="chordPointers/chordPointers.xsl"/>
+            <file name="create-IDs/create-IDs.xsl"/>
+            <file name="alternative_texts/diff/diff.xsl"/>
+            <file name="dir_tstamp/dir_tstamp.xsl"/>
+            <file name="extractPartVoice/extractPartVoice.xsl"/>
+            <file name="alternative_texts/prepare_edition/prepare_edition.xsl"/>
+            <file name="secondLayer/secondLayer.xsl"/>
+            <file name="updateVersion/updateVersion.xsl"/>
+        </folder>
         <folder path="."/>
         <file name="options/options.xml"/>
     </projectTree>
