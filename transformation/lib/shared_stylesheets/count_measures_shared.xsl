@@ -1,57 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet exclude-result-prefixes="xs xd dme functx" version="3.0" xmlns:dme="http://www.mozarteum.at/ns/dme" xmlns:functx="http://www.functx.com" xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xpath-default-namespace="http://www.music-encoding.org/ns/mei">
-	<xd:doc scope="stylesheet">
-		<xd:desc>
-			<xd:p><xd:b>Description:</xd:b> Adds @n to &lt;measure> according to the following prescriptions:</xd:p>
-			<xd:p>
-				<xd:ul>
-					<xd:li>Counts &lt;measure>s within one &lt;mdiv> (if there are multiple &lt;mdiv>s it processes each separately)</xd:li>
-					<xd:li>Special cases: <xd:ul><xd:b>&lt;ending></xd:b>: <xd:ul>
-								<xd:li>In the 1st: @n="nA"</xd:li>
-								<xd:li>In the 2nd: @n="nB"</xd:li>
-							</xd:ul>
-							<xd:ul>If &lt;measure>/@metcon="false": <xd:li>In the 1st: @n="naA"</xd:li>
-								<xd:li>In the 2nd: @n="nbA"</xd:li>
-							</xd:ul>
-						</xd:ul>
-						<xd:ul>
-							<xd:ul><xd:b>&lt;mdiv>/&lt;measure>/@metcon="false"</xd:b>
-								<xd:li>
-									<xd:ul>
-										<xd:li>first position: @n="0"</xd:li>
-										<xd:li>last position: @n="n" ('n' = any integer)</xd:li>
-									</xd:ul>
-								</xd:li>
-								<xd:b>&lt;section>/&lt;measure>/@metcon="false"</xd:b>
-								<xd:li>
-									<xd:ul>
-										<xd:li>last position: @n="na"</xd:li>
-										<xd:li>first position: @n="nb" (excl. 'zeroMeasure')</xd:li>
-									</xd:ul>
-								</xd:li>
-							</xd:ul>
-						</xd:ul>
-					</xd:li>
-				</xd:ul>
-			</xd:p>
-			<xd:p><xd:b>Notes and user guide</xd:b>: <xd:ul>
-					<xd:li>&lt;measure>/@metcon="false" and &lt;endings> have to be in correct places</xd:li>
-					<xd:li>A case if there are multiple &lt;measure>s within an &lt;ending> as well as these &lt;measure>s have @metcon="false" wasn't tested</xd:li>
-					<xd:li>It doesn't work properly if a &lt;measure> is wrapped in &lt;app>/&lt;lem> or &lt;rdg></xd:li>
-				</xd:ul></xd:p>
-			<xd:p>
-				<xd:b>Author: </xd:b>Oleksii Sapov</xd:p>
-			<xd:p>
-				<xd:b>Created on: </xd:b>August, 2 2018, version 1.0.0<xd:ul>
-					<xd:li>
-						<xd:i>Versions</xd:i>: <xd:ul>
-							<xd:li>23.07.2019: <xd:i>1.1.0</xd:i></xd:li>
-						</xd:ul>
-					</xd:li>
-				</xd:ul>
-			</xd:p>
-		</xd:desc>
-	</xd:doc>
+	
 	<xsl:output encoding="UTF-8" indent="yes" method="xml"/>
 
 	<xd:doc scope="component">

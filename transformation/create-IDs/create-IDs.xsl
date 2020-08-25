@@ -7,11 +7,7 @@
 					<li>Example: <i>note_295</i></li>
 					<li>Syntax: {local-name()}_{$newID}</li>
 					<li>Note that the numeric value is incremented by <i>6</i>, e.g. the next &lt;note&gt; would have the ID: <i>note_301</i></li>
-				</ul><pre/> Special cases:<pre/>
-				<b>&lt;mdiv&gt;</b>, <b>&lt;score&gt;</b>: <ul>
-					<li>Example: <i>mdiv_581004</i> (&lt;mdiv&gt; of the K. 581, 4th movement)</li>
-					<li>If there are 1+ &lt;mdiv&gt;s, a suffix is added: e.g. <i>mdiv_581004<b>_01</b></i> (first &lt;mdiv&gt;)</li>
-				</ul><pre/>
+				</ul><pre/> Special cases:<pre/>			
 				<b>&lt;scoreDef&gt;, &lt;staffGrp&gt;</b>: <ul>
 					<li>Example: <i>scoreDef_02</i> (second &lt;scoreDef&gt; in the file)</li>
 					<li>Note that the elements are counted through the file, not for each &lt;mdiv&gt;</li>
@@ -32,11 +28,21 @@
 				<ul>
 					<li>Example: <i>zoneOf_m1_k556_001</i></li>
 					<li>Syntax: <i>zoneOf_{xml:id of the measure which @facs corresponds to the current ID}</i></li>
-				</ul>
-			</p><pre> </pre>
+				</ul>			
+			</p>
+			<p>Rely on DIME naming convention (otherwise, standard case is applied):<pre/>
+				<b>&lt;mdiv&gt;</b>, <b>&lt;score&gt;</b>: <ul>
+					<li>Example: <i>mdiv_581004</i> (&lt;mdiv&gt; of the K. 581, 4th movement)</li>
+					<li>If there are 1+ &lt;mdiv&gt;s, a suffix is added: e.g. <i>mdiv_581004<b>_01</b></i> (first &lt;mdiv&gt;)</li>
+				</ul><pre/>
+				<b>&lt;measure&gt;</b>, <b>&lt;score&gt;</b>: <ul>
+					<li>Example: <i>m1_k331_002_01</i> (first measure of the second movement of K. 331, first &lt;mdiv&gt;)</li>
+					<li>If there are 1+ &lt;mdiv&gt;s, a suffix is added: e.g. <i>mdiv_581004<b>_01</b></i> (first &lt;mdiv&gt;)</li>
+				</ul><pre/></p>
+			<pre> </pre>
 			<p><b>Notes:</b><pre/>Options should be configured in <i>../options/options.xml</i><pre/> Some <i>special cases</i> require the DIME file naming convention 'dmeref_{xxx-xxx}_{xxxx}.xml'.</p>
 			<pre> </pre>
-			<p><b>Current version</b>: <b id="version">1.1.3</b>. For the details see changeLog.</p>
+			<p><b>Current version</b>: <b id="version">1.2.0</b>. For the details see changeLog.</p>
 			<p><b>Contributors</b>: Oleksii Sapov. <pre/>
 				<b>Copyright</b>: 2020 Internationale Stiftung Mozarteum Salzburg.<pre/>Licensed under the Educational Community License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at <a href="https://opensource.org/licenses/ECL-2.0">https://opensource.org/licenses/ECL-2.0</a><pre/>Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.</p>
 		</desc>
@@ -53,10 +59,11 @@
 
 	<xsl:import href="modules/changeLog.xsl"/>
 
+	<xsl:variable as="xs:boolean" name="DIME-FileNaming" select="matches($fileName, '^[a-z]{6}_\d{3}-\d{3}_\d{4}$')"/>
 	<xsl:variable as="map(xs:string, item()*)" name="options">
 		<xsl:call-template name="options"/>
 	</xsl:variable>
-	<xsl:variable as="map(xs:string, item()*)" name="optionsCalc">
+	<xsl:variable as="map(xs:string, item()*)?" name="optionsCalc">
 		<xsl:call-template name="optionsCalc"/>
 	</xsl:variable>
 
