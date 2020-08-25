@@ -6685,7 +6685,7 @@ ${caret}</String>
                                             <cssFile-array>
                                                 <cssFile>
                                                     <field name="href">
-                                                        <String>${pdu}/lib/DIME-tools/DIME-tools.css</String>
+                                                        <String>${pdu}/options/CSS/options.css</String>
                                                     </field>
                                                     <field name="title">
                                                         <String>DIME Tools Options</String>
@@ -6979,7 +6979,7 @@ ${caret}</String>
                                     <null/>
                                 </field>
                                 <field name="priority">
-                                    <Integer>1</Integer>
+                                    <Integer>3</Integer>
                                 </field>
                                 <field name="xmlNodeCustomizerExtension">
                                     <null/>
@@ -9653,10 +9653,10 @@ ${caret}</String>
                                     <Boolean>false</Boolean>
                                 </field>
                                 <field name="outputFile">
-                                    <File>${cfn}_extractPartVoice.xml</File>
+                                    <File>${cfn}_X.mei</File>
                                 </field>
                                 <field name="outputResource">
-                                    <String>${cfn}_extractPartVoice.xml</String>
+                                    <String>${cfn}_X.mei</String>
                                 </field>
                                 <field name="openOtherLocationInBrowser">
                                     <Boolean>false</Boolean>
@@ -9683,29 +9683,7 @@ ${caret}</String>
                                     <Boolean>true</Boolean>
                                 </field>
                                 <field name="xsltParams">
-                                    <list>
-                                        <transformationParameter>
-                                            <field name="paramDescription">
-                                                <paramDescriptor>
-                                                    <field name="localName">
-                                                        <String>voices</String>
-                                                    </field>
-                                                    <field name="prefix">
-                                                        <null/>
-                                                    </field>
-                                                    <field name="namespace">
-                                                        <null/>
-                                                    </field>
-                                                </paramDescriptor>
-                                            </field>
-                                            <field name="value">
-                                                <String>${ask('input voice(s)', generic, '|1|2.2|')}</String>
-                                            </field>
-                                            <field name="hasXPathValue">
-                                                <Boolean>false</Boolean>
-                                            </field>
-                                        </transformationParameter>
-                                    </list>
+                                    <list/>
                                 </field>
                                 <field name="cascadingStylesheets">
                                     <String-array/>
@@ -10311,6 +10289,6 @@ ${caret}</String>
     </meta>
     <projectTree name="transformation.xpr">
         <folder path="."/>
-        <file name="lib/DIME-tools/DIME-tools.xml"/>
+        <file name="options/options.xml"/>
     </projectTree>
 </project>

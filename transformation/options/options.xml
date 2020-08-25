@@ -4,10 +4,7 @@
 		<h1>Options for DIME Tools</h1>
 		<contents class="contents">
 			<span>NAVIGATION:</span>
-			<ul class="contents__ul">
-				<li>
-					<a href="#DOXconvX"> DOXconvX</a>
-				</li>
+			<ul class="contents__ul">				
 				<li>
 					<a href="#create-IDs"> create-IDs</a>
 				</li>
@@ -28,18 +25,7 @@
 				</li>
 			</ul>
 		</contents>
-	</div>
-	<div xml:id="DOXconvX">
-		<h2>DOXconvX (DOX conversion extended)</h2>
-		<parameters>
-			<parameter xml:id="meiHead">1</parameter>
-			<parameter xml:id="genre">orchestral</parameter>
-			<parameter xml:id="pages"/>
-			<parameter xml:id="Clarinetto"/>
-			<parameter xml:id="Clarino"/>
-			<parameter xml:id="Corno"/>
-		</parameters>
-	</div>
+	</div>	
 	<div xml:id="create-IDs">
 		<h2>CREATE-IDs</h2>
 		<parameters>			
