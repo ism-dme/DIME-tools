@@ -3,3 +3,4 @@ The most convinient way to use the oXygen XML editor project file ( `transformat
 
 Each main stylesheet contains documentation. For better readability it is recommended to use the oXygen built-in documentation generation.
 
+Tested with <oXygen\\> XML Editor 20.1, build 2020010914

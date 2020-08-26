@@ -14,3 +14,5 @@ The most convinient way is to use the oXygen XML editor project file ( `validati
 * For generating the documenatation, two separate transformation scenarios are used:
   1. `docs_unique-rules`  (should be applied on `uniqueRules.sch`) 
   2. `docs_framework` (should be applied on `styleguide.ditamap`)
+  
+Tested with <oXygen\\> XML Editor 20.1, build 2020010914

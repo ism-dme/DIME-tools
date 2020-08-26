@@ -6685,7 +6685,7 @@ ${caret}</String>
                                             <cssFile-array>
                                                 <cssFile>
                                                     <field name="href">
-                                                        <String>${pdu}/options/CSS/options.css</String>
+                                                        <String>${pdu}/transformation/options/CSS/options.css</String>
                                                     </field>
                                                     <field name="title">
                                                         <String>DIME Tools Options</String>
@@ -6715,7 +6715,7 @@ ${caret}</String>
                                                         <String></String>
                                                     </field>
                                                     <field name="largeIconPath">
-                                                        <String>${pdu}/lib/pct/iconmonstr-gear-10-24_black.png</String>
+                                                        <String>${pdu}/transformation/lib/pct/iconmonstr-gear-10-24_black.png</String>
                                                     </field>
                                                     <field name="smallIconPath">
                                                         <String></String>
@@ -6761,7 +6761,7 @@ ${caret}</String>
                                                         <String></String>
                                                     </field>
                                                     <field name="largeIconPath">
-                                                        <String>${pdu}/lib/pct/iconmonstr-gear-10-24_black.png</String>
+                                                        <String>${pdu}/transformation/lib/pct/iconmonstr-gear-10-24_black.png</String>
                                                     </field>
                                                     <field name="smallIconPath">
                                                         <String></String>
@@ -8403,6 +8403,141 @@ ${caret}</String>
                         <scenarioAssociation-array>
                             <scenarioAssociation>
                                 <field name="url">
+                                    <String>transformation/samples/fb.mei</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>updateVersion_USE-OPTIONS</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>XSL</String>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>transformation/samples/chordPointers.mei</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>chordPointers</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>XSL</String>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>transformation/MREs/secondLayer.mei</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>secondLayer</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>XSL</String>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>transformation/MREs/extractPartVoice.mei</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>extractPartVoice</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>XSL</String>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>transformation/MREs/@layer_1-2.mei</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>@layer_1-2</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>XSL</String>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>transformation/MREs/mre_checkAccidV_8_false.mei</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>checkAccidentalsVisibility</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>XSL</String>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>transformation/MREs/fb.mei</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>fb</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>XSL</String>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>transformation/MREs/checkDurations_fb.mei</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>addTstamps</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>XSL</String>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>transformation/MREs/count_measures-create-IDs.mei</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>create-IDs_USE-OPTIONS</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>XSL</String>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
                                     <String>../../dme_repos/trunk/edition/165_2625/dmeref_165-001_2626.xml</String>
                                 </field>
                                 <field name="scenarioIds">
@@ -8684,7 +8819,7 @@ ${caret}</String>
                                     <String></String>
                                 </field>
                                 <field name="inputXSLURL">
-                                    <String>${pdu}/@layer_1-2/@layer_1-2.xsl</String>
+                                    <String>${pdu}/transformation/@layer_1-2/@layer_1-2.xsl</String>
                                 </field>
                                 <field name="inputXMLURL">
                                     <String>${currentFileURL}</String>
@@ -8792,7 +8927,7 @@ ${caret}</String>
                                     <String></String>
                                 </field>
                                 <field name="inputXSLURL">
-                                    <String>${pdu}/addTstamps/addTstamps.xsl</String>
+                                    <String>${pdu}/transformation/addTstamps/addTstamps.xsl</String>
                                 </field>
                                 <field name="inputXMLURL">
                                     <String>${currentFileURL}</String>
@@ -8878,7 +9013,7 @@ ${caret}</String>
                                     <String></String>
                                 </field>
                                 <field name="inputXSLURL">
-                                    <String>${pdu}/attr2elem_accid-artic/attr2elem_accid-artic.xsl</String>
+                                    <String>${pdu}/transformation/attr2elem_accid-artic/attr2elem_accid-artic.xsl</String>
                                 </field>
                                 <field name="inputXMLURL">
                                     <String>${currentFileURL}</String>
@@ -8964,7 +9099,7 @@ ${caret}</String>
                                     <String></String>
                                 </field>
                                 <field name="inputXSLURL">
-                                    <String>${pdu}/checkAccidentalsVisibility/checkAccidentalsVisibility.xsl</String>
+                                    <String>${pdu}/transformation/checkAccidentalsVisibility/checkAccidentalsVisibility.xsl</String>
                                 </field>
                                 <field name="inputXMLURL">
                                     <String>${currentFileURL}</String>
@@ -9050,7 +9185,7 @@ ${caret}</String>
                                     <String></String>
                                 </field>
                                 <field name="inputXSLURL">
-                                    <String>${pdu}/checkDurations/checkDurations.xsl</String>
+                                    <String>${pdu}/transformation/checkDurations/checkDurations.xsl</String>
                                 </field>
                                 <field name="inputXMLURL">
                                     <String>${currentFileURL}</String>
@@ -9136,7 +9271,7 @@ ${caret}</String>
                                     <String></String>
                                 </field>
                                 <field name="inputXSLURL">
-                                    <String>${pdu}/chordPointers/chordPointers.xsl</String>
+                                    <String>${pdu}/transformation/chordPointers/chordPointers.xsl</String>
                                 </field>
                                 <field name="inputXMLURL">
                                     <String>${currentFileURL}</String>
@@ -9222,7 +9357,7 @@ ${caret}</String>
                                     <String></String>
                                 </field>
                                 <field name="inputXSLURL">
-                                    <String>${pdu}/count_measures/count_measures.xsl</String>
+                                    <String>${pdu}/transformation/count_measures/count_measures.xsl</String>
                                 </field>
                                 <field name="inputXMLURL">
                                     <String>${currentFileURL}</String>
@@ -9308,7 +9443,7 @@ ${caret}</String>
                                     <String></String>
                                 </field>
                                 <field name="inputXSLURL">
-                                    <String>${pdu}/create-IDs/create-IDs.xsl</String>
+                                    <String>${pdu}/transformation/create-IDs/create-IDs.xsl</String>
                                 </field>
                                 <field name="inputXMLURL">
                                     <String>${currentFileURL}</String>
@@ -9416,10 +9551,10 @@ ${caret}</String>
                                     <String></String>
                                 </field>
                                 <field name="inputXSLURL">
-                                    <String>${pdu}/alternative_texts/diff/diff.xsl</String>
+                                    <String>${pdu}/transformation/alternative_texts/diff/diff.xsl</String>
                                 </field>
                                 <field name="inputXMLURL">
-                                    <String>${pdu}/alternative_texts/diff/diff.xsl</String>
+                                    <String>${pdu}/transformation/alternative_texts/diff/diff.xsl</String>
                                 </field>
                                 <field name="defaultScenario">
                                     <Boolean>false</Boolean>
@@ -9524,7 +9659,7 @@ ${caret}</String>
                                     <String></String>
                                 </field>
                                 <field name="inputXSLURL">
-                                    <String>${pdu}/dir_tstamp/dir_tstamp.xsl</String>
+                                    <String>${pdu}/transformation/dir_tstamp/dir_tstamp.xsl</String>
                                 </field>
                                 <field name="inputXMLURL">
                                     <String>${currentFileURL}</String>
@@ -9632,7 +9767,7 @@ ${caret}</String>
                                     <String></String>
                                 </field>
                                 <field name="inputXSLURL">
-                                    <String>${pdu}/extractPartVoice/extractPartVoice.xsl</String>
+                                    <String>${pdu}/transformation/extractPartVoice/extractPartVoice.xsl</String>
                                 </field>
                                 <field name="inputXMLURL">
                                     <String>${currentFileURL}</String>
@@ -9718,7 +9853,7 @@ ${caret}</String>
                                     <String></String>
                                 </field>
                                 <field name="inputXSLURL">
-                                    <String>${pdu}/fb/fb.xsl</String>
+                                    <String>${pdu}/transformation/fb/fb.xsl</String>
                                 </field>
                                 <field name="inputXMLURL">
                                     <String>${currentFileURL}</String>
@@ -9826,7 +9961,7 @@ ${caret}</String>
                                     <String></String>
                                 </field>
                                 <field name="inputXSLURL">
-                                    <String>${pdu}/lib/basic.xsl</String>
+                                    <String>${pdu}/transformation/lib/basic.xsl</String>
                                 </field>
                                 <field name="inputXMLURL">
                                     <String>${currentFileURL}</String>
@@ -9912,7 +10047,7 @@ ${caret}</String>
                                     <String></String>
                                 </field>
                                 <field name="inputXSLURL">
-                                    <String>${pdu}/alternative_texts/prepare_edition/prepare_edition.xsl</String>
+                                    <String>${pdu}/transformation/alternative_texts/prepare_edition/prepare_edition.xsl</String>
                                 </field>
                                 <field name="inputXMLURL">
                                     <String>${currentFileURL}</String>
@@ -10041,7 +10176,7 @@ ${caret}</String>
                                     <String></String>
                                 </field>
                                 <field name="inputXSLURL">
-                                    <String>${pdu}/secondLayer/secondLayer.xsl</String>
+                                    <String>${pdu}/transformation/secondLayer/secondLayer.xsl</String>
                                 </field>
                                 <field name="inputXMLURL">
                                     <String>${currentFileURL}</String>
@@ -10192,7 +10327,7 @@ ${caret}</String>
                                     <String></String>
                                 </field>
                                 <field name="inputXSLURL">
-                                    <String>${pdu}/updateVersion/updateVersion.xsl</String>
+                                    <String>${pdu}/transformation/updateVersion/updateVersion.xsl</String>
                                 </field>
                                 <field name="inputXMLURL">
                                     <String>${currentFileURL}</String>
@@ -10287,7 +10422,7 @@ ${caret}</String>
             </serialized>
         </options>
     </meta>
-    <projectTree name="transformation.xpr">
+    <projectTree name="DIME-tools.xpr">
         <folder masterFiles="true" name="Master Files">
             <file name="@layer_1-2/@layer_1-2.xsl"/>
             <file name="addTstamps/addTstamps.xsl"/>
@@ -10304,6 +10439,6 @@ ${caret}</String>
             <file name="updateVersion/updateVersion.xsl"/>
         </folder>
         <folder path="."/>
-        <file name="options/options.xml"/>
+        <file name="transformation/options/options.xml"/>
     </projectTree>
 </project>
