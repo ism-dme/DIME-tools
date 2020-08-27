@@ -1,6 +1,6 @@
 # DIME-Schematron 
 
-These schematron rules contain some project specific constraints as well as rules which are not covered in the [MEI 3.0](https://music-encoding.org/guidelines/v3/content/) (DIME-customized) schema and its embedded schematron rules. 
+These schematron rules contain some project specific constraints as well as rules which are not covered in the MEI 3.0 DIME-customized [schema](https://dme.mozarteum.at/DME/schemata/mei-DME.rng) and its embedded schematron rules. 
 
 ## Usage Notes
 The most convinient way is to use the oXygen XML editor project file ( `validation.xpr` ) which contains all needed settings.
