@@ -5,11 +5,12 @@
 	<body>
 		<p>Required<ol id="ol_gjf_313_tgb">
 				<li>@staff?</li>
-				<li>@dur="the 'longest' (= the minimum) value of the descendants &lt;note/>/@dur or &lt;rest/>/@dur" (the case when they have different values). Example:<codeblock>&lt;chord dur="8"> &lt;note dur="8"/> &lt;note dur="16"/> &lt;/chord></codeblock><p>
+				<li>@dur="the 'longest' (= the minimum) value of the descendants &lt;note/>/@dur or &lt;rest/>/@dur" (the case when they have different values). Example:<codeblock>&lt;chord dur="8"> &lt;note dur="8"/> &lt;note dur="16"/> &lt;/chord></codeblock>
+					<p>
 						<dl audience="rules">
 							<dlhead>
 								<dthd>Rule</dthd>
-								<ddhd>minAttributeValueDescendants</ddhd>
+								<ddhd>attributeValueDescendants</ddhd>
 							</dlhead>
 							<dlentry>
 								<dt>element</dt>
@@ -24,12 +25,17 @@
 								<dd>(descendant::mei:note or descendant::mei:rest)</dd>
 							</dlentry>
 							<dlentry>
+								<dt>fence</dt>
+								<dd>min</dd>
+							</dlentry>
+							<dlentry>
 								<dt>phase</dt>
 								<dd>refTexts_music, altTexts_music</dd>
 							</dlentry>
 						</dl>
-					</p></li>
-			<li>@tstamp with the value '*(.*******), e.g '3.25'.<p>
+					</p>
+				</li>
+				<li>@tstamp with the value '*(.*******), e.g '3.25'.<p>
 						<dl audience="rules">
 							<dlhead>
 								<dthd>Rule</dthd>
@@ -60,7 +66,7 @@
 						<dl audience="rules">
 							<dlhead>
 								<dthd>Rule</dthd>
-								<ddhd>maxAttributeValueDescendants</ddhd>
+								<ddhd>attributeValueDescendants</ddhd>
 							</dlhead>
 							<dlentry>
 								<dt>element</dt>
@@ -75,6 +81,10 @@
 								<dd>(descendant::mei:note[@dots] or descendant::mei:rest[@dots])</dd>
 							</dlentry>
 							<dlentry>
+								<dt>fence</dt>
+								<dd>max</dd>
+							</dlentry>
+							<dlentry>
 								<dt>phase</dt>
 								<dd>refTexts_music, altTexts_music</dd>
 							</dlentry>
@@ -84,9 +94,9 @@
 			</ol>
 		</p>
 		<p>Example files:<ul id="ul_ebh_qq3_tgb">
-			<li>dmeref_421-001_5152.xml m42</li>
-		</ul><ul id="ul_xhf_tq3_tgb">
-			<li>dmeref_421-001_5152.xml m14 (uneven duration)</li>
-		</ul></p>		
+				<li>dmeref_421-001_5152.xml m42</li>
+			</ul><ul id="ul_xhf_tq3_tgb">
+				<li>dmeref_421-001_5152.xml m14 (uneven duration)</li>
+			</ul></p>
 	</body>
 </topic>
