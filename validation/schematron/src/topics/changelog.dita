@@ -5,12 +5,17 @@
 	<body>
 		<div>
 			<p>
-				<b>2020-07-</b>
+				<b>2020-08-27</b>
+				<ul id="2020-07-30">
+					<li>Improve abstract pattern <i>matchesAttributeValue</i></li>
+					<li>Add sqf:fix <i>addAttributeUserValue</i></li>
+					<li>Replace abstract patterns <i>minAttributeValueDescendants</i>, <i>maxAttributeValueDescendants</i> by <i>attributeValueDescendants</i> and update rules for chord</li>
+				</ul>
+			</p>
+			<p>
+				<b>2020-07-30</b>
 				<ul id="ul_clh_c4x_j">
-					<li>deprecate: e</li>
-					<li>add: check_references: check for //music//ref/@target </li>
-					<li>internal: 
-					</li>
+					<li>add: for the phase check_references, add check for //music//ref/@target </li>
 				</ul>
 			</p>
 			<p>

@@ -9,10 +9,11 @@ The most convinient way is to use the oXygen XML editor project file ( `validati
 * Making changes:
   * for the rules which follow generic patterns use DITA documents in the `src/topics/*`. Note that underlying *abstract schematron rules* are defined in `src/rules/library.sch`
 	* for the unique rules use `src/rules/unique_rules.sch`
-  * Apply the transformation scenario _extract\_schematron\_rules_ . (The scenario can be applied on any file as its input is defined in the scenario statically.)
+  * Apply the transformation scenario _extract\_schematron\_rules_ on the 
+`./validation/schematron/src/styleguide.ditamap`
 
 * For generating the documenatation, two separate transformation scenarios are used:
   1. `docs_unique-rules`  (should be applied on `uniqueRules.sch`) 
-  2. `documentations` (should be applied on `styleguide.ditamap`)
+  2. `documentation` (should be applied on `styleguide.ditamap`)
   
 Tested with <oXygen\\> XML Editor 20.1, build 2020010914
