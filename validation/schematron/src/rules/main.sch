@@ -59,9 +59,9 @@ marked with audience="rules" in the corresponding topic files.-->
    <phase id="checkReferences">
       <active pattern="checkReferences_"/>
    </phase>
-   <include href="library.sch#checkAttributeValue"/>
-   <include href="library.sch#attributeValueDescendants"/>
    <include href="library.sch#matchesAttributeValue"/>
+   <include href="library.sch#attributeValueDescendants"/>
+   <include href="library.sch#checkAttributeValue"/>
    <include href="quickFix-library.xml"/>
    <include href="unique_rules.sch#slur-tie"/>
    <include href="unique_rules.sch#sameAs"/>
@@ -150,7 +150,7 @@ marked with audience="rules" in the corresponding topic files.-->
       <param name="attribute" value="dur"/>
       <param name="descendants"
              value="(descendant::mei:note or descendant::mei:rest)"/>
-      <param name="fence" value="min"/>
+      <param name="fence" value="lowest"/>
       <param name="phase" value="refTexts_music, altTexts_music"/>
    </pattern>
    <!--Generated from topics/chord.dita.-->
@@ -170,7 +170,7 @@ marked with audience="rules" in the corresponding topic files.-->
       <param name="attribute" value="dots"/>
       <param name="descendants"
              value="(descendant::mei:note[@dots] or descendant::mei:rest[@dots])"/>
-      <param name="fence" value="max"/>
+      <param name="fence" value="highest"/>
       <param name="phase" value="refTexts_music, altTexts_music"/>
    </pattern>
    <!--Generated from topics/mrest.dita.-->

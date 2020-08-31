@@ -17,7 +17,7 @@
 											<Integer>-1</Integer>
 										</field>
 										<field name="value">
-											<String>DIME schematron</String>
+											<String>Integrated Styleguide</String>
 										</field>
 										<field name="patchHandling">
 											<String>set</String>
@@ -86,7 +86,7 @@
 													<String>*</String>
 												</field>
 												<field name="fileName">
-													<String>*.ditamap</String>
+													<String>styleguide.ditamap</String>
 												</field>
 												<field name="publicID">
 													<String>*</String>
@@ -125,7 +125,7 @@
 													<null/>
 												</field>
 												<field name="name">
-													<String>schematron_extract-rules</String>
+													<String>extract schematron rules</String>
 												</field>
 												<field name="baseURL">
 													<String></String>
@@ -420,7 +420,7 @@
 													<null/>
 												</field>
 												<field name="name">
-													<String>schematron_docs</String>
+													<String>create schematron documentation</String>
 												</field>
 												<field name="baseURL">
 													<null/>

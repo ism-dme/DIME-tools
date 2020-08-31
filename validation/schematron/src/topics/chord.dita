@@ -26,7 +26,7 @@
 							</dlentry>
 							<dlentry>
 								<dt>fence</dt>
-								<dd>min</dd>
+								<dd>lowest</dd>
 							</dlentry>
 							<dlentry>
 								<dt>phase</dt>
@@ -82,7 +82,7 @@
 							</dlentry>
 							<dlentry>
 								<dt>fence</dt>
-								<dd>max</dd>
+								<dd>highest</dd>
 							</dlentry>
 							<dlentry>
 								<dt>phase</dt>
