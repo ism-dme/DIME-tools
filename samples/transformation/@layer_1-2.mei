@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://dme.mozarteum.at/DME/schemata/mei-DME.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://dme.mozarteum.at/DME/schemata/mei-DME.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei meiversion="3.0.0" xmlns="http://www.music-encoding.org/ns/mei">
+	<meiHead meiversion="3.0.0">
+		<fileDesc>
+			<titleStmt>
+				<title label="NMA digital" type="unit">an example</title>
+			</titleStmt>
+			<pubStmt/>
+		</fileDesc>
+	</meiHead>
+	<music meiversion="3.0.0">
+		<body>
+			<mdiv xml:id="mdiv_72">
+				<score xml:id="score_78">
+					<scoreDef key.mode="major" key.pname="c" key.sig="0" meter.count="4" meter.sym="common" meter.unit="4" optimize="false" xml:id="scoreDef_01">
+						<staffGrp barthru="false" xml:id="staffGrp_01">
+							<staffGrp barthru="true" symbol="bracket" xml:id="staffGrp_02">
+								<staffDef clef.line="2" clef.shape="G" label.abbr="Fl." lines="5" n="1" xml:id="staffDef_P1">
+									<label xml:id="label_P1">Flauto</label>
+								</staffDef>
+								<staffDef clef.line="2" clef.shape="G" label.abbr="Ob." lines="5" n="2" xml:id="staffDef_P2">
+									<label xml:id="label_P2">Oboi</label>
+									<layerDef n="1" xml:id="layerDef_"/>
+									<layerDef n="2" xml:id="layerDef_"/>
+								</staffDef>
+								<staffDef clef.line="4" clef.shape="F" label.abbr="Fag." lines="5" n="3" xml:id="staffDef_P3">
+									<label xml:id="label_P3">Fagotti</label>
+									<layerDef n="1" xml:id="layerDef_"/>
+									<layerDef n="2" xml:id="layerDef_"/>
+								</staffDef>
+							</staffGrp>
+							<staffGrp barthru="true" symbol="bracket" xml:id="staffGrp_03">
+								<staffDef clef.line="2" clef.shape="G" key.sig="0" label.abbr="Cor." lines="5" n="4" trans.diat="-7" trans.semi="-12" xml:id="staffDef_P4">
+									<label xml:id="label_P4">Corni<lb xml:id="lb_P4"/> in Do/C</label>
+									<layerDef n="1" xml:id="layerDef_"/>
+									<layerDef n="2" xml:id="layerDef_"/>
+								</staffDef>
+								<staffDef clef.line="2" clef.shape="G" key.sig="0" label.abbr="Cl." lines="5" n="5" trans.diat="0" trans.semi="0" xml:id="staffDef_P5">
+									<label xml:id="label_P5">Clarini<lb xml:id="lb_P5"/> in Do/C</label>
+									<layerDef n="1" xml:id="layerDef_"/>
+									<layerDef n="2" xml:id="layerDef_"/>
+								</staffDef>
+							</staffGrp>
+							<staffDef clef.line="4" clef.shape="F" key.sig="0" label.abbr="Timp." lines="5" n="6" xml:id="staffDef_P6">
+								<label xml:id="label_P6">Timpani<lb xml:id="lb_P6"/> in Do-Sol/C-G</label>
+							</staffDef>
+							<staffGrp barthru="true" symbol="bracket" xml:id="staffGrp_04">
+								<staffGrp symbol="brace" xml:id="staffGrp_05">
+									<staffDef clef.line="2" clef.shape="G" label.abbr="Vl. I" lines="5" n="7" xml:id="staffDef_P7">
+										<label xml:id="label_P7">Violino I</label>
+									</staffDef>
+									<staffDef clef.line="2" clef.shape="G" label.abbr="Vl. II" lines="5" n="8" xml:id="staffDef_P8">
+										<label xml:id="label_P8">Violino II</label>
+									</staffDef>
+								</staffGrp>
+								<staffDef clef.line="3" clef.shape="C" label.abbr="Va." lines="5" n="9" xml:id="staffDef_P9">
+									<label xml:id="label_P9">Viola</label>
+								</staffDef>
+								<staffDef clef.line="4" clef.shape="F" label.abbr="Vc. e Bs." lines="5" n="10" xml:id="staffDef_P10">
+									<label xml:id="label_P10">Violoncello<lb xml:id="lb_P10"/> e Basso</label>
+									<layerDef n="1" xml:id="layerDef_"/>
+									<layerDef n="2" xml:id="layerDef_"/>
+								</staffDef>
+							</staffGrp>
+						</staffGrp>
+					</scoreDef>
+					<section xml:id="section_A_m1-3">
+						<measure n="1" xml:id="m1">
+							<staff n="1" xml:id="staff_420">
+								<layer n="1" xml:id="layer_426">
+									<mRest tstamp="1" xml:id="mRest_432"/>
+								</layer>
+							</staff>
+							<staff n="2" xml:id="staff_438">
+								<layer n="1" xml:id="layer_444">
+									<mRest tstamp="1" xml:id="mRest_450"/>
+								</layer>
+								<layer n="2" sameas="#layer_444" xml:id="layer_456"/>
+							</staff>
+							<staff n="3" xml:id="staff_462">
+								<layer n="1" xml:id="layer_468">
+									<mRest tstamp="1" xml:id="mRest_474"/>
+								</layer>
+								<layer n="2" sameas="#layer_468" xml:id="layer_480"/>
+							</staff>
+							<staff n="4" xml:id="staff_486">
+								<layer n="1" xml:id="layer_492">
+									<mRest tstamp="1" xml:id="mRest_498"/>
+								</layer>
+								<layer n="2" sameas="#layer_492" xml:id="layer_504"/>
+							</staff>
+							<staff n="5" xml:id="staff_510">
+								<layer n="1" xml:id="layer_516">
+									<mRest tstamp="1" xml:id="mRest_522"/>
+								</layer>
+								<layer n="2" sameas="#layer_516" xml:id="layer_528"/>
+							</staff>
+							<staff n="6" xml:id="staff_534">
+								<layer n="1" xml:id="layer_540">
+									<mRest tstamp="1" xml:id="mRest_546"/>
+								</layer>
+							</staff>
+							<staff n="7" xml:id="staff_552">
+								<layer n="1" xml:id="layer_558">
+									<note dots="1" dur="4" oct="5" pname="c" tstamp="1" xml:id="note_564"/>
+									<note dur="8" oct="4" pname="b" tstamp="2.5" xml:id="note_570"/>
+									<note dots="1" dur="4" oct="5" pname="d" tstamp="3" xml:id="note_576"/>
+									<note dur="8" oct="5" pname="c" tstamp="4.5" xml:id="note_582"/>
+								</layer>
+							</staff>
+							<staff n="8" xml:id="staff_588">
+								<layer n="1" xml:id="layer_594">
+									<note dur="2" oct="4" pname="f" tstamp="1" xml:id="note_600"/>
+									<note dur="2" oct="4" pname="e" tstamp="3" xml:id="note_606"/>
+								</layer>
+							</staff>
+							<staff n="9" xml:id="staff_612">
+								<layer n="1" xml:id="layer_618">
+									<note dur="1" oct="4" pname="g" tstamp="1" xml:id="note_624"/>
+								</layer>
+							</staff>
+							<staff n="10" xml:id="staff_630">
+								<layer n="1" xml:id="layer_636">
+									<note dur="2" oct="4" pname="d" tstamp="1" xml:id="note_642"/>
+									<note dur="2" oct="4" pname="c" tstamp="3" xml:id="note_648"/>
+								</layer>
+								<layer n="2" xml:id="layer_654">
+									<mRest tstamp="1" xml:id="mRest_660"/>
+								</layer>
+							</staff>
+							<dynam staff="8" startid="#note_600" xml:id="dynam_666">p</dynam>
+							<dynam staff="9" startid="#note_624" xml:id="dynam_684">p</dynam>
+							<dynam place="above" staff="10" startid="#note_642" xml:id="dynam_696">p</dynam>
+							<dir place="above" staff="10" tstamp="1" xml:id="dir_708">
+								<rend fontstyle="normal" xml:id="rend_714">Violoncelli</rend>
+							</dir>
+							<slur endid="#note_582" staff="7" startid="#note_564" xml:id="slur_726"/>
+							<slur endid="#note_606" staff="8" startid="#note_600" xml:id="slur_732"/>
+							<slur endid="#note_648" staff="10" startid="#note_642" xml:id="slur_738"/>
+							<tie endid="#note_960" staff="9" startid="#note_624" xml:id="tie_744"/>
+						</measure>
+						<measure n="2" xml:id="m2">
+							<staff n="1" xml:id="staff_756">
+								<layer n="1" xml:id="layer_762">
+									<mRest tstamp="1" xml:id="mRest_768"/>
+								</layer>
+							</staff>
+							<staff n="2" xml:id="staff_774">
+								<layer n="1" xml:id="layer_780">
+									<mRest tstamp="1" xml:id="mRest_786"/>
+								</layer>
+								<layer n="2" sameas="#layer_780" xml:id="layer_792"/>
+							</staff>
+							<staff n="3" xml:id="staff_798">
+								<layer n="1" xml:id="layer_804">
+									<mRest tstamp="1" xml:id="mRest_810"/>
+								</layer>
+								<layer n="2" sameas="#layer_804" xml:id="layer_816"/>
+							</staff>
+							<staff n="4" xml:id="staff_822">
+								<layer n="1" xml:id="layer_828">
+									<mRest tstamp="1" xml:id="mRest_834"/>
+								</layer>
+								<layer n="2" sameas="#layer_828" xml:id="layer_840"/>
+							</staff>
+							<staff n="5" xml:id="staff_846">
+								<layer n="1" xml:id="layer_852">
+									<mRest tstamp="1" xml:id="mRest_858"/>
+								</layer>
+								<layer n="2" sameas="#layer_852" xml:id="layer_864"/>
+							</staff>
+							<staff n="6" xml:id="staff_870">
+								<layer n="1" xml:id="layer_876">
+									<mRest tstamp="1" xml:id="mRest_882"/>
+								</layer>
+							</staff>
+							<staff n="7" xml:id="staff_888">
+								<layer n="1" xml:id="layer_894">
+									<note dur="2" oct="5" pname="g" tstamp="1" xml:id="note_900"/>
+									<note dur="4" oct="5" pname="f" tstamp="3" xml:id="note_906"/>
+									<rest dur="4" tstamp="4" xml:id="rest_912"/>
+								</layer>
+							</staff>
+							<staff n="8" xml:id="staff_918">
+								<layer n="1" xml:id="layer_924">
+									<note dur="2" oct="4" pname="d" tstamp="1" xml:id="note_930"/>
+									<note dur="4" oct="4" pname="d" tstamp="3" xml:id="note_936"/>
+									<rest dur="4" tstamp="4" xml:id="rest_942"/>
+								</layer>
+							</staff>
+							<staff n="9" xml:id="staff_948">
+								<layer n="1" xml:id="layer_954">
+									<note dur="2" oct="4" pname="g" tstamp="1" xml:id="note_960"/>
+									<note dur="4" oct="4" pname="g" tstamp="3" xml:id="note_966"/>
+									<rest dur="4" tstamp="4" xml:id="rest_972"/>
+								</layer>
+							</staff>
+							<staff n="10" xml:id="staff_978">
+								<layer n="1" xml:id="layer_984">
+									<note dur="2" oct="3" pname="b" tstamp="1" xml:id="note_990"/>
+									<note dur="4" oct="3" pname="b" tstamp="3" xml:id="note_996"/>
+									<rest dur="4" tstamp="4" xml:id="rest_1002"/>
+								</layer>
+								<layer n="2" xml:id="layer_1008">
+									<mRest tstamp="1" xml:id="mRest_1014"/>
+								</layer>
+							</staff>
+							<slur endid="#note_906" staff="7" startid="#note_900" xml:id="slur_1020"/>
+							<tie endid="#note_936" staff="8" startid="#note_930" xml:id="tie_1032"/>
+							<tie endid="#note_966" staff="9" startid="#note_960" xml:id="tie_1038"/>
+							<tie endid="#note_996" staff="10" startid="#note_990" xml:id="tie_1044"/>
+						</measure>
+						<measure n="3" xml:id="m3">
+							<staff n="1" xml:id="staff_1056">
+								<layer n="1" xml:id="layer_1062">
+									<note dur="4" oct="5" pname="g" tstamp="1" xml:id="note_1068"/>
+									<rest dur="8" tstamp="2" xml:id="rest_1074"/>
+									<beam xml:id="beam_1080">
+										<tuplet bracket.visible="false" num="3" num.visible="true" numbase="2" xml:id="tuplet_1086">
+											<note dur="16" oct="5" pname="d" tstamp="2.5" xml:id="note_1092"/>
+											<note dur="16" oct="5" pname="e" tstamp="2.666666666666667" xml:id="note_1098"/>
+											<note accid="s" dur="16" oct="5" pname="f" tstamp="2.8333333333333335" xml:id="note_1104"/>
+										</tuplet>
+									</beam>
+									<note dur="4" oct="5" pname="g" tstamp="3" xml:id="note_1110"/>
+									<rest dur="8" tstamp="4" xml:id="rest_1116"/>
+									<beam xml:id="beam_1122">
+										<tuplet bracket.visible="false" num="3" num.visible="true" numbase="2" xml:id="tuplet_1128">
+											<note dur="16" oct="5" pname="d" tstamp="4.5" xml:id="note_1134"/>
+											<note dur="16" oct="5" pname="e" tstamp="4.666666666666666" xml:id="note_1140"/>
+											<note accid.ges="s" dur="16" oct="5" pname="f" tstamp="4.833333333333333" xml:id="note_1146"/>
+										</tuplet>
+									</beam>
+								</layer>
+							</staff>
+							<staff n="2" xml:id="staff_1152">
+								<layer n="1" xml:id="layer_1158">
+									<note dur="4" oct="5" pname="g" tstamp="1" xml:id="note_1164"/>
+									<rest dur="8" tstamp="2" xml:id="rest_1170"/>
+									<beam xml:id="beam_1176">
+										<tuplet bracket.visible="false" num="3" num.visible="true" numbase="2" xml:id="tuplet_1182">
+											<note dur="16" oct="5" pname="d" tstamp="2.5" xml:id="note_1188"/>
+											<note dur="16" oct="5" pname="e" tstamp="2.666666666666667" xml:id="note_1194"/>
+											<note accid="s" dur="16" oct="5" pname="f" tstamp="2.8333333333333335" xml:id="note_1200"/>
+										</tuplet>
+									</beam>
+									<note dur="4" oct="5" pname="g" tstamp="3" xml:id="note_1206"/>
+									<rest dur="8" tstamp="4" xml:id="rest_1212"/>
+									<beam xml:id="beam_1218">
+										<tuplet bracket.visible="false" num="3" num.visible="true" numbase="2" xml:id="tuplet_1224">
+											<note dur="16" oct="5" pname="d" tstamp="4.5" xml:id="note_1230"/>
+											<note dur="16" oct="5" pname="e" tstamp="4.666666666666666" xml:id="note_1236"/>
+											<note accid.ges="s" dur="16" oct="5" pname="f" tstamp="4.833333333333333" xml:id="note_1242"/>
+										</tuplet>
+									</beam>
+								</layer>
+								<layer n="2" sameas="#layer_1158" xml:id="layer_1248"/>
+							</staff>
+							<staff n="3" xml:id="staff_1254">
+								<layer n="1" xml:id="layer_1260">
+									<note dur="4" oct="3" pname="g" tstamp="1" xml:id="note_1266"/>
+									<rest dur="8" tstamp="2" xml:id="rest_1272"/>
+									<beam xml:id="beam_1278">
+										<tuplet bracket.visible="false" num="3" num.visible="true" numbase="2" xml:id="tuplet_1284">
+											<note dur="16" oct="3" pname="d" tstamp="2.5" xml:id="note_1290"/>
+											<note dur="16" oct="3" pname="e" tstamp="2.666666666666667" xml:id="note_1296"/>
+											<note accid="s" dur="16" oct="3" pname="f" tstamp="2.8333333333333335" xml:id="note_1302"/>
+										</tuplet>
+									</beam>
+									<note dur="4" oct="3" pname="g" tstamp="3" xml:id="note_1308"/>
+									<rest dur="8" tstamp="4" xml:id="rest_1314"/>
+									<beam xml:id="beam_1320">
+										<tuplet bracket.visible="false" num="3" num.visible="true" numbase="2" xml:id="tuplet_1326">
+											<note dur="16" oct="3" pname="d" tstamp="4.5" xml:id="note_1332"/>
+											<note dur="16" oct="3" pname="e" tstamp="4.666666666666666" xml:id="note_1338"/>
+											<note accid.ges="s" dur="16" oct="3" pname="f" tstamp="4.833333333333333" xml:id="note_1344"/>
+										</tuplet>
+									</beam>
+								</layer>
+								<layer n="2" sameas="#layer_1260" xml:id="layer_1350"/>
+							</staff>
+							<staff n="4" xml:id="staff_1356">
+								<layer n="1" xml:id="layer_1362">
+									<note dur="4" oct="4" pname="g" tstamp="1" xml:id="note_1368"/>
+									<rest dur="4" tstamp="2" xml:id="rest_1374"/>
+									<note dur="4" oct="4" pname="g" tstamp="3" xml:id="note_1380"/>
+									<rest dur="4" tstamp="4" xml:id="rest_1386"/>
+								</layer>
+								<layer n="2" xml:id="layer_1392">
+									<note dur="4" oct="4" pname="g" tstamp="1" xml:id="note_1398"/>
+									<rest sameas="#rest_1374" tstamp="2" xml:id="rest_1404"/>
+									<note dur="4" oct="4" pname="g" tstamp="3" xml:id="note_1410"/>
+									<rest sameas="#rest_1386" tstamp="4" xml:id="rest_1416"/>
+								</layer>
+							</staff>
+							<staff n="5" xml:id="staff_1422">
+								<layer n="1" xml:id="layer_1428">
+									<note dur="4" oct="4" pname="g" tstamp="1" xml:id="note_1434"/>
+									<rest dur="4" tstamp="2" xml:id="rest_1440"/>
+									<note dur="4" oct="4" pname="g" tstamp="3" xml:id="note_1446"/>
+									<rest dur="4" tstamp="4" xml:id="rest_1452"/>
+								</layer>
+								<layer n="2" xml:id="layer_1458">
+									<note dur="4" oct="4" pname="g" tstamp="1" xml:id="note_1464"/>
+									<rest sameas="#rest_1440" tstamp="2" xml:id="rest_1470"/>
+									<note dur="4" oct="4" pname="g" tstamp="3" xml:id="note_1476"/>
+									<rest sameas="#rest_1452" tstamp="4" xml:id="rest_1482"/>
+								</layer>
+							</staff>
+							<staff n="6" xml:id="staff_1488">
+								<layer n="1" xml:id="layer_1494">
+									<note dur="4" oct="2" pname="g" tstamp="1" xml:id="note_1500"/>
+									<rest dur="4" tstamp="2" xml:id="rest_1506"/>
+									<note dur="4" oct="2" pname="g" tstamp="3" xml:id="note_1512"/>
+									<rest dur="4" tstamp="4" xml:id="rest_1518"/>
+								</layer>
+							</staff>
+							<staff n="7" xml:id="staff_1524">
+								<layer n="1" xml:id="layer_1530">
+									<chord dur="4" tstamp="1" xml:id="chord_1536">
+										<note oct="4" pname="g" xml:id="note_1542"/>
+										<note oct="3" pname="g" xml:id="note_1548"/>
+									</chord>
+									<rest dur="8" tstamp="2" xml:id="rest_1554"/>
+									<beam xml:id="beam_1560">
+										<tuplet bracket.visible="false" num="3" num.visible="true" numbase="2" xml:id="tuplet_1566">
+											<note dur="16" oct="4" pname="d" tstamp="2.5" xml:id="note_1572"/>
+											<note dur="16" oct="4" pname="e" tstamp="2.666666666666667" xml:id="note_1578"/>
+											<note accid="s" dur="16" oct="4" pname="f" tstamp="2.8333333333333335" xml:id="note_1584"/>
+										</tuplet>
+									</beam>
+									<note dur="4" oct="4" pname="g" tstamp="3" xml:id="note_1590"/>
+									<rest dur="8" tstamp="4" xml:id="rest_1596"/>
+									<beam xml:id="beam_1602">
+										<tuplet bracket.visible="false" num="3" num.visible="false" numbase="2" xml:id="tuplet_1608">
+											<note dur="16" oct="4" pname="d" tstamp="4.5" xml:id="note_1614"/>
+											<note dur="16" oct="4" pname="e" tstamp="4.666666666666666" xml:id="note_1620"/>
+											<note accid.ges="s" dur="16" oct="4" pname="f" tstamp="4.833333333333333" xml:id="note_1626"/>
+										</tuplet>
+									</beam>
+								</layer>
+							</staff>
+							<staff n="8" xml:id="staff_1632">
+								<layer n="1" xml:id="layer_1638">
+									<chord dur="4" tstamp="1" xml:id="chord_1644">
+										<note oct="4" pname="g" xml:id="note_1650"/>
+										<note oct="3" pname="g" xml:id="note_1656"/>
+									</chord>
+									<rest dur="8" tstamp="2" xml:id="rest_1662"/>
+									<beam xml:id="beam_1668">
+										<tuplet bracket.visible="false" num="3" num.visible="true" numbase="2" xml:id="tuplet_1674">
+											<note dur="16" oct="4" pname="d" tstamp="2.5" xml:id="note_1680"/>
+											<note dur="16" oct="4" pname="e" tstamp="2.666666666666667" xml:id="note_1686"/>
+											<note accid="s" dur="16" oct="4" pname="f" tstamp="2.8333333333333335" xml:id="note_1692"/>
+										</tuplet>
+									</beam>
+									<note dur="4" oct="4" pname="g" tstamp="3" xml:id="note_1698"/>
+									<rest dur="8" tstamp="4" xml:id="rest_1704"/>
+									<beam xml:id="beam_1710">
+										<tuplet bracket.visible="false" num="3" num.visible="false" numbase="2" xml:id="tuplet_1716">
+											<note dur="16" oct="4" pname="d" tstamp="4.5" xml:id="note_1722"/>
+											<note dur="16" oct="4" pname="e" tstamp="4.666666666666666" xml:id="note_1728"/>
+											<note accid.ges="s" dur="16" oct="4" pname="f" tstamp="4.833333333333333" xml:id="note_1734"/>
+										</tuplet>
+									</beam>
+								</layer>
+							</staff>
+							<staff n="9" xml:id="staff_1740">
+								<layer n="1" xml:id="layer_1746">
+									<note dur="4" oct="4" pname="g" tstamp="1" xml:id="note_1752"/>
+									<rest dur="8" tstamp="2" xml:id="rest_1758"/>
+									<beam xml:id="beam_1764">
+										<tuplet bracket.visible="false" num="3" num.visible="true" numbase="2" xml:id="tuplet_1770">
+											<note dur="16" oct="4" pname="d" tstamp="2.5" xml:id="note_1776"/>
+											<note dur="16" oct="4" pname="e" tstamp="2.666666666666667" xml:id="note_1782"/>
+											<note accid="s" dur="16" oct="4" pname="f" tstamp="2.8333333333333335" xml:id="note_1788"/>
+										</tuplet>
+									</beam>
+									<note dur="4" oct="4" pname="g" tstamp="3" xml:id="note_1794"/>
+									<rest dur="8" tstamp="4" xml:id="rest_1800"/>
+									<beam xml:id="beam_1806">
+										<tuplet bracket.visible="false" num="3" num.visible="true" numbase="2" xml:id="tuplet_1812">
+											<note dur="16" oct="4" pname="d" tstamp="4.5" xml:id="note_1818"/>
+											<note dur="16" oct="4" pname="e" tstamp="4.666666666666666" xml:id="note_1824"/>
+											<note accid.ges="s" dur="16" oct="4" pname="f" tstamp="4.833333333333333" xml:id="note_1830"/>
+										</tuplet>
+									</beam>
+								</layer>
+							</staff>
+							<staff n="10" xml:id="staff_1836">
+								<layer n="1" xml:id="layer_1842">
+									<note dur="4" oct="3" pname="g" tstamp="1" xml:id="note_1848"/>
+									<rest dur="8" tstamp="2" xml:id="rest_1854"/>
+									<beam xml:id="beam_1860">
+										<tuplet bracket.visible="false" num="3" num.visible="true" numbase="2" xml:id="tuplet_1866">
+											<note dur="16" oct="3" pname="d" tstamp="2.5" xml:id="note_1872"/>
+											<note dur="16" oct="3" pname="e" tstamp="2.666666666666667" xml:id="note_1878"/>
+											<note accid="s" dur="16" oct="3" pname="f" tstamp="2.8333333333333335" xml:id="note_1884"/>
+										</tuplet>
+									</beam>
+									<note dur="4" oct="3" pname="g" tstamp="3" xml:id="note_1890"/>
+									<rest dur="8" tstamp="4" xml:id="rest_1896"/>
+									<beam xml:id="beam_1902">
+										<tuplet bracket.visible="false" num="3" num.visible="true" numbase="2" xml:id="tuplet_1908">
+											<note dur="16" oct="3" pname="d" tstamp="4.5" xml:id="note_1914"/>
+											<note dur="16" oct="3" pname="e" tstamp="4.666666666666666" xml:id="note_1920"/>
+											<note accid.ges="s" dur="16" oct="3" pname="f" tstamp="4.833333333333333" xml:id="note_1926"/>
+										</tuplet>
+									</beam>
+								</layer>
+								<layer n="2" sameas="#layer_1842" xml:id="layer_1932"/>
+							</staff>
+							<dynam staff="7" startid="#chord_1536" xml:id="dynam_1938">f</dynam>
+							<dynam staff="8" startid="#chord_1644" xml:id="dynam_1956">f</dynam>
+							<dynam staff="9" startid="#note_1752" xml:id="dynam_1968">f</dynam>
+							<dynam staff="10" startid="#note_1848" xml:id="dynam_1980">f</dynam>
+							<supplied resp="#NMA-editors" xml:id="supplied_1992">
+								<dir place="above" staff="7" tstamp="4.666666666666666" xml:id="dir_1998">3</dir>
+							</supplied>
+							<supplied resp="#NMA-editors" xml:id="supplied_2010">
+								<dir place="above" staff="8" tstamp="4.666666666666666" xml:id="dir_2016">3</dir>
+							</supplied>
+							<dir place="above" staff="10" tstamp="1" xml:id="dir_2028">
+								<rend fontstyle="normal" xml:id="rend_2034">tutti</rend>
+							</dir>
+							<slur endid="#note_1110" staff="1" startid="#note_1092" xml:id="slur_2046"/>
+							<slur endid="#note_9438" staff="1" startid="#note_1134" xml:id="slur_2052"/>
+							<slur endid="#note_1206" layer="1 2" staff="2" startid="#note_1188" xml:id="slur_2058"/>
+							<slur endid="#note_9468" layer="1 2" staff="2" startid="#note_1230" xml:id="slur_2064"/>
+							<slur endid="#note_1308" layer="1 2" staff="3" startid="#note_1290" xml:id="slur_2070"/>
+							<slur endid="#note_9498" layer="1 2" staff="3" startid="#note_1332" xml:id="slur_2082"/>
+							<slur endid="#note_1590" staff="7" startid="#note_1572" xml:id="slur_2088"/>
+							<slur endid="#note_9666" staff="7" startid="#note_1614" xml:id="slur_2094"/>
+							<slur endid="#note_1698" staff="8" startid="#note_1680" xml:id="slur_2100"/>
+							<slur endid="#note_9708" staff="8" startid="#note_1722" xml:id="slur_2106"/>
+							<slur endid="#note_1794" staff="9" startid="#note_1776" xml:id="slur_2112"/>
+							<slur endid="#note_9738" staff="9" startid="#note_1818" xml:id="slur_2118"/>
+							<slur endid="#note_1890" layer="1 2" staff="10" startid="#note_1872" xml:id="slur_2124"/>
+							<slur endid="#note_9768" layer="1 2" staff="10" startid="#note_1914" xml:id="slur_2130"/>
+						</measure>
+					</section>
+				</score>
+			</mdiv>
+		</body>
+	</music>
+</mei>

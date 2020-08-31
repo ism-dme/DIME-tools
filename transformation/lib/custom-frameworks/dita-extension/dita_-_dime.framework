@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<serialized version="20.1" xml:space="preserve">
+<serialized version="21.0" xml:space="preserve">
 	<serializableOrderedMap>
 		<entry>
 			<String>document.types</String>
@@ -21,68 +21,6 @@
 										</field>
 										<field name="patchHandling">
 											<String>set</String>
-										</field>
-										<field name="anchor">
-											<null/>
-										</field>
-									</poPatch>
-									<poPatch>
-										<field name="fieldPath">
-											<String>authorExtensionDescriptor/actionDescriptors</String>
-										</field>
-										<field name="index">
-											<Integer>80</Integer>
-										</field>
-										<field name="value">
-											<action>
-												<field name="id">
-													<String>workflow_1.1</String>
-												</field>
-												<field name="name">
-													<String>workflow_1.1</String>
-												</field>
-												<field name="description">
-													<String></String>
-												</field>
-												<field name="largeIconPath">
-													<String>${pdu}/util/xslt_oxygen/lib/pct\iconmonstr-gear-10-24_black.png</String>
-												</field>
-												<field name="smallIconPath">
-													<String></String>
-												</field>
-												<field name="accessKey">
-													<String></String>
-												</field>
-												<field name="accelerator">
-													<null/>
-												</field>
-												<field name="actionModes">
-													<actionMode-array>
-														<actionMode>
-															<field name="xpathCondition">
-																<String></String>
-															</field>
-															<field name="argValues">
-																<serializableOrderedMap>
-																	<entry>
-																		<String>scenarioNames</String>
-																		<String>workflow_1.1</String>
-																	</entry>
-																</serializableOrderedMap>
-															</field>
-															<field name="operationID">
-																<String>ro.sync.ecss.extensions.commons.operations.ExecuteTransformationScenariosOperation</String>
-															</field>
-														</actionMode>
-													</actionMode-array>
-												</field>
-												<field name="enabledInReadOnlyContext">
-													<Boolean>false</Boolean>
-												</field>
-											</action>
-										</field>
-										<field name="patchHandling">
-											<String>addIndex</String>
 										</field>
 										<field name="anchor">
 											<null/>
@@ -291,10 +229,10 @@
 									</cssFile>
 									<cssFile>
 										<field name="href">
-											<String>${framework}/css/edit/alternate-hide-prolog.css</String>
+											<String>${framework}/css/edit/alternate-fold-prolog.css</String>
 										</field>
 										<field name="title">
-											<String>+ Hide prolog</String>
+											<String>+ Fold prolog</String>
 										</field>
 										<field name="alternate">
 											<Boolean>true</Boolean>
@@ -585,7 +523,7 @@
 											<String>/images/ListItem24.png</String>
 										</field>
 										<field name="smallIconPath">
-											<String>/images/ListItem16.gif</String>
+											<String>/images/ListItem16.png</String>
 										</field>
 										<field name="accessKey">
 											<String></String>
@@ -939,7 +877,7 @@
 												</actionMode>
 												<actionMode>
 													<field name="xpathCondition">
-														<String>ancestor-or-self::*[contains(@class," topic/li ") or contains(@class," topic/ul ") or contains(@class," topic/ul ")][1][contains(@class," topic/li ")]</String>
+														<String>ancestor-or-self::*[contains(@class," topic/li ") or contains(@class," topic/ul ") or contains(@class," topic/sli ") or contains(@class," topic/sl ")][1][contains(@class," topic/li ")]</String>
 													</field>
 													<field name="argValues">
 														<serializableOrderedMap>
@@ -963,22 +901,6 @@
 												</actionMode>
 												<actionMode>
 													<field name="xpathCondition">
-														<String>self::*[contains(@class," topic/ul ")] | self::*[contains(@class," topic/ol ")]</String>
-													</field>
-													<field name="argValues">
-														<serializableOrderedMap>
-															<entry>
-																<String>fragment</String>
-																<String>&lt;li/></String>
-															</entry>
-														</serializableOrderedMap>
-													</field>
-													<field name="operationID">
-														<String>ro.sync.ecss.extensions.commons.operations.SurroundWithFragmentOperation</String>
-													</field>
-												</actionMode>
-												<actionMode>
-													<field name="xpathCondition">
 														<String>ancestor-or-self::*[contains(@class," topic/sli ")]</String>
 													</field>
 													<field name="argValues">
@@ -995,6 +917,10 @@
 																<String>insertPosition</String>
 																<String>After</String>
 															</entry>
+															<entry>
+																<String>schemaAware</String>
+																<String>false</String>
+															</entry>
 														</serializableOrderedMap>
 													</field>
 													<field name="operationID">
@@ -1010,6 +936,22 @@
 															<entry>
 																<String>fragment</String>
 																<String>&lt;sli/></String>
+															</entry>
+														</serializableOrderedMap>
+													</field>
+													<field name="operationID">
+														<String>ro.sync.ecss.extensions.commons.operations.SurroundWithFragmentOperation</String>
+													</field>
+												</actionMode>
+												<actionMode>
+													<field name="xpathCondition">
+														<String>self::*[contains(@class," topic/ul ")] | self::*[contains(@class," topic/ol ")]</String>
+													</field>
+													<field name="argValues">
+														<serializableOrderedMap>
+															<entry>
+																<String>fragment</String>
+																<String>&lt;li/></String>
 															</entry>
 														</serializableOrderedMap>
 													</field>
@@ -1047,6 +989,38 @@
 										</field>
 										<field name="actionModes">
 											<actionMode-array>
+												<actionMode>
+													<field name="xpathCondition">
+														<String>oxy:allows-child-element("*", "class", " topic/ul ")</String>
+													</field>
+													<field name="argValues">
+														<serializableOrderedMap>
+															<entry>
+																<String>listType</String>
+																<String>unorderedlist</String>
+															</entry>
+														</serializableOrderedMap>
+													</field>
+													<field name="operationID">
+														<String>ro.sync.ecss.extensions.dita.DITAInsertListOperation</String>
+													</field>
+												</actionMode>
+												<actionMode>
+													<field name="xpathCondition">
+														<String>oxy:allows-child-element("*", "class", " topic/sl ")</String>
+													</field>
+													<field name="argValues">
+														<serializableOrderedMap>
+															<entry>
+																<String>listType</String>
+																<String>simplelist</String>
+															</entry>
+														</serializableOrderedMap>
+													</field>
+													<field name="operationID">
+														<String>ro.sync.ecss.extensions.dita.DITAInsertListOperation</String>
+													</field>
+												</actionMode>
 												<actionMode>
 													<field name="xpathCondition">
 														<String></String>
@@ -1093,6 +1067,33 @@
 										</field>
 										<field name="actionModes">
 											<actionMode-array>
+												<actionMode>
+													<field name="xpathCondition">
+														<String>oxy:allows-child-element("*", "class", " topic/ol ")</String>
+													</field>
+													<field name="argValues">
+														<serializableOrderedMap/>
+													</field>
+													<field name="operationID">
+														<String>ro.sync.ecss.extensions.dita.DITAInsertListOperation</String>
+													</field>
+												</actionMode>
+												<actionMode>
+													<field name="xpathCondition">
+														<String>oxy:allows-child-element("*", "class", " topic/sl ")</String>
+													</field>
+													<field name="argValues">
+														<serializableOrderedMap>
+															<entry>
+																<String>listType</String>
+																<String>simplelist</String>
+															</entry>
+														</serializableOrderedMap>
+													</field>
+													<field name="operationID">
+														<String>ro.sync.ecss.extensions.dita.DITAInsertListOperation</String>
+													</field>
+												</actionMode>
 												<actionMode>
 													<field name="xpathCondition">
 														<String></String>
@@ -3513,15 +3514,10 @@ oxy:current-selected-element()[self::*[contains(@class," topic/tbody ") or conta
 														<String>true()</String>
 													</field>
 													<field name="argValues">
-														<serializableOrderedMap>
-															<entry>
-																<String>URL pattern</String>
-																<String>https://www.oxygenxml.com/dita/1.3/specs/langRef/base/{Element_name}.html</String>
-															</entry>
-														</serializableOrderedMap>
+														<serializableOrderedMap/>
 													</field>
 													<field name="operationID">
-														<String>ro.sync.ecss.extensions.commons.operations.ShowElementDocumentationOperation</String>
+														<String>ro.sync.ecss.extensions.dita.ShowDITAElementDocumentationOperation</String>
 													</field>
 												</actionMode>
 											</actionMode-array>
@@ -5434,6 +5430,67 @@ self::image[empty(parent::imagemap)] or oxy:current-selected-element()[self::ima
 											<Boolean>false</Boolean>
 										</field>
 									</action>
+									<action>
+										<field name="id">
+											<String>apply.image.map</String>
+										</field>
+										<field name="name">
+											<String>${i18n(apply.image.map)}</String>
+										</field>
+										<field name="description">
+											<String>${i18n(apply.image.map.description)}</String>
+										</field>
+										<field name="largeIconPath">
+											<String></String>
+										</field>
+										<field name="smallIconPath">
+											<String></String>
+										</field>
+										<field name="accessKey">
+											<String></String>
+										</field>
+										<field name="accelerator">
+											<null/>
+										</field>
+										<field name="actionModes">
+											<actionMode-array>
+												<actionMode>
+													<field name="xpathCondition">
+														<String>oxy:current-selected-element()[contains(@class,'topic/image') and not(ancestor::imagemap) ]</String>
+													</field>
+													<field name="argValues">
+														<serializableOrderedMap>
+															<entry>
+																<String>fragment</String>
+																<String>&lt;imagemap>
+  ${selection}
+  &lt;area>
+    &lt;shape/>
+    &lt;coords/>
+    &lt;xref/>
+  &lt;/area>
+&lt;/imagemap></String>
+															</entry>
+															<entry>
+																<String>insertLocation</String>
+																<String>oxy:current-selected-element()</String>
+															</entry>
+															<entry>
+																<String>insertPosition</String>
+																<String>Replace</String>
+															</entry>
+														</serializableOrderedMap>
+													</field>
+													<field name="operationID">
+														<String>ro.sync.ecss.extensions.commons.operations.InsertOrReplaceFragmentOperation</String>
+													</field>
+												</actionMode>
+											</actionMode-array>
+										</field>
+										<field name="enabledInReadOnlyContext">
+											<Boolean>false</Boolean>
+										</field>
+									</action>
 								</action-array>
 							</field>
 							<field name="menubarDescriptor">
@@ -6661,7 +6718,6 @@ self::image[empty(parent::imagemap)] or oxy:current-selected-element()[self::ima
 							<String>${frameworkDir}/templates/topic</String>
 							<String>${frameworkDir}/templates/topic-xsd</String>
 							<String>${frameworkDir}/templates/topic-rng</String>
-							<String>${frameworkDir}/templates/plugin</String>
 							<String>${configured.ditaot.dir}/org.dita-ng.doctypes_oxygen_templates/topic-rng</String>
 							<String>${configured.ditaot.dir}/plugins/net.sourceforge.dita4publishers.doctypes/oxygen_templates/topic (Dita 4 Publishers)</String>
 							<String>${configured.ditaot.dir}/plugins/org.oasis-open.dita.v1_3/oxygen_templates/DITA 1.3/topic-rng</String>
@@ -7285,6 +7341,9 @@ self::image[empty(parent::imagemap)] or oxy:current-selected-element()[self::ima
 								<field name="publishingTemplateDataPO">
 									<null/>
 								</field>
+								<field name="oxygenFeedbackPO">
+									<null/>
+								</field>
 								<field name="additionalAntArgs">
 									<String></String>
 								</field>
@@ -7506,6 +7565,9 @@ self::image[empty(parent::imagemap)] or oxy:current-selected-element()[self::ima
 								<field name="publishingTemplateDataPO">
 									<null/>
 								</field>
+								<field name="oxygenFeedbackPO">
+									<null/>
+								</field>
 								<field name="additionalAntArgs">
 									<String></String>
 								</field>
@@ -7699,6 +7761,9 @@ self::image[empty(parent::imagemap)] or oxy:current-selected-element()[self::ima
 									<null/>
 								</field>
 								<field name="publishingTemplateDataPO">
+									<null/>
+								</field>
+								<field name="oxygenFeedbackPO">
 									<null/>
 								</field>
 								<field name="additionalAntArgs">

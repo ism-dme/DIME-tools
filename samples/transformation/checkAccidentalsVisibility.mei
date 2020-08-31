@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei meiversion="4.0.0" xmlns="http://www.music-encoding.org/ns/mei">
+	<meiHead meiversion="4.0.0">
+		<fileDesc>
+			<titleStmt>
+				<title label="NMA digital" type="unit">an example</title>
+			</titleStmt>
+			<pubStmt/>
+		</fileDesc>
+	</meiHead>
+	<music meiversion="4.0.0">
+		<body>
+			<mdiv xml:id="mdiv_checkAccidV">
+				<score xml:id="score_checkAccidV">
+					<scoreDef key.mode="major" key.pname="b" key.sig="2f" meter.count="3" meter.unit="4" xml:id="scoreDef_01">
+						<staffGrp bar.thru="true" symbol="bracket" xml:id="staffGrp_01">
+							<staffDef clef.line="2" clef.shape="G" lines="5" n="1" xml:id="staffDef_P1"/>
+						</staffGrp>
+					</scoreDef>
+					<section xml:id="section_A_m1-2">
+						<measure n="1" xml:id="m1">
+							<staff n="1" xml:id="staff_120">
+								<layer n="1" xml:id="layer_126">
+									<note accid.ges="f" dur="4" oct="4" pname="e" xml:id="note_132"/>
+									<note dur="4" oct="4" pname="f" xml:id="note_138">
+										<accid accid.ges="n" xml:id="accid_144"/>
+									</note>
+									<note accid="n" dur="4" oct="4" pname="e" tstamp="3" xml:id="note_150"/>
+								</layer>
+							</staff>
+							<tie endid="#note_180" startid="#note_150" xml:id="tie_156"/>
+						</measure>
+						<measure n="2" xml:id="m2">
+							<staff n="1" xml:id="staff_168">
+								<layer n="1" xml:id="layer_174">
+									<note accid="n" dur="4" oct="4" pname="e" xml:id="note_180"/>
+									<note accid="f" dur="4" oct="4" pname="e" xml:id="note_186"/>
+									<beam xml:id="beam_192">
+										<note accid.ges="f" dots="1" dur="8" oct="4" pname="e" xml:id="note_198"/>
+										<note accid="f" dur="16" oct="4" pname="e" xml:id="note_204"/>
+									</beam>
+								</layer>
+							</staff>
+						</measure>
+					</section>
+				</score>
+			</mdiv>
+		</body>
+	</music>
+</mei>
