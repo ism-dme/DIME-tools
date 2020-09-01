@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project version="20.1">
+<project version="21.0">
     <meta>
         <filters directoryPatterns="" filePatterns="*.xpr" positiveFilePatterns="" showHiddenFiles="false"/>
         <options>
-            <serialized version="20.1" xml:space="preserve">
+            <serialized version="21.0" xml:space="preserve">
                 <serializableOrderedMap>
                     <entry>
                         <String>additional.frameworks.directories</String>
@@ -6832,6 +6832,147 @@ ${caret}</String>
                                     <null/>
                                 </field>
                             </codeTemplateItem>
+                            <codeTemplateItem>
+                                <field name="contentType">
+                                    <String>text/css</String>
+                                </field>
+                                <field name="unparsedInsertString">
+                                    <String>operation, 'ro.sync.ecss.extensions.commons.operations.ChangeAttributesOperation',
+          arg-elementLocations, '.',
+          arg-attributeNames, '',
+          arg-values, '',
+          arg-removeIfEmpty, 'true'</String>
+                                </field>
+                                <field name="descriptionString">
+                                    <String>&lt;html>&lt;head>&lt;/head>&lt;body>Description:&lt;p style="margin-left:10px;">Add/change/remove one or more attributes for one or more elements.&lt;/p>&lt;br/>Arguments: &lt;ul>&lt;li>&lt;b>elementLocations&lt;/b> = An XPath expression indicating the elements whose attributes will be affected.
+Note: If it is not defined, then the element at the caret position will be used.&lt;/li>&lt;li>&lt;b>attributeNames&lt;/b> = The names of the attributes to change/insert/remove, each on a new line. The provided values can be local names or Clark notations ({attribute_namespace}attibute_name).&lt;/li>&lt;li>&lt;b>values&lt;/b> = The attribute values, each on a new line. An empty value will remove the corresponding attribute if 'removeIfEmpty' is set to 'true' (it is by default).&lt;/li>&lt;li>&lt;b>removeIfEmpty&lt;/b> = 'true' means the attribute should be removed if an empty value is provided. The default value is 'true'.&lt;/li>&lt;/ul> &lt;br/> Template: &lt;br/>&lt;p style="margin-left:10px;">operation, 'ro.sync.ecss.extensions.commons.operations.ChangeAttributesOperation',&lt;br/>          arg-elementLocations, '.',&lt;br/>          arg-attributeNames, '',&lt;br/>          arg-values, '',&lt;br/>          arg-removeIfEmpty, 'true'&lt;/p>&lt;/body>&lt;/html></String>
+                                </field>
+                                <field name="renderString">
+                                    <String>op_ChangeAttributesOperation</String>
+                                </field>
+                                <field name="enabled">
+                                    <Boolean>true</Boolean>
+                                </field>
+                                <field name="accelerator">
+                                    <null/>
+                                </field>
+                            </codeTemplateItem>
+                            <codeTemplateItem>
+                                <field name="contentType">
+                                    <String>text/json</String>
+                                </field>
+                                <field name="unparsedInsertString">
+                                    <String>"key${caret}": []</String>
+                                </field>
+                                <field name="descriptionString">
+                                    <String>JSON array</String>
+                                </field>
+                                <field name="renderString">
+                                    <String>array</String>
+                                </field>
+                                <field name="enabled">
+                                    <Boolean>true</Boolean>
+                                </field>
+                                <field name="accelerator">
+                                    <null/>
+                                </field>
+                            </codeTemplateItem>
+                            <codeTemplateItem>
+                                <field name="contentType">
+                                    <String>text/json</String>
+                                </field>
+                                <field name="unparsedInsertString">
+                                    <String>{"key${caret}": "val"}</String>
+                                </field>
+                                <field name="descriptionString">
+                                    <String>JSON object</String>
+                                </field>
+                                <field name="renderString">
+                                    <String>obj</String>
+                                </field>
+                                <field name="enabled">
+                                    <Boolean>true</Boolean>
+                                </field>
+                                <field name="accelerator">
+                                    <null/>
+                                </field>
+                            </codeTemplateItem>
+                            <codeTemplateItem>
+                                <field name="contentType">
+                                    <String>text/json</String>
+                                </field>
+                                <field name="unparsedInsertString">
+                                    <String>{
+    "name": "${caret}",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {},
+    "keywords": [],
+    "author": "${user}",
+    "license": "EPL",
+    "dependencies": {},
+    "devDependencies": {}
+}</String>
+                                </field>
+                                <field name="descriptionString">
+                                    <String>JSON package</String>
+                                </field>
+                                <field name="renderString">
+                                    <String>pack</String>
+                                </field>
+                                <field name="enabled">
+                                    <Boolean>true</Boolean>
+                                </field>
+                                <field name="accelerator">
+                                    <null/>
+                                </field>
+                            </codeTemplateItem>
+                            <codeTemplateItem>
+                                <field name="contentType">
+                                    <String>text/json</String>
+                                </field>
+                                <field name="unparsedInsertString">
+                                    <String>"key${caret}": "val"</String>
+                                </field>
+                                <field name="descriptionString">
+                                    <String>JSON key/value pair</String>
+                                </field>
+                                <field name="renderString">
+                                    <String>pair</String>
+                                </field>
+                                <field name="enabled">
+                                    <Boolean>true</Boolean>
+                                </field>
+                                <field name="accelerator">
+                                    <null/>
+                                </field>
+                            </codeTemplateItem>
+                            <codeTemplateItem>
+                                <field name="contentType">
+                                    <String>text/less</String>
+                                </field>
+                                <field name="unparsedInsertString">
+                                    <String>operation, 'ro.sync.ecss.extensions.commons.operations.ChangeAttributesOperation',
+          arg-elementLocations, '.',
+          arg-attributeNames, '',
+          arg-values, '',
+          arg-removeIfEmpty, 'true'</String>
+                                </field>
+                                <field name="descriptionString">
+                                    <String>&lt;html>&lt;head>&lt;/head>&lt;body>Description:&lt;p style="margin-left:10px;">Add/change/remove one or more attributes for one or more elements.&lt;/p>&lt;br/>Arguments: &lt;ul>&lt;li>&lt;b>elementLocations&lt;/b> = An XPath expression indicating the elements whose attributes will be affected.
+Note: If it is not defined, then the element at the caret position will be used.&lt;/li>&lt;li>&lt;b>attributeNames&lt;/b> = The names of the attributes to change/insert/remove, each on a new line. The provided values can be local names or Clark notations ({attribute_namespace}attibute_name).&lt;/li>&lt;li>&lt;b>values&lt;/b> = The attribute values, each on a new line. An empty value will remove the corresponding attribute if 'removeIfEmpty' is set to 'true' (it is by default).&lt;/li>&lt;li>&lt;b>removeIfEmpty&lt;/b> = 'true' means the attribute should be removed if an empty value is provided. The default value is 'true'.&lt;/li>&lt;/ul> &lt;br/> Template: &lt;br/>&lt;p style="margin-left:10px;">operation, 'ro.sync.ecss.extensions.commons.operations.ChangeAttributesOperation',&lt;br/>          arg-elementLocations, '.',&lt;br/>          arg-attributeNames, '',&lt;br/>          arg-values, '',&lt;br/>          arg-removeIfEmpty, 'true'&lt;/p>&lt;/body>&lt;/html></String>
+                                </field>
+                                <field name="renderString">
+                                    <String>op_ChangeAttributesOperation</String>
+                                </field>
+                                <field name="enabled">
+                                    <Boolean>true</Boolean>
+                                </field>
+                                <field name="accelerator">
+                                    <null/>
+                                </field>
+                            </codeTemplateItem>
                         </codeTemplateItem-array>
                     </entry>
                     <entry>
@@ -7235,6 +7376,9 @@ extended schematron rules</String>
                                                             <String>${home}</String>
                                                         </field>
                                                         <field name="hasXPathValue">
+                                                            <Boolean>false</Boolean>
+                                                        </field>
+                                                        <field name="isStatic">
                                                             <Boolean>false</Boolean>
                                                         </field>
                                                     </transformationParameter>
@@ -7775,6 +7919,9 @@ extended schematron rules</String>
                                                         <field name="hasXPathValue">
                                                             <Boolean>false</Boolean>
                                                         </field>
+                                                        <field name="isStatic">
+                                                            <Boolean>false</Boolean>
+                                                        </field>
                                                     </transformationParameter>
                                                 </list>
                                             </field>
@@ -7883,6 +8030,9 @@ extended schematron rules</String>
                                                         <field name="hasXPathValue">
                                                             <Boolean>false</Boolean>
                                                         </field>
+                                                        <field name="isStatic">
+                                                            <Boolean>false</Boolean>
+                                                        </field>
                                                     </transformationParameter>
                                                 </list>
                                             </field>
@@ -7989,6 +8139,9 @@ extended schematron rules</String>
                                                             <String>${home}</String>
                                                         </field>
                                                         <field name="hasXPathValue">
+                                                            <Boolean>false</Boolean>
+                                                        </field>
+                                                        <field name="isStatic">
                                                             <Boolean>false</Boolean>
                                                         </field>
                                                     </transformationParameter>
@@ -8185,6 +8338,9 @@ extended schematron rules</String>
                                                         <field name="hasXPathValue">
                                                             <Boolean>false</Boolean>
                                                         </field>
+                                                        <field name="isStatic">
+                                                            <Boolean>false</Boolean>
+                                                        </field>
                                                     </transformationParameter>
                                                 </list>
                                             </field>
@@ -8379,6 +8535,9 @@ extended schematron rules</String>
                                                         <field name="hasXPathValue">
                                                             <Boolean>false</Boolean>
                                                         </field>
+                                                        <field name="isStatic">
+                                                            <Boolean>false</Boolean>
+                                                        </field>
                                                     </transformationParameter>
                                                     <transformationParameter>
                                                         <field name="paramDescription">
@@ -8398,6 +8557,9 @@ extended schematron rules</String>
                                                             <String>${cfne}</String>
                                                         </field>
                                                         <field name="hasXPathValue">
+                                                            <Boolean>false</Boolean>
+                                                        </field>
+                                                        <field name="isStatic">
                                                             <Boolean>false</Boolean>
                                                         </field>
                                                     </transformationParameter>
@@ -8509,6 +8671,9 @@ extended schematron rules</String>
                                                         <field name="hasXPathValue">
                                                             <Boolean>false</Boolean>
                                                         </field>
+                                                        <field name="isStatic">
+                                                            <Boolean>false</Boolean>
+                                                        </field>
                                                     </transformationParameter>
                                                     <transformationParameter>
                                                         <field name="paramDescription">
@@ -8530,6 +8695,9 @@ extended schematron rules</String>
                                                         <field name="hasXPathValue">
                                                             <Boolean>false</Boolean>
                                                         </field>
+                                                        <field name="isStatic">
+                                                            <Boolean>false</Boolean>
+                                                        </field>
                                                     </transformationParameter>
                                                     <transformationParameter>
                                                         <field name="paramDescription">
@@ -8549,6 +8717,9 @@ extended schematron rules</String>
                                                             <String>${home}</String>
                                                         </field>
                                                         <field name="hasXPathValue">
+                                                            <Boolean>false</Boolean>
+                                                        </field>
+                                                        <field name="isStatic">
                                                             <Boolean>false</Boolean>
                                                         </field>
                                                     </transformationParameter>
@@ -8657,6 +8828,9 @@ extended schematron rules</String>
                                                             <String>${home}</String>
                                                         </field>
                                                         <field name="hasXPathValue">
+                                                            <Boolean>false</Boolean>
+                                                        </field>
+                                                        <field name="isStatic">
                                                             <Boolean>false</Boolean>
                                                         </field>
                                                     </transformationParameter>
@@ -8906,6 +9080,9 @@ extended schematron rules</String>
                                                         <Boolean>false</Boolean>
                                                     </field>
                                                 </publishingTemplate>
+                                            </field>
+                                            <field name="oxygenFeedbackPO">
+                                                <null/>
                                             </field>
                                             <field name="additionalAntArgs">
                                                 <String></String>
