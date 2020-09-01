@@ -29,9 +29,9 @@
 	<div xml:id="create-IDs">
 		<h2>CREATE-IDs</h2>
 		<parameters>			
-			<parameter xml:id="recount_measures">0</parameter>
-			<parameter xml:id="all">0</parameter>
-			<parameter xml:id="els2apply">section</parameter>
+			<parameter xml:id="recount_measures">1</parameter>
+			<parameter xml:id="all">1</parameter>
+			<parameter xml:id="els2apply"/>
 			<parameter xml:id="els2exclude"/>			
 		</parameters>
 	</div>
