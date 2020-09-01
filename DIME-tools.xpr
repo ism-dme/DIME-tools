@@ -11415,6 +11415,5 @@ extended schematron rules</String>
             <file name="transformation/updateVersion/updateVersion.xsl"/>
         </folder>
         <folder path="."/>
-        <file name="transformation/options/options.xml"/>
     </projectTree>
 </project>
