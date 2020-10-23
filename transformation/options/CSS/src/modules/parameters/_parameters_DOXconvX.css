@@ -1,0 +1,46 @@
+/*=========== DOXconvX ==========*/
+parameter[xml|id="meiHead"]:before {
+  content:
+    oxy_label(text, "Don't use the external meiHead (Werk-header)", width, 20em, text-align, left) "  "
+    oxy_checkbox(edit, "#text",
+      values, "0",
+      uncheckedValues, "1");
+  visibility: -oxy-collapse-text;
+}
+
+parameter[xml|id="genre"]:before {
+  content:
+    oxy_label(text, "Genre:", width, 120px, text-align, left) oxy_combobox(edit, "#text",
+      editable, true,
+      values, "orchestral, chamber, piano, opera");
+}
+
+parameter[xml|id="Clarinetto"]:before {
+  content:
+    oxy_label(text, "Clarinetto:", width, 25px, text-align, left) oxy_combobox(edit, "#text",
+      editable, true,
+      values, "none, Si♭/B, La/A, Do/C, Si/H");
+}
+
+parameter[xml|id="Clarino"]:before {
+  content:
+    oxy_label(text, "Clarino:", width, 25px, text-align, left) oxy_combobox(edit, "#text",
+      editable, true,
+      values, "none, Si♭/B, Mi♭/Es, Re/D, Do/C");
+}
+
+parameter[xml|id="Corno"]:before {
+  content:
+    oxy_label(text, "Corno:", width, 25px, text-align, left) oxy_combobox(edit, "#text",
+      editable, true,
+      values, "none, Fa/F, Mi♭/Es, Do/C");
+}
+
+parameter[xml|id="pages"]:before {
+  content:
+    oxy_label(text, "Movement pages:", width, 120px, text-align, left) "  "
+    oxy_textfield(edit, "#text", columns, 4, tooltip, "e.g. 2-15");
+  visibility: -oxy-collapse-text;
+}
+
+/*=========== DOXconvX END ==========*/

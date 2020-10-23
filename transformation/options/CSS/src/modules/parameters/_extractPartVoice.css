@@ -1,0 +1,122 @@
+/*=========== extractPartVoice ==========*/
+
+div[xml|id="extractPartVoice"] > parameters {
+	width: 30%;
+/*	text-align: center;*/
+	
+}
+
+div[xml|id="extractPartVoice"] > parameters > parameter {
+
+padding-left: 1rem;
+/*padding-right: auto;*/
+}
+
+
+parameter[xml|id="staff-1"]:before {
+
+  content:  "staff 1     "
+    oxy_combobox(edit, "#text",
+    editable, false,
+      values, "0, 1, 1.1, 1.2"
+    );
+}
+parameter[xml|id="staff-2"]:before {
+  content: "staff 2     "
+    oxy_combobox(edit, "#text",
+    editable, false,
+      values, "0, 2, 2.1, 2.2"
+    );
+}
+parameter[xml|id="staff-3"]:before {
+  content: "staff 3     "
+    oxy_combobox(edit, "#text",
+    editable, false,
+      values, "0, 3, 3.1, 3.2"
+    );
+}
+parameter[xml|id="staff-4"]:before {
+  content: "staff 4     "
+    oxy_combobox(edit, "#text",
+    editable, false,
+      values, "0, 4, 4.1, 4.2"
+    );
+}
+parameter[xml|id="staff-5"]:before {
+  content: "staff 5     "
+    oxy_combobox(edit, "#text",
+    editable, false,
+      values, "0, 5, 5.1, 5.2"
+    );
+}
+parameter[xml|id="staff-6"]:before {
+  content: "staff 6     "
+    oxy_combobox(edit, "#text",
+    editable, false,
+      values, "0, 6, 6.1, 6.2"
+    );
+}
+parameter[xml|id="staff-7"]:before {
+  content: "staff 7     "
+    oxy_combobox(edit, "#text",
+    editable, false,
+      values, "0, 7, 7.1, 7.2"
+    );
+}
+parameter[xml|id="staff-8"]:before {
+  content: "staff 8     "
+    oxy_combobox(edit, "#text",
+    editable, false,
+      values, "0, 8, 8.1, 8.2"
+    );
+}
+parameter[xml|id="staff-9"]:before {
+  content: "staff 9     "
+    oxy_combobox(edit, "#text",
+    editable, false,
+      values, "0, 9, 9.1, 9.2"
+    );
+}
+parameter[xml|id="staff-10"]:before {
+  content: "staff 10   "
+    oxy_combobox(edit, "#text",
+    editable, false,
+      values, "0, 10, 10.1, 10.2"
+    );
+}
+parameter[xml|id="staff-11"]:before {
+  content: "staff 11   "
+    oxy_combobox(edit, "#text",
+    editable, false,
+      values, "0, 11, 11.1, 11.2"
+    );
+}
+parameter[xml|id="staff-12"]:before {
+  content: "staff 12   "
+    oxy_combobox(edit, "#text",
+    editable, false,
+      values, "0, 12, 12.1, 12.2"
+    );
+}
+parameter[xml|id="staff-13"]:before {
+  content: "staff 13   "
+    oxy_combobox(edit, "#text",
+    editable, false,
+      values, "0, 13, 13.1, 13.2"
+    );
+}
+parameter[xml|id="staff-14"]:before {
+  content: "staff 14   "
+    oxy_combobox(edit, "#text",
+    editable, false,
+      values, "0, 14, 14.1, 14.2"
+    );
+}
+parameter[xml|id="staff-15"]:before {
+  content: "staff 15   "
+    oxy_combobox(edit, "#text",
+    editable, false,
+      values, "0, 15, 15.1, 15.2"
+    );
+}
+/*=========== extractPartVoice END ===========*/

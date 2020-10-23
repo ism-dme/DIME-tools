@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://dme.mozarteum.at/DME/schemata/mei-DME.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://dme.mozarteum.at/DME/schemata/mei-DME.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei meiversion="3.0.0" xml:id="dme92517025-f4c2-4231-a1c3-b70f02802d61" xmlns="http://www.music-encoding.org/ns/mei">
+	<meiHead meiversion="3.0.0">
+		<fileDesc>
+			<titleStmt>
+				<!--needed to be able to reneder in MoVi-->
+				<title label="NMA digital" type="unit">an example</title>
+			</titleStmt>
+			<pubStmt/>
+		</fileDesc>
+	</meiHead>
+	<music meiversion="3.0.0">
+		<body>
+			<mdiv n="2a" xml:id="mdiv_">
+				<score xml:id="score_">
+					<scoreDef key.mode="major" key.pname="b" key.sig="2f" meter.count="3" meter.unit="4" xml:id="scoreDef_01">
+						<staffGrp barthru="true" symbol="bracket" xml:id="staffGrp_84">
+							<staffDef clef.line="2" clef.shape="G" lines="5" n="1" xml:id="staffDef_90"/>
+						</staffGrp>
+					</scoreDef>
+					<section label="menuetto_A" xml:id="section_A_m1-5">
+						<measure n="1" xml:id="m1_k_">
+							<staff n="1" xml:id="staff_108">
+								<layer n="1" xml:id="layer_114">
+									<note accid.ges="f" dur="2" oct="4" pname="e" tstamp="1" xml:id="note_120"/>
+									<choice xml:id="choice_132">
+										<corr xml:id="corr_132">
+											<note dur="4" oct="4" pname="e" tstamp="3" xml:id="note_132">
+												<accid accid="f" func="caution" xml:id="accid_138"/>
+											</note>
+										</corr>
+										<orig xml:id="orig_132">
+											<note dur="4" oct="4" pname="e" tstamp="3" xml:id="note_132b">
+												<accid accid="f" xml:id="accid_138b"/>
+											</note>
+										</orig>
+									</choice>
+								</layer>
+							</staff>
+						</measure>
+					</section>
+				</score>
+			</mdiv>
+		</body>
+	</music>
+</mei>
