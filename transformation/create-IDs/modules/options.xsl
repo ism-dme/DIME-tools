@@ -6,10 +6,12 @@
 		<variable name="optionsGUI" select="doc('../../options/options.xml')//id('create-IDs')/dme:parameters"/>
 
 		<map>
-			<map-entry key="'recount_measures'" select="$optionsGUI/id('recount_measures')/string(text())"/>
-			<map-entry key="'all'" select="$optionsGUI/id('all')/string(text())"/>
+			<map-entry key="'recount_measures'" select="$optionsGUI/id('recount_measures')/text() => string()"/>
+			<map-entry key="'all'" select="$optionsGUI/id('all')/text() => string()"/>
 			<map-entry key="'els2apply'" select="dme:tokValues($optionsGUI, 'els2apply')"/>
 			<map-entry key="'els2exclude'" select="dme:tokValues($optionsGUI, 'els2exclude')"/>
+			<map-entry key="'addSuffix'" select="$optionsGUI/id('addSuffix')/text() => string()"/>
+			<map-entry key="'suffix'" select="$optionsGUI/id('suffix')/text() => string()"/>
 		</map>
 	</template>
 

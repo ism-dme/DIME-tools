@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<?xml-stylesheet type="text/css" href="../../frameworks/styleguide/css/styleguideActions.css"?>
 <topic id="chord">
-	<title>chord</title>
+	<title>&lt;chord></title>
 	<body>
 		<p>Required<ol id="ol_gjf_313_tgb">
 				<li>@staff?</li>
@@ -26,7 +27,7 @@
 							</dlentry>
 							<dlentry>
 								<dt>fence</dt>
-								<dd>lowest</dd>
+								<dd>min</dd>
 							</dlentry>
 							<dlentry>
 								<dt>phase</dt>
@@ -82,7 +83,7 @@
 							</dlentry>
 							<dlentry>
 								<dt>fence</dt>
-								<dd>highest</dd>
+								<dd>max</dd>
 							</dlentry>
 							<dlentry>
 								<dt>phase</dt>

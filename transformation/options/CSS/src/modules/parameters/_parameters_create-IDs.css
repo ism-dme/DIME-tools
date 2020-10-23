@@ -1,10 +1,19 @@
 /*=========== CREATE-IDs ==========*/
+parameter[xml|id="recount_measures"]:before {
+  content:
+    oxy_label(text, "Recount measures (@n)", width, 20em, text-align, left) "  "
+    oxy_checkbox(edit, "#text",
+      values, "YES",
+      uncheckedValues, "NO");
+  visibility: -oxy-collapse-text;
+}
+
 parameter[xml|id="all"]:before {
   content:
     oxy_label(text, "Apply for all elements in the <body>", width, 20em, text-align, left) "  "
     oxy_checkbox(edit, "#text",
-      values, "1",
-      uncheckedValues, "0");
+      values, "YES",
+      uncheckedValues, "NO");
   visibility: -oxy-collapse-text;
 }
 
@@ -21,12 +30,19 @@ parameter[xml|id="els2exclude"]:before {
   visibility: -oxy-collapse-text;
 }
 
-parameter[xml|id="recount_measures"]:before {
+parameter[xml|id="addSuffix"]:before {
   content:
-    oxy_label(text, "Recount measures (@n)", width, 20em, text-align, left) "  "
+    oxy_label(text, "Add suffix to the existed IDs", width, 20em, text-align, left) "  "
     oxy_checkbox(edit, "#text",
-      values, "1",
-      uncheckedValues, "0");
+      values, 'YES'
+      uncheckedValues, "NO");
+  visibility: -oxy-collapse-text;
+}
+
+parameter[xml|id="suffix"]:before {
+  content:
+    oxy_label(text, "Specify suffix: ", width, 120px, text-align, left) "  "
+    oxy_textfield(edit, "#text", columns, 20, tooltip, "e.g. '-b'");
   visibility: -oxy-collapse-text;
 }
 

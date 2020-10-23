@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<?xml-stylesheet type="text/css" href="../../frameworks/styleguide/css/styleguideActions.css"?>
 <topic id="unclear">
 	<title>unclear</title>
 	<body>
-		<?oxy_custom_start type="oxy_content_highlight" color="255,60,255"?>
-		<p>Hier kann man freien Text eingeben.<?oxy_custom_end?></p>
+	
 		<p>
 			<dl audience="rules">
 				<dlhead>

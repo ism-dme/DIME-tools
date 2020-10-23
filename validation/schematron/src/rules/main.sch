@@ -59,9 +59,9 @@ marked with audience="rules" in the corresponding topic files.-->
    <phase id="checkReferences">
       <active pattern="checkReferences_"/>
    </phase>
-   <include href="library.sch#matchesAttributeValue"/>
-   <include href="library.sch#attributeValueDescendants"/>
    <include href="library.sch#checkAttributeValue"/>
+   <include href="library.sch#attributeValueDescendants"/>
+   <include href="library.sch#matchesAttributeValue"/>
    <include href="quickFix-library.xml"/>
    <include href="unique_rules.sch#slur-tie"/>
    <include href="unique_rules.sch#sameAs"/>
@@ -81,7 +81,7 @@ marked with audience="rules" in the corresponding topic files.-->
    <!--Generated from topics/annotation.dita.-->
    <pattern id="annot_1"
             is-a="checkAttributeValue"
-            see="file:///D:/development/DIME/dime-tools_documentation/schematron/webhelp-responsive/topics/annotation.html">
+            see="file:///K:/PROJEKTE/DMEDME/Praktisches_(Howto)/dime-tools_documentation/schematron/webhelp-responsive/topics/annotation.html">
       <param name="element" value="mei:body//mei:annot[@plist]"/>
       <param name="attribute" value="type"/>
       <param name="attrValue"
@@ -93,7 +93,7 @@ marked with audience="rules" in the corresponding topic files.-->
    <!--Generated from topics/annotation.dita.-->
    <pattern id="annot_2"
             is-a="checkAttributeValue"
-            see="file:///D:/development/DIME/dime-tools_documentation/schematron/webhelp-responsive/topics/annotation.html">
+            see="file:///K:/PROJEKTE/DMEDME/Praktisches_(Howto)/dime-tools_documentation/schematron/webhelp-responsive/topics/annotation.html">
       <param name="element" value="mei:body//mei:annot[not(@plist)]"/>
       <param name="attribute" value="type"/>
       <param name="attrValue"
@@ -104,7 +104,7 @@ marked with audience="rules" in the corresponding topic files.-->
    <!--Generated from topics/annotation.dita.-->
    <pattern id="annot_3"
             is-a="checkAttributeValue"
-            see="file:///D:/development/DIME/dime-tools_documentation/schematron/webhelp-responsive/topics/annotation.html">
+            see="file:///K:/PROJEKTE/DMEDME/Praktisches_(Howto)/dime-tools_documentation/schematron/webhelp-responsive/topics/annotation.html">
       <param name="element" value="mei:body//mei:annot[not(@plist)]"/>
       <param name="attribute" value="type"/>
       <param name="attrValue"
@@ -115,7 +115,7 @@ marked with audience="rules" in the corresponding topic files.-->
    <!--Generated from topics/supplied.dita.-->
    <pattern id="supplied_1"
             is-a="matchesAttributeValue"
-            see="file:///D:/development/DIME/dime-tools_documentation/schematron/webhelp-responsive/topics/supplied.html">
+            see="file:///K:/PROJEKTE/DMEDME/Praktisches_(Howto)/dime-tools_documentation/schematron/webhelp-responsive/topics/supplied.html">
       <param name="element" value="mei:supplied"/>
       <param name="attribute" value="resp"/>
       <param name="RegEx" value="(#NMA-editors)|(#DME-editors)"/>
@@ -124,7 +124,7 @@ marked with audience="rules" in the corresponding topic files.-->
    <!--Generated from topics/unclear.dita.-->
    <pattern id="unclear_1"
             is-a="checkAttributeValue"
-            see="file:///D:/development/DIME/dime-tools_documentation/schematron/webhelp-responsive/topics/unclear.html">
+            see="file:///K:/PROJEKTE/DMEDME/Praktisches_(Howto)/dime-tools_documentation/schematron/webhelp-responsive/topics/unclear.html">
       <param name="element" value="mei:unclear[mei:slur | mei:tie]"/>
       <param name="attribute" value="reason"/>
       <param name="attrValue"
@@ -135,7 +135,7 @@ marked with audience="rules" in the corresponding topic files.-->
    <!--Generated from topics/unclear.dita.-->
    <pattern id="unclear_2"
             is-a="checkAttributeValue"
-            see="file:///D:/development/DIME/dime-tools_documentation/schematron/webhelp-responsive/topics/unclear.html">
+            see="file:///K:/PROJEKTE/DMEDME/Praktisches_(Howto)/dime-tools_documentation/schematron/webhelp-responsive/topics/unclear.html">
       <param name="element" value="mei:unclear[mei:note]"/>
       <param name="attribute" value="reason"/>
       <param name="attrValue" value="pitch[[]]---duration[[]]---illegible[[]]"/>
@@ -145,18 +145,18 @@ marked with audience="rules" in the corresponding topic files.-->
    <!--Generated from topics/chord.dita.-->
    <pattern id="chord_1"
             is-a="attributeValueDescendants"
-            see="file:///D:/development/DIME/dime-tools_documentation/schematron/webhelp-responsive/topics/chord.html">
+            see="file:///K:/PROJEKTE/DMEDME/Praktisches_(Howto)/dime-tools_documentation/schematron/webhelp-responsive/topics/chord.html">
       <param name="element" value="mei:chord[not(@sameas) or not(@copyof)]"/>
       <param name="attribute" value="dur"/>
       <param name="descendants"
              value="(descendant::mei:note or descendant::mei:rest)"/>
-      <param name="fence" value="lowest"/>
+      <param name="fence" value="min"/>
       <param name="phase" value="refTexts_music, altTexts_music"/>
    </pattern>
    <!--Generated from topics/chord.dita.-->
    <pattern id="chord_2"
             is-a="matchesAttributeValue"
-            see="file:///D:/development/DIME/dime-tools_documentation/schematron/webhelp-responsive/topics/chord.html">
+            see="file:///K:/PROJEKTE/DMEDME/Praktisches_(Howto)/dime-tools_documentation/schematron/webhelp-responsive/topics/chord.html">
       <param name="element" value="mei:chord[not(@sameas) or not(@copyof)]"/>
       <param name="attribute" value="tstamp"/>
       <param name="RegEx" value="\d(\.(\d){1,7})?"/>
@@ -165,18 +165,18 @@ marked with audience="rules" in the corresponding topic files.-->
    <!--Generated from topics/chord.dita.-->
    <pattern id="chord_3"
             is-a="attributeValueDescendants"
-            see="file:///D:/development/DIME/dime-tools_documentation/schematron/webhelp-responsive/topics/chord.html">
+            see="file:///K:/PROJEKTE/DMEDME/Praktisches_(Howto)/dime-tools_documentation/schematron/webhelp-responsive/topics/chord.html">
       <param name="element" value="mei:chord[not(@sameas) or not(@copyof)]"/>
       <param name="attribute" value="dots"/>
       <param name="descendants"
              value="(descendant::mei:note[@dots] or descendant::mei:rest[@dots])"/>
-      <param name="fence" value="highest"/>
+      <param name="fence" value="max"/>
       <param name="phase" value="refTexts_music, altTexts_music"/>
    </pattern>
    <!--Generated from topics/mrest.dita.-->
    <pattern id="mRest_1"
             is-a="checkAttributeValue"
-            see="file:///D:/development/DIME/dime-tools_documentation/schematron/webhelp-responsive/topics/mrest.html">
+            see="file:///K:/PROJEKTE/DMEDME/Praktisches_(Howto)/dime-tools_documentation/schematron/webhelp-responsive/topics/mrest.html">
       <param name="element" value="mei:mRest"/>
       <param name="attribute" value="tstamp"/>
       <param name="attrValue" value="1"/>
@@ -186,7 +186,7 @@ marked with audience="rules" in the corresponding topic files.-->
    <!--Generated from topics/facsimile.dita.-->
    <pattern id="facsimile_1"
             is-a="matchesAttributeValue"
-            see="file:///D:/development/DIME/dime-tools_documentation/schematron/webhelp-responsive/topics/facsimile.html">
+            see="file:///K:/PROJEKTE/DMEDME/Praktisches_(Howto)/dime-tools_documentation/schematron/webhelp-responsive/topics/facsimile.html">
       <param name="element" value="mei:facsimile"/>
       <param name="attribute" value="decls"/>
       <param name="RegEx" value="#digital_image[\d]?"/>
@@ -195,7 +195,7 @@ marked with audience="rules" in the corresponding topic files.-->
    <!--Generated from topics/hairpin.dita.-->
    <pattern id="hairpin_1"
             is-a="matchesAttributeValue"
-            see="file:///D:/development/DIME/dime-tools_documentation/schematron/webhelp-responsive/topics/hairpin.html">
+            see="file:///K:/PROJEKTE/DMEDME/Praktisches_(Howto)/dime-tools_documentation/schematron/webhelp-responsive/topics/hairpin.html">
       <param name="element" value="*[@tstamp2]"/>
       <param name="attribute" value="tstamp2"/>
       <param name="RegEx" value="([0-9]+m\s*\+\s*)[0-9]+(\.?[0-9]*)?"/>
@@ -204,7 +204,7 @@ marked with audience="rules" in the corresponding topic files.-->
    <!--Generated from topics/corr.dita.-->
    <pattern id="corr_1"
             is-a="matchesAttributeValue"
-            see="file:///D:/development/DIME/dime-tools_documentation/schematron/webhelp-responsive/topics/corr.html">
+            see="file:///K:/PROJEKTE/DMEDME/Praktisches_(Howto)/dime-tools_documentation/schematron/webhelp-responsive/topics/corr.html">
       <param name="element" value="mei:corr"/>
       <param name="attribute" value="resp"/>
       <param name="RegEx" value="(#NMA-editors)|(#DME-editors)"/>

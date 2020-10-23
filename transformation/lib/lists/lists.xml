@@ -35,7 +35,7 @@
 		<item>analog</item>
 		<item>stem.sameas</item>
 		<item>facs</item>
-		<item>target</item>
+		<!--<item>target</item> should be applied for few elements only-->
 	</list>
 	<list used-by="extractVoice.xsl" xml:id="controlEvents">
 		<item>dynam</item>
