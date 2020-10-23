@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+	<title>DIME Schematron Documentation</title>
+	<topicref href="topics/rules.dita">
+		<topicref href="topics/unique_rules.dita"/>
+		<topicref href="topics/annotation.dita"  props="rules"  />
+		<topicref href="topics/supplied.dita" props="rules"/>
+		<topicref href="topics/unclear.dita" props="rules"/>
+		<topicref href="topics/chord.dita" props="rules"/>	
+		<topicref href="topics/note.dita" props="rules"/>
+		<topicref href="topics/mrest.dita" props="rules"/>
+		<topicref href="topics/facsimile.dita" props="rules"/>
+		<topicref href="topics/hairpin.dita" props="rules"/>		
+		<topicref href="topics/corr.dita" props="rules"/>
+		<topicref href="topics/tie.dita" props="rules"/>
+		<topicref href="topics/attributes.dita">
+			<topicref href="topics/sameas.dita" props="rules"/>
+		</topicref>
+	</topicref>		
+	<topicref href="topics/changelog.dita"/>
+	<topicref href="topics/dime-docs_home.dita"/>
+	<topicref format="ditamap" href="keys/keys.ditamap"/>	
+</map>

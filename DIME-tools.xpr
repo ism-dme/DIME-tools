@@ -6909,7 +6909,7 @@ ${caret}</String>
                                             <cssFile-array>
                                                 <cssFile>
                                                     <field name="href">
-                                                        <String>${pdu}/util/transformation/options/CSS/options.css</String>
+                                                        <String>${pdu}/transformation/options/CSS/options.css</String>
                                                     </field>
                                                     <field name="title">
                                                         <String>options</String>
@@ -6939,7 +6939,7 @@ ${caret}</String>
                                                         <String></String>
                                                     </field>
                                                     <field name="largeIconPath">
-                                                        <String>${pdu}/util/xslt_oxygen/lib/pct\iconmonstr-gear-10-24_black.png</String>
+                                                        <String>${pdu}/xslt_oxygen/lib/pct\iconmonstr-gear-10-24_black.png</String>
                                                     </field>
                                                     <field name="smallIconPath">
                                                         <String></String>
@@ -6985,7 +6985,7 @@ ${caret}</String>
                                                         <String></String>
                                                     </field>
                                                     <field name="largeIconPath">
-                                                        <String>${pdu}/util/xslt_oxygen/lib/pct\iconmonstr-gear-10-24_black.png</String>
+                                                        <String>${pdu}/xslt_oxygen/lib/pct\iconmonstr-gear-10-24_black.png</String>
                                                     </field>
                                                     <field name="smallIconPath">
                                                         <String></String>
@@ -7031,7 +7031,7 @@ ${caret}</String>
                                                         <String></String>
                                                     </field>
                                                     <field name="largeIconPath">
-                                                        <String>${pdu}/util/xslt_oxygen/lib/pct\iconmonstr-gear-10-24_black.png</String>
+                                                        <String>${pdu}/xslt_oxygen/lib/pct\iconmonstr-gear-10-24_black.png</String>
                                                     </field>
                                                     <field name="smallIconPath">
                                                         <String></String>
@@ -7077,7 +7077,7 @@ ${caret}</String>
                                                         <String></String>
                                                     </field>
                                                     <field name="largeIconPath">
-                                                        <String>${pdu}/util/xslt_oxygen/lib/pct\iconmonstr-gear-10-24_black.png</String>
+                                                        <String>${pdu}/xslt_oxygen/lib/pct\iconmonstr-gear-10-24_black.png</String>
                                                     </field>
                                                     <field name="smallIconPath">
                                                         <String></String>
@@ -7123,7 +7123,7 @@ ${caret}</String>
                                                         <String>diff tool for alternative texts</String>
                                                     </field>
                                                     <field name="largeIconPath">
-                                                        <String>${pdu}/util/xslt_oxygen/lib/pct\iconmonstr-gear-10-24_black.png</String>
+                                                        <String>${pdu}/xslt_oxygen/lib/pct\iconmonstr-gear-10-24_black.png</String>
                                                     </field>
                                                     <field name="smallIconPath">
                                                         <String></String>
@@ -7734,7 +7734,7 @@ ${caret}</String>
                                     <null/>
                                 </field>
                                 <field name="cmd">
-                                    <String>"C:\Program Files (x86)\Vim\vim80\gvim.exe" -S ../util/src/mei-edit-tools.vim ${cf}</String>
+                                    <String>"C:\Program Files (x86)\Vim\vim80\gvim.exe" -S ../src/mei-edit-tools.vim ${cf}</String>
                                 </field>
                                 <field name="description">
                                     <String>runs gVIM</String>
@@ -9143,9 +9143,9 @@ ${caret}</String>
     <projectTree name="DIME.xpr">
         <folder name="tools configuration">
             <folder name="figured bass">
-                <folder path="util/transformation/fb/"/>
+                <folder path="transformation/fb/"/>
             </folder>
-            <file name="util/transformation/options/options.xml"/>
+            <file name="transformation/options/options.xml"/>
         </folder>
         <folder path="."/>
         <folder path="file:/K:/PROJEKTE/DMEDME/Edition/Referenztexte/"/>
