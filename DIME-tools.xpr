@@ -8,7 +8,7 @@
                     <entry>
                         <String>additional.frameworks.directories</String>
                         <String-array>
-                            <String>${pd}\util\oxy_frameworks</String>
+                            <String>${pd}\oxy_frameworks</String>
                         </String-array>
                     </entry>
                     <entry>
@@ -9140,7 +9140,7 @@ ${caret}</String>
             </serialized>
         </options>
     </meta>
-    <projectTree name="DIME.xpr">
+    <projectTree name="DIME-tools.xpr">
         <folder name="tools configuration">
             <folder name="figured bass">
                 <folder path="transformation/fb/"/>
