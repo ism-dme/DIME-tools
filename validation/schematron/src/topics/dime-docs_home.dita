@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
-<topic id="utils_documentation_home">
-	<title>DIME Documentation HOME</title>
-	<body>
-		<p>The documentation for schematron is created from another source as DIME docs. However, you can reach the DIME documentation following the <xref keyref="DIME-tools">link</xref>.</p>
-	</body>
-</topic>

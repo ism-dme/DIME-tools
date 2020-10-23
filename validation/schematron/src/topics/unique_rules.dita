@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
-<topic id="schematron_2">
-    <title><b>Unique Rules</b></title>
-    <body>
-		<p>These are the rules which are not generic and must be defined in a separate schematron file. Due to technical reasons it is currently not possible to integrate the documentation into the oXygen webhelp. Therefore, follow the link below to watch a simple HTML solution. </p>
-        <p>Follow the <xref keyref="schematron">link</xref></p>
-    </body>
-</topic>
