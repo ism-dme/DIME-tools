@@ -5,7 +5,7 @@
 	<meiHead meiversion="4.0.0">
 		<fileDesc>
 			<titleStmt>
-				<title label="NMA digital" type="unit">&lt;chord/&gt;</title>
+				<title label="NMA digital" type="unit">Minimal running example for schematron rule for &lt;chord/&gt; (correct)</title>
 			</titleStmt>
 			<pubStmt/>
 		</fileDesc>

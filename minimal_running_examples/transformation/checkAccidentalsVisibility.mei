@@ -5,7 +5,7 @@
 	<meiHead meiversion="4.0.0">
 		<fileDesc>
 			<titleStmt>
-				<title label="NMA digital" type="unit">an example</title>
+				<title label="NMA digital" type="unit">Minimal running example for the 'checkAccidentalsVisibility' XSLT</title>
 			</titleStmt>
 			<pubStmt/>
 		</fileDesc>

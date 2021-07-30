@@ -5,7 +5,7 @@
   <meiHead meiversion="4.0.0">
     <fileDesc>
       <titleStmt>
-        <title label="NMA digital" type="unit">&lt;slur/&gt;</title>
+      	<title label="NMA digital" type="unit">Minimal running example for schematron rule for &lt;slur/&gt; (correct)</title>
       </titleStmt>
       <pubStmt/>
     </fileDesc>
@@ -42,7 +42,7 @@
                   <rest dur="2" tstamp="3" xml:id="rest_198"/>
                 </layer>
               </staff>
-              <slur endid="#note_144" staff="2" startid="#note_138" xml:id="slur_204"/>
+              <slur endid="#note_144" staff="1" startid="#note_138" xml:id="slur_204"/>
             </measure>
             <measure n="2" xml:id="m2">
               <staff n="1" xml:id="staff_216">
@@ -65,7 +65,7 @@
                   <rest dur="2" tstamp="4" xml:id="rest_294"/>
                 </layer>
               </staff>
-              <slur endid="#note_144" staff="1" startid="#note_234" xml:id="slur_300"/>
+              <slur endid="#note_240" staff="1" startid="#note_234" xml:id="slur_300"/>
             </measure>
           </section>
         </score>

@@ -5,7 +5,7 @@
   <meiHead meiversion="4.0.0">
     <fileDesc>
       <titleStmt>
-        <title label="NMA digital" type="unit">&lt;chord/&gt;</title>
+      	<title label="NMA digital" type="unit">Minimal running example for schematron validation scenario 'checkDurations'</title>
       </titleStmt>
       <pubStmt/>
     </fileDesc>
@@ -23,25 +23,17 @@
             <measure n="1" xml:id="m1">
               <staff n="1" xml:id="staff_114">
                 <layer n="1" xml:id="layer_120">
-                  <chord dur="4" tstamp="2" xml:id="chord_126">
-                    <note dur="4" oct="5" pname="a" xml:id="note_132"/>
-                    <note dur="2" oct="4" pname="a" xml:id="note_138"/>
-                  </chord>
-                  <rest dur="4" tstamp="2" xml:id="rest_144"/>
-                  <rest dur="2" tstamp="3" xml:id="rest_150"/>
+                  <note dur="2" oct="4" pname="a" xml:id="note_126"/>
+                  <rest dur="4" tstamp="2" xml:id="rest_132"/>
+                  <rest dur="2" tstamp="3" xml:id="rest_138"/>
                 </layer>
               </staff>
             </measure>
             <measure n="2" xml:id="m2">
-              <staff n="1" xml:id="staff_162">
-                <layer n="1" xml:id="layer_168">
-                  <chord dur="4" xml:id="chord_174">
-                    <note dots="0" dur="4" oct="5" pname="a" xml:id="note_180"/>
-                    <note dots="1" dur="4" oct="4" pname="a" xml:id="note_186"/>
-                  </chord>
-                  <rest dur="8" tstamp="2.5" xml:id="rest_192"/>
-                  <rest dur="4" tstamp="3" xml:id="rest_198"/>
-                  <rest dur="2" tstamp="4" xml:id="rest_204"/>
+              <staff n="1" xml:id="staff_150">
+                <layer n="1" xml:id="layer_156">
+                  <note dur="2" oct="4" pname="a" xml:id="note_162"/>
+                  <rest dur="2" tstamp="4" xml:id="rest_168"/>
                 </layer>
               </staff>
             </measure>

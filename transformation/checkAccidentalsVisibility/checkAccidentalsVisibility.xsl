@@ -4,7 +4,7 @@
 	<doc scope="stylesheet" xmlns="http://www.oxygenxml.com/ns/doc/xsl">
 		<desc>
 			<p>
-				<i>Changes the visibility of the accidentals (@accid => @accid.ges).</i>
+				<i>Disables visibility of accidentals and key signatures (@accid => @accid.ges).</i>
 			</p>
 			<p><b>Rules</b>:<pre/>The checked note (later: <i>context note</i>) <ul>
 					<li>is not a grace note</li>

@@ -5,7 +5,7 @@
   <meiHead meiversion="4.0.0">
     <fileDesc>
       <titleStmt>
-        <title label="NMA digital" type="unit">Schematron: check references</title>
+        <title label="NMA digital" type="unit">Minimal running example for schematron validation scenario 'check references'</title>
       </titleStmt>
       <pubStmt/>
     </fileDesc>
