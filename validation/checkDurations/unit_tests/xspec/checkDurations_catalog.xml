@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog"
+         xml:base="file:/C:/Users/sapov/AppData/Roaming/com.oxygenxml/extensions/v20.1/frameworks/https___www.oxygenxml.com_InstData_Addons_community_updateSite.xml/xspec.support-2.0.0/">
+   <nextCatalog catalog="file:/C:/Program%20Files/Oxygen%20XML%20Editor%2020/frameworks/dita/catalog.xml"/>
+   <nextCatalog catalog="file:/C:/Program%20Files/Oxygen%20XML%20Editor%2020/frameworks/dita/DITA-OT2.x/catalog-dita.xml"/>
+   <nextCatalog catalog="file:/C:/Program%20Files/Oxygen%20XML%20Editor%2020/frameworks/dita/styleguide/catalog.xml"/>
+   <nextCatalog catalog="file:/C:/Program%20Files/Oxygen%20XML%20Editor%2020/frameworks/dita/plugin/catalog.xml"/>
+   <nextCatalog catalog="file:/C:/Program%20Files/Oxygen%20XML%20Editor%2020/frameworks/extensions/catalog.xml"/>
+   <nextCatalog catalog="file:/C:/Program%20Files/Oxygen%20XML%20Editor%2020/frameworks/svg/dtd/svgcatalog.xml"/>
+   <nextCatalog catalog="file:/C:/Program%20Files/Oxygen%20XML%20Editor%2020/frameworks/tei/xml/tei/custom/schema/catalog.xml"/>
+   <nextCatalog catalog="file:/C:/Program%20Files/Oxygen%20XML%20Editor%2020/frameworks/tei/xml/tei/schema/catalog.xml"/>
+   <nextCatalog catalog="file:/C:/Program%20Files/Oxygen%20XML%20Editor%2020/frameworks/tei/xml/tei/stylesheet/catalog.xml"/>
+   <nextCatalog catalog="file:/C:/Program%20Files/Oxygen%20XML%20Editor%2020/frameworks/xhtml/dtd/xhtmlcatalog.xml"/>
+   <nextCatalog catalog="file:/C:/Program%20Files/Oxygen%20XML%20Editor%2020/frameworks/xhtml/relaxng/catalog.xml"/>
+   <nextCatalog catalog="file:/C:/Program%20Files/Oxygen%20XML%20Editor%2020/frameworks/xhtml/nvdl/catalog.xml"/>
+   <nextCatalog catalog="file:/C:/Program%20Files/Oxygen%20XML%20Editor%2020/frameworks/xhtml11/dtd/xhtmlcatalog.xml"/>
+   <nextCatalog catalog="file:/C:/Program%20Files/Oxygen%20XML%20Editor%2020/frameworks/xhtml11/schema/xhtmlcatalog.xml"/>
+   <nextCatalog catalog="file:/C:/Program%20Files/Oxygen%20XML%20Editor%2020/frameworks/xhtml/xhtml5%20(epub3)/catalog-compat.xml"/>
+   <nextCatalog catalog="file:/C:/Program%20Files/Oxygen%20XML%20Editor%2020/frameworks/xhtml/styleguide/catalog.xml"/>
+   <nextCatalog catalog="file:/C:/Program%20Files/Oxygen%20XML%20Editor%2020/frameworks/xml_refactoring/catalog.xml"/>
+   <nextCatalog catalog="file:/C:/Program%20Files/Oxygen%20XML%20Editor%2020/frameworks/xmlschema/catalog.xml"/>
+   <nextCatalog catalog="file:/C:/Program%20Files/Oxygen%20XML%20Editor%2020/frameworks/catalog.xml"/>
+</catalog>
