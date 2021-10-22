@@ -285,7 +285,7 @@
 									<String></String>
 								</field>
 								<field name="inputXSLURL">
-									<String>${framework}/../../transformation/checkDurations/checkDurations.xsl</String>
+									<String>${framework}/../../validation/checkDurations/checkDurations.xsl</String>
 								</field>
 								<field name="inputXMLURL">
 									<String>${currentFileURL}</String>
