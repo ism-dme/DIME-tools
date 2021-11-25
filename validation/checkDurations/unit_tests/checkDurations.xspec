@@ -26,7 +26,7 @@
     </x:scenario>
     
     <x:scenario label="@sameas">
-      <scenario label="Withe @dots">
+      <scenario label="With @dots">
         <context href="input/@sameas_@dots.mei" select="/"/>
         <expect label="rest_160176 references to a rest with @dots" select="()"/>
       </scenario>
@@ -35,7 +35,18 @@
         <x:expect label="All durations are correct (layer_26862 is the @sameas-in-tuplet-case)" select="()"/>
       </x:scenario>
     </x:scenario>
-
+    
+    <x:scenario label="@copyof">
+      <scenario label="beam@copyof correct">
+        <context href="input/@copyof.mei" select="/"/>
+        <expect label="layer_99852 contains beam@copyof" select="()"/>
+      </scenario>
+      <x:scenario label="beam@copyof wrong">
+        <x:context href="input/@copyof_wrong.mei" select="/"/>
+        <x:expect label="note_99792 was changed from 16 to 32" select="'layer_99762&#xA;layer_99852'"/>
+      </x:scenario>
+    </x:scenario>
+        
     <x:scenario label="app">
       <x:scenario label="normal case and @sameas case ">
         <x:context href="input/app.mei" select="/"/>
@@ -49,8 +60,7 @@
         <x:expect label="All values are correct" select="()"/>
       </x:scenario>
     </x:scenario>
-    
-    
+        
   </x:scenario>
 
 

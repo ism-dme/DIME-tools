@@ -15,7 +15,7 @@
         </ul>
       </p>
       <pre> </pre>
-      <p><b>Current version</b>: <b id="version">1.1.0</b>. For the details see the changeLog.</p>
+      <p><b>Current version</b>: <b id="version">1.1.1</b>. For the details see the changeLog.</p>
       <p><b>Author</b>: Oleksii Sapov. <b>Disclaimer</b>: The stylesheet uses some logic and code parts form <i>addTstamps.xsl</i> which was created by Johannes Kepper on May 22, 2016.<pre/>
         <b>Copyright</b>: 2021 Internationale Stiftung Mozarteum Salzburg.<pre/>Licensed under the Educational Community License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at <a href="https://opensource.org/licenses/ECL-2.0">https://opensource.org/licenses/ECL-2.0</a><pre/>Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.</p>
     </desc>
@@ -206,17 +206,10 @@
     <for-each select=".//*">
       <choose>
         <!--I the current element has @sameas, @dur and @dots are copied from the referenced element-->
-        <when test="(@sameas or @copyof) and not(@dur)">
+        <when test="@sameas and not(@dur)">
 
           <variable as="element()" name="reference">
-            <choose>
-              <when test="@sameas">
-                <sequence select="substring-after(@sameas, '#') => id()"/>
-              </when>
-              <when test="@copyof">
-                <sequence select="substring-after(@copyof, '#') => id()"/>
-              </when>
-            </choose>
+            <sequence select="substring-after(@sameas, '#') => id()"/>
           </variable>
 
           <if test="$reference[(not(ancestor::chord) and not(@grace)) or (local-name() = $events.dur.exceptions)]">
@@ -235,6 +228,33 @@
                 </copy>
               </when>
             </choose>
+          </if>
+          
+          <if test="$reference//*">
+            <for-each select="$reference//*">
+              <if test="@dur and not(ancestor::chord) and not(@grace) or (local-name() = $events.dur.exceptions)">
+                <sequence select="."/>
+              </if>
+            </for-each>
+          </if>
+          
+        </when>
+        <when test="@copyof">
+
+          <variable as="element()" name="reference">
+            <sequence select="substring-after(@copyof, '#') => id()"/>
+          </variable>
+
+          <if test="$reference[@dur and not(ancestor::chord) and not(@grace) or (local-name() = $events.dur.exceptions)]">
+            <sequence select="$reference"/>
+          </if>
+          <!--In case if the reference is e.g. beam which does not contain @dur but its children may-->
+          <if test="$reference//*">
+            <for-each select="$reference//*">
+              <if test="@dur and not(ancestor::chord) and not(@grace) or (local-name() = $events.dur.exceptions)">
+                <sequence select="."/>
+              </if>
+            </for-each>
           </if>
         </when>
         <otherwise>

@@ -4,8 +4,12 @@
   <doc scope="stylesheet" xmlns="http://www.oxygenxml.com/ns/doc/xsl">
     <desc>
       <b>Versions</b>:<p>
+        <b>1.1.1</b> (2021-11-25) <ul>
+          <li>Improve @copyof and @sameas-support (cases when the pointed element has descendants, e.g. &lt;beam&gt;)</li>
+        </ul>
+      </p><p>
         <b>1.1.0</b> (2021-10-19) <ul>
-          <li>Enable check for  &lt;layer>s with &lt;tuplet&gt;s including @sameas-elements</li>
+          <li>Enable check for &lt;layer>s with &lt;tuplet&gt;s including @sameas-elements</li>
           <li>Exclude &lt;layer>s with &lt;mSpace&gt;, &lt;multiRest&gt;</li>
           <li>Bugfix: when a @sameas-element has @dur (e.g. K. 550 ) the attribute on the element should have a higher priority</li>
           <li>UX improvements: more meaningful filename of the report, add messages if there are no errors, create XPath for &lt;measure&gt;s with @metcon, and &lt;layer&gt;s with &lt;app&gt; or &lt;choice&gt; which can be checked manually</li>
