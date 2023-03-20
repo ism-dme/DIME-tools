@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project version="20.1">
+<project>
     <meta>
         <filters directoryPatterns="" filePatterns="DIME.xpr" positiveFilePatterns="" showHiddenFiles="false"/>
         <options>
-            <serialized version="20.1" xml:space="preserve">
+            <serialized xml:space="preserve">
                 <serializableOrderedMap>
                     <entry>
                         <String>additional.frameworks.directories</String>
@@ -7020,6 +7020,375 @@ Note: If it is not defined, then the element at the caret position will be used.
                                     <null/>
                                 </field>
                             </codeTemplateItem>
+                            <codeTemplateItem>
+                                <field name="contentType">
+                                    <String>text/css</String>
+                                </field>
+                                <field name="unparsedInsertString">
+                                    <String>operation, 'ro.sync.ecss.extensions.commons.operations.ExecuteCustomizableTransformationScenarioOperation',
+          arg-scenarioName, '',
+          arg-scenarioParameters, '',
+          arg-markInProgressXPathLocation, '',
+          arg-markOthersInProgressXPathLocation, ''</String>
+                                </field>
+                                <field name="descriptionString">
+                                    <String>&lt;html>&lt;head>&lt;/head>&lt;body>Description:&lt;p style="margin-left:10px;">Run a named transformation scenario with specific parameters defined in the associated document type.&lt;/p>&lt;br/>Arguments: &lt;ul>&lt;li>&lt;b>scenarioName&lt;/b> = The name of the transformation scenario which will be executed.&lt;/li>&lt;li>&lt;b>scenarioParameters&lt;/b> = Provided parameters for the transformation scenario.
+Parameters are inserted as name=value pairs separated by line breaks.
+The set parameters are taken into account for XSLT, DITA, Chemistry and ANT Transformation scenario types.&lt;/li>&lt;li>&lt;b>markInProgressXPathLocation&lt;/b> = XPath expression that identifies the element(s) on which a specific  '-oxy-transformation-in-progress' pseudo class is set before transformation is started.The pseudo class is reset when the transformation ends.If this XPath expression is not defined, the current node is used.&lt;/li>&lt;li>&lt;b>markOthersInProgressXPathLocation&lt;/b> = XPath expression that indentifies other elements on which a specific '-oxy-transformation-in-progress-others' pseudo class is set before the transformation is started.The pseudo class is reset when the transformation ends.&lt;/li>&lt;/ul> &lt;br/> Template: &lt;br/>&lt;p style="margin-left:10px;">operation, 'ro.sync.ecss.extensions.commons.operations.ExecuteCustomizableTransformationScenarioOperation',&lt;br/>          arg-scenarioName, '',&lt;br/>          arg-scenarioParameters, '',&lt;br/>          arg-markInProgressXPathLocation, '',&lt;br/>          arg-markOthersInProgressXPathLocation, ''&lt;/p>&lt;/body>&lt;/html></String>
+                                </field>
+                                <field name="renderString">
+                                    <String>op_ExecuteCustomizableTransformationScenarioOperation</String>
+                                </field>
+                                <field name="enabled">
+                                    <Boolean>true</Boolean>
+                                </field>
+                                <field name="accelerator">
+                                    <null/>
+                                </field>
+                            </codeTemplateItem>
+                            <codeTemplateItem>
+                                <field name="contentType">
+                                    <String>text/css</String>
+                                </field>
+                                <field name="unparsedInsertString">
+                                    <String>operation, 'ro.sync.ecss.extensions.commons.operations.ExecuteValidationScenariosOperation',
+          arg-scenarioNames, ''</String>
+                                </field>
+                                <field name="descriptionString">
+                                    <String>&lt;html>&lt;head>&lt;/head>&lt;body>Description:&lt;p style="margin-left:10px;">Run a named validation scenario defined in the associated document type.&lt;/p>&lt;br/>Arguments: &lt;ul>&lt;li>&lt;b>scenarioNames&lt;/b> = The names of the validation scenario which will be executed, separated by new lines.&lt;/li>&lt;/ul> &lt;br/> Template: &lt;br/>&lt;p style="margin-left:10px;">operation, 'ro.sync.ecss.extensions.commons.operations.ExecuteValidationScenariosOperation',&lt;br/>          arg-scenarioNames, ''&lt;/p>&lt;/body>&lt;/html></String>
+                                </field>
+                                <field name="renderString">
+                                    <String>op_ExecuteValidationScenariosOperation</String>
+                                </field>
+                                <field name="enabled">
+                                    <Boolean>true</Boolean>
+                                </field>
+                                <field name="accelerator">
+                                    <null/>
+                                </field>
+                            </codeTemplateItem>
+                            <codeTemplateItem>
+                                <field name="contentType">
+                                    <String>text/css</String>
+                                </field>
+                                <field name="unparsedInsertString">
+                                    <String>operation, 'ro.sync.ecss.extensions.commons.operations.ReplaceElementContentOperation',
+          arg-elementLocation, '.',
+          arg-fragment, '&lt;element/>'</String>
+                                </field>
+                                <field name="descriptionString">
+                                    <String>&lt;html>&lt;head>&lt;/head>&lt;body>Description:&lt;p style="margin-left:10px;">Replaces the content of the fully selected element or the content of the element at caret (if the selection is empty or a node is not entirely selected)&lt;/p>&lt;br/>Arguments: &lt;ul>&lt;li>&lt;b>elementLocation&lt;/b> = An XPath expression indicating the element whose attribute will be changed.
+Note: If it is not defined then the element at the caret position or the current fully selected element will be used.&lt;/li>&lt;li>&lt;b>fragment&lt;/b> = The new content of the element.&lt;/li>&lt;/ul> &lt;br/> Template: &lt;br/>&lt;p style="margin-left:10px;">operation, 'ro.sync.ecss.extensions.commons.operations.ReplaceElementContentOperation',&lt;br/>          arg-elementLocation, '.',&lt;br/>          arg-fragment, '&lt;element/>'&lt;/p>&lt;/body>&lt;/html></String>
+                                </field>
+                                <field name="renderString">
+                                    <String>op_ReplaceElementContentOperation</String>
+                                </field>
+                                <field name="enabled">
+                                    <Boolean>true</Boolean>
+                                </field>
+                                <field name="accelerator">
+                                    <null/>
+                                </field>
+                            </codeTemplateItem>
+                            <codeTemplateItem>
+                                <field name="contentType">
+                                    <String>text/css</String>
+                                </field>
+                                <field name="unparsedInsertString">
+                                    <String>operation, 'ro.sync.ecss.extensions.commons.operations.StopCurrentTransformationScenarioOperation'</String>
+                                </field>
+                                <field name="descriptionString">
+                                    <String>&lt;html>&lt;head>&lt;/head>&lt;body>Description:&lt;p style="margin-left:10px;">Stop the current running transformation scenario.&lt;/p>&lt;br/>Arguments: &lt;p style="margin-left:10px;">This operation has no arguments.&lt;/p> &lt;br/> Template: &lt;br/>&lt;p style="margin-left:10px;">operation, 'ro.sync.ecss.extensions.commons.operations.StopCurrentTransformationScenarioOperation'&lt;/p>&lt;/body>&lt;/html></String>
+                                </field>
+                                <field name="renderString">
+                                    <String>op_StopCurrentTransformationScenarioOperation</String>
+                                </field>
+                                <field name="enabled">
+                                    <Boolean>true</Boolean>
+                                </field>
+                                <field name="accelerator">
+                                    <null/>
+                                </field>
+                            </codeTemplateItem>
+                            <codeTemplateItem>
+                                <field name="contentType">
+                                    <String>text/css</String>
+                                </field>
+                                <field name="unparsedInsertString">
+                                    <String>operation, 'ro.sync.ecss.extensions.commons.operations.ToggleCommentOperation'</String>
+                                </field>
+                                <field name="descriptionString">
+                                    <String>&lt;html>&lt;head>&lt;/head>&lt;body>Description:&lt;p style="margin-left:10px;">Wrap selection in an XML comment or unwrap existing XML comment&lt;/p>&lt;br/>Arguments: &lt;p style="margin-left:10px;">This operation has no arguments.&lt;/p> &lt;br/> Template: &lt;br/>&lt;p style="margin-left:10px;">operation, 'ro.sync.ecss.extensions.commons.operations.ToggleCommentOperation'&lt;/p>&lt;/body>&lt;/html></String>
+                                </field>
+                                <field name="renderString">
+                                    <String>op_ToggleCommentOperation</String>
+                                </field>
+                                <field name="enabled">
+                                    <Boolean>true</Boolean>
+                                </field>
+                                <field name="accelerator">
+                                    <null/>
+                                </field>
+                            </codeTemplateItem>
+                            <codeTemplateItem>
+                                <field name="contentType">
+                                    <String>text/html</String>
+                                </field>
+                                <field name="unparsedInsertString">
+                                    <String>&lt;datalist id="id${caret}">
+  &lt;option value="">&lt;/option>
+  &lt;option value="">&lt;/option>
+&lt;/datalist></String>
+                                </field>
+                                <field name="descriptionString">
+                                    <String>HTML data list with autocomplete options</String>
+                                </field>
+                                <field name="renderString">
+                                    <String>datalist</String>
+                                </field>
+                                <field name="enabled">
+                                    <Boolean>true</Boolean>
+                                </field>
+                                <field name="accelerator">
+                                    <null/>
+                                </field>
+                            </codeTemplateItem>
+                            <codeTemplateItem>
+                                <field name="contentType">
+                                    <String>text/html</String>
+                                </field>
+                                <field name="unparsedInsertString">
+                                    <String>&lt;dl>
+  &lt;dt>${caret}&lt;/dt>&lt;dd>&lt;/dd>
+  &lt;dt>&lt;/dt>&lt;dd>&lt;/dd>
+&lt;/dl></String>
+                                </field>
+                                <field name="descriptionString">
+                                    <String>HTML definition list</String>
+                                </field>
+                                <field name="renderString">
+                                    <String>dl</String>
+                                </field>
+                                <field name="enabled">
+                                    <Boolean>true</Boolean>
+                                </field>
+                                <field name="accelerator">
+                                    <null/>
+                                </field>
+                            </codeTemplateItem>
+                            <codeTemplateItem>
+                                <field name="contentType">
+                                    <String>text/html</String>
+                                </field>
+                                <field name="unparsedInsertString">
+                                    <String>&lt;figure>
+  &lt;img src="src${caret}" alt="">
+  &lt;figcaption>&lt;/figcaption>
+&lt;/figure></String>
+                                </field>
+                                <field name="descriptionString">
+                                    <String>HTML figure with image and caption</String>
+                                </field>
+                                <field name="renderString">
+                                    <String>figure</String>
+                                </field>
+                                <field name="enabled">
+                                    <Boolean>true</Boolean>
+                                </field>
+                                <field name="accelerator">
+                                    <null/>
+                                </field>
+                            </codeTemplateItem>
+                            <codeTemplateItem>
+                                <field name="contentType">
+                                    <String>text/html</String>
+                                </field>
+                                <field name="unparsedInsertString">
+                                    <String>&lt;ol type="1${caret}">
+  &lt;li>&lt;/li>
+  &lt;li>&lt;/li>
+&lt;/ol></String>
+                                </field>
+                                <field name="descriptionString">
+                                    <String>HTML ordered list</String>
+                                </field>
+                                <field name="renderString">
+                                    <String>ol</String>
+                                </field>
+                                <field name="enabled">
+                                    <Boolean>true</Boolean>
+                                </field>
+                                <field name="accelerator">
+                                    <null/>
+                                </field>
+                            </codeTemplateItem>
+                            <codeTemplateItem>
+                                <field name="contentType">
+                                    <String>text/html</String>
+                                </field>
+                                <field name="unparsedInsertString">
+                                    <String>&lt;table>
+  &lt;caption>${caret}&lt;/caption>
+  &lt;thead>
+    &lt;tr>
+      &lt;th>&lt;/th>
+      &lt;th>&lt;/th>
+    &lt;/tr>
+  &lt;/thead>
+  &lt;tbody>
+    &lt;tr>
+      &lt;td>&lt;/td>
+      &lt;td>&lt;/td>
+    &lt;/tr>
+  &lt;/tbody>
+&lt;/table></String>
+                                </field>
+                                <field name="descriptionString">
+                                    <String>HTML table</String>
+                                </field>
+                                <field name="renderString">
+                                    <String>table</String>
+                                </field>
+                                <field name="enabled">
+                                    <Boolean>true</Boolean>
+                                </field>
+                                <field name="accelerator">
+                                    <null/>
+                                </field>
+                            </codeTemplateItem>
+                            <codeTemplateItem>
+                                <field name="contentType">
+                                    <String>text/html</String>
+                                </field>
+                                <field name="unparsedInsertString">
+                                    <String>&lt;ul>
+  &lt;li>${caret}&lt;/li>
+  &lt;li>&lt;/li>
+&lt;/ul></String>
+                                </field>
+                                <field name="descriptionString">
+                                    <String>HTML unordered list</String>
+                                </field>
+                                <field name="renderString">
+                                    <String>ul</String>
+                                </field>
+                                <field name="enabled">
+                                    <Boolean>true</Boolean>
+                                </field>
+                                <field name="accelerator">
+                                    <null/>
+                                </field>
+                            </codeTemplateItem>
+                            <codeTemplateItem>
+                                <field name="contentType">
+                                    <String>text/less</String>
+                                </field>
+                                <field name="unparsedInsertString">
+                                    <String>operation, 'ro.sync.ecss.extensions.commons.operations.ExecuteCustomizableTransformationScenarioOperation',
+          arg-scenarioName, '',
+          arg-scenarioParameters, '',
+          arg-markInProgressXPathLocation, '',
+          arg-markOthersInProgressXPathLocation, ''</String>
+                                </field>
+                                <field name="descriptionString">
+                                    <String>&lt;html>&lt;head>&lt;/head>&lt;body>Description:&lt;p style="margin-left:10px;">Run a named transformation scenario with specific parameters defined in the associated document type.&lt;/p>&lt;br/>Arguments: &lt;ul>&lt;li>&lt;b>scenarioName&lt;/b> = The name of the transformation scenario which will be executed.&lt;/li>&lt;li>&lt;b>scenarioParameters&lt;/b> = Provided parameters for the transformation scenario.
+Parameters are inserted as name=value pairs separated by line breaks.
+The set parameters are taken into account for XSLT, DITA, Chemistry and ANT Transformation scenario types.&lt;/li>&lt;li>&lt;b>markInProgressXPathLocation&lt;/b> = XPath expression that identifies the element(s) on which a specific  '-oxy-transformation-in-progress' pseudo class is set before transformation is started.The pseudo class is reset when the transformation ends.If this XPath expression is not defined, the current node is used.&lt;/li>&lt;li>&lt;b>markOthersInProgressXPathLocation&lt;/b> = XPath expression that indentifies other elements on which a specific '-oxy-transformation-in-progress-others' pseudo class is set before the transformation is started.The pseudo class is reset when the transformation ends.&lt;/li>&lt;/ul> &lt;br/> Template: &lt;br/>&lt;p style="margin-left:10px;">operation, 'ro.sync.ecss.extensions.commons.operations.ExecuteCustomizableTransformationScenarioOperation',&lt;br/>          arg-scenarioName, '',&lt;br/>          arg-scenarioParameters, '',&lt;br/>          arg-markInProgressXPathLocation, '',&lt;br/>          arg-markOthersInProgressXPathLocation, ''&lt;/p>&lt;/body>&lt;/html></String>
+                                </field>
+                                <field name="renderString">
+                                    <String>op_ExecuteCustomizableTransformationScenarioOperation</String>
+                                </field>
+                                <field name="enabled">
+                                    <Boolean>true</Boolean>
+                                </field>
+                                <field name="accelerator">
+                                    <null/>
+                                </field>
+                            </codeTemplateItem>
+                            <codeTemplateItem>
+                                <field name="contentType">
+                                    <String>text/less</String>
+                                </field>
+                                <field name="unparsedInsertString">
+                                    <String>operation, 'ro.sync.ecss.extensions.commons.operations.ExecuteValidationScenariosOperation',
+          arg-scenarioNames, ''</String>
+                                </field>
+                                <field name="descriptionString">
+                                    <String>&lt;html>&lt;head>&lt;/head>&lt;body>Description:&lt;p style="margin-left:10px;">Run a named validation scenario defined in the associated document type.&lt;/p>&lt;br/>Arguments: &lt;ul>&lt;li>&lt;b>scenarioNames&lt;/b> = The names of the validation scenario which will be executed, separated by new lines.&lt;/li>&lt;/ul> &lt;br/> Template: &lt;br/>&lt;p style="margin-left:10px;">operation, 'ro.sync.ecss.extensions.commons.operations.ExecuteValidationScenariosOperation',&lt;br/>          arg-scenarioNames, ''&lt;/p>&lt;/body>&lt;/html></String>
+                                </field>
+                                <field name="renderString">
+                                    <String>op_ExecuteValidationScenariosOperation</String>
+                                </field>
+                                <field name="enabled">
+                                    <Boolean>true</Boolean>
+                                </field>
+                                <field name="accelerator">
+                                    <null/>
+                                </field>
+                            </codeTemplateItem>
+                            <codeTemplateItem>
+                                <field name="contentType">
+                                    <String>text/less</String>
+                                </field>
+                                <field name="unparsedInsertString">
+                                    <String>operation, 'ro.sync.ecss.extensions.commons.operations.ReplaceElementContentOperation',
+          arg-elementLocation, '.',
+          arg-fragment, '&lt;element/>'</String>
+                                </field>
+                                <field name="descriptionString">
+                                    <String>&lt;html>&lt;head>&lt;/head>&lt;body>Description:&lt;p style="margin-left:10px;">Replaces the content of the fully selected element or the content of the element at caret (if the selection is empty or a node is not entirely selected)&lt;/p>&lt;br/>Arguments: &lt;ul>&lt;li>&lt;b>elementLocation&lt;/b> = An XPath expression indicating the element whose attribute will be changed.
+Note: If it is not defined then the element at the caret position or the current fully selected element will be used.&lt;/li>&lt;li>&lt;b>fragment&lt;/b> = The new content of the element.&lt;/li>&lt;/ul> &lt;br/> Template: &lt;br/>&lt;p style="margin-left:10px;">operation, 'ro.sync.ecss.extensions.commons.operations.ReplaceElementContentOperation',&lt;br/>          arg-elementLocation, '.',&lt;br/>          arg-fragment, '&lt;element/>'&lt;/p>&lt;/body>&lt;/html></String>
+                                </field>
+                                <field name="renderString">
+                                    <String>op_ReplaceElementContentOperation</String>
+                                </field>
+                                <field name="enabled">
+                                    <Boolean>true</Boolean>
+                                </field>
+                                <field name="accelerator">
+                                    <null/>
+                                </field>
+                            </codeTemplateItem>
+                            <codeTemplateItem>
+                                <field name="contentType">
+                                    <String>text/less</String>
+                                </field>
+                                <field name="unparsedInsertString">
+                                    <String>operation, 'ro.sync.ecss.extensions.commons.operations.StopCurrentTransformationScenarioOperation'</String>
+                                </field>
+                                <field name="descriptionString">
+                                    <String>&lt;html>&lt;head>&lt;/head>&lt;body>Description:&lt;p style="margin-left:10px;">Stop the current running transformation scenario.&lt;/p>&lt;br/>Arguments: &lt;p style="margin-left:10px;">This operation has no arguments.&lt;/p> &lt;br/> Template: &lt;br/>&lt;p style="margin-left:10px;">operation, 'ro.sync.ecss.extensions.commons.operations.StopCurrentTransformationScenarioOperation'&lt;/p>&lt;/body>&lt;/html></String>
+                                </field>
+                                <field name="renderString">
+                                    <String>op_StopCurrentTransformationScenarioOperation</String>
+                                </field>
+                                <field name="enabled">
+                                    <Boolean>true</Boolean>
+                                </field>
+                                <field name="accelerator">
+                                    <null/>
+                                </field>
+                            </codeTemplateItem>
+                            <codeTemplateItem>
+                                <field name="contentType">
+                                    <String>text/less</String>
+                                </field>
+                                <field name="unparsedInsertString">
+                                    <String>operation, 'ro.sync.ecss.extensions.commons.operations.ToggleCommentOperation'</String>
+                                </field>
+                                <field name="descriptionString">
+                                    <String>&lt;html>&lt;head>&lt;/head>&lt;body>Description:&lt;p style="margin-left:10px;">Wrap selection in an XML comment or unwrap existing XML comment&lt;/p>&lt;br/>Arguments: &lt;p style="margin-left:10px;">This operation has no arguments.&lt;/p> &lt;br/> Template: &lt;br/>&lt;p style="margin-left:10px;">operation, 'ro.sync.ecss.extensions.commons.operations.ToggleCommentOperation'&lt;/p>&lt;/body>&lt;/html></String>
+                                </field>
+                                <field name="renderString">
+                                    <String>op_ToggleCommentOperation</String>
+                                </field>
+                                <field name="enabled">
+                                    <Boolean>true</Boolean>
+                                </field>
+                                <field name="accelerator">
+                                    <null/>
+                                </field>
+                            </codeTemplateItem>
                         </codeTemplateItem-array>
                     </entry>
                     <entry>
@@ -7030,6 +7399,9 @@ Note: If it is not defined, then the element at the caret position will be used.
                         <String>document.types</String>
                         <documentTypeDescriptor-array>
                             <documentTypeDescriptor>
+                                <field name="webResources">
+                                    <null/>
+                                </field>
                                 <field name="extensionPatch">
                                     <null/>
                                 </field>
@@ -7513,6 +7885,14 @@ Note: If it is not defined, then the element at the caret position will be used.
                             </documentTypeEntry>
                             <documentTypeEntry>
                                 <field name="documentTypeID">
+                                    <String>6/samples/application_form.framework/Application Form (Sample)</String>
+                                </field>
+                                <field name="enable">
+                                    <Boolean>false</Boolean>
+                                </field>
+                            </documentTypeEntry>
+                            <documentTypeEntry>
+                                <field name="documentTypeID">
                                     <String>6/daisy/daisy.framework/Daisy</String>
                                 </field>
                                 <field name="enable">
@@ -7673,6 +8053,14 @@ Note: If it is not defined, then the element at the caret position will be used.
                             </documentTypeEntry>
                             <documentTypeEntry>
                                 <field name="documentTypeID">
+                                    <String>6/samples/personal.framework/Personal (Sample)</String>
+                                </field>
+                                <field name="enable">
+                                    <Boolean>false</Boolean>
+                                </field>
+                            </documentTypeEntry>
+                            <documentTypeEntry>
+                                <field name="documentTypeID">
                                     <String>6/publishing_template/publishing_template.framework/Publishing Template</String>
                                 </field>
                                 <field name="enable">
@@ -7706,6 +8094,14 @@ Note: If it is not defined, then the element at the caret position will be used.
                             <documentTypeEntry>
                                 <field name="documentTypeID">
                                     <String>6/stratml/stratml2.framework/StratML Part 2 (Perfomance Plans and Reports)</String>
+                                </field>
+                                <field name="enable">
+                                    <Boolean>false</Boolean>
+                                </field>
+                            </documentTypeEntry>
+                            <documentTypeEntry>
+                                <field name="documentTypeID">
+                                    <String>6/samples/travel-guide.framework/Travel Guide (Sample)</String>
                                 </field>
                                 <field name="enable">
                                     <Boolean>false</Boolean>
@@ -7769,6 +8165,14 @@ Note: If it is not defined, then the element at the caret position will be used.
                             </documentTypeEntry>
                             <documentTypeEntry>
                                 <field name="documentTypeID">
+                                    <String>6/focheck/AHFormatter.framework/XSL-FO 1.1 with Antenna House extensions</String>
+                                </field>
+                                <field name="enable">
+                                    <Boolean>false</Boolean>
+                                </field>
+                            </documentTypeEntry>
+                            <documentTypeEntry>
+                                <field name="documentTypeID">
                                     <String>6/xspec/xspec.framework/XSpec</String>
                                 </field>
                                 <field name="enable">
@@ -7777,39 +8181,7 @@ Note: If it is not defined, then the element at the caret position will be used.
                             </documentTypeEntry>
                             <documentTypeEntry>
                                 <field name="documentTypeID">
-                                    <String>6/samples/application_form.framework/Application Form (Sample)</String>
-                                </field>
-                                <field name="enable">
-                                    <Boolean>false</Boolean>
-                                </field>
-                            </documentTypeEntry>
-                            <documentTypeEntry>
-                                <field name="documentTypeID">
                                     <String>6/samples/form-controls.framework/Form Controls (Sample)</String>
-                                </field>
-                                <field name="enable">
-                                    <Boolean>false</Boolean>
-                                </field>
-                            </documentTypeEntry>
-                            <documentTypeEntry>
-                                <field name="documentTypeID">
-                                    <String>6/samples/personal.framework/Personal (Sample)</String>
-                                </field>
-                                <field name="enable">
-                                    <Boolean>false</Boolean>
-                                </field>
-                            </documentTypeEntry>
-                            <documentTypeEntry>
-                                <field name="documentTypeID">
-                                    <String>6/samples/travel-guide.framework/Travel Guide (Sample)</String>
-                                </field>
-                                <field name="enable">
-                                    <Boolean>false</Boolean>
-                                </field>
-                            </documentTypeEntry>
-                            <documentTypeEntry>
-                                <field name="documentTypeID">
-                                    <String>6/focheck/AHFormatter.framework/XSL-FO 1.1 with Antenna House extensions</String>
                                 </field>
                                 <field name="enable">
                                     <Boolean>false</Boolean>
@@ -9271,6 +9643,14 @@ Note: If it is not defined, then the element at the caret position will be used.
                     <entry>
                         <String>stop.debugging.when.editing</String>
                         <Integer>1</Integer>
+                    </entry>
+                    <entry>
+                        <String>storage.level.scenario.associations</String>
+                        <Boolean>false</Boolean>
+                    </entry>
+                    <entry>
+                        <String>storage.level.validation.scenario.associations</String>
+                        <Boolean>false</Boolean>
                     </entry>
                     <entry>
                         <String>user.custom.templates.directories</String>

@@ -38,7 +38,7 @@
 		</parameters>
 	</div>
 	<div xml:id="extractPartVoice">
-		<h2>extractPartVoice</h2>
+		<h2>extractParts</h2>
 		<p>Choose the staff and voice. "0": this staff will not be extracted. A whole number (e.g. 1) refers to the whole staff. A float number refers to the layer, which will be extracted (e.g. 1.2 refers to the first staff, second layer).</p>			
 		<parameters>
 			<parameter xml:id="staff-1">0</parameter>

@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<serialized version="20.1" xml:space="preserve">
+<serialized xml:space="preserve">
 	<serializableOrderedMap>
 		<entry>
 			<String>document.types</String>
 			<documentTypeDescriptor-array>
 				<documentTypeDescriptor>
+					<field name="webResources">
+						<null/>
+					</field>
 					<field name="extensionPatch">
 						<null/>
 					</field>
@@ -219,9 +222,6 @@
 								<field name="openInBrowser">
 									<Boolean>false</Boolean>
 								</field>
-								<field name="outputFile">
-									<File>${cfne}</File>
-								</field>
 								<field name="outputResource">
 									<String>${cfne}</String>
 								</field>
@@ -304,9 +304,6 @@
 								</field>
 								<field name="openInBrowser">
 									<Boolean>false</Boolean>
-								</field>
-								<field name="outputFile">
-									<null/>
 								</field>
 								<field name="outputResource">
 									<null/>
@@ -391,9 +388,6 @@
 								<field name="openInBrowser">
 									<Boolean>false</Boolean>
 								</field>
-								<field name="outputFile">
-									<File>${xpath_eval( doc('${currentFileURL}')/id('mergeStaves')/@file )}</File>
-								</field>
 								<field name="outputResource">
 									<String>${xpath_eval( doc('${currentFileURL}')//id('mergeStaves')//@file )}</String>
 								</field>
@@ -443,6 +437,9 @@
 											<field name="hasXPathValue">
 												<Boolean>false</Boolean>
 											</field>
+											<field name="isStatic">
+												<Boolean>false</Boolean>
+											</field>
 										</transformationParameter>
 										<transformationParameter>
 											<field name="paramDescription">
@@ -462,6 +459,9 @@
 												<String>${home}</String>
 											</field>
 											<field name="hasXPathValue">
+												<Boolean>false</Boolean>
+											</field>
+											<field name="isStatic">
 												<Boolean>false</Boolean>
 											</field>
 										</transformationParameter>
@@ -520,9 +520,6 @@
 								<field name="openInBrowser">
 									<Boolean>false</Boolean>
 								</field>
-								<field name="outputFile">
-									<File>${cfne}</File>
-								</field>
 								<field name="outputResource">
 									<String>${cfne}</String>
 								</field>
@@ -572,6 +569,9 @@
 											<field name="hasXPathValue">
 												<Boolean>false</Boolean>
 											</field>
+											<field name="isStatic">
+												<Boolean>false</Boolean>
+											</field>
 										</transformationParameter>
 										<transformationParameter>
 											<field name="paramDescription">
@@ -591,6 +591,9 @@
 												<String>${home}</String>
 											</field>
 											<field name="hasXPathValue">
+												<Boolean>false</Boolean>
+											</field>
+											<field name="isStatic">
 												<Boolean>false</Boolean>
 											</field>
 										</transformationParameter>
@@ -649,9 +652,6 @@
 								<field name="openInBrowser">
 									<Boolean>false</Boolean>
 								</field>
-								<field name="outputFile">
-									<File>${cfne}</File>
-								</field>
 								<field name="outputResource">
 									<String>${cfne}</String>
 								</field>
@@ -699,6 +699,9 @@
 												<String>${home}</String>
 											</field>
 											<field name="hasXPathValue">
+												<Boolean>false</Boolean>
+											</field>
+											<field name="isStatic">
 												<Boolean>false</Boolean>
 											</field>
 										</transformationParameter>
@@ -756,9 +759,6 @@
 								</field>
 								<field name="openInBrowser">
 									<Boolean>false</Boolean>
-								</field>
-								<field name="outputFile">
-									<File>${cfne}</File>
 								</field>
 								<field name="outputResource">
 									<String>${cfne}</String>
@@ -843,9 +843,6 @@
 								<field name="openInBrowser">
 									<Boolean>false</Boolean>
 								</field>
-								<field name="outputFile">
-									<File>${cfne}</File>
-								</field>
 								<field name="outputResource">
 									<String>${cfne}</String>
 								</field>
@@ -928,9 +925,6 @@
 								</field>
 								<field name="openInBrowser">
 									<Boolean>false</Boolean>
-								</field>
-								<field name="outputFile">
-									<File>${cfne}</File>
 								</field>
 								<field name="outputResource">
 									<String>${cfne}</String>
@@ -1015,9 +1009,6 @@
 								<field name="openInBrowser">
 									<Boolean>false</Boolean>
 								</field>
-								<field name="outputFile">
-									<File>${cfne}</File>
-								</field>
 								<field name="outputResource">
 									<String>${cfne}</String>
 								</field>
@@ -1100,9 +1091,6 @@
 								</field>
 								<field name="openInBrowser">
 									<Boolean>false</Boolean>
-								</field>
-								<field name="outputFile">
-									<File>${cfne}</File>
 								</field>
 								<field name="outputResource">
 									<String>${cfne}</String>
@@ -1187,9 +1175,6 @@
 								<field name="openInBrowser">
 									<Boolean>false</Boolean>
 								</field>
-								<field name="outputFile">
-									<File>${cfne}</File>
-								</field>
 								<field name="outputResource">
 									<String>${cfne}</String>
 								</field>
@@ -1237,6 +1222,9 @@
 												<String>${cfn}</String>
 											</field>
 											<field name="hasXPathValue">
+												<Boolean>false</Boolean>
+											</field>
+											<field name="isStatic">
 												<Boolean>false</Boolean>
 											</field>
 										</transformationParameter>
@@ -1295,9 +1283,6 @@
 								<field name="openInBrowser">
 									<Boolean>false</Boolean>
 								</field>
-								<field name="outputFile">
-									<null/>
-								</field>
 								<field name="outputResource">
 									<null/>
 								</field>
@@ -1345,6 +1330,9 @@
 												<String>${currentFileURL}</String>
 											</field>
 											<field name="hasXPathValue">
+												<Boolean>false</Boolean>
+											</field>
+											<field name="isStatic">
 												<Boolean>false</Boolean>
 											</field>
 										</transformationParameter>
@@ -1403,9 +1391,6 @@
 								<field name="openInBrowser">
 									<Boolean>false</Boolean>
 								</field>
-								<field name="outputFile">
-									<File>${cfne}</File>
-								</field>
 								<field name="outputResource">
 									<String>${cfne}</String>
 								</field>
@@ -1455,6 +1440,9 @@
 											<field name="hasXPathValue">
 												<Boolean>false</Boolean>
 											</field>
+											<field name="isStatic">
+												<Boolean>false</Boolean>
+											</field>
 										</transformationParameter>
 									</list>
 								</field>
@@ -1473,7 +1461,7 @@
 									<null/>
 								</field>
 								<field name="name">
-									<String>extractPartVoice</String>
+									<String>extractParts</String>
 								</field>
 								<field name="baseURL">
 									<String></String>
@@ -1491,7 +1479,7 @@
 									<String></String>
 								</field>
 								<field name="inputXSLURL">
-									<String>${framework}/../../transformation/extractPartVoice/extractPartVoice.xsl</String>
+									<String>${framework}/../../transformation/extractParts/extractParts.xsl</String>
 								</field>
 								<field name="inputXMLURL">
 									<String>${currentFileURL}</String>
@@ -1510,9 +1498,6 @@
 								</field>
 								<field name="openInBrowser">
 									<Boolean>false</Boolean>
-								</field>
-								<field name="outputFile">
-									<File>${cfn}_X.mei</File>
 								</field>
 								<field name="outputResource">
 									<String>${cfn}_X.mei</String>
@@ -1597,9 +1582,6 @@
 								<field name="openInBrowser">
 									<Boolean>false</Boolean>
 								</field>
-								<field name="outputFile">
-									<File>${cfne}</File>
-								</field>
 								<field name="outputResource">
 									<String>${cfne}</String>
 								</field>
@@ -1647,6 +1629,9 @@
 												<String>${home}</String>
 											</field>
 											<field name="hasXPathValue">
+												<Boolean>false</Boolean>
+											</field>
+											<field name="isStatic">
 												<Boolean>false</Boolean>
 											</field>
 										</transformationParameter>
@@ -1705,9 +1690,6 @@
 								<field name="openInBrowser">
 									<Boolean>false</Boolean>
 								</field>
-								<field name="outputFile">
-									<File>${cfne}</File>
-								</field>
 								<field name="outputResource">
 									<String>${cfne}</String>
 								</field>
@@ -1758,6 +1740,9 @@
 											<field name="hasXPathValue">
 												<Boolean>false</Boolean>
 											</field>
+											<field name="isStatic">
+												<Boolean>false</Boolean>
+											</field>
 										</transformationParameter>
 										<transformationParameter>
 											<field name="paramDescription">
@@ -1779,6 +1764,9 @@
 											<field name="hasXPathValue">
 												<Boolean>false</Boolean>
 											</field>
+											<field name="isStatic">
+												<Boolean>false</Boolean>
+											</field>
 										</transformationParameter>
 										<transformationParameter>
 											<field name="paramDescription">
@@ -1798,6 +1786,9 @@
 												<String>${home}</String>
 											</field>
 											<field name="hasXPathValue">
+												<Boolean>false</Boolean>
+											</field>
+											<field name="isStatic">
 												<Boolean>false</Boolean>
 											</field>
 										</transformationParameter>
@@ -1856,9 +1847,6 @@
 								<field name="openInBrowser">
 									<Boolean>true</Boolean>
 								</field>
-								<field name="outputFile">
-									<File>${cfne}</File>
-								</field>
 								<field name="outputResource">
 									<String>${cfne}</String>
 								</field>
@@ -1906,6 +1894,9 @@
 												<String>${home}</String>
 											</field>
 											<field name="hasXPathValue">
+												<Boolean>false</Boolean>
+											</field>
+											<field name="isStatic">
 												<Boolean>false</Boolean>
 											</field>
 										</transformationParameter>
@@ -1964,9 +1955,6 @@
 								<field name="openInBrowser">
 									<Boolean>false</Boolean>
 								</field>
-								<field name="outputFile">
-									<File>${cfne}</File>
-								</field>
 								<field name="outputResource">
 									<String>${cfne}</String>
 								</field>
@@ -2016,6 +2004,9 @@
 											<field name="hasXPathValue">
 												<Boolean>false</Boolean>
 											</field>
+											<field name="isStatic">
+												<Boolean>false</Boolean>
+											</field>
 										</transformationParameter>
 										<transformationParameter>
 											<field name="paramDescription">
@@ -2035,6 +2026,9 @@
 												<String>${ask('measure range', generic, '')}</String>
 											</field>
 											<field name="hasXPathValue">
+												<Boolean>false</Boolean>
+											</field>
+											<field name="isStatic">
 												<Boolean>false</Boolean>
 											</field>
 										</transformationParameter>
@@ -2092,9 +2086,6 @@
 								</field>
 								<field name="openInBrowser">
 									<Boolean>false</Boolean>
-								</field>
-								<field name="outputFile">
-									<File>${cfne}</File>
 								</field>
 								<field name="outputResource">
 									<String>${cfne}</String>
@@ -2183,9 +2174,6 @@
 								<field name="openInBrowser">
 									<Boolean>true</Boolean>
 								</field>
-								<field name="outputFile">
-									<File>file:/K:/PROJEKTE/DMEDME/Praktisches_(Howto)/dime-tools_documentation/schematron/schematron.html</File>
-								</field>
 								<field name="outputResource">
 									<String>file:///K:/PROJEKTE/DMEDME/Praktisches_(Howto)/dime-tools_documentation/schematron/schematron.html</String>
 								</field>
@@ -2269,9 +2257,6 @@
 								<field name="openInBrowser">
 									<Boolean>false</Boolean>
 								</field>
-								<field name="outputFile">
-									<null/>
-								</field>
 								<field name="outputResource">
 									<null/>
 								</field>
@@ -2317,6 +2302,9 @@
 									<Boolean>false</Boolean>
 								</field>
 								<field name="useAntennaHouse">
+									<Boolean>false</Boolean>
+								</field>
+								<field name="useDITAScript">
 									<Boolean>false</Boolean>
 								</field>
 								<field name="baseDir">
@@ -2374,6 +2362,9 @@
 											<Boolean>false</Boolean>
 										</field>
 									</publishingTemplate>
+								</field>
+								<field name="oxygenFeedbackPO">
+									<null/>
 								</field>
 								<field name="additionalAntArgs">
 									<String></String>
@@ -2545,9 +2536,6 @@
 								<field name="openInBrowser">
 									<Boolean>true</Boolean>
 								</field>
-								<field name="outputFile">
-									<null/>
-								</field>
 								<field name="outputResource">
 									<null/>
 								</field>
@@ -2593,6 +2581,9 @@
 									<Boolean>false</Boolean>
 								</field>
 								<field name="useAntennaHouse">
+									<Boolean>false</Boolean>
+								</field>
+								<field name="useDITAScript">
 									<Boolean>false</Boolean>
 								</field>
 								<field name="baseDir">
@@ -2650,6 +2641,9 @@
 											<Boolean>false</Boolean>
 										</field>
 									</publishingTemplate>
+								</field>
+								<field name="oxygenFeedbackPO">
+									<null/>
 								</field>
 								<field name="additionalAntArgs">
 									<String></String>
@@ -2821,9 +2815,6 @@
 								<field name="openInBrowser">
 									<Boolean>true</Boolean>
 								</field>
-								<field name="outputFile">
-									<null/>
-								</field>
 								<field name="outputResource">
 									<null/>
 								</field>
@@ -2907,9 +2898,6 @@
 								<field name="openInBrowser">
 									<Boolean>false</Boolean>
 								</field>
-								<field name="outputFile">
-									<File>${cfd}/lilypond/${cfn}.ly</File>
-								</field>
 								<field name="outputResource">
 									<String>${cfd}\lilypond\${cfn}.ly</String>
 								</field>
@@ -2992,9 +2980,6 @@
 								</field>
 								<field name="openInBrowser">
 									<Boolean>false</Boolean>
-								</field>
-								<field name="outputFile">
-									<File>${cfd}/lilypond/${cfn}.ly</File>
 								</field>
 								<field name="outputResource">
 									<String>${cfd}\lilypond\${cfn}.ly</String>
@@ -3086,6 +3071,9 @@
 													</field>
 												</validationUnitSchema>
 											</field>
+											<field name="validationAdvancedSettings">
+												<null/>
+											</field>
 										</validationUnit>
 										<validationUnit>
 											<field name="validationType">
@@ -3130,6 +3118,9 @@
 													</field>
 												</validationUnitSchema>
 											</field>
+											<field name="validationAdvancedSettings">
+												<null/>
+											</field>
 										</validationUnit>
 									</list>
 								</field>
@@ -3171,6 +3162,9 @@
 												<null/>
 											</field>
 											<field name="validationSchema">
+												<null/>
+											</field>
+											<field name="validationAdvancedSettings">
 												<null/>
 											</field>
 										</validationUnit>
@@ -3216,6 +3210,9 @@
 														<String>${framework}/../../validation/schematron/src/rules/main.sch</String>
 													</field>
 												</validationUnitSchema>
+											</field>
+											<field name="validationAdvancedSettings">
+												<null/>
 											</field>
 										</validationUnit>
 									</list>
@@ -3273,6 +3270,9 @@
 													</field>
 												</validationUnitSchema>
 											</field>
+											<field name="validationAdvancedSettings">
+												<null/>
+											</field>
 										</validationUnit>
 									</list>
 								</field>
@@ -3314,6 +3314,9 @@
 												<null/>
 											</field>
 											<field name="validationSchema">
+												<null/>
+											</field>
+											<field name="validationAdvancedSettings">
 												<null/>
 											</field>
 										</validationUnit>
@@ -3360,6 +3363,9 @@
 													</field>
 												</validationUnitSchema>
 											</field>
+											<field name="validationAdvancedSettings">
+												<null/>
+											</field>
 										</validationUnit>
 									</list>
 								</field>
@@ -3401,6 +3407,9 @@
 												<null/>
 											</field>
 											<field name="validationSchema">
+												<null/>
+											</field>
+											<field name="validationAdvancedSettings">
 												<null/>
 											</field>
 										</validationUnit>
@@ -3446,6 +3455,9 @@
 														<String>${framework}/../../validation/schematron/src/rules/main.sch</String>
 													</field>
 												</validationUnitSchema>
+											</field>
+											<field name="validationAdvancedSettings">
+												<null/>
 											</field>
 										</validationUnit>
 									</list>
