@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<x:description stylesheet="../chordPointers.xsl" xmlns:x="http://www.jenitennison.com/xslt/xspec">
+  <x:scenario label="Scenario for testing template with match 'slur | dynam[@startid]">
+    <x:context href="input/test_cases.mei" select="/"/>
+    <x:expect href="output/output.mei" label="no changes, start- endids on notes" select="/"/>
+  </x:scenario>
+
+  <!--  <x:scenario  label="Scenario for testing function replacePointer">
+    <x:context href="input/test_cases.mei" select="//*[@xml:id='slur_12090']"/>
+    
+    <x:expect label="no changes, start- endids on notes" select="//*[@xml:id='slur_12090']"/>
+  </x:scenario>-->
+
+  <!--  <x:scenario  label="Scenario for testing function replacePointer">
+    <x:call template="replacePointer">
+      <x:param name="pointer" select="'no_value'"/>
+    </x:call>
+    <x:expect label="Not yet implemented" select="'Not yet implemented'"/>
+  </x:scenario>
+
+  <x:scenario label="Scenario for testing function testChord">
+    <x:call template="testChord">
+      <x:param name="IDref" select="'no_value'"/>
+    </x:call>
+    <x:expect label="Not yet implemented" select="'Not yet implemented'"/>
+  </x:scenario>-->
+</x:description>

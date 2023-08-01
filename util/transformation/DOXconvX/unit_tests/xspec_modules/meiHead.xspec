@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<x:description stylesheet="../../DOXconvX.xsl" xmlns:mei="http://www.music-encoding.org/ns/mei" xmlns:x="http://www.jenitennison.com/xslt/xspec">
+
+
+  <x:scenario label="Scenario for testing the meiHead mode">
+    <!--    <x:variable href="../input/309_3836/dmeref_309-001_3837.xml" name="K309_001" select="/"/>-->
+    <x:context href="../input/309_3836/dmeref_309-001_3837.xml" mode="meiHead" select="//mei:meiHead/*"/>
+    <x:expect href="../output/309_3836/dmeref_309-001_3837.mei" label="test output" select="//mei:meiHead"/>
+  </x:scenario>
+
+</x:description>

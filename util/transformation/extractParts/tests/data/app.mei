@@ -1,0 +1,843 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mei meiversion="3.0.0" xmlns="http://www.music-encoding.org/ns/mei">
+	<meiHead meiversion="3.0.0">
+		<fileDesc>
+			<titleStmt xml:id="fd_titstmt">
+				<title authURI="https://dme.mozarteum.at" authority="KVonline" label="NMA digital" type="unit" xml:id="fd_tit_1" xml:lang="DE">Sinfonie in g, 3. Satz, KV 550/03</title>
+				<title authority="ISMIDW" codedval="6318" label="version1" type="subordinate" xml:id="fd_tit_1.1_DE" xml:lang="DE">1. Fassung </title>
+				<title authority="ISMIDW" codedval="6309" label="version2" type="subordinate" xml:id="fd_tit_1.2_DE" xml:lang="DE">2. Fassung </title>
+				<title authURI="https://dme.mozarteum.at" authority="KVonline" label="NMA digital" type="unit" xml:id="fd_tit_2" xml:lang="EN">Symphony in g, 3rd mvt., K. 550/03</title>
+				<title authority="ISMIDW" codedval="6318" label="version1" type="subordinate" xml:id="fd_tit_2.1_EN" xml:lang="EN">Version 1 </title>
+				<title authority="ISMIDW" codedval="6309" label="version2" type="subordinate" xml:id="fd_tit_2.2_EN" xml:lang="EN">Version 2 </title>
+				<title type="file" xml:id="fd_tit_3">
+					<ref target="dme.mozarteum.at/movi/file/550/3" targettype="file_location">dmeref_550-003_6314.xml</ref>
+				</title>
+				<title label="NMA digital" type="subordinate" xml:id="fd_tit_4" xml:lang="EN">A digital edition</title>
+				<author>
+					<persName authURI="https://d-nb.info/gnd/118584596" authority="GND" codedval="118584596" label="MI-PID_39409" role="composer" xml:id="WAM">Wolfgang Amadé Mozart</persName>
+				</author>
+				<respStmt>
+					<resp>NMA reference text prepared by:</resp>
+					<corpName xml:id="NMA-editors">
+						<persName authURI="https://d-nb.info/gnd/119177978" authority="GND" codedval="119177978" label="MI-PID_58333" role="editor" xml:id="HCRL">H. C. Robbins Landon</persName>
+					</corpName>
+				</respStmt>
+				<funder n="1" xml:id="ISM">
+					<corpName authURI="https://d-nb.info/gnd/37019-8" authority="GND" codedval="37019-8">Internationale Stiftung Mozarteum Salzburg</corpName>
+					<address>
+						<addrLine>
+							<settlement authURI="https://www.geonames.org/2766824" authority="GeoNames">Salzburg</settlement>
+						</addrLine>
+						<addrLine>
+							<country>Austria</country>
+						</addrLine>
+					</address>
+				</funder>
+				<funder n="2" xml:id="PHI">
+					<corpName authURI="https://d-nb.info/dnbn/330242865" authority="GND" codedval="330242865">The Packard Humanities Institute</corpName>
+					<address>
+						<addrLine>
+							<settlement authURI="https://www.geonames.org/5368335" authority="GeoNames">Los Altos</settlement>
+						</addrLine>
+						<addrLine>
+							<country>California, USA</country>
+						</addrLine>
+					</address>
+				</funder>
+			</titleStmt>
+			<editionStmt>
+				<edition>
+					<identifier type="version">1.0.0</identifier>
+					<date isodate="2019-11-22" type="release"/>
+				</edition>
+				<respStmt n="1">
+					<resp>Digital remastering by:</resp>
+					<persName analog="#IC" xml:id="ed.p1">Iacopo Cividini</persName>
+				</respStmt>
+				<respStmt n="2">
+					<resp>Proofreading by:</resp>
+					<persName analog="#OS" xml:id="pr.p1">Oleksii Sapov</persName>
+					<persName analog="#ND" xml:id="pr.p2">Norbert Dubowy</persName>
+				</respStmt>
+			</editionStmt>
+			<pubStmt>
+				<publisher>
+					<corpName analog="#ISM"/>
+				</publisher>
+				<respStmt>
+					<corpName label="ISM Research Department" role="sponsor" xml:id="ISM-Research">
+						<persName authURI="https://d-nb.info/gnd/10403128X" authority="GND" codedval="10403128X" label="MI-PID_64597" role="pdr" xml:id="UL">Ulrich Leisinger</persName>
+					</corpName>
+				</respStmt>
+				<availability>
+					<useRestrict label="license">CC BY-NC-SA 4.0</useRestrict>
+				</availability>
+			</pubStmt>
+			<seriesStmt>
+				<title>Digital Interactive Mozart Edition (DIME)</title>
+				<respStmt>
+					<corpName label="Digital Mozart Edition Editorial Office" role="project execution" xml:id="DME-editors">
+						<persName authURI="https://d-nb.info/gnd/1041960638" authority="GND" codedval="1041960638" label="MI-PID_65157" role="rth edt" xml:id="ND">Norbert Dubowy</persName>
+						<persName authURI="https://d-nb.info/gnd/1161430091" authority="GND" codedval="1161430091" label="MI-PID_84342" role="edt mrk" xml:id="MB">Mirijam Beier</persName>
+						<persName authURI="https://d-nb.info/gnd/1083841270" authority="GND" codedval="1083841270" label="MI-PID_84344" role="edt mrk" xml:id="IC">Iacopo Cividini</persName>
+						<persName authURI="https://d-nb.info/gnd/135494575" authority="GND" codedval="135494575" label="MI-PID_84343" role="edt mrk" xml:id="TR">Till Reininghaus</persName>
+						<persName authURI="https://d-nb.info/gnd/1161423672" authority="GND" codedval="1161423672" label="MI-PID_84341" role="edt mrk" xml:id="OS">Oleksii Sapov</persName>
+						<persName authURI="https://d-nb.info/gnd/1061093409" authority="GND" codedval="1061093409" label="MI-PID_27802" role="led dtm" xml:id="FK">Franz Kelnreiter</persName>
+						<persName label="MI-PID_83688" role="dtm" xml:id="FG">Felix Gründer</persName>
+					</corpName>
+				</respStmt>
+			</seriesStmt>
+			<sourceDesc>
+				<!--<source label="Version 1" xml:id="source_0.1">
+					<editionStmt>
+						<edition xml:id="digital_image1"/>
+					</editionStmt>
+				</source>
+				<source label="Version 2" xml:id="source_0.2">
+					<editionStmt>
+						<edition xml:id="digital_image2"/>
+					</editionStmt>
+				</source>-->
+				<source label="NMA1-1" xml:id="source_1">
+					<identifier authURI="https://www.baerenreiter.com" authority="Bärenreiter" type="catalog_number">BA 4509-01</identifier>
+					<titleStmt>
+						<title type="volume">Wolfgang Amadeus Mozart, Neue Ausgabe sämtlicher Werke, Sinfonien, Band 9</title>
+						<title type="work">Sinfonie in g, 1. Fassung</title>
+						<title type="unit">Menuetto &lt;mit Trio&gt;</title>
+						<composer analog="#WAM">Wolfgang Amadeus Mozart</composer>
+						<editor>
+							<persName analog="#HCRL">H. C. Robbins Landon</persName>
+						</editor>
+					</titleStmt>
+					<editionStmt>
+						<edition xml:lang="DE">[erste Auflage]</edition>
+						<edition xml:lang="EN">[first edition]</edition>
+						<edition xml:id="digital_image1">
+							<ref label="version 1" target="https://dme.mozarteum.at/DME/nma/nma_cont.php?vsep=111&amp;p1=99&amp;l=1" targettype="website">
+								<repository>NMA Online</repository>
+							</ref>
+						</edition>
+					</editionStmt>
+					<pubStmt>
+						<publisher>
+							<corpName authURI="https://d-nb.info/gnd/2005573-0" authority="GND" codedval="2005573-0" xml:id="BV">Bärenreiter</corpName>
+						</publisher>
+						<pubPlace>Kassel</pubPlace>
+						<date>1957</date>
+					</pubStmt>
+					<seriesStmt>
+						<title label="NMA">Wolfgang Amadeus Mozart, Neue Ausgabe sämtlicher Werke</title>
+						<biblScope label="Orchesterwerke" unit="Serie" xml:lang="DE">
+							<num>IV</num>
+						</biblScope>
+						<biblScope label="Sinfonien" unit="Werkgruppe" xml:lang="DE">
+							<num>11</num>
+						</biblScope>
+						<biblScope unit="Band" xml:lang="DE">
+							<num>9</num>
+						</biblScope>
+						<biblScope label="Orchesterwerke" unit="Series" xml:lang="EN">
+							<num>IV</num>
+						</biblScope>
+						<biblScope label="Sinfonien" unit="Group" xml:lang="EN">
+							<num>11</num>
+						</biblScope>
+						<biblScope unit="Volume" xml:lang="EN">
+							<num>9</num>
+						</biblScope>
+						<biblScope label="version 1" unit="page">63-124</biblScope>
+					</seriesStmt>
+					<contents>
+						<contentItem>Menuetto &lt;mit Trio&gt;<bibl>
+								<biblScope label="version 1" unit="page">99-103</biblScope>
+							</bibl>
+						</contentItem>
+					</contents>
+					<notesStmt>
+						<annot label="version 1" n="1">Mozart, Wolfgang Amadeus. Neue Ausgabe sämtlicher Werke, Serie IV, Orchesterwerke, Werkgruppe 11, Sinfonien Band 9. Ed. H. C. Robbins Landon. Kassel: Bärenreiter, 1957, p. 63-124.</annot>
+						<annot label="version 1" n="2">Menuetto &lt;mit Trio&gt;, p. 99-103.</annot>
+					</notesStmt>
+				</source>
+				<source label="NMA1-2" xml:id="source_2">
+					<identifier authURI="https://www.baerenreiter.com" authority="Bärenreiter" type="catalog_number">BA 4509-01</identifier>
+					<titleStmt>
+						<title type="volume">Wolfgang Amadeus Mozart, Neue Ausgabe sämtlicher Werke, Sinfonien, Band 9</title>
+						<title type="work">Sinfonie in g, 2. Fassung</title>
+						<title type="unit">Menuetto &lt;mit Trio&gt;</title>
+						<composer analog="#WAM">Wolfgang Amadeus Mozart</composer>
+						<editor>
+							<persName analog="#HCRL">H. C. Robbins Landon</persName>
+						</editor>
+					</titleStmt>
+					<editionStmt>
+						<edition xml:lang="DE">[erste Auflage]</edition>
+						<edition xml:lang="EN">[first edition]</edition>
+						<edition xml:id="digital_image2">
+							<ref label="version 2" target="https://dme.mozarteum.at/DME/nma/nma_cont.php?vsep=111&amp;p1=161&amp;l=1" targettype="website">
+								<repository>NMA Online</repository>
+							</ref>
+						</edition>
+					</editionStmt>
+					<pubStmt>
+						<publisher>
+							<corpName analog="#BV">Bärenreiter</corpName>
+						</publisher>
+						<pubPlace>Kassel</pubPlace>
+						<date>1957</date>
+					</pubStmt>
+					<seriesStmt>
+						<title label="NMA">Wolfgang Amadeus Mozart, Neue Ausgabe sämtlicher Werke</title>
+						<biblScope label="Orchesterwerke" unit="Serie" xml:lang="DE">
+							<num>IV</num>
+						</biblScope>
+						<biblScope label="Sinfonien" unit="Werkgruppe" xml:lang="DE">
+							<num>11</num>
+						</biblScope>
+						<biblScope unit="Band" xml:lang="DE">
+							<num>9</num>
+						</biblScope>
+						<biblScope label="Orchesterwerke" unit="Series" xml:lang="EN">
+							<num>IV</num>
+						</biblScope>
+						<biblScope label="Sinfonien" unit="Group" xml:lang="EN">
+							<num>11</num>
+						</biblScope>
+						<biblScope unit="Volume" xml:lang="EN">
+							<num>9</num>
+						</biblScope>
+						<biblScope label="version 2" unit="page">125-186</biblScope>
+					</seriesStmt>
+					<contents>
+						<contentItem>Menuetto &lt;mit Trio&gt;<bibl>
+								<biblScope label="version 2" unit="page">161-165</biblScope>
+							</bibl>
+						</contentItem>
+					</contents>
+					<notesStmt>
+						<annot label="version 2" n="1">Mozart, Wolfgang Amadeus. Neue Ausgabe sämtlicher Werke, Serie IV, Orchesterwerke, Werkgruppe 11, Sinfonien Band 9. Ed. H. C. Robbins Landon. Kassel: Bärenreiter, 1957, p. 125-186.</annot>
+						<annot label="version 2" n="2">Menuetto &lt;mit Trio&gt;, p. 161-165.</annot>
+					</notesStmt>
+				</source>
+				<source label="NMA2-1" xml:id="source_3">
+					<identifier authURI="https://www.baerenreiter.com" authority="Bärenreiter" type="catalog_number">BA 4509-01</identifier>
+					<titleStmt>
+						<title type="volume">Wolfgang Amadeus Mozart, Neue Ausgabe sämtlicher Werke, Sinfonien, Band 9</title>
+						<title type="work">Sinfonie in g, 1. Fassung</title>
+						<title type="unit">Menuetto &lt;mit Trio&gt;</title>
+						<composer analog="#WAM">Wolfgang Amadeus Mozart</composer>
+						<editor>
+							<persName analog="#HCRL">H. C. Robbins Landon</persName>
+						</editor>
+					</titleStmt>
+					<editionStmt>
+						<edition xml:lang="DE">Zweite, durchgesehene Auflage 1997</edition>
+						<edition xml:lang="EN">[Second, revised edition of 1997]</edition>
+					</editionStmt>
+					<pubStmt>
+						<publisher>
+							<corpName analog="#BV">Bärenreiter</corpName>
+						</publisher>
+						<pubPlace>Kassel</pubPlace>
+						<date>1997</date>
+					</pubStmt>
+					<seriesStmt>
+						<title label="NMA">Wolfgang Amadeus Mozart, Neue Ausgabe sämtlicher Werke</title>
+						<biblScope label="Orchesterwerke" unit="Serie" xml:lang="DE">
+							<num>IV</num>
+						</biblScope>
+						<biblScope label="Sinfonien" unit="Werkgruppe" xml:lang="DE">
+							<num>11</num>
+						</biblScope>
+						<biblScope unit="Band" xml:lang="DE">
+							<num>9</num>
+						</biblScope>
+						<biblScope label="Orchesterwerke" unit="Series" xml:lang="EN">
+							<num>IV</num>
+						</biblScope>
+						<biblScope label="Sinfonien" unit="Group" xml:lang="EN">
+							<num>11</num>
+						</biblScope>
+						<biblScope unit="Volume" xml:lang="EN">
+							<num>9</num>
+						</biblScope>
+						<biblScope label="version 1" unit="page">63-124</biblScope>
+					</seriesStmt>
+					<contents>
+						<contentItem>Menuetto &lt;mit Trio&gt;<bibl>
+								<biblScope label="version 1" unit="page">99-103</biblScope>
+							</bibl>
+						</contentItem>
+					</contents>
+					<notesStmt>
+						<annot label="version 1" n="1">Mozart, Wolfgang Amadeus. Neue Ausgabe sämtlicher Werke, Serie IV, Orchesterwerke, Werkgruppe 11, Sinfonien Band 9. Ed. H. C. Robbins Landon. Zweite, durchgesehene Auflage. Kassel: Bärenreiter, 1997, p. 63-124.</annot>
+						<annot label="version 1" n="2">Menuetto &lt;mit Trio&gt;, p. 99-103.</annot>
+					</notesStmt>
+				</source>
+				<source label="NMA2-2" xml:id="source_4">
+					<identifier authURI="https://www.baerenreiter.com" authority="Bärenreiter" type="catalog_number">BA 4509-01</identifier>
+					<titleStmt>
+						<title type="volume">Wolfgang Amadeus Mozart, Neue Ausgabe sämtlicher Werke, Sinfonien, Band 9</title>
+						<title type="work">Sinfonie in g, 2. Fassung</title>
+						<title type="unit">Menuetto &lt;mit Trio&gt;</title>
+						<composer analog="#WAM">Wolfgang Amadeus Mozart</composer>
+						<editor>
+							<persName analog="#HCRL">H. C. Robbins Landon</persName>
+						</editor>
+					</titleStmt>
+					<editionStmt>
+						<edition xml:lang="DE">Zweite, durchgesehene Auflage 1997</edition>
+						<edition xml:lang="EN">[Second, revised edition of 1997]</edition>
+					</editionStmt>
+					<pubStmt>
+						<publisher>
+							<corpName analog="#BV">Bärenreiter</corpName>
+						</publisher>
+						<pubPlace>Kassel</pubPlace>
+						<date>1997</date>
+					</pubStmt>
+					<seriesStmt>
+						<title label="NMA">Wolfgang Amadeus Mozart, Neue Ausgabe sämtlicher Werke</title>
+						<biblScope label="Orchesterwerke" unit="Serie" xml:lang="DE">
+							<num>IV</num>
+						</biblScope>
+						<biblScope label="Sinfonien" unit="Werkgruppe" xml:lang="DE">
+							<num>11</num>
+						</biblScope>
+						<biblScope unit="Band" xml:lang="DE">
+							<num>9</num>
+						</biblScope>
+						<biblScope label="Orchesterwerke" unit="Series" xml:lang="EN">
+							<num>IV</num>
+						</biblScope>
+						<biblScope label="Sinfonien" unit="Group" xml:lang="EN">
+							<num>11</num>
+						</biblScope>
+						<biblScope unit="Volume" xml:lang="EN">
+							<num>9</num>
+						</biblScope>
+						<biblScope label="version 2" unit="page">125-186</biblScope>
+					</seriesStmt>
+					<contents>
+						<contentItem>Menuetto &lt;mit Trio&gt;<bibl>
+								<biblScope label="version 2" unit="page">161-165</biblScope>
+							</bibl>
+						</contentItem>
+					</contents>
+					<notesStmt>
+						<annot label="version 2" n="1">Mozart, Wolfgang Amadeus. Neue Ausgabe sämtlicher Werke, Serie IV, Orchesterwerke, Werkgruppe 11, Sinfonien Band 9. Ed. H. C. Robbins Landon. Zweite, durchgesehene Auflage. Kassel: Bärenreiter, 1997, p. 125-186.</annot>
+						<annot label="version 2" n="2">Menuetto &lt;mit Trio&gt;, p. 161-165.</annot>
+					</notesStmt>
+				</source>
+				<source label="NMA-KB" xml:id="source_5">
+					<identifier authURI="https://www.baerenreiter.com" authority="Bärenreiter" type="catalog_number">BA 4509-40</identifier>
+					<titleStmt>
+						<title>Wolfgang Amadeus Mozart. Kritische Berichte. Serie IV: Orchesterwerke, Werkgruppe 11: Sinfonien, Band 9.</title>
+						<author analog="#HCRL">H. C. Robbins Landon</author>
+					</titleStmt>
+					<editionStmt>
+						<edition xml:lang="DE">[auf Seite i/70-71 zusammengestellte Berichtigungen zum Notenband]</edition>
+						<edition xml:lang="EN">[corrigenda to the music edition reported on p. i/70-71]</edition>
+					</editionStmt>
+					<pubStmt>
+						<publisher analog="#BV">Bärenreiter</publisher>
+						<pubPlace>Kassel</pubPlace>
+						<date>1963</date>
+					</pubStmt>
+					<seriesStmt>
+						<title label="NMA">Wolfgang Amadeus Mozart, Neue Ausgabe sämtlicher Werke</title>
+						<biblScope label="Orchesterwerke" unit="Serie" xml:lang="DE">
+							<num>IV</num>
+						</biblScope>
+						<biblScope label="Sinfonien" unit="Werkgruppe" xml:lang="DE">
+							<num>11</num>
+						</biblScope>
+						<biblScope unit="Band" xml:lang="DE">
+							<num>9</num>
+						</biblScope>
+						<biblScope label="Orchesterwerke" unit="Series" xml:lang="EN">
+							<num>IV</num>
+						</biblScope>
+						<biblScope label="Sinfonien" unit="Group" xml:lang="EN">
+							<num>11</num>
+						</biblScope>
+						<biblScope unit="Volume" xml:lang="EN">
+							<num>9</num>
+						</biblScope>
+					</seriesStmt>
+					<notesStmt>
+						<annot n="1">Landon, H. C. Robbins. Wolfgang Amadeus Mozart, Neue Ausgabe sämtlicher Werke, Kritische Berichte, Serie IV: Orchesterwerke, Werkgruppe 11: Sinfonien Band 9. Kassel: Bärenreiter, 1963.</annot>
+					</notesStmt>
+				</source>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.2.0" xml:id="parseDox2XML.xsl_v0.2.0">
+					<name>parseDox2XML.xsl</name>
+				</application>
+				<application version="0.9.6" xml:id="doxml2mei.xsl_v0.9.6">
+					<name>doxml2mei.xsl</name>
+					<p>This converter is a reasonably large collection of XSLT stylesheets (utilizing XSLT 3.0), developed by <persName authURI="https://d-nb.info/gnd/174032757" authority="GND" codedval="174032757" xml:id="JoKep">Johannes Kepper</persName> (<ref target="https://edirom.de">
+							<corpName authURI="https://d-nb.info/gnd/1095564986" authority="GND" codedval="1095564986">ViFE</corpName>
+						</ref>) on behalf of and assisted by the <ref target="https://mozarteum.at">Salzburg Mozarteum Foundation</ref> staff.</p>
+				</application>
+				<application version="2.2.5" xml:id="DOXconvX.xsl_v2.2.5">
+					<name>DOXconvX.xsl</name>
+					<p>Developed by <persName analog="#OS">Oleksii Sapov</persName>.</p>
+				</application>
+				<application version="2.1.1" xml:id="secondLayer.xsl_v2.1.1">
+					<name>secondLayer.xsl</name>
+					<p>Adds an empty second layer or a second layer with mRest depending on the mode. Developed by <persName analog="#OS">Oleksii Sapov</persName>.</p>
+				</application>
+			</appInfo>
+			<editorialDecl label="Editor's Note" xml:lang="EN">
+				<p>This is the encoding of the 3rd movement of K. 550 according to the <rend rend="italic">Neue Mozart Ausgabe</rend> IV/11/9 (ed. H. C. Robbins Landon, 1957; second edition, 1997). The symphony in g minor K. 550 is available in two authentic versions. Mozart altered the original scoring by providing additional clarinet parts while modifying the oboe parts. The first version (without clarinets) and the second version (with clarinets) are both published in full score in NMA IV/11/9. The present digital edition combines these versions in one single encoding. Both versions of the first edition are encoded as 'source_1' and 'source_2', those of the second edition as 'source_3' and 'source_4' with the second edition as the accepted reading. Corrigenda reported in the corresponding Critical Report (H. C. Robbins Landon, 1963) on page i/70-71 and marked as 'source_5' have already been worked into the second edition.</p>
+				<p>The NMA edition is primarily based on Mozart’s autograph score (NMA siglum A), which is preserved at the Archiv der Gesellschaft der Musikfreunde, Vienna, call number A 159 (XIII 6137). Along with the full score, this item includes two autograph addenda: the first addendum consists in one folio with alternative measures for the 2nd movement; the second addendum contains additional parts for clarinet and revised oboe parts, which constitute the second version. As a secondary source, the editor consulted the first print edition published by André, Offenbach am Main, in 1794 (NMA siglum B) as well as the first print edition of the second version, published likewise by André in 1805 (NMA siglum C). Both of them are not considered in the variant readings of the Critical Report.</p>
+				<p>In the digital edition, the diacritic markup of editorial interventions used in the NMA print edition (i.e. small size, italics, brackets, dashed line form) are coded as additions; as such they are marked as decisions by the editors of the NMA (@resp). Wherever possible the markup of additions affects the smallest unit that can be individually addressed, usually an element. In some cases, a distinction between supplied and un-supplied elements is made through a &lt;choice&gt; element. With the exception of possible corrections of obvious printing errors (marked in the code as such) the coding of the musical text is faithful to the aforementioned NMA editions. Some normalizations have been applied; for a full description of the editorial principles see the <ref target="https://dme.mozarteum.at/musik/edition/#200" targettype="website">Editorial Guidelines of the DME Music Editions</ref>.</p>
+				<p>The present encoding in MEI 3.0.0 (with some minor customizations) is based on a previous encoding in DOX format. The DOX data were gained from optical music recognition (OMR) and proof reading processes developed and carried out by <corpName analog="#PHI">The Packard Humanities Institute</corpName>, Los Altos, CA.</p>
+				<p>For technical reasons, it is possible that some of the original editorial markup not captured by OMR (e.g. small staccato signs) is not represented in the encoded versions. </p>
+				<p>Lacunae may be reported to the <ref target="dme@mozarteum.at" targettype="email">Editorial Office of the DME</ref>. </p>
+				<p>
+					<biblList>
+						<head>
+							<rend fontweight="bold">Bibliography</rend>
+						</head>
+						<bibl>Landon, H. C. Robbins. <rend fontstyle="italic">Wolfgang Amadeus Mozart, Neue Ausgabe sämtlicher Werke, Kritische Berichte, Serie IV, Werkgruppe 11, Band 9</rend>. Kassel: Bärenreiter, 1963.</bibl>
+						<bibl>Mozart, Wolfgang Amadeus. <rend fontstyle="italic">Neue Ausgabe sämtlicher Werke, Serie IV, Werkgruppe 11, Sinfonien Band 9</rend>. Ed. H. C. Robbins Landon. Kassel: Bärenreiter, 1957.</bibl>
+						<bibl>Mozart, Wolfgang Amadeus. <rend fontstyle="italic">Neue Ausgabe sämtlicher Werke, Serie IV, Werkgruppe 11, Sinfonien Band 9</rend>. Ed. H. C. Robbins Landon. Zweite, durchgesehene Auflage. Kassel: Bärenreiter, 1997.</bibl>
+					</biblList>
+				</p>
+				<p>Last revision: <date isodate="2019-11-22"/>
+				</p>
+			</editorialDecl>
+			<projectDesc>
+				<p>The DOX data results from an optical music recognition (OMR) software and proof reading processes developed and realised by <corpName analog="#PHI">The Packard Humanities Institute, Los Altos, CA</corpName>.</p>
+			</projectDesc>
+		</encodingDesc>
+		<workDesc>
+			<work xml:id="ISMIDW11586">
+				<identifier authURI="https://d-nb.info/gnd/300111150" authority="GND" type="work" xml:id="gnd-work">300111150</identifier>
+				<identifier authority="KVonline" label="KVonline" type="work" xml:id="kv550">550</identifier>
+				<identifier authority="KVonline" label="KVonline" type="movement" xml:id="kv550003">550/03</identifier>
+				<identifier authority="ISM-IDW" label="version 1" type="work" xml:id="ISMIDW6318">6318</identifier>
+				<identifier authority="ISM-IDW" label="version 1" type="movement" xml:id="idm-6321">6321</identifier>
+				<identifier authority="ISM-IDW" label="version 2" type="work" xml:id="ISMIDW6309">6309</identifier>
+				<identifier authority="ISM-IDW" label="version 2" type="movement" xml:id="idm-6314">6314</identifier>
+				<titleStmt>
+					<title type="main" xml:lang="DE">
+						<title>Sinfonie in g</title>
+						<identifier analog="#KVonline" label="KV">KV 550</identifier>
+					</title>
+					<title type="subordinate" xml:lang="DE">3. Satz</title>
+					<title type="main" xml:lang="EN">
+						<title>Symphony in g</title>
+						<identifier analog="#KVonline" label="KV">K. 550</identifier>
+					</title>
+					<title type="subordinate" xml:lang="EN">3rd mvt.</title>
+					<title type="movementHeading" xml:id="mvt_headingDE" xml:lang="DE">Menuetto &lt;mit Trio&gt;</title>
+					<title type="movementHeading" xml:id="mvt_headingEN" xml:lang="EN">Menuetto &lt;with Trio&gt;</title>
+					<composer analog="#WAM">Wolfgang Amadé Mozart</composer>
+				</titleStmt>
+				<tempo xml:id="tempo">Allegretto</tempo>
+				<key mode="minor" pname="g" sig="2f"/>
+				<meter count="3" unit="4"/>
+				<perfMedium>
+					<perfResList analog="marc:048" authURI="https://www.loc.gov/standards/valuelist/marcmusperf.html" authority="marcmusperf">
+						<perfRes codedval="wa" label="flute" n="1" xml:id="instrVoice_1">flute</perfRes>
+						<perfRes codedval="wb" label="oboe" n="2" xml:id="instrVoice_2">oboe-1</perfRes>
+						<perfRes codedval="wb" label="oboe" n="3" xml:id="instrVoice_3">oboe-2</perfRes>
+						<perfRes codedval="wc" label="clarinet" n="4" xml:id="instrVoice_4">clarinet-1</perfRes>
+						<perfRes codedval="wc" label="clarinet" n="5" xml:id="instrVoice_5">clarinet-2</perfRes>
+						<perfRes codedval="wd" label="bassoon" n="6" xml:id="instrVoice_6">bassoon-1</perfRes>
+						<perfRes codedval="wd" label="bassoon" n="7" xml:id="instrVoice_7">bassoon-2</perfRes>
+						<perfRes codedval="ba" label="horn" n="8" xml:id="instrVoice_8">horn-1</perfRes>
+						<perfRes codedval="ba" label="horn" n="9" xml:id="instrVoice_9">horn-2</perfRes>
+						<perfRes codedval="sa" label="violin" n="10" xml:id="instrVoice_10">violin-1</perfRes>
+						<perfRes codedval="sa" label="violin" n="11" xml:id="instrVoice_11">violin-2</perfRes>
+						<perfRes codedval="sb" label="viola" n="12" xml:id="instrVoice_12">viola</perfRes>
+						<perfRes codedval="sc" label="violoncello" n="13" xml:id="instrVoice_13">violoncello</perfRes>
+						<perfRes codedval="sd" label="double bass" n="14" xml:id="instrVoice_14">double bass</perfRes>
+					</perfResList>
+				</perfMedium>
+				<classification>
+					<termList>
+						<term classcode="#classification_GND">
+							<identifier>4055087-4</identifier>
+							<title>Sinfonie</title>
+						</term>
+					</termList>
+					<classCode authURI="https://d-nb.info/gnd/4055087-4" authority="GND" xml:id="classification_GND"/>
+				</classification>
+				<expressionList label="NMA_sources">
+					<expression label="autograph score" n="1">
+						<biblList>
+							<bibl n="1" xml:id="NMAsource_A">
+								<identifier authority="ISM-IDQ">10908</identifier>
+								<title>Sinfonia di Wolfgang Mozart</title>
+								<composer analog="#WAM">Wolfgang Amadé Mozart</composer>
+								<physLoc>
+									<repository>
+										<geogName authURI="https://www.geonames.org/2761369" authority="GeoNames" codedval="2761369">Wien</geogName>
+										<corpName>Archiv der Gesellschaft der Musikfreunde</corpName>
+									</repository>
+									<identifier authURI="https://www.rism.info/" authority="RISM" type="library_siglum">A-Wgm</identifier>
+									<identifier type="shelfmark">A 159 (XIII 6137)</identifier>
+								</physLoc>
+								<annot n="1" xml:lang="DE">Das Autograph gibt die 1. Fassung der Sinfonie wieder. Zwei autographe Nachträge werden in einer Tasche aufbewahrt, die auf der Innenseite des hinteren Umschlags angebracht ist. Der erste Nachtrag umfasst 1 Blatt, auf dem Mozart die Varianten zum 2. Satz notiert hat. Die entsprechenden Stellen sind im Autograph markiert. Der zweite Nachtrag umfasst die autographe Bläserpartitur mit den nachkomponierten Klarinetten und den geänderten Oboen für die 2. Fassung.</annot>
+								<biblScope label="range" unit="folio">1-44 (score)</biblScope>
+								<biblScope label="range" unit="folio">1 (first addendum)</biblScope>
+								<biblScope label="range" unit="folio">1-8 (second addendum)</biblScope>
+							</bibl>
+						</biblList>
+					</expression>
+					<expression label="first print edition" n="2">
+						<biblList>
+							<bibl n="2" xml:id="NMAsource_B">
+								<identifier authority="ISM-IDQ">16686</identifier>
+								<title>SINFONIE à grand orchestre, composeè par M<rend rend="sup">r</rend> MOZART. Oeuvre 45<rend rend="sup">me</rend>
+								</title>
+								<composer analog="#WAM">M<rend rend="sup">r</rend> MOZART</composer>
+								<imprint>
+									<publisher>
+										<corpName authURI="http://d-nb.info/gnd/2091955-4" authority="GND" codedval="2091955-4">J. André</corpName>
+									</publisher>
+									<pubPlace>
+										<settlement authURI="https://www.geonames.org/2857807/offenbach.html" authority="GeoNames" codedval="2857807">Offenbach sur le Mein</settlement>
+									</pubPlace>
+									<date>1794</date>
+									<identifier type="catalog_number">685</identifier>
+								</imprint>
+								<physLoc>
+									<repository>
+										<geogName authURI="https://www.geonames.org/2773538" authority="GeoNames" codedval="2773538">Kremsmünster</geogName>
+										<corpName>Benediktinerstift, Musikarchiv, Kremsmünster</corpName>
+										<identifier authURI="https://www.rism.info/" authority="RISM" type="library_siglum">A-KR</identifier>
+										<identifier type="shelfmark">H. 17/82</identifier>
+									</repository>
+								</physLoc>
+							</bibl>
+						</biblList>
+					</expression>
+					<expression label="second print edition" n="3">
+						<biblList>
+							<bibl n="2" xml:id="NMAsource_C">
+								<identifier authority="ISM-IDQ">18744</identifier>
+								<title>Grande Sinfonie pouv [sic] deux Violons, Alto &amp; Basse, 1 Flûte, 2 Haut-bois, 2 Clarinettes 2 Bassons, &amp; 2 Cors. composée par W. A. Mozart. Oeuvre 45. Edition d’après le manuscrit, augmenté par des Clarinettes et avec des changemens dans les Haut-bois par l’auteur./</title>
+								<composer analog="#WAM">W. A. Mozart</composer>
+								<imprint>
+									<publisher>
+										<corpName authURI="http://d-nb.info/gnd/2091955-4" authority="GND" codedval="2091955-4">Jean André</corpName>
+									</publisher>
+									<pubPlace>
+										<settlement authURI="https://www.geonames.org/2857807/offenbach.html" authority="GeoNames" codedval="2857807">OFFENBACH s/M</settlement>
+									</pubPlace>
+									<date>1805</date>
+									<identifier type="catalog_number">2120</identifier>
+								</imprint>
+								<physLoc>
+									<repository>
+										<geogName authURI="https://www.geonames.org/2766824" authority="GeoNames" codedval="2766824">Salzburg</geogName>
+										<corpName analog="#ISM">Internationale Stiftung Mozarteum</corpName>
+										<identifier authURI="https://www.rism.info/" authority="RISM" type="library_siglum">A-Sm</identifier>
+										<identifier type="shelfmark">Rara 550/1</identifier>
+										<ref target="https://permalink.obvsg.at/ISM/AC09154842" targettype="website"/>
+									</repository>
+								</physLoc>
+							</bibl>
+						</biblList>
+					</expression>
+				</expressionList>
+				<componentGrp label="related units">
+					<work analog="#ISMIDW6318" label="complete symphony, version 1" n="1">
+						<identifier authority="ISM-IDW" label="version 1" type="work">6318</identifier>
+						<contents>
+							<contentItem n="1">
+								<identifier authority="ISM-IDW" label="version 1" type="movement">6319</identifier>
+								<ref target="dmeref_550-001_6310.xml" targettype="file"/>
+							</contentItem>
+							<contentItem n="2">
+								<identifier authority="ISM-IDW" label="version 1" type="movement">6320</identifier>
+								<ref target="dmeref_550-002_6311.xml" targettype="file"/>
+							</contentItem>
+							<contentItem n="3">
+								<identifier authority="ISM-IDW" label="version 1" type="movement">6321</identifier>
+								<ref target="dmeref_550-003_6314.xml" targettype="file"/>
+							</contentItem>
+							<contentItem n="4">
+								<identifier authority="ISM-IDW" label="version 1" type="movement">6324</identifier>
+								<ref target="dmeref_550-004_6317.xml" targettype="file"/>
+							</contentItem>
+						</contents>
+						<relationList>
+							<relation label="version 1" rel="hasPart" target="#idm-6321"/>
+						</relationList>
+					</work>
+					<work analog="#idm-6321" label="individual movement" n="2">
+						<identifier authority="ISM-IDW" label="version 1" type="movement">6321</identifier>
+						<contents>
+							<contentItem n="1" xml:id="ISMIDW6322">
+								<identifier authority="ISM-IDW" label="Menuetto" type="movement">6322</identifier>
+							</contentItem>
+							<contentItem n="2" xml:id="ISMIDW6323">
+								<identifier authority="ISM-IDW" label="Trio" type="movement">6323</identifier>
+							</contentItem>
+						</contents>
+						<relationList label="version 1">
+							<relation rel="isPartOf" target="#ISMIDW6318"/>
+							<relation rel="hasPart" target="#ISMIDW6322"/>
+							<relation rel="hasPart" target="#ISMIDW6323"/>
+						</relationList>
+					</work>
+					<work analog="#ISMIDW6309" label="complete symphony, version 2" n="3">
+						<identifier authority="ISM-IDW" label="version 2" type="work">6309</identifier>
+						<contents>
+							<contentItem n="1">
+								<identifier authority="ISM-IDW" label="version 2" type="movement">6310</identifier>
+								<ref target="dmeref_550-001_6310.xml" targettype="file"/>
+							</contentItem>
+							<contentItem n="2">
+								<identifier authority="ISM-IDW" label="version 2" type="movement">6311</identifier>
+								<ref target="dmeref_550-002_6311.xml" targettype="file"/>
+							</contentItem>
+							<contentItem n="3">
+								<identifier authority="ISM-IDW" label="version 2" type="movement">6314</identifier>
+								<ref target="dmeref_550-003_6314.xml" targettype="file"/>
+							</contentItem>
+							<contentItem n="4">
+								<identifier authority="ISM-IDW" label="version 2" type="movement">6317</identifier>
+								<ref target="dmeref_550-004_6317.xml" targettype="file"/>
+							</contentItem>
+						</contents>
+						<relationList>
+							<relation label="version 2" rel="hasPart" target="#idm-6314"/>
+						</relationList>
+					</work>
+					<work analog="#idm-6314" label="individual movement" n="4">
+						<identifier authority="ISM-IDW" label="version 2" type="movement">6314</identifier>
+						<contents>
+							<contentItem n="1" xml:id="ISMIDW6315">
+								<identifier authority="ISM-IDW" label="Menuetto" type="movement">6315</identifier>
+							</contentItem>
+							<contentItem n="2" xml:id="ISMIDW6316">
+								<identifier authority="ISM-IDW" label="Trio" type="movement">6316</identifier>
+							</contentItem>
+						</contents>
+						<relationList label="version 2">
+							<relation rel="isPartOf" target="#ISMIDW6309"/>
+							<relation rel="hasPart" target="#ISMIDW6315"/>
+							<relation rel="hasPart" target="#ISMIDW6316"/>
+						</relationList>
+					</work>
+				</componentGrp>
+			</work>
+		</workDesc>
+		<revisionDesc>
+			<change n="1" resp="#FK">
+				<changeDesc>
+					<p>File converted from Dox to DoxML using <ptr target="#parseDox2XML.xsl_v0.2.0"/>.</p>
+				</changeDesc>
+				<date notafter="2019-08-28"/>
+			</change>
+			<change isodate="2019-08-28" n="2" resp="#JoKep">
+				<changeDesc>
+					<p>File converted from DoxML to MEI using <ptr target="#doxml2mei.xsl_v0.9.6"/>.</p>
+				</changeDesc>
+			</change>
+			<change isodate="2019-10-02" n="3" resp="#IC">
+				<changeDesc>
+					<p>Processed with <ptr target="#DOXconvX.xsl_v2.2.5"/>.</p>
+				</changeDesc>
+			</change>
+			<change isodate="2019-10-04" n="4" resp="#IC">
+				<changeDesc>
+					<p>Processed with <ptr target="#secondLayer.xsl_v2.1.1"/>.</p>
+				</changeDesc>
+			</change>
+			<change isodate="2019-10-15" n="5" resp="#IC">
+				<changeDesc>
+					<p>revised and updated according to workflow_1.1</p>
+				</changeDesc>
+			</change>
+			<change isodate="2019-10-30" n="6" resp="#OS">
+				<changeDesc>
+					<p>proofreading according to workflow_1.2</p>
+				</changeDesc>
+			</change>
+			<change isodate="2019-11-14" n="7" resp="#ND">
+				<changeDesc>
+					<p>final review, workflow 1.3</p>
+				</changeDesc>
+			</change>
+			<change isodate="2019-12-02" n="8" resp="#OS">
+				<changeDesc>
+					<p>proofreading, 1st version</p>
+				</changeDesc>
+			</change>
+			<!-- Release -->
+			<!--<change n="6">				
+				<changeDesc>
+					<p/>
+				</changeDesc>
+			</change>-->
+		</revisionDesc>
+	</meiHead>
+	<music meiversion="3.0.0">
+		<body>
+			<mdiv label="MENUETTO" n="3" xml:id="mdiv_550003">
+				<score xml:id="score_550003">
+					<scoreDef key.mode="minor" key.pname="g" key.sig="2f" meter.count="3" meter.unit="4" optimize="false" xml:id="scoreDef_01">
+						<pgHead xml:id="pgHead_4752">
+							<rend halign="center" valign="middle" xml:id="rend_4758">
+								<rend fontsize="x-large" xml:id="rend_4764">Sinfonie in g, 3. Satz, KV 550/03</rend>
+							</rend>
+							<rend halign="center" valign="middle" xml:id="rend_4776">
+								<rend fontsize="x-large" xml:id="rend_4782">Zweite Fassung</rend>
+							</rend>
+							<rend halign="center" valign="middle" xml:id="rend_4794">
+								<rend fontsize="small" xml:id="rend_4800">Symphony in g, 3rd mvt., K. 550/03</rend>
+							</rend>
+							<rend halign="center" valign="middle" xml:id="rend_4812">
+								<rend fontsize="small" xml:id="rend_4818">Second Version</rend>
+							</rend>
+							<rend halign="center" valign="middle" xml:id="rend_4830">
+								<rend fontsize="large" xml:id="rend_4836">A digital edition</rend>
+							</rend>
+						</pgHead>
+						<staffGrp barthru="false" xml:id="staffGrp_01">
+							<staffGrp barthru="true" symbol="bracket" xml:id="staffGrp_02">
+								<staffDef clef.line="2" clef.shape="G" decls="#instrVoice_1" dme.parts="1" doxml.id="d28e66" label.abbr="Fl." lines="5" n="1" xml:id="staffDef_P1_sc01">
+									<label xml:id="label_P1_sc01">Flauto</label>
+								</staffDef>
+								<staffDef clef.line="2" clef.shape="G" dme.parts="2,3" doxml.id="d28e127" label.abbr="Ob." lines="5" n="2" xml:id="staffDef_P2_sc01">
+									<label xml:id="label_P2_sc01">Oboi</label>
+									<layerDef decls="#instrVoice_2" n="1" xml:id="layerDef_Ob1_sc01"/>
+									<layerDef decls="#instrVoice_3" n="2" xml:id="layerDef_Ob2_sc01"/>
+								</staffDef>
+								<!-- <app xml:id="app_scoreDef">
+									<rdg corresp="#ISMIDW6309" source="#source_2 #source_4" label="version 2" n="2" xml:id="rdg2_scoreDef_02"> -->
+								<staffDef clef.line="2" clef.shape="G" dme.parts="4,5" doxml.id="d28e177" key.sig="0" label.abbr="Clar." lines="5" n="3" trans.diat="-1" trans.semi="-2" xml:id="staffDef_P3_sc01">
+									<label xml:id="label_P3_sc01">Clarinetti<lb xml:id="lb_P3_sc01"/> in Si♭/B</label>
+									<layerDef decls="#instrVoice_4" n="1" xml:id="layerDef_Clar1_sc01"/>
+									<layerDef decls="#instrVoice_5" n="2" xml:id="layerDef_Clar2_sc01"/>
+								</staffDef>
+								<!-- </rdg>
+									 <rdg corresp="#ISMIDW6318" source="#source_1 #source_2" label="version 1" n="1" xml:id="rdg1_scoreDef"/>
+									</app> -->
+								<staffDef clef.line="4" clef.shape="F" dme.parts="6,7" doxml.id="d28e227" label.abbr="Fag." lines="5" n="4" xml:id="staffDef_P4_sc01">
+									<label xml:id="label_P4_sc01">Fagotti</label>
+									<layerDef decls="#instrVoice_6" n="1" xml:id="layerDef_Fag1_sc01"/>
+									<layerDef decls="#instrVoice_7" n="2" xml:id="layerDef_Fag2_sc01"/>
+								</staffDef>
+							</staffGrp>
+							<staffGrp symbol="bracket" xml:id="staffGrp_03">
+								<staffDef clef.line="2" clef.shape="G" dme.parts="8,9" doxml.id="d28e282" key.sig="0" label.abbr="Cor." lines="5" n="5" trans.diat="-3" trans.semi="-5" xml:id="staffDef_P5_sc01">
+									<label xml:id="label_P5_sc01">Corni<lb xml:id="lb_P5_sc01"/> in Sol/G</label>
+									<layerDef decls="#instrVoice_8" n="1" xml:id="layerDef_Cor1_sc01"/>
+									<layerDef decls="#instrVoice_9" n="2" xml:id="layerDef_Cor2_sc01"/>
+								</staffDef>
+							</staffGrp>
+							<staffGrp barthru="true" symbol="bracket" xml:id="staffGrp_04">
+								<staffGrp symbol="brace" xml:id="staffGrp_05">
+									<staffDef clef.line="2" clef.shape="G" decls="#instrVoice_10" dme.parts="10" doxml.id="d28e342" label.abbr="Vl. I" lines="5" n="6" xml:id="staffDef_P6_sc01">
+										<label xml:id="label_P6_sc01">Violino I</label>
+									</staffDef>
+									<staffDef clef.line="2" clef.shape="G" decls="#instrVoice_11" dme.parts="11" doxml.id="d28e403" label.abbr="Vl. II" lines="5" n="7" xml:id="staffDef_P7_sc01">
+										<label xml:id="label_P7_sc01">Violino II</label>
+									</staffDef>
+								</staffGrp>
+								<staffDef clef.line="3" clef.shape="C" decls="#instrVoice_12" dme.parts="12" doxml.id="d28e464" label.abbr="Va." lines="5" n="8" xml:id="staffDef_P8_sc01">
+									<label xml:id="label_P8_sc01">Viola</label>
+								</staffDef>
+								<staffDef clef.line="4" clef.shape="F" decls="#instrVoice_13 #instrVoice_14" dme.parts="13,14" doxml.id="d28e516" label.abbr="Vc. B." lines="5" n="9" xml:id="staffDef_P9_sc01">
+									<label xml:id="label_P9_sc01">Violoncello<lb xml:id="lb_P9_sc01"/> e Basso</label>
+								</staffDef>
+							</staffGrp>
+						</staffGrp>
+					</scoreDef>
+					<app xml:id="app_5136">
+						<rdg corresp="#ISMIDW6309" label="version-2_6309" n="2" source="#source_2 #source_4" xml:id="rdg_5142"/>
+						<rdg corresp="#ISMIDW6318" label="version-1_6318" n="1" source="#source_1 #source_3" xml:id="rdg_5148">
+							<scoreDef key.mode="minor" key.pname="g" key.sig="2f" meter.count="3" meter.unit="4" optimize="false" xml:id="scoreDef_02">
+								<pgHead xml:id="pgHead_5160">
+									<rend halign="center" valign="middle" xml:id="rend_5166">
+										<rend fontsize="x-large" xml:id="rend_5172">Sinfonie in g, 3. Satz, KV 550/03</rend>
+									</rend>
+									<rend halign="center" valign="middle" xml:id="rend_5184">
+										<rend fontsize="x-large" xml:id="rend_5190">Erste Fassung</rend>
+									</rend>
+									<rend halign="center" valign="middle" xml:id="rend_5202">
+										<rend fontsize="small" xml:id="rend_5208">Symphony in g, 3rd mvt., K. 550/03</rend>
+									</rend>
+									<rend halign="center" valign="middle" xml:id="rend_5220">
+										<rend fontsize="small" xml:id="rend_5226">First Version</rend>
+									</rend>
+									<rend halign="center" valign="middle" xml:id="rend_5238">
+										<rend fontsize="large" xml:id="rend_5244">A digital edition</rend>
+									</rend>
+								</pgHead>
+								<staffGrp barthru="false" xml:id="staffGrp_06">
+									<staffGrp barthru="true" symbol="bracket" xml:id="staffGrp_07">
+										<staffDef n="1" xml:id="staffDef_P1_sc02"/>
+										<staffDef n="2" xml:id="staffDef_P2_sc02"/>
+										<staffDef n="4" xml:id="staffDef_P3_sc02"/>
+									</staffGrp>
+									<staffGrp symbol="bracket" xml:id="staffGrp_08">
+										<staffDef n="5" xml:id="staffDef_P4_sc02"/>
+									</staffGrp>
+									<staffGrp barthru="true" symbol="bracket" xml:id="staffGrp_09">
+										<staffGrp symbol="brace" xml:id="staffGrp_10">
+											<staffDef n="6" xml:id="staffDef_P5_sc02"/>
+											<staffDef n="7" xml:id="staffDef_P6_sc02"/>
+										</staffGrp>
+										<staffDef n="8" xml:id="staffDef_P7_sc02"/>
+										<staffDef n="9" xml:id="staffDef_P8_sc02"/>
+									</staffGrp>
+								</staffGrp>
+							</scoreDef>
+						</rdg>
+					</app>
+					<section xml:id="section_">
+						<section xml:id="section_A_m36-36">
+							<measure facs="#zoneOf_measure39a #zoneOf_measure39b" n="36" xml:id="m36_k550_003">
+								<staff dme.parts="2,3" n="2" xml:id="staff_5352">
+									<layer n="1" xml:id="layer_5358">
+										<note doxml.id="d28e3376" dur="4" oct="5" pname="g" tstamp="1" xml:id="note_5364"/>
+										<app xml:id="app_5370">
+											<rdg corresp="#ISMIDW6309" label="version-2_6309" n="2" source="#source_2 #source_4" xml:id="rdg_5376">
+												<rest doxml.id="d28e3380" dur="4" tstamp="2" xml:id="rest_5382"/>
+												<rest doxml.id="d28e3383" dur="4" tstamp="3" xml:id="rest_5388"/>
+											</rdg>
+											<rdg corresp="#ISMIDW6318" label="version-1_6318" n="1" source="#source_1 #source_3" xml:id="rdg_5394">
+												<rest doxml.id="d28e3422" dur="4" oloc="5" ploc="f" tstamp="2" xml:id="rest_5400"/>
+												<note doxml.id="d28e3426" dur="4" oct="4" pname="a" tstamp="3" xml:id="note_5406"/>
+											</rdg>
+										</app>
+									</layer>
+									<layer n="2" xml:id="layer_5412">
+										<note accid.ges="f" doxml.id="d28e3378" dur="4" oct="4" pname="b" tstamp="1" xml:id="note_5418"/>
+										<app xml:id="app_5424">
+											<rdg corresp="#ISMIDW6309" label="version-2_6309" n="2" source="#source_2 #source_4" xml:id="rdg_5430">
+												<rest doxml.id="d28e3380b" sameas="#rest_5382" tstamp="2" xml:id="rest_5436"/>
+												<rest doxml.id="d28e3383b" dur="2" tstamp="3" xml:id="rest_5442"/>
+											</rdg>
+											<rdg corresp="#ISMIDW6318" label="version-1_6318" n="1" source="#source_1 #source_3" xml:id="rdg_5448">
+												<rest doxml.id="d28e3422b" dur="4" oloc="4" ploc="f" tstamp="2" xml:id="rest_5454"/>
+												<rest doxml.id="d28e3429" dur="4" oloc="4" ploc="c" tstamp="3" xml:id="rest_5460"/>
+											</rdg>
+										</app>
+									</layer>
+								</staff>
+								<app xml:id="app_5466">
+									<rdg corresp="#ISMIDW6309" label="version-2_6309" n="2" source="#source_2 #source_4" xml:id="rdg_5472"/>
+									<rdg corresp="#ISMIDW6318" label="version-1_6318" n="1" source="#source_1 #source_3" xml:id="rdg_5478">
+										<dynam doxml.id="d28e3424" layer="1" place="above" staff="2" startid="#note_5406" xml:id="dynam_5484">p</dynam>
+									</rdg>
+								</app>
+							</measure>
+						</section>
+					</section>
+				</score>
+			</mdiv>
+		</body>
+	</music>
+</mei>

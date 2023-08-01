@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://dme.mozarteum.at/DME/schemata/mei-DME-4.0.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://dme.mozarteum.at/DME/schemata/mei-DME-4.0.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei meiversion="4.0.1" xmlns="http://www.music-encoding.org/ns/mei">
+  <meiHead>
+    <fileDesc>
+      <titleStmt>
+        <title label="NMA digital" type="unit">an example</title>
+      </titleStmt>
+      <pubStmt/>
+    </fileDesc>
+  </meiHead>
+  <music>
+    <body>
+      <mdiv>
+        <score>
+          <scoreDef key.accid="f" key.mode="major" key.pname="e" key.sig="3f" meter.count="4" meter.sym="common" meter.unit="4" xml:id="scoreDef_01">
+            <staffGrp bar.thru="true" decls="#instrVoice_1" doxml.id="d28e39" symbol="brace" xml:id="staffGrp_01">
+              <staffDef clef.line="2" clef.shape="G" decls="#upper" lines="5" n="1" xml:id="staffDef_P1"/>
+              <staffDef clef.line="4" clef.shape="F" decls="#lower" lines="5" n="2" xml:id="staffDef_P2"/>
+            </staffGrp>
+          </scoreDef>
+          <section>
+            <measure facs="#zoneOf_m12_k457_002" n="12" xml:id="m12_k457_002">
+              <staff decls="#upper" n="1" xml:id="staff_6912">
+                <layer n="1" xml:id="layer_6918">
+                  <beam xml:id="beam_6924">
+                    <note accid.ges="f" dots="1" doxml.id="d27e907" dur="32" oct="5" pname="b" tstamp="1" xml:id="note_6930"/>
+                    <note doxml.id="d27e909" dur="64" oct="5" pname="f" tstamp="1.1875" xml:id="note_6936"/>
+                    <note dots="1" doxml.id="d27e911" dur="32" oct="6" pname="d" tstamp="1.25" xml:id="note_6942"/>
+                    <note accid.ges="f" doxml.id="d27e913" dur="64" oct="5" pname="b" tstamp="1.4375" xml:id="note_6948"/>
+                    <note doxml.id="d27e915" dur="8" oct="6" pname="f" tstamp="1.5" xml:id="note_6954"/>
+                  </beam>
+                  <beam xml:id="beam_6960">
+                    <note doxml.id="d27e917" dur="32" oct="6" pname="f" tstamp="2" xml:id="note_6966"/>
+                    <note doxml.id="d27e919" dur="32" oct="6" pname="d" tstamp="2.125" xml:id="note_6972"/>
+                    <note accid="n" doxml.id="d27e922" dur="32" oct="5" pname="b" tstamp="2.25" xml:id="note_6978"/>
+                    <note accid="f" doxml.id="d27e924" dur="32" oct="5" pname="a" tstamp="2.375" xml:id="note_6984"/>
+                  </beam>
+                  <beam xml:id="beam_6990">
+                    <note doxml.id="d27e926" dur="32" oct="5" pname="f" tstamp="2.5" xml:id="note_6996"/>
+                    <note doxml.id="d27e928" dur="32" oct="5" pname="d" tstamp="2.625" xml:id="note_7002"/>
+                    <note accid="n" doxml.id="d27e930" dur="32" oct="4" pname="b" tstamp="2.75" xml:id="note_7008"/>
+                    <note accid="f" doxml.id="d27e932" dur="32" oct="4" pname="a" tstamp="2.875" xml:id="note_7014"/>
+                  </beam>
+                  <beam xml:id="beam_7020">
+                    <note doxml.id="d27e934" dur="16" oct="4" pname="g" tstamp="3" xml:id="note_7026"/>
+                    <note accid="s" doxml.id="d27e936" dur="8" oct="5" pname="f" tstamp="3.25" xml:id="note_7032"/>
+                    <note doxml.id="d27e938" dur="8" oct="5" pname="g" tstamp="3.75" xml:id="note_7038"/>
+                    <note accid="n" doxml.id="d27e940" dur="8" oct="5" pname="a" tstamp="4.25" xml:id="note_7044"/>
+                    <note doxml.id="d27e942" dur="16" oct="5" pname="b" tstamp="4.75" xml:id="note_7050">
+                      <supplied resp="#NMA-editors" xml:id="supplied_7056">
+                        <accid accid="f" xml:id="accid_7062"/>
+                      </supplied>
+                    </note>
+                  </beam>
+                </layer>
+              </staff>
+              <staff decls="#lower" n="2" xml:id="staff_7068">
+                <layer n="1" xml:id="layer_7074">
+                  <beam xml:id="beam_7080">
+                    <note doxml.id="d27e951" dur="16" oct="3" pname="d" tstamp="1" xml:id="note_7086"/>
+                    <note doxml.id="d27e953" dur="16" oct="3" pname="f" tstamp="1.25" xml:id="note_7092"/>
+                    <note accid.ges="f" doxml.id="d27e955" dur="16" oct="3" pname="b" tstamp="1.5" xml:id="note_7098"/>
+                    <note doxml.id="d27e957" dur="16" oct="3" pname="f" tstamp="1.75" xml:id="note_7104"/>
+                  </beam>
+                  <beam xml:id="beam_7110">
+                    <note doxml.id="d27e959" dur="16" oct="3" pname="d" tstamp="2" xml:id="note_7116"/>
+                    <note doxml.id="d27e961" dur="16" oct="3" pname="f" tstamp="2.25" xml:id="note_7122"/>
+                    <note accid="f" doxml.id="d27e963" dur="16" oct="3" pname="a" tstamp="2.5" xml:id="note_7128"/>
+                    <note doxml.id="d27e965" dur="16" oct="3" pname="f" tstamp="2.75" xml:id="note_7134"/>
+                  </beam>
+                  <beam xml:id="beam_7140">
+                    <note accid.ges="f" doxml.id="d27e968" dur="16" oct="3" pname="e" tstamp="3" xml:id="note_7146"/>
+                    <note doxml.id="d27e970" dur="16" oct="3" pname="g" tstamp="3.25" xml:id="note_7152"/>
+                    <note doxml.id="d27e972" dur="16" oct="4" pname="c" tstamp="3.5" xml:id="note_7158"/>
+                    <note doxml.id="d27e974" dur="16" oct="3" pname="g" tstamp="3.75" xml:id="note_7164"/>
+                  </beam>
+                  <beam xml:id="beam_7170">
+                    <note accid="n" doxml.id="d27e976" dur="16" oct="3" pname="e" tstamp="4" xml:id="note_7176"/>
+                    <note doxml.id="d27e978" dur="16" oct="3" pname="g" tstamp="4.25" xml:id="note_7182"/>
+                    <note accid="f" doxml.id="d27e980" dur="16" oct="4" pname="d" tstamp="4.5" xml:id="note_7188"/>
+                    <note doxml.id="d27e982" dur="16" oct="3" pname="g" tstamp="4.75" xml:id="note_7194"/>
+                  </beam>
+                </layer>
+              </staff>
+              <dynam doxml.id="d27e905" staff="1" startid="#note_6930" xml:id="dynam_7200">f</dynam>
+              <dynam doxml.id="d27e947" staff="2" startid="#note_7086" xml:id="dynam_7212">f</dynam>
+              <supplied resp="#NMA-editors" xml:id="supplied_7224">
+                <dir doxml.id="d27e949" place="above" staff="2" tstamp="1" xml:id="dir_7230">
+                  <rend fontstyle="normal" halign="center" xml:id="rend_7236">simile</rend>
+                </dir>
+              </supplied>
+              <app type="ossia" xml:id="app_7248">
+                <lem source="#source_1" xml:id="lem_7254">
+                  <choice xml:id="choice_7260">
+                    <corr resp="#NMA-editors" xml:id="corr_7266">
+                      <turn accidlower="n" delayed="true" form="upper" staff="1" tstamp="3.5" xml:id="turn_7272"/>
+                    </corr>
+                    <orig xml:id="orig_7278">
+                      <turn delayed="true" form="upper" staff="1" tstamp="3.5" xml:id="turn_7284"/>
+                    </orig>
+                  </choice>
+                </lem>
+                <rdg source="#source_A" xml:id="rdg_7290"/>
+                <rdg source="#source_A2" xml:id="rdg_7296"/>
+              </app>
+              <app type="ossia" xml:id="app_7302">
+                <lem source="#source_1" xml:id="lem_7308">
+                  <choice xml:id="choice_7314">
+                    <corr resp="#NMA-editors" xml:id="corr_7320">
+                      <turn accidlower="s" accidupper="n" delayed="true" form="upper" staff="1" tstamp="4" xml:id="turn_7326"/>
+                    </corr>
+                    <orig xml:id="orig_7332">
+                      <turn delayed="true" form="upper" staff="1" tstamp="4" xml:id="turn_7338"/>
+                    </orig>
+                  </choice>
+                </lem>
+                <rdg source="#source_A" xml:id="rdg_7344"/>
+                <rdg source="#source_A2" xml:id="rdg_7350"/>
+              </app>
+              <app type="ossia" xml:id="app_7356">
+                <lem source="#source_1" xml:id="lem_7362">
+                  <choice xml:id="choice_7368">
+                    <corr resp="#NMA-editors" xml:id="corr_7374">
+                      <turn accidupper="f" delayed="true" form="upper" staff="1" tstamp="4.5" xml:id="turn_7380"/>
+                    </corr>
+                    <orig xml:id="orig_7386">
+                      <turn delayed="true" form="upper" staff="1" tstamp="4.5" xml:id="turn_7392"/>
+                    </orig>
+                  </choice>
+                </lem>
+                <rdg source="#source_A" xml:id="rdg_7398"/>
+                <rdg source="#source_A2" xml:id="rdg_7404"/>
+              </app>
+              <annot startid="#turn_7272" type="DME-note" xml:id="annot_7410">The Critical Report contains following correction of the first edition: the alternative reading for the turns in the measures 12 and 13 apply not for the source_A2 only but also for the source_A. For technical purposes theses alternative readings were splitted, although semantically identical.</annot>
+              <slur endid="#note_6936" staff="1" startid="#note_6930" xml:id="slur_7272"/>
+              <slur endid="#note_6948" staff="1" startid="#note_6942" xml:id="slur_7278"/>
+              <slur endid="#note_7014" staff="1" startid="#note_6972" xml:id="slur_7284"/>
+              <slur endid="#note_7038" staff="1" startid="#note_7032" xml:id="slur_7296"/>
+              <slur endid="#note_7044" staff="1" startid="#note_7038" xml:id="slur_7302"/>
+              <slur endid="#note_7050" staff="1" startid="#note_7044" xml:id="slur_7308"/>
+              <tie endid="#note_6966" staff="1" startid="#note_6954" xml:id="tie_7464"/>
+              <tie curvedir="above" endid="#note_7506" staff="1" startid="#note_7050" xml:id="tie_7470"/>
+            </measure>
+            <measure facs="#zoneOf_m13_k457_002" n="13" xml:id="m13_k457_002">
+              <staff decls="#upper" n="1" xml:id="staff_7488">
+                <layer n="1" xml:id="layer_7494">
+                  <beam xml:id="beam_7500">
+                    <note accid.ges="f" doxml.id="d27e995" dur="16" oct="5" pname="b" tstamp="1" xml:id="note_7506"/>
+                    <note doxml.id="d27e997" dur="32" oct="6" pname="d" tstamp="1.25" xml:id="note_7512"/>
+                    <note doxml.id="d27e999" dur="32" oct="6" pname="f" tstamp="1.375" xml:id="note_7518"/>
+                    <note doxml.id="d27e1001" dur="8" oct="5" pname="f" tstamp="1.5" xml:id="note_7524"/>
+                  </beam>
+                  <beam xml:id="beam_7530">
+                    <note doxml.id="d27e1003" dur="32" oct="5" pname="f" tstamp="2" xml:id="note_7536"/>
+                    <note accid="s" doxml.id="d27e1005" dur="32" oct="5" pname="f" tstamp="2.125" xml:id="note_7542"/>
+                    <note doxml.id="d27e1007" dur="32" oct="5" pname="g" tstamp="2.25" xml:id="note_7548"/>
+                    <note accid="n" doxml.id="d27e1009" dur="32" oct="5" pname="f" tstamp="2.375" xml:id="note_7554"/>
+                  </beam>
+                  <beam xml:id="beam_7560">
+                    <note doxml.id="d27e1011" dur="32" oct="5" pname="f" tstamp="2.5" xml:id="note_7566"/>
+                    <note accid.ges="f" doxml.id="d27e1014" dur="32" oct="5" pname="e" tstamp="2.625" xml:id="note_7572"/>
+                    <note doxml.id="d27e1016" dur="32" oct="5" pname="d" tstamp="2.75" xml:id="note_7578"/>
+                    <note doxml.id="d27e1018" dur="32" oct="5" pname="c" tstamp="2.875" xml:id="note_7584"/>
+                  </beam>
+                  <note accid.ges="f" doxml.id="d27e1020" dur="8" oct="4" pname="b" tstamp="3" xml:id="note_7590"/>
+                  <rest doxml.id="d27e1022" dur="8" tstamp="3.5" xml:id="rest_7596"/>
+                  <beam xml:id="beam_7602">
+                    <note accid="n" doxml.id="d27e1026" dur="32" oct="4" pname="a" tstamp="4" xml:id="note_7608"/>
+                    <note doxml.id="d27e1028" dur="32" oct="5" pname="c" tstamp="4.125" xml:id="note_7614"/>
+                    <note doxml.id="d27e1030" dur="32" oct="5" pname="g" tstamp="4.25" xml:id="note_7620"/>
+                    <note doxml.id="d27e1032" dur="32" oct="5" pname="f" tstamp="4.375" xml:id="note_7626"/>
+                  </beam>
+                  <beam xml:id="beam_7632">
+                    <note doxml.id="d27e1034" dur="32" oct="5" pname="g" tstamp="4.5" xml:id="note_7638"/>
+                    <note doxml.id="d27e1037" dur="32" oct="5" pname="f" tstamp="4.625" xml:id="note_7644"/>
+                    <note doxml.id="d27e1039" dur="32" oct="5" pname="g" tstamp="4.75" xml:id="note_7650"/>
+                    <note doxml.id="d27e1041" dur="32" oct="5" pname="f" tstamp="4.875" xml:id="note_7656"/>
+                  </beam>
+                </layer>
+              </staff>
+              <staff decls="#lower" n="2" xml:id="staff_7662">
+                <layer n="1" xml:id="layer_7668">
+                  <beam xml:id="beam_7674">
+                    <note doxml.id="d27e1045" dur="16" oct="3" pname="f" tstamp="1" xml:id="note_7680"/>
+                    <note accid.ges="f" doxml.id="d27e1047" dur="16" oct="3" pname="b" tstamp="1.25" xml:id="note_7686"/>
+                    <note doxml.id="d27e1049" dur="16" oct="4" pname="d" tstamp="1.5" xml:id="note_7692">
+                      <supplied resp="#NMA-editors" xml:id="supplied_7698">
+                        <accid accid="n" xml:id="accid_7704"/>
+                      </supplied>
+                    </note>
+                    <note accid.ges="f" doxml.id="d27e1051" dur="16" oct="3" pname="b" tstamp="1.75" xml:id="note_7710"/>
+                  </beam>
+                  <beam xml:id="beam_7716">
+                    <note doxml.id="d27e1053" dur="16" oct="3" pname="f" tstamp="2" xml:id="note_7722"/>
+                    <note accid="n" doxml.id="d27e1055" dur="16" oct="3" pname="a" tstamp="2.25" xml:id="note_7728"/>
+                    <note doxml.id="d27e1057" dur="16" oct="4" pname="c" tstamp="2.5" xml:id="note_7734"/>
+                    <note doxml.id="d27e1060" dur="16" oct="3" pname="a" tstamp="2.75" xml:id="note_7740"/>
+                  </beam>
+                  <beam xml:id="beam_7746">
+                    <note accid.ges="f" doxml.id="d27e1064" dur="32" oct="3" pname="b" tstamp="3" xml:id="note_7752"/>
+                    <note doxml.id="d27e1066" dur="32" oct="4" pname="d" tstamp="3.125" xml:id="note_7758"/>
+                    <note doxml.id="d27e1068" dur="32" oct="4" pname="f" tstamp="3.25" xml:id="note_7764"/>
+                    <note doxml.id="d27e1070" dur="32" oct="4" pname="d" tstamp="3.375" xml:id="note_7770"/>
+                  </beam>
+                  <beam xml:id="beam_7776">
+                    <note doxml.id="d27e1072" dur="32" oct="4" pname="f" tstamp="3.5" xml:id="note_7782"/>
+                    <note doxml.id="d27e1074" dur="32" oct="4" pname="d" tstamp="3.625" xml:id="note_7788"/>
+                    <note doxml.id="d27e1076" dur="32" oct="4" pname="f" tstamp="3.75" xml:id="note_7794"/>
+                    <note doxml.id="d27e1078" dur="32" oct="4" pname="d" tstamp="3.875" xml:id="note_7800"/>
+                  </beam>
+                  <chord doxml.id="d27e1080" dur="8" tstamp="4" xml:id="chord_7806">
+                    <note accid.ges="f" doxml.id="d27e1080" oct="4" pname="e" xml:id="note_7812"/>
+                    <note doxml.id="d27e1083" oct="3" pname="f" xml:id="note_7818"/>
+                  </chord>
+                  <rest doxml.id="d27e1085" dur="8" tstamp="4.5" xml:id="rest_7824"/>
+                </layer>
+              </staff>
+              <dynam doxml.id="d27e1024" place="above" staff="1" startid="#note_7608" xml:id="dynam_7830">p</dynam>
+              <dynam doxml.id="d27e1062" staff="2" startid="#note_7752" xml:id="dynam_7842">p</dynam>
+              <app type="ossia" xml:id="app_7854">
+                <lem source="#source_1" xml:id="lem_7860">
+                  <choice xml:id="choice_7866">
+                    <corr resp="#NMA-editors" xml:id="corr_7872">
+                      <turn accidlower="n" delayed="true" form="upper" staff="1" tstamp="1.125" xml:id="turn_7878"/>
+                    </corr>
+                    <orig xml:id="orig_7884">
+                      <turn delayed="true" form="upper" staff="1" tstamp="1.125" xml:id="turn_7890"/>
+                    </orig>
+                  </choice>
+                </lem>
+                <rdg source="#source_A" xml:id="rdg_7896"/>
+                <rdg source="#source_A2" xml:id="rdg_7902"/>
+              </app>
+              <slur endid="#note_7518" staff="1" startid="#note_7506" xml:id="slur_7734"/>
+              <slur endid="#note_7554" staff="1" startid="#note_7536" xml:id="slur_7740"/>
+              <slur endid="#note_7584" staff="1" startid="#note_7566" xml:id="slur_7746"/>
+              <slur endid="#note_7656" staff="1" startid="#note_7608" xml:id="slur_7752"/>
+              <slur endid="#note_7800" staff="2" startid="#note_7752" xml:id="slur_7758"/>
+              <tie endid="#note_7536" staff="1" startid="#note_7524" xml:id="tie_7938"/>
+            </measure>
+          </section>
+        </score>
+      </mdiv>
+    </body>
+  </music>
+</mei>

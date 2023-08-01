@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+	<title>user-guides_keys</title>
+	<keydef format="pdf" href="../../../var/gVIM-supplied.pdf" keys="gVIM-supplied" navtitle="gVIM-supplied" scope="peer">
+		<topicmeta>
+			<linktext>gVIM-supplied</linktext>
+		</topicmeta>
+	</keydef>
+	<keydef format="pdf" href="../../../var/XPath-Suche.rtf" keys="XPath-Suche" navtitle="XPath-Suche" scope="peer">
+		<topicmeta>
+			<linktext>XPath-Suche</linktext>
+		</topicmeta>
+	</keydef>
+</map>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://dme.mozarteum.at/DME/schemata/mei-DME.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://dme.mozarteum.at/DME/schemata/mei-DME.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei meiversion="3.0.0" xmlns="http://www.music-encoding.org/ns/mei">
+	<meiHead meiversion="3.0.0">
+		<fileDesc>
+			<titleStmt>
+				<title label="NMA digital" type="unit">an example</title>
+			</titleStmt>
+			<pubStmt/>
+		</fileDesc>
+	</meiHead>
+	<music meiversion="3.0.0">
+		<body>
+			<mdiv>
+				<score>
+					<scoreDef key.mode="major" key.pname="c" meter.count="4" meter.sym="common" meter.unit="4" xml:id="scoreDef_01">
+						<staffGrp symbol="bracket" xml:id="staffGrp_01">
+							<staffDef clef.line="3" clef.shape="C" dme.parts="3,4" doxml.id="d28e202" label.abbr="Va." lines="5" n="1" xml:id="staffDef_P3">
+								<label xml:id="label_staffP3">Viola I, II</label>
+							</staffDef>
+						</staffGrp>
+					</scoreDef>
+					<section>
+						<measure xml:id="m_1">
+							<staff n="1" xml:id="staff_1">
+								<layer n="1" xml:id="layer_20340">
+									<beam xml:id="beam_20346">
+										<note accid.ges="s" doxml.id="d28e3159" dur="8" oct="4" pname="g" tstamp="1" xml:id="note_20352"/>
+										<note accid="x" doxml.id="d28e3161" dur="8" oct="4" pname="f" tstamp="1.5" xml:id="note_20358"/>
+										<note accid="s" doxml.id="d28e3163" dur="8" oct="4" pname="a" tstamp="2" xml:id="note_20364"/>
+										<note accid.ges="s" doxml.id="d28e3165" dur="8" oct="4" pname="g" tstamp="2.5" xml:id="note_20370"/>
+										<note accid.ges="s" doxml.id="d28e3167" dur="8" oct="4" pname="f" tstamp="3" xml:id="note_20376">
+											<app xml:id="app_">
+												<lem source="#source_a" xml:id="lem_">
+													<accid accid="n" xml:id="accid_20376a"/>
+													<accid accid="s" xml:id="accid_20376b"/>
+												</lem>
+												<rdg source="#source_b" xml:id="rdg_">
+													<accid accid="n" xml:id="accid_20376c"/>
+												</rdg>
+											</app>
+										</note>
+										<note accid.ges="s" doxml.id="d28e3169" dur="8" oct="4" pname="f" tstamp="3.5" xml:id="note_20385"/>
+									</beam>
+								</layer>
+							</staff>
+						</measure>
+					</section>
+				</score>
+			</mdiv>
+		</body>
+	</music>
+</mei>

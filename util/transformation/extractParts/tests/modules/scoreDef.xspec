@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<x:description run-as="external" stylesheet="../../main.xsl" xmlns:test-helper="x-urn:tutorial:helper:ws-only-text:test-helper" xmlns:dme="http://www.mozarteum.at/ns/dme" xmlns:mei="http://www.music-encoding.org/ns/mei" xmlns:x="http://www.jenitennison.com/xslt/xspec">
+
+  <x:helper stylesheet="../../../lib/test-helper.xsl"/>
+
+  <x:scenario focus="on" label="Tests for scoreDef">
+    <x:scenario label="Extract Oboe II ( |2.2| )">
+      <x:param name="parts">|2.2|</x:param>
+
+      <x:variable href="../data/mre_01.mei" name="mre_01" select="/"/>
+      <x:context mode="extract" select="$mre_01//mei:scoreDef" expand-text="no"/>
+
+      <x:variable href="../data/snippets/snippets_01.xml" name="scoreDefXml" select="test-helper:remove-whitespace-only-text(/)"/>
+      <x:expect select="$scoreDefXml//dme:output//dme:item[@n=1]/mei:scoreDef" label="staffGrp with no staffDef should be deleted."/>
+    </x:scenario>
+
+    <x:scenario label="Extract Oboe II, Corni, Violino I ( |2.2|4|7| )">
+      <x:param name="parts">|2.2|4|7|</x:param>
+
+      <x:variable href="../data/mre_01.mei" name="mre_01" select="/"/>
+      <x:context mode="extract" select="$mre_01//mei:scoreDef" expand-text="no"/>
+
+      <x:variable href="../data/snippets/snippets_01.xml" name="scoreDefXml" select="test-helper:remove-whitespace-only-text(/)"/>
+      <x:expect select="$scoreDefXml//dme:output/dme:item[@n=2]/mei:scoreDef" label="Oboe: @symbol=none, Corni: symbol=bracket, Violino: parent staffGrp deleted, @symbol=none"/>
+    </x:scenario>
+  </x:scenario>
+
+
+
+
+
+
+
+
+
+
+
+
+</x:description>

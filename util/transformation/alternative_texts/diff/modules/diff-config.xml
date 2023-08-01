@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<elements xmlns="http://www.mozarteum.at/ns/dme">
+	<description>
+		<p>The element &lt;elementsTocompare> contains the list of element's local names which are considered for comparison. The string values in the &lt;attrubutes> defines which attributes . For the elements with the @text attribute an additional comparison of their text nodes is performed.</p>
+		<p>The element &lt;excludeAncestors> contains a list of elements which children are excluded from comparison. Also, the 'pointers'of those elements (e.g. &lt;slur>s) are excluded.</p>
+		<p>THe element &lt;exceptions> contains a list of hard typed exceptions. They are localized vai the ID and the @n attribute (The values e.g. '458-001' are the KV number and part number. </p>
+		<p>The children of the elements which do not have corresponding elements are excluded from the comparison. For instance, the &lt;artic> of a note (assuming the are no respective note in another file).</p>
+		<p>Following split / merged elements are recognized: 1) slurs 2) tuplets (e.g. a sextuplet is split into two triplets); 3) beams (e.g. a group of four notes was split into two groups of two notes). If a beam has a split / merged tuplet as ancestor element, this beam will be excluded from comparison.</p>
+	</description>
+	<elementsTOcompare>
+		<note>
+			<attributes>pname,dur,dots,oct</attributes>
+		</note>
+		<chord>
+			<attributes>dur,tstamp,dots</attributes>
+		</chord>
+		<slur>
+			<attributes>startid,endid</attributes>
+		</slur>
+		<rest>
+			<attributes>dur,tstamp,dots</attributes>
+		</rest>
+		<tie>
+			<attributes>startid,endid</attributes>
+		</tie>
+		<trill>
+			<attributes>startid,tstamp2,extender,accidupper,accidlower</attributes>
+		</trill>
+		<turn>
+			<attributes>startid,acciduper,accidlower</attributes>
+		</turn>
+		<fermata>
+			<attributes>startid,tstamp</attributes>
+		</fermata>
+		<dynam text="yes">
+			<attributes>startid,tstamp,extender</attributes>
+		</dynam>
+		<dir text="yes">
+			<attributes>startid,tstamp</attributes>
+		</dir>
+		<tempo text="yes">
+			<attributes/>
+		</tempo>
+		<artic>
+			<attributes>artic</attributes>
+		</artic>
+		<accid>
+			<attributes>accid,accid.ges</attributes>
+		</accid>
+	</elementsTOcompare>
+	<excludeAncestors>
+		<orig/>
+		<rdg/>
+		<sic/>
+	</excludeAncestors>
+	<exceptions>
+		<piece>
+			<part n="458-001">slur_63732-A,slur_63732,#note_63909-A</part>
+		</piece>
+	</exceptions>
+</elements>

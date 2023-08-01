@@ -1,0 +1,27 @@
+/*===========Enhance From Doxml START===========*/
+div[xml|id="doxml"]>parameters>.urlChooser {
+  /* color: red; */
+  content:
+    oxy_label(text, "Choose the input doxml file: ", width, 28em, text-align, left) oxy_urlChooser(edit, "@file", columns, 30);
+}
+
+/* <parameter xml:id="replaceAll">YES</parameter>
+  <parameter xml:id="add"/>    */
+/* parameter[xml|id="replaceAll"]:before {
+  content:
+    oxy_label(text, "Replace all elements in the current MEI", width, 20em, text-align, left) "  "
+    oxy_checkbox(edit, "#text",
+      values, "YES",
+      uncheckedValues, "NO");
+  visibility: -oxy-collapse-text;
+}
+
+parameter[xml|id="add"]:before {
+  content:
+    oxy_label(text, "Add elements to the existing in the current MEI", width, 20em, text-align, left) "  "
+    oxy_checkbox(edit, "#text",
+      values, "YES",
+      uncheckedValues, "NO");
+  visibility: -oxy-collapse-text;
+} */
+/*===========Enhance From Doxml END===========*/

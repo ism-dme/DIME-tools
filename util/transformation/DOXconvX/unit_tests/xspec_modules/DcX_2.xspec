@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<x:description stylesheet="../../DOXconvX.xsl" xmlns:mei="http://www.music-encoding.org/ns/mei" xmlns:x="http://www.jenitennison.com/xslt/xspec">
+
+  <x:scenario label="Delete dir with text 'origrace-g1'.">
+    <x:variable href="../input/246_3523/dmeref_246-002_3528.xml" name="K246_002" select="/"/>
+    <x:context mode="DcX_2" select="$K246_002/id('di_d4419e7219')"/>
+    <x:expect label="no output (element deleted)" select="()"/>
+  </x:scenario>
+
+  <x:scenario focus="on" label="Copy dir">
+    <x:variable href="../input/246_3523/dmeref_246-002_3528.xml" name="K246_002" select="/"/>
+    <x:context mode="DcX_2">
+      <dir doxml.id="d27e20" place="above" staff="1" tstamp="1" type="bartext" xml:id="di_d871e179" xmlns="http://www.music-encoding.org/ns/mei">Tempo di Menuetto</dir>
+    </x:context>
+    <x:expect label="Dir should be copied.">
+      <dir doxml.id="d27e20" place="above" staff="1" tstamp="1" type="bartext" xml:id="di_d871e179" xmlns="http://www.music-encoding.org/ns/mei">Tempo di Menuetto</dir>
+    </x:expect>
+  </x:scenario>
+
+</x:description>

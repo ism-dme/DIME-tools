@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://dme.mozarteum.at/DME/schemata/mei-DME-4.0.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://dme.mozarteum.at/DME/schemata/mei-DME-4.0.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei meiversion="4.0.1" xmlns="http://www.music-encoding.org/ns/mei">
+  <meiHead>
+    <fileDesc>
+      <titleStmt>
+        <title label="NMA digital" type="unit">an example</title>
+      </titleStmt>
+      
+      <pubStmt/>
+    </fileDesc>
+  </meiHead>
+  <music>
+    <body>
+      <mdiv>
+        <score>
+          <scoreDef key.mode="major" key.pname="f" key.sig="1f" meter.count="3" meter.unit="4" optimize="false" xml:id="scoreDef_01">
+            <staffGrp barthru="false" xml:id="staffGrp_01">
+              <staffGrp barthru="true" symbol="bracket" xml:id="staffGrp_02">
+                <staffDef clef.line="2" clef.shape="G" decls="#instrVoice_1" dme.parts="1" doxml.id="d27e52" label.abbr="Fl." lines="5" n="1" xml:id="staffDef_P1">
+                  <label xml:id="label_P1">Flauto</label>
+                </staffDef>
+                <staffDef clef.line="2" clef.shape="G" dme.parts="2,3" doxml.id="d27e87" label.abbr="Ob." lines="5" n="2" xml:id="staffDef_P2">
+                  <label xml:id="label_P2">Oboi</label>
+                  <layerDef decls="#instrVoice_2" n="1" xml:id="layerDef_Ob1"/>
+                  <layerDef decls="#instrVoice_3" n="2" xml:id="layerDef_Ob2"/>
+                </staffDef>
+                <staffDef clef.line="4" clef.shape="F" dme.parts="4,5" doxml.id="d27e127" label.abbr="Fag." lines="5" n="3" xml:id="staffDef_P3">
+                  <label xml:id="label_P3">Fagotti</label>
+                  <layerDef decls="#instrVoice_4" n="1" xml:id="layerDef_Fag1"/>
+                  <layerDef decls="#instrVoice_5" n="2" xml:id="layerDef_Fag2"/>
+                </staffDef>
+              </staffGrp>
+              <staffGrp symbol="bracket" xml:id="staffGrp_03">
+                <staffDef clef.line="2" clef.shape="G" dme.parts="6,7" doxml.id="d27e167" key.sig="0" label.abbr="Cor." lines="5" n="4" trans.diat="-4" trans.semi="-7" xml:id="staffDef_P4">
+                  <label xml:id="label_P4">Corni<lb xml:id="lb_P4"/> in Fa/F</label>
+                  <layerDef decls="#instrVoice_6" n="1" xml:id="layerDef_Cor1"/>
+                  <layerDef decls="#instrVoice_7" n="2" xml:id="layerDef_Cor2"/>
+                </staffDef>
+              </staffGrp>
+              <staffGrp barthru="true" symbol="bracket" xml:id="staffGrp_04">
+                <staffGrp symbol="brace" xml:id="staffGrp_05">
+                  <staffDef clef.line="2" clef.shape="G" decls="#instrVoice_8" dme.parts="8" doxml.id="d27e206" label.abbr="Vl.I" lines="5" n="5" xml:id="staffDef_P5">
+                    <label xml:id="label_P5">Violino I</label>
+                  </staffDef>
+                  <staffDef clef.line="2" clef.shape="G" decls="#instrVoice_9" dme.parts="9" doxml.id="d27e294" label.abbr="Vl.II" lines="5" n="6" xml:id="staffDef_P6">
+                    <label xml:id="label_P6">Violino II</label>
+                  </staffDef>
+                </staffGrp>
+                <staffDef clef.line="3" clef.shape="C" decls="#instrVoice_10" dme.parts="10" doxml.id="d27e378" label.abbr="Va." lines="5" n="7" xml:id="staffDef_P7">
+                  <label xml:id="label_P7">Viola</label>
+                </staffDef>
+                <staffDef clef.line="4" clef.shape="F" decls="#instrVoice_11 #instrVoice_12" dme.parts="11,12" doxml.id="d27e432" label.abbr="Vc. e Bs." lines="5" n="8" xml:id="staffDef_P8">
+                  <label xml:id="label_P8">Violoncello<lb xml:id="lb_P8"/> e Basso</label>
+                </staffDef>
+              </staffGrp>
+            </staffGrp>
+          </scoreDef>
+          <section>
+            <measure facs="#zoneOf_measure39" n="39" xml:id="m39_k551_002">
+              <staff dme.parts="1" n="1" xml:id="staff_26652">
+                <layer n="1" xml:id="layer_26658">
+                  <note doxml.id="d27e4959" dur="4" oct="6" pname="c" tstamp="1" xml:id="note_26664"/>
+                  <rest doxml.id="d27e4961" dur="4" tstamp="2" xml:id="rest_26670"/>
+                  <rest doxml.id="d27e4963" dur="4" tstamp="3" xml:id="rest_26676"/>
+                </layer>
+              </staff>
+              <staff dme.parts="2,3" n="2" xml:id="staff_26682">
+                <layer n="1" xml:id="layer_26688">
+                  <note doxml.id="d27e5007" dur="4" oct="5" pname="c" tstamp="1" xml:id="note_26694"/>
+                  <rest doxml.id="d27e5009" dur="4" tstamp="2" xml:id="rest_26700"/>
+                  <rest doxml.id="d27e5011" dur="4" tstamp="3" xml:id="rest_26706"/>
+                </layer>
+                <layer n="2" xml:id="layer_26712">
+                  <note doxml.id="d27e5007" dur="4" oct="5" pname="c" tstamp="1" xml:id="note_26718"/>
+                  <rest doxml.id="d27e5009" sameas="#rest_26700" tstamp="2" xml:id="rest_26724"/>
+                  <rest doxml.id="d27e5011" sameas="#rest_26706" tstamp="3" xml:id="rest_26730"/>
+                </layer>
+              </staff>
+              <staff dme.parts="4,5" n="3" xml:id="staff_26736">
+                <layer n="1" xml:id="layer_26742">
+                  <note doxml.id="d27e5045" dur="4" oct="4" pname="c" tstamp="1" xml:id="note_26748"/>
+                  <rest doxml.id="d27e5049" dur="4" tstamp="2" xml:id="rest_26754"/>
+                  <rest doxml.id="d27e5051" dur="4" tstamp="3" xml:id="rest_26760"/>
+                </layer>
+                <layer n="2" xml:id="layer_26766">
+                  <note doxml.id="d27e5047" dur="4" oct="3" pname="e" stem.sameas="#note_26748" tstamp="1" xml:id="note_26772"/>
+                  <rest doxml.id="d27e5049" sameas="#rest_26754" tstamp="2" xml:id="rest_26778"/>
+                  <rest doxml.id="d27e5051" sameas="#rest_26760" tstamp="3" xml:id="rest_26784"/>
+                </layer>
+              </staff>
+              <staff dme.parts="6,7" n="4" xml:id="staff_26790">
+                <layer n="1" xml:id="layer_26796">
+                  <tuplet bracket.visible="true" num="3" num.visible="true" numbase="2" xml:id="tuplet_26802">
+                    <rest doxml.id="d27e5133" dur="16" tstamp="1" xml:id="rest_26808"/>
+                    <beam xml:id="beam_26814">
+                      <note doxml.id="d27e5139" dur="16" oct="4" pname="g" tstamp="1.1666666666666667" xml:id="note_26820"/>
+                      <note doxml.id="d27e5143" dur="16" oct="4" pname="g" tstamp="1.3333333333333333" xml:id="note_26826"/>
+                    </beam>
+                  </tuplet>
+                  <beam xml:id="beam_26832">
+                    <tuplet bracket.visible="false" num="3" num.visible="true" numbase="2" xml:id="tuplet_26838">
+                      <note doxml.id="d27e5147" dur="16" oct="4" pname="g" tstamp="1.5" xml:id="note_26844"/>
+                      <note doxml.id="d27e5154" dur="16" oct="4" pname="g" tstamp="1.6666666666666665" xml:id="note_26850"/>
+                      <note doxml.id="d27e5158" dur="16" oct="4" pname="g" tstamp="1.8333333333333333" xml:id="note_26856"/>
+                    </tuplet>
+                  </beam>
+                  <beam xml:id="beam_26857">
+                    <tuplet bracket.visible="false" num="3" num.visible="false" numbase="2" xml:id="tuplet_26858">
+                      <note doxml.id="d27e5147" dur="16" oct="4" pname="g" tstamp="2" xml:id="note_26859"/>
+                      <note doxml.id="d27e5154" dur="16" oct="4" pname="g" tstamp="2.1666666666666667" xml:id="note_26860"/>
+                      <note doxml.id="d27e5158" dur="16" oct="4" pname="g" tstamp="2.3333333333333333" xml:id="note_26861"/>
+                    </tuplet>
+                    <tuplet bracket.visible="false" num="3" num.visible="false" numbase="2" xml:id="tuplet_26862">
+                      <note doxml.id="d27e5147" dur="16" oct="4" pname="g" tstamp="2.5" xml:id="note_26862"/>
+                      <note doxml.id="d27e5154" dur="16" oct="4" pname="g" tstamp="2.6666666666666665" xml:id="note_26863"/>
+                      <note doxml.id="d27e5158" dur="16" oct="4" pname="g" tstamp="2.8333333333333333" xml:id="note_26864"/>
+                    </tuplet>
+                  </beam>
+                  <beam xml:id="beam_26865">
+                    <tuplet bracket.visible="false" num="3" num.visible="false" numbase="2" xml:id="tuplet_26865">
+                      <note doxml.id="d27e5147" dur="16" oct="4" pname="g" tstamp="3" xml:id="note_26866"/>
+                      <note doxml.id="d27e5154" dur="16" oct="4" pname="g" tstamp="3.1666666666666667" xml:id="note_26867"/>
+                      <note doxml.id="d27e5158" dur="16" oct="4" pname="g" tstamp="3.3333333333333333" xml:id="note_26868"/>
+                    </tuplet>
+                    <tuplet bracket.visible="false" num="3" num.visible="false" numbase="2" xml:id="tuplet_26869">
+                      <note doxml.id="d27e5147" dur="16" oct="4" pname="g" tstamp="3.5" xml:id="note_26869"/>
+                      <note doxml.id="d27e5154" dur="16" oct="4" pname="g" tstamp="3.6666666666666665" xml:id="note_26870"/>
+                      <note doxml.id="d27e5158" dur="16" oct="4" pname="g" tstamp="3.8333333333333333" xml:id="note_26871"/>
+                    </tuplet>
+                  </beam>
+                </layer>
+                <layer n="2" xml:id="layer_26862">
+                  <tuplet bracket.visible="true" num="3" num.visible="true" numbase="2" xml:id="tuplet_26868">
+                    <rest doxml.id="d27e5133" sameas="#rest_26808" tstamp="1" xml:id="rest_26874"/>
+                    <beam xml:id="beam_26880">
+                      <note doxml.id="d27e5141" dur="16" oct="3" pname="g" stem.sameas="#note_26820" tstamp="1.1666666666666667" xml:id="note_26886"/>
+                      <note doxml.id="d27e5145" dur="16" oct="3" pname="g" stem.sameas="#note_26826" tstamp="1.3333333333333333" xml:id="note_26892"/>
+                    </beam>
+                  </tuplet>
+                  <beam xml:id="beam_26898">
+                    <tuplet bracket.visible="false" num="3" num.visible="true" numbase="2" xml:id="tuplet_26904">
+                      <note doxml.id="d27e5149" dur="16" oct="3" pname="g" stem.sameas="#note_26844" tstamp="1.5" xml:id="note_26910"/>
+                      <note doxml.id="d27e5156" dur="16" oct="3" pname="g" stem.sameas="#note_26850" tstamp="1.6666666666666665" xml:id="note_26916"/>
+                      <note doxml.id="d27e5160" dur="16" oct="3" pname="g" stem.sameas="#note_26856" tstamp="1.8333333333333333" xml:id="note_26922"/>
+                    </tuplet>
+                  </beam>
+                  <beam xml:id="beam_26923">
+                    <tuplet bracket.visible="false" num="3" num.visible="false" numbase="2" xml:id="tuplet_26923">
+                      <note dur="16" oct="3" pname="g" stem.sameas="#note_26859" tstamp="2" xml:id="note_26924"/>
+                      <note dur="16" oct="3" pname="g" stem.sameas="#note_26860" tstamp="2.1666666666666667" xml:id="note_26925"/>
+                      <note dur="16" oct="3" pname="g" stem.sameas="#note_26861" tstamp="2.3333333333333333" xml:id="note_26926"/>
+                    </tuplet>
+                    <tuplet bracket.visible="false" num="3" num.visible="false" numbase="2" xml:id="tuplet_26927">
+                      <note dur="16" oct="3" pname="g" stem.sameas="#note_26862" tstamp="2.5" xml:id="note_26927"/>
+                      <note dur="16" oct="3" pname="g" stem.sameas="#note_26863" tstamp="2.6666666666666665" xml:id="note_26928"/>
+                      <note dur="16" oct="3" pname="g" stem.sameas="#note_26864" tstamp="2.8333333333333333" xml:id="note_26929"/>
+                    </tuplet>
+                  </beam>
+                  <beam xml:id="beam_26930">
+                    <tuplet bracket.visible="false" num="3" num.visible="false" numbase="2" xml:id="tuplet_26930">
+                      <note dur="16" oct="3" pname="g" stem.sameas="#note_26859" tstamp="2" xml:id="note_26931"/>
+                      <note dur="16" oct="3" pname="g" stem.sameas="#note_26860" tstamp="2.1666666666666667" xml:id="note_26932"/>
+                      <note dur="16" oct="3" pname="g" stem.sameas="#note_26861" tstamp="2.3333333333333333" xml:id="note_26933"/>
+                    </tuplet>
+                    <tuplet bracket.visible="false" num="3" num.visible="false" numbase="2" xml:id="tuplet_26934">
+                      <note dur="16" oct="3" pname="g" stem.sameas="#note_26862" tstamp="2.5" xml:id="note_26934"/>
+                      <note dur="16" oct="3" pname="g" stem.sameas="#note_26863" tstamp="2.6666666666666665" xml:id="note_26935"/>
+                      <note dur="16" oct="3" pname="g" stem.sameas="#note_26864" tstamp="2.8333333333333333" xml:id="note_26936"/>
+                    </tuplet>
+                  </beam>
+                </layer>
+              </staff>
+              <staff dme.parts="8" n="5" xml:id="staff_26928">
+                <layer n="1" xml:id="layer_26934">
+                  <beam xml:id="beam_26940">
+                    <note artic="stacc" doxml.id="d27e5223" dur="8" oct="4" pname="c" tstamp="1" xml:id="note_26946"/>
+                    <note doxml.id="d27e5227" dur="8" oct="5" pname="e" tstamp="1.5" xml:id="note_26952"/>
+                    <note doxml.id="d27e5229" dur="8" oct="5" pname="f" tstamp="2" xml:id="note_26958"/>
+                    <note doxml.id="d27e5231" dur="8" oct="5" pname="g" tstamp="2.5" xml:id="note_26964"/>
+                  </beam>
+                  <beam xml:id="beam_26970">
+                    <tuplet bracket.visible="false" num="3" num.visible="true" numbase="2" xml:id="tuplet_26976">
+                      <note doxml.id="d27e5233" dur="16" oct="5" pname="a" tstamp="3" xml:id="note_26982"/>
+                      <note accid="s" doxml.id="d27e5237" dur="16" oct="5" pname="g" tstamp="3.1666666666666665" xml:id="note_26988"/>
+                      <note doxml.id="d27e5239" dur="16" oct="5" pname="a" tstamp="3.333333333333333" xml:id="note_26994"/>
+                    </tuplet>
+                  </beam>
+                  <beam xml:id="beam_27000">
+                    <tuplet bracket.visible="false" num="3" num.visible="true" numbase="2" xml:id="tuplet_27006">
+                      <note doxml.id="d27e5241" dur="16" oct="6" pname="c" tstamp="3.4999999999999996" xml:id="note_27012"/>
+                      <note accid="n" doxml.id="d27e5246" dur="16" oct="5" pname="b" tstamp="3.666666666666666" xml:id="note_27018"/>
+                      <note doxml.id="d27e5248" dur="16" oct="5" pname="a" tstamp="3.8333333333333326" xml:id="note_27024"/>
+                    </tuplet>
+                  </beam>
+                </layer>
+              </staff>
+              <staff dme.parts="9" n="6" xml:id="staff_27030">
+                <layer n="1" xml:id="layer_27036">
+                  <beam xml:id="beam_27042">
+                    <note doxml.id="d27e5285" dur="8" oct="4" pname="c" tstamp="1" xml:id="note_27048">
+                      <supplied resp="#NMA-editors" xml:id="supplied_27048">
+                        <artic artic="stacc" xml:id="artic_27048"/>
+                      </supplied>
+                    </note>
+                    <note doxml.id="d27e5289" dur="8" oct="4" pname="c" tstamp="1.5" xml:id="note_27054"/>
+                    <note doxml.id="d27e5292" dur="8" oct="4" pname="d" tstamp="2" xml:id="note_27060"/>
+                    <note doxml.id="d27e5294" dur="8" oct="4" pname="e" tstamp="2.5" xml:id="note_27066"/>
+                  </beam>
+                  <beam xml:id="beam_27072">
+                    <tuplet bracket.visible="false" num="3" num.visible="true" numbase="2" xml:id="tuplet_27078">
+                      <note doxml.id="d27e5296" dur="16" oct="4" pname="f" tstamp="3" xml:id="note_27084"/>
+                      <note doxml.id="d27e5300" dur="16" oct="4" pname="e" tstamp="3.1666666666666665" xml:id="note_27090"/>
+                      <note doxml.id="d27e5302" dur="16" oct="4" pname="f" tstamp="3.333333333333333" xml:id="note_27096"/>
+                    </tuplet>
+                  </beam>
+                  <beam xml:id="beam_27102">
+                    <tuplet bracket.visible="false" num="3" num.visible="true" numbase="2" xml:id="tuplet_27108">
+                      <note doxml.id="d27e5304" dur="16" oct="4" pname="a" tstamp="3.4999999999999996" xml:id="note_27114"/>
+                      <note doxml.id="d27e5308" dur="16" oct="4" pname="g" tstamp="3.666666666666666" xml:id="note_27120"/>
+                      <note doxml.id="d27e5310" dur="16" oct="4" pname="f" tstamp="3.8333333333333326" xml:id="note_27126"/>
+                    </tuplet>
+                  </beam>
+                </layer>
+              </staff>
+              <staff dme.parts="10" n="7" xml:id="staff_27132">
+                <layer n="1" xml:id="layer_27138">
+                  <note doxml.id="d27e5348" dur="4" oct="3" pname="e" tstamp="1" xml:id="note_27144">
+                    <supplied resp="#NMA-editors" xml:id="supplied_27144">
+                      <artic artic="stacc" xml:id="artic_27144"/>
+                    </supplied>
+                  </note>
+                  <rest doxml.id="d27e5350" dur="4" tstamp="2" xml:id="rest_27150"/>
+                  <rest doxml.id="d27e5352" dur="4" tstamp="3" xml:id="rest_27156"/>
+                </layer>
+              </staff>
+              <staff dme.parts="11,12" n="8" xml:id="staff_27162">
+                <layer n="1" xml:id="layer_27168">
+                  <note artic="stacc" doxml.id="d27e5377" dur="4" oct="3" pname="c" tstamp="1" xml:id="note_27174"/>
+                  <rest doxml.id="d27e5379" dur="4" tstamp="2" xml:id="rest_27180"/>
+                  <rest doxml.id="d27e5381" dur="4" tstamp="3" xml:id="rest_27186"/>
+                </layer>
+              </staff>
+              <dynam doxml.id="d27e5135" layer="1 2" staff="4" startid="#note_26820" xml:id="dynam_27192">p</dynam>
+              <dynam doxml.id="d27e5225" staff="5" startid="#note_26952" xml:id="dynam_27204">p</dynam>
+              <dynam doxml.id="d27e5287" staff="6" startid="#note_27054" xml:id="dynam_27216">p</dynam>
+              <slur endid="#note_27876" staff="5" startid="#note_26952" xml:id="slur_27330"/>
+              <slur endid="#note_27912" staff="6" startid="#note_27054" xml:id="slur_27336"/>
+            </measure>
+
+          </section>
+        </score>
+      </mdiv>
+    </body>
+  </music>
+</mei>

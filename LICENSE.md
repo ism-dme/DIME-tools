@@ -1,4 +1,4 @@
-Contributors: Oleksii Sapov, Johannes Kepper
+Contributors: Oleksii Sapov
 
 **Copyright** 2020 [_Internationale Stiftung Mozarteum Salzburg_](dme.mozarteum.at).
 
@@ -11,8 +11,4 @@ ___
 
 **Disclaimer**
 
-
-The project uses following parts from the [Intelligent Integrated Style Guide](https://github.com/oxygenxml/integrated-styleguide) by Syncro Soft SRL (2018) licensed under [Apache 2.0] (https://www.apache.org/licenses/LICENSE-2.0) license.:
-
-- `./validation/schematron/styleguide` framework
--  `./validation/schematron/src` folder. The files in this folder were modified to meet the project needs, in particular, in order to be able to define the *unique rules*
+If parts of this project use other open software the authors and license agreement are mentioned there.

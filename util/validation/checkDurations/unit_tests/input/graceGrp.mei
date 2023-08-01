@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://dme.mozarteum.at/DME/schemata/mei-DME-4.0.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://dme.mozarteum.at/DME/schemata/mei-DME-4.0.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei meiversion="4.0.1" xmlns="http://www.music-encoding.org/ns/mei">
+  <meiHead>
+    <fileDesc>
+      <titleStmt>
+        <title label="NMA digital" type="unit">an example</title>
+      </titleStmt>
+      <pubStmt/>
+    </fileDesc>
+  </meiHead>
+  <music>
+    <body>
+      <mdiv n="1" xml:id="mdiv_72">
+        <score xml:id="score_78">
+          <scoreDef key.mode="minor" key.pname="a" key.sig="0" meter.count="2" meter.unit="4" xml:id="scoreDef_01">
+            <staffGrp bar.thru="true" symbol="brace" xml:id="staffGrp_01">
+              <staffDef clef.line="2" clef.shape="G" lines="5" n="1" xml:id="staffDef_P1"/>
+              <staffDef clef.line="4" clef.shape="F" lines="5" n="2" xml:id="staffDef_P2"/>
+            </staffGrp>
+          </scoreDef>
+          <section xml:id="section_A_m1-1">
+            <measure n="1" xml:id="m1">
+              <staff n="1" xml:id="staff_120">
+                <layer n="1" xml:id="layer_126">
+                  <graceGrp grace="unknown" xml:id="graceGrp_132">
+                    <chord dur="8" stem.dir="up" xml:id="chord_138">
+                      <note oct="5" pname="e" xml:id="note_144"/>
+                      <note oct="5" pname="c" xml:id="note_150"/>
+                    </chord>
+                  </graceGrp>
+                  <chord dur="4" tstamp="1" xml:id="chord_156">
+                    <note oct="5" pname="d" xml:id="note_162"/>
+                    <note oct="4" pname="b" xml:id="note_168"/>
+                  </chord>
+                  <beam xml:id="beam_174">
+                    <chord dur="8" tstamp="2" xml:id="chord_180">
+                      <note oct="5" pname="c" xml:id="note_186"/>
+                      <note oct="4" pname="a" xml:id="note_192"/>
+                    </chord>
+                    <chord dur="8" tstamp="2.5" xml:id="chord_198">
+                      <note oct="4" pname="b" xml:id="note_204"/>
+                      <note accid="s" oct="4" pname="g" xml:id="note_210"/>
+                    </chord>
+                  </beam>
+                </layer>
+              </staff>
+              <staff n="2" xml:id="staff_216">
+                <layer n="1" xml:id="layer_222">
+                  <note dur="4" oct="4" pname="d" tstamp="1" xml:id="note_228"/>
+                  <note dur="4" oct="4" pname="e" tstamp="2" xml:id="note_234"/>
+                </layer>
+              </staff>
+              <slur curvedir="below" endid="#chord_156" staff="1" startid="#chord_138" xml:id="slur_240"/>
+            </measure>
+          </section>
+        </score>
+      </mdiv>
+    </body>
+  </music>
+</mei>

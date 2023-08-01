@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://dme.mozarteum.at/DME/schemata/mei-DME.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://dme.mozarteum.at/DME/schemata/mei-DME.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei meiversion="3.0.0" xmlns="http://www.music-encoding.org/ns/mei">
+	<meiHead meiversion="3.0.0">
+		<fileDesc>
+			<titleStmt>
+				<title label="NMA digital" type="unit">resolve &lt;bTrem&gt;s</title>
+			</titleStmt>
+			<pubStmt/>
+		</fileDesc>
+	</meiHead>
+	<music meiversion="3.0.0">
+		<body>
+			<mdiv xml:id="mdiv_72">
+				<score xml:id="score_78">
+					<scoreDef meter.count="4" meter.sym="common" meter.unit="4" xml:id="scoreDef_01">
+						<staffGrp xml:id="staffGrp_01">
+							<staffDef clef.line="2" clef.shape="G" lines="5" n="1" xml:id="staffDef_P1"/>
+						</staffGrp>
+					</scoreDef>
+					<section xml:id="section_A_m1-3">
+						<measure n="1" xml:id="m1">
+							<staff n="1" xml:id="staff_114">
+								<layer n="1" xml:id="layer_120">
+									<beam xml:id="beam_126">
+										<note dur="8" oct="4" pname="f" tstamp="1" xml:id="note_132"/>
+										<note dur="8" oct="3" pname="f" tstamp="1.25" xml:id="note_138"/>
+										<note dur="8" oct="3" pname="f" tstamp="1.5" xml:id="note_144"/>
+										<note dur="8" oct="3" pname="f" tstamp="1.75" xml:id="note_150"/>
+									</beam>
+									<bTrem form="meas" measperf="8" xml:id="bTrem_156">
+										<note dur="2" oct="3" pname="f" stem.mod="1slash" tstamp="2" xml:id="note_162"/>
+									</bTrem>
+								</layer>
+							</staff>
+						</measure>
+						<measure n="2" xml:id="m2">
+							<staff n="1" xml:id="staff_174">
+								<layer n="1" xml:id="layer_180">
+									<bTrem form="meas" measperf="8" xml:id="bTrem_186">
+										<note accid="f" dur="2" oct="5" pname="d" stem.mod="1slash" tstamp="1" xml:id="note_192"/>
+									</bTrem>
+									<bTrem form="meas" measperf="8" xml:id="bTrem_198">
+										<note accid.ges="f" dur="2" oct="5" pname="d" stem.mod="1slash" tstamp="2" xml:id="note_204"/>
+									</bTrem>
+								</layer>
+							</staff>
+						</measure>
+						<measure n="3" xml:id="m3">
+							<staff n="1" xml:id="staff_216">
+								<layer n="1" xml:id="layer_222">
+									<bTrem form="meas" measperf="8" xml:id="bTrem_228">
+										<chord dur="2" stem.mod="1slash" tstamp="1" xml:id="chord_234">
+											<note accid="s" oct="5" pname="f" xml:id="note_240"/>
+											<note oct="5" pname="c" xml:id="note_246"/>
+										</chord>
+									</bTrem>
+									<bTrem form="meas" measperf="8" xml:id="bTrem_252">
+										<chord dur="2" stem.mod="1slash" tstamp="2" xml:id="chord_258">
+											<note accid.ges="s" oct="5" pname="f" xml:id="note_264"/>
+											<note oct="5" pname="c" xml:id="note_270"/>
+										</chord>
+									</bTrem>
+								</layer>
+							</staff>
+						</measure>
+						<measure n="4" xml:id="m4">
+							<staff n="1" xml:id="staff_5304">
+								<layer n="1" xml:id="layer_5310">
+									<beam xml:id="beam_5316">
+										<note accid.ges="f" dur="8" oct="4" pname="e" tstamp="1" xml:id="note_5322"/>
+										<note accid.ges="f" dur="8" oct="4" pname="e" tstamp="2" xml:id="note_5328"/>
+										<note accid.ges="f" dur="8" oct="4" pname="e" tstamp="3" xml:id="note_5334"/>
+									</beam>
+									<bTrem form="meas" measperf="8" xml:id="bTrem_5340">
+										<note accid.ges="f" dots="1" dur="4" oct="4" pname="e" stem.mod="1slash" tstamp="4" xml:id="note_5346"/>
+									</bTrem>
+								</layer>
+							</staff>
+						</measure>
+					</section>
+				</score>
+			</mdiv>
+		</body>
+	</music>
+</mei>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<x:description stylesheet="../DOXconvX.xsl" xmlns:x="http://www.jenitennison.com/xslt/xspec">
+
+  <x:param href="input/309_3836/dmeref_309-001_3837.xml" name="global-context-item"/>
+  <x:param href="../DOXconvX.xsl" name="currentStylesheet" select="/"/>
+
+
+  <!--dummy-->
+  <x:param name="fileName" select="'dmeref_309-001_3837'"/>
+  <x:param name="fileURL" select="'file:/C:/Users/sapov/DIME/working-set/dev_xslt/util/transformation/DOXconvX/unit_tests/input/'"/>
+  <x:param name="userHomeDirectory" select="'file:/C:/Users/sapov/'"/>
+
+  <x:import href="xspec_modules/chords.xspec"/>
+  <x:import href="xspec_modules/options.xspec"/>
+  <x:import href="xspec_modules/meiHead.xspec"/>
+  <x:import href="xspec_modules/trackChanges.xspec"/>
+  <x:import href="xspec_modules/DcX_2.xspec"/>
+  <x:import href="xspec_modules/DcX_3.xspec"/>
+
+  <!--  with these parameters use the XSpec copy scenario-->
+  <!--   <x:param name="fileName"/>
+  <x:param name="fileURL"/>
+  <x:param name="userHomeDirectory"/>-->
+
+
+
+
+  <x:scenario label="Scenario for testing the decls mode">
+
+    <x:scenario label="Piano solo">
+      <x:context href="input/309_3836/309-001_track-changes/3_various_1.xml" mode="decls" select="id('st_d1361e256')"/>
+      <x:expect href="input/309_3836/309-001_track-changes/4_decls.xml" label="@decls=#upper should be added" select="id('st_d1361e256')"/>
+    </x:scenario>
+
+    <x:scenario label="Piano concerto">
+      <x:scenario label="piano">
+        <x:context href="input/246_3523/246-002_track-changes/3_various_1.xml" mode="decls" select="id('st_d4419e9354')"/>
+        <x:expect href="input/246_3523/246-002_track-changes/4_decls.xml" label="@decls=#lower should be added" select="id('st_d4419e9354')"/>
+      </x:scenario>
+
+      <x:scenario label="other instruments">
+        <x:context href="input/246_3523/246-002_track-changes/3_various_1.xml" mode="decls" select="id('st_d4419e9361')"/>
+        <x:expect href="input/246_3523/246-002_track-changes/4_decls.xml" label="No @decls should be added" select="id('st_d4419e9361')"/>
+      </x:scenario>
+    </x:scenario>
+
+  </x:scenario>
+
+  <x:scenario label="Adding tempo@part=%all">
+
+    <x:scenario label="Piano concerto">
+      <x:context href="input/246_3523/246-002_track-changes/2_scoreDef.xml" mode="DcX_1" select="id('tm_d4419e331')"/>
+      <x:expect href="input/246_3523/246-002_track-changes/3_various_1.xml" label="part=%all should be added when mode=orchestral, i. e. if the next test is green, this test should be red!" select="id('tm_d4419e331')"/>
+    </x:scenario>
+
+    <x:scenario label="Piano solo">
+      <x:context href="input/309_3836/309-001_track-changes/2_scoreDef.xml" mode="DcX_1" select="id('tm_d1361e269')"/>
+      <x:expect href="input/309_3836/309-001_track-changes/3_various_1.xml" label="No part=%all should be added when mode=piano, i. e. if the previous test is green, this test should be red!" select="id('tm_d1361e269')"/>
+    </x:scenario>
+
+  </x:scenario>
+
+</x:description>

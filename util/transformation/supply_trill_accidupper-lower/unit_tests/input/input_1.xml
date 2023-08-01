@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mei meiversion="4.0.1" xmlns="http://www.music-encoding.org/ns/mei">
+  <choice xml:id="choice_7596">
+    <corr resp="#NMA-editors" xml:id="corr_7602">
+      <supplied resp="#NMA-editors" xml:id="supplied_7608">
+        <trill accidupper="s" place="above" staff="1" startid="#note_7428" xml:id="trill_7614"/>
+      </supplied>
+    </corr>
+    <orig xml:id="orig_7620">
+      <trill staff="1" startid="#note_7428" xml:id="trill_7626"/>
+    </orig>
+  </choice>
+</mei>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<x:description stylesheet="../../DOXconvX.xsl" xmlns:mei="http://www.music-encoding.org/ns/mei" xmlns:x="http://www.jenitennison.com/xslt/xspec">
+
+  <x:scenario label="chord having notes with @staff">
+    <x:scenario label="chord does not have staff">
+      <x:context mode="chords">
+        <mei:chord doxml.id="d27e1647" dur="8" tstamp="2.5" xml:id="chord_d25e1141">
+          <mei:note doxml.id="d27e1647" layer="1" oct="3" pname="g" staff="2" xml:id="chnote_d25e1141"/>
+          <mei:note doxml.id="d27e1649" layer="1" oct="3" pname="e" staff="2" xml:id="chnote_d25e1142"/>
+        </mei:chord>
+      </x:context>
+      <x:expect label="moved @staff to chord">
+        <mei:chord doxml.id="d27e1647" dur="8" staff="2" tstamp="2.5" xml:id="chord_d25e1141">
+          <mei:note doxml.id="d27e1647" layer="1" oct="3" pname="g" staff="2" xml:id="chnote_d25e1141"/>
+          <mei:note doxml.id="d27e1649" layer="1" oct="3" pname="e" staff="2" xml:id="chnote_d25e1142"/>
+        </mei:chord>
+      </x:expect>
+    </x:scenario>
+
+    <x:scenario label="chord does have @staff which shoud be updated">
+      <x:context mode="chords">
+        <mei:chord doxml.id="d27e1647" dur="8" staff="1" tstamp="2.5" xml:id="chord_d25e1141">
+          <mei:note doxml.id="d27e1647" layer="1" oct="3" pname="g" staff="2" xml:id="chnote_d25e1141"/>
+          <mei:note doxml.id="d27e1649" layer="1" oct="3" pname="e" staff="2" xml:id="chnote_d25e1142"/>
+        </mei:chord>
+      </x:context>
+      <x:expect label="moved @staff to chord">
+        <mei:chord doxml.id="d27e1647" dur="8" staff="2" tstamp="2.5" xml:id="chord_d25e1141">
+          <mei:note doxml.id="d27e1647" layer="1" oct="3" pname="g" staff="2" xml:id="chnote_d25e1141"/>
+          <mei:note doxml.id="d27e1649" layer="1" oct="3" pname="e" staff="2" xml:id="chnote_d25e1142"/>
+        </mei:chord>
+      </x:expect>
+    </x:scenario>
+
+  </x:scenario>
+
+</x:description>

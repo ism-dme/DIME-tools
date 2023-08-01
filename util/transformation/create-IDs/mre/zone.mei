@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei meiversion="4.0.0" xmlns="http://www.music-encoding.org/ns/mei">
+	<meiHead meiversion="4.0.0">
+		<fileDesc>
+			<titleStmt>
+				<title label="NMA digital" type="unit">an example</title>
+			</titleStmt>
+			<pubStmt/>
+		</fileDesc>
+	</meiHead>
+	<music meiversion="4.0.0">
+		<facsimile decls="#digital_image">
+			<surface label="9" xml:id="surface_9">
+				<graphic target="page9.tif"/>
+				<zone data="#m1" lrx="547" lry="895" type="measure" ulx="399" uly="93" xml:id="zoneOf_measure1"/>
+				<zone data="#m2" lrx="645" lry="895" type="measure" ulx="547" uly="93" xml:id="zoneOf_measure2"/>
+				<zone data="#m3" lrx="749" lry="895" type="measure" ulx="645" uly="93" xml:id="zoneOf_measure3"/>
+			</surface>
+		</facsimile>
+		<body>
+			<mdiv n="1" xml:id="mdiv_108">
+				<score xml:id="score_114">
+					<scoreDef meter.count="4" meter.sym="common" meter.unit="4" xml:id="scoreDef_01">
+						<staffGrp xml:id="staffGrp_01">
+							<staffDef clef.line="2" clef.shape="G" lines="5" n="1" xml:id="staffDef_P1"/>
+						</staffGrp>
+					</scoreDef>
+					<section xml:id="section_A_m1-3">
+						<measure facs="#zoneOf_measure1" n="1" xml:id="m1">
+							<staff n="1" xml:id="staff_150">
+								<layer n="1" xml:id="layer_156">
+									<note dur="4" oct="4" pname="c" xml:id="note_162"/>
+									<note dur="4" oct="4" pname="c" xml:id="note_168"/>
+									<note dur="4" oct="4" pname="c" xml:id="note_174"/>
+									<note dur="4" oct="4" pname="c" xml:id="note_180"/>
+								</layer>
+							</staff>
+						</measure>
+						<measure facs="#zoneOf_measure2" n="2" xml:id="m2">
+							<staff n="1" xml:id="staff_192">
+								<layer n="1" xml:id="layer_198">
+									<note dur="4" oct="4" pname="c" xml:id="note_204"/>
+									<note dur="4" oct="4" pname="c" xml:id="note_210"/>
+									<note dur="4" oct="4" pname="c" xml:id="note_216"/>
+									<note dur="4" oct="4" pname="c" xml:id="note_222"/>
+								</layer>
+							</staff>
+						</measure>
+						<measure facs="#zoneOf_measure3" n="3" xml:id="m3">
+							<staff n="1" xml:id="staff_234">
+								<layer n="1" xml:id="layer_240">
+									<note dur="4" oct="4" pname="c" xml:id="note_246"/>
+									<note dur="4" oct="4" pname="c" xml:id="note_252"/>
+									<note dur="4" oct="4" pname="c" xml:id="note_258"/>
+									<note dur="4" oct="4" pname="c" xml:id="note_264"/>
+								</layer>
+							</staff>
+						</measure>
+					</section>
+				</score>
+			</mdiv>
+		</body>
+	</music>
+</mei>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mei meiversion="4.0.1" xmlns="http://www.music-encoding.org/ns/mei">
+  <music>
+    <body>
+      <mdiv n="1" xml:id="mdiv_282001">
+        <score xml:id="score_282001">
+          <scoreDef key.mode="major" key.pname="g" key.sig="1s" meter.count="3" meter.unit="4" optimize="false" xml:id="scoreDef_01">
+            <staffGrp bar.thru="true" symbol="bracket" xml:id="staffGrp_02">
+              <staffDef clef.line="2" clef.shape="G" decls="#instrVoice_1" doxml.id="d27e33" lines="5" n="1" xml:id="staffDef_P1">
+                <label xml:id="label_P1">Violino I</label>
+              </staffDef>
+              <staffDef clef.line="2" clef.shape="G" decls="#instrVoice_2" doxml.id="d27e75" lines="5" n="2" xml:id="staffDef_P2">
+                <label xml:id="label_P2">Violino II</label>
+              </staffDef>
+              <staffDef clef.line="3" clef.shape="C" decls="#instrVoice_3" doxml.id="d27e106" lines="5" n="3" xml:id="staffDef_P3">
+                <label xml:id="label_P3">Viola</label>
+              </staffDef>
+              <staffDef clef.line="4" clef.shape="F" decls="#instrVoice_4" doxml.id="d27e163" lines="5" n="4" xml:id="staffDef_P4">
+                <label xml:id="label_P4">Violoncello</label>
+              </staffDef>
+            </staffGrp>
+          </scoreDef>
+          <section xml:id="section_adagio">
+
+            <measure facs="#zoneOf_m52" n="52" xml:id="m52">
+              <staff n="1" xml:id="staff_14652">
+                <layer n="1" xml:id="layer_14658">
+                  <note doxml.id="d27e2847" dur="4" oct="5" pname="a" tstamp="1" xml:id="note_14664"/>
+                  <rest doxml.id="d27e2849" dur="4" tstamp="2" xml:id="rest_14670"/>
+                  <rest doxml.id="d27e2851" dur="4" tstamp="3" xml:id="rest_14676"/>
+                </layer>
+              </staff>
+              <staff n="2" xml:id="staff_14682">
+                <layer n="1" xml:id="layer_14688">
+                  <beam xml:id="beam_14694">
+                    <tuplet bracket.visible="false" num="3" num.place="above" num.visible="true" numbase="2" type="num_supplied_NMA" xml:id="tuplet_14700">
+                      <note doxml.id="d27e2868" dur="16" oct="5" pname="g" tstamp="1" xml:id="note_14706"/>
+                      <note doxml.id="d27e2872" dur="16" oct="5" pname="e" tstamp="1.16667" xml:id="note_14712"/>
+                      <note doxml.id="d27e2874" dur="16" oct="5" pname="d" tstamp="1.33333" xml:id="note_14718"/>
+                    </tuplet>
+                  </beam>
+                  <beam xml:id="beam_14724">
+                    <tuplet bracket.visible="false" num="3" num.place="above" num.visible="true" numbase="2" type="num_supplied_NMA" xml:id="tuplet_14730">
+                      <note accid="s" doxml.id="d27e2877" dur="16" oct="5" pname="c" tstamp="1.5" xml:id="note_14736"/>
+                      <note doxml.id="d27e2881" dur="16" oct="4" pname="b" tstamp="1.66667" xml:id="note_14742"/>
+                      <note doxml.id="d27e2883" dur="16" oct="4" pname="a" tstamp="1.83333" xml:id="note_14748"/>
+                    </tuplet>
+                  </beam>
+                  <beam xml:id="beam_14754">
+                    <tuplet bracket.visible="false" num="3" num.place="below" num.visible="true" numbase="2" type="num_supplied_NMA" xml:id="tuplet_14760">
+                      <note doxml.id="d27e2885" dur="16" oct="4" pname="g" tstamp="2" xml:id="note_14766"/>
+                      <note doxml.id="d27e2889" dur="16" oct="4" pname="e" tstamp="2.16667" xml:id="note_14772"/>
+                      <note doxml.id="d27e2891" dur="16" oct="4" pname="d" tstamp="2.33333" xml:id="note_14778"/>
+                    </tuplet>
+                  </beam>
+                  <beam xml:id="beam_14784">
+                    <tuplet bracket.visible="false" num="3" num.place="below" num.visible="true" numbase="2" type="num_supplied_NMA" xml:id="tuplet_14790">
+                      <note accid="s" doxml.id="d27e2893" dur="16" oct="4" pname="c" tstamp="2.5" xml:id="note_14796"/>
+                      <note doxml.id="d27e2897" dur="16" oct="3" pname="b" tstamp="2.66667" xml:id="note_14802"/>
+                      <note doxml.id="d27e2900" dur="16" oct="3" pname="a" tstamp="2.83333" xml:id="note_14808"/>
+                    </tuplet>
+                  </beam>
+                  <beam xml:id="beam_14814">
+                    <note doxml.id="d27e2902" dur="16" oct="5" pname="e" tstamp="3" xml:id="note_14820"/>
+                    <note doxml.id="d27e2904" dur="16" oct="4" pname="a" tstamp="3.25" xml:id="note_14826"/>
+                    <note doxml.id="d27e2906" dur="16" oct="5" pname="g" tstamp="3.5" xml:id="note_14832"/>
+                    <note doxml.id="d27e2908" dur="16" oct="5" pname="e" tstamp="3.75" xml:id="note_14838"/>
+                  </beam>
+                </layer>
+              </staff>
+              <staff n="3" xml:id="staff_14844">
+                <layer n="1" xml:id="layer_14850">
+                  <rest doxml.id="d27e2939" dur="8" tstamp="1" xml:id="rest_14856"/>
+                  <note doxml.id="d27e2941" dur="4" oct="4" pname="a" tstamp="1.5" xml:id="note_14862"/>
+                  <note doxml.id="d27e2943" dur="4" oct="4" pname="a" tstamp="2.5" xml:id="note_14868"/>
+                  <note doxml.id="d27e2946" dur="8" oct="4" pname="a" tstamp="3.5" xml:id="note_14874"/>
+                </layer>
+              </staff>
+              <staff n="4" xml:id="staff_14880">
+                <layer n="1" xml:id="layer_14886">
+                  <beam xml:id="beam_14892">
+                    <note accid="s" doxml.id="d27e2994" dur="8" oct="3" pname="c" tstamp="1" xml:id="note_14898"/>
+                    <note accid.ges="s" doxml.id="d27e2996" dur="8" oct="3" pname="c" tstamp="1.5" xml:id="note_14904"/>
+                    <note accid.ges="s" doxml.id="d27e2998" dur="8" oct="3" pname="c" tstamp="2" xml:id="note_14910"/>
+                    <note accid.ges="s" doxml.id="d27e3000" dur="8" oct="3" pname="c" tstamp="2.5" xml:id="note_14916"/>
+                    <note accid.ges="s" doxml.id="d27e3002" dur="8" oct="3" pname="c" tstamp="3" xml:id="note_14922"/>
+                    <note accid.ges="s" doxml.id="d27e3004" dur="8" oct="3" pname="c" tstamp="3.5" xml:id="note_14928"/>
+                  </beam>
+                </layer>
+              </staff>
+              <tie endid="#note_14706" staff="2" tstamp="0" xml:id="tie_14640"/>
+            </measure>
+          </section>
+        </score>
+      </mdiv>
+    </body>
+  </music>
+</mei>

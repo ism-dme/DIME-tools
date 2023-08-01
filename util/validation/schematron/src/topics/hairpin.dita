@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<?xml-stylesheet type="text/css" href="../../frameworks/styleguide/css/styleguideActions.css"?>
+<topic id="hairpin">
+    <title>&lt;hairpin&gt;</title>
+    <body>
+        <p>The value of <i><?oxy_custom_start type="oxy_content_highlight" color="255,60,255"?>@tstamp2<?oxy_custom_end?></i> has to start with <b>[0-9]m+</b>, e.g. <i>0m+4</i>.</p>
+		<p>
+			<dl audience="rules">
+				<dlhead>
+					<dthd>Rule</dthd>
+					<ddhd>matchesAttributeValue</ddhd>
+				</dlhead>
+				<dlentry>
+					<dt>element</dt>
+					<dd>*[@tstamp2]</dd>
+				</dlentry>
+				<dlentry>
+					<dt>attribute</dt>
+					<dd>tstamp2</dd>
+				</dlentry>
+				<dlentry>
+					<dt>RegEx</dt>
+					<dd>([0-9]+m\s*\+\s*)[0-9]+(\.?[0-9]*)?</dd>
+				</dlentry>
+				<dlentry>
+					<dt>phase</dt>
+					<dd>refTexts_v3, altTexts_v3, , refTexts_v4, altTexts_v4</dd>
+				</dlentry>
+			</dl>
+		</p>
+    </body>
+</topic>
