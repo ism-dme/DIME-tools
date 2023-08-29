@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<x:description run-as="external" stylesheet="../../main.xsl" xmlns:test-helper="x-urn:tutorial:helper:ws-only-text:test-helper" xmlns:dme="http://www.mozarteum.at/ns/dme" xmlns:mei="http://www.music-encoding.org/ns/mei" xmlns:x="http://www.jenitennison.com/xslt/xspec">
+
+
+  <x:scenario label="Events">
+
+    <x:scenario label="mRest">
+      <x:param name="parts">|4.2|</x:param>
+      <x:context select="$K550-004"/>
+      <x:expect test="id('mRest_40248')" label="@ploc, @oloc are deleted.">
+        <mei:mRest tstamp="1" xml:id="mRest_40248"/>
+      </x:expect>
+    </x:scenario>
+    
+    <x:scenario label="rest">
+      <x:call template="layer.descendants">
+        <x:param name="els" select="$K550-003//id('rest_14148')"/>
+      </x:call>
+      <x:expect label="@ploc, @oloc are deleted.">
+        <mei:rest doxml.id="d28e2076" dur="4" tstamp="2" xml:id="rest_14148"/>
+      </x:expect>
+    </x:scenario>
+    
+  </x:scenario>
+</x:description>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<x:description run-as="external" stylesheet="../../main.xsl" xmlns:test-helper="x-urn:tutorial:helper:ws-only-text:test-helper" xmlns:dme="http://www.mozarteum.at/ns/dme" xmlns:mei="http://www.music-encoding.org/ns/mei" xmlns:x="http://www.jenitennison.com/xslt/xspec">
+
+  <x:scenario label="Files output.">
+
+    <x:scenario label="When all available parts are selected for extraction, the file should not be processed.">
+
+      <x:scenario label="Extract Oboi (|2|)">
+        <x:param name="parts">|2|</x:param>
+        <x:context select="$beam-0"/>
+        <x:call template="main"/>
+        <x:expect select="()" label="No output as all parts are requested."/>
+      </x:scenario>
+
+      <x:scenario label="Extract all avaialable parts (|1|2|3|4|5|6|7|8|9|)">
+        <x:param name="parts">|1|2|3|4|5|6|7|8|9|</x:param>
+        <x:context select="$K550-003"/>
+        <x:call template="main"/>
+        <x:expect select="()" label="No output as all parts are requested."/>
+      </x:scenario>
+    </x:scenario>
+  </x:scenario>
+</x:description>
