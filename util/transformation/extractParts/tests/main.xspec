@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<x:description run-as="external" stylesheet="../main.xsl" xmlns:mei="http://www.music-encoding.org/ns/mei" xmlns:x="http://www.jenitennison.com/xslt/xspec">
-
-  <x:import href="modules/scoreDef.xspec"/>
-  <x:import href="modules/global.xspec"/>
-
-</x:description>
