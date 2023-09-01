@@ -1,6 +1,6 @@
-Contributors: Oleksii Sapov
+Contributors: Oleksii Sapov-Erlinger
 
-**Copyright** 2020 [_Internationale Stiftung Mozarteum Salzburg_](dme.mozarteum.at).
+**Copyright** 2020-2023 [_Internationale Stiftung Mozarteum Salzburg_](dme.mozarteum.at).
 
 Licensed under the Educational Community License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at http://www.opensource.org/licenses/ECL-2.0
 
