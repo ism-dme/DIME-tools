@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="gvim">
+	<title>gVIM</title>
+	<body>
+		<p><b>Most common Shortcuts</b>:<ul id="ul_hhk_1js_tjb">
+				<li>add supplied <codeph>&lt;accid:></codeph>: <b>Ctrl+a </b></li>
+				<li>add supplied <codeph>&lt;artic></codeph>: <b>Ctrl+s </b></li>
+				<li>add wrap any element: <b>Ctrl+d</b>
+				</li>
+				<li><codeph>&lt;app></codeph> with two <codeph>&lt;rdg></codeph> (with attributes for KV 550): <b>Crtl+r</b></li>
+				<li><codeph>&lt;app></codeph> with <codeph>&lt;lem></codeph>, <codeph>&lt;rdg></codeph>: <b>Ctrl+l</b></li>
+			</ul>
+		</p>
+		<p>More info in the following file:
+			<xref keyref="gVIM-supplied">giVIm</xref>
+		</p>
+	</body>
+</topic>

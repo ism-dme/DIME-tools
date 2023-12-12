@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mei meiversion="4.0.1" xmlns="http://www.music-encoding.org/ns/mei">
+  <music>
+    <body>
+      <mdiv n="1" xml:id="mdiv_282001">
+        <score xml:id="score_282001">
+          <scoreDef key.mode="major" key.pname="f" key.sig="1f" meter.count="4" meter.sym="common" meter.unit="4" optimize="false" xml:id="scoreDef_01">
+            <staffGrp bar.thru="true" symbol="bracket" xml:id="staffGrp_01">
+              <staffDef clef.line="2" clef.shape="G" decls="#instrVoice_1" doxml.id="d27e39" lines="5" n="1" xml:id="staffDef_P1">
+                <label xml:id="label_P1">Violino I</label>
+              </staffDef>
+              <staffDef clef.line="2" clef.shape="G" decls="#instrVoice_2" doxml.id="d27e135" lines="5" n="2" xml:id="staffDef_P2">
+                <label xml:id="label_P2">Violino II</label>
+              </staffDef>
+              <staffDef clef.line="3" clef.shape="C" decls="#instrVoice_3" doxml.id="d27e202" lines="5" n="3" xml:id="staffDef_P3">
+                <label xml:id="label_P3">Viola</label>
+              </staffDef>
+              <staffDef clef.line="4" clef.shape="F" decls="#instrVoice_4" doxml.id="d27e269" lines="5" n="4" xml:id="staffDef_P4">
+                <label xml:id="label_P4">Violoncello</label>
+              </staffDef>
+            </staffGrp>
+          </scoreDef>
+          <section xml:id="section_adagio">
+
+            <measure facs="#zoneOf_m39_k168_001" n="39" xml:id="m39_k168_001">
+              <staff n="1" xml:id="staff_11946">
+                <layer n="1" xml:id="layer_11952">
+                  <beam xml:id="beam_11958">
+                    <tuplet bracket.visible="false" num="3" num.visible="false" numbase="2" xml:id="tuplet_11964">
+                      <note artic="stacc" doxml.id="d27e1929" dur="8" oct="5" pname="c" tstamp="1" xml:id="note_11970"/>
+                      <note artic="stacc" doxml.id="d27e1934" dur="8" oct="5" pname="d" tstamp="1.33333" xml:id="note_11976"/>
+                      <note artic="stacc" doxml.id="d27e1936" dur="8" oct="5" pname="e" tstamp="1.66667" xml:id="note_11982"/>
+                    </tuplet>
+                  </beam>
+                  <beam xml:id="beam_11988">
+                    <tuplet bracket.visible="false" num="3" num.visible="false" numbase="2" xml:id="tuplet_11994">
+                      <note artic="stacc" doxml.id="d27e1938" dur="8" oct="5" pname="f" tstamp="2" xml:id="note_12000"/>
+                      <note artic="stacc" doxml.id="d27e1942" dur="8" oct="5" pname="g" tstamp="2.33333" xml:id="note_12006"/>
+                      <note artic="stacc" doxml.id="d27e1944" dur="8" oct="5" pname="a" tstamp="2.66667" xml:id="note_12012"/>
+                    </tuplet>
+                  </beam>
+                  <beam xml:id="beam_12018">
+                    <tuplet bracket.visible="false" num="3" num.visible="false" numbase="2" xml:id="tuplet_12024">
+                      <note artic="stacc" doxml.id="d27e1946" dur="8" oct="5" pname="g" tstamp="3" xml:id="note_12030"/>
+                      <note artic="stacc" doxml.id="d27e1950" dur="8" oct="5" pname="a" tstamp="3.33333" xml:id="note_12036"/>
+                      <note artic="stacc" doxml.id="d27e1952" dur="8" oct="5" pname="g" tstamp="3.66667" xml:id="note_12042"/>
+                    </tuplet>
+                  </beam>
+                  <beam xml:id="beam_12048">
+                    <tuplet bracket.visible="false" num="3" num.visible="false" numbase="2" xml:id="tuplet_12054">
+                      <note artic="stacc" doxml.id="d27e1954" dur="8" oct="5" pname="f" tstamp="4" xml:id="note_12060"/>
+                      <note artic="stacc" doxml.id="d27e1959" dur="8" oct="5" pname="e" tstamp="4.33333" xml:id="note_12066"/>
+                      <note artic="stacc" doxml.id="d27e1961" dur="8" oct="5" pname="d" tstamp="4.66667" xml:id="note_12072"/>
+                    </tuplet>
+                  </beam>
+                </layer>
+              </staff>
+              <staff n="2" xml:id="staff_12078">
+                <layer n="1" xml:id="layer_12084">
+                  <beam xml:id="beam_12090">
+                    <tuplet bracket.visible="false" num="3" num.visible="false" numbase="2" xml:id="tuplet_12096">
+                      <note artic="stacc" doxml.id="d27e2042" dur="8" oct="4" pname="e" tstamp="1" xml:id="note_12102"/>
+                      <note accid="n" artic="stacc" doxml.id="d27e2046" dur="8" oct="3" pname="b" tstamp="1.33333" xml:id="note_12108"/>
+                      <note artic="stacc" doxml.id="d27e2049" dur="8" oct="4" pname="c" tstamp="1.66667" xml:id="note_12114"/>
+                    </tuplet>
+                  </beam>
+                  <beam xml:id="beam_12120">
+                    <tuplet bracket.visible="false" num="3" num.visible="false" numbase="2" xml:id="tuplet_12126">
+                      <note artic="stacc" doxml.id="d27e2051" dur="8" oct="4" pname="d" tstamp="2" xml:id="note_12132"/>
+                      <note artic="stacc" doxml.id="d27e2055" dur="8" oct="4" pname="e" tstamp="2.33333" xml:id="note_12138"/>
+                      <note artic="stacc" doxml.id="d27e2057" dur="8" oct="4" pname="f" tstamp="2.66667" xml:id="note_12144"/>
+                    </tuplet>
+                  </beam>
+                  <beam xml:id="beam_12150">
+                    <tuplet bracket.visible="false" num="3" num.visible="false" numbase="2" xml:id="tuplet_12156">
+                      <note artic="stacc" doxml.id="d27e2059" dur="8" oct="4" pname="e" tstamp="3" xml:id="note_12162"/>
+                      <note artic="stacc" doxml.id="d27e2063" dur="8" oct="4" pname="f" tstamp="3.33333" xml:id="note_12168"/>
+                      <note artic="stacc" doxml.id="d27e2065" dur="8" oct="4" pname="e" tstamp="3.66667" xml:id="note_12174"/>
+                    </tuplet>
+                  </beam>
+                  <beam xml:id="beam_12180">
+                    <tuplet bracket.visible="false" num="3" num.visible="false" numbase="2" xml:id="tuplet_12186">
+                      <note artic="stacc" doxml.id="d27e2067" dur="8" oct="4" pname="d" tstamp="4" xml:id="note_12192"/>
+                      <note artic="stacc" doxml.id="d27e2072" dur="8" oct="4" pname="c" tstamp="4.33333" xml:id="note_12198"/>
+                      <note accid.ges="n" artic="stacc" doxml.id="d27e2074" dur="8" oct="3" pname="b" tstamp="4.66667" xml:id="note_12204"/>
+                    </tuplet>
+                  </beam>
+                </layer>
+              </staff>
+              <staff n="3" xml:id="staff_12210">
+                <layer n="1" xml:id="layer_12216">
+                  <note doxml.id="d27e2120" dur="4" oct="3" pname="g" tstamp="1" xml:id="note_12222"/>
+                  <note doxml.id="d27e2122" dur="4" oct="3" pname="f" tstamp="2" xml:id="note_12228"/>
+                  <note doxml.id="d27e2124" dur="4" oct="3" pname="g" tstamp="3" xml:id="note_12234"/>
+                  <note doxml.id="d27e2126" dur="4" oct="4" pname="f" tstamp="4" xml:id="note_12240"/>
+                </layer>
+              </staff>
+              <staff n="4" xml:id="staff_12246">
+                <layer n="1" xml:id="layer_12252">
+                  <note doxml.id="d27e2174" dur="4" oct="3" pname="c" tstamp="1" xml:id="note_12258"/>
+                  <rest doxml.id="d27e2176" dur="4" tstamp="2" xml:id="rest_12264"/>
+                  <note doxml.id="d27e2178" dur="4" oct="3" pname="g" tstamp="3" xml:id="note_12270"/>
+                  <note doxml.id="d27e2180" dur="4" oct="2" pname="g" tstamp="4" xml:id="note_12276"/>
+                </layer>
+              </staff>
+              <dynam doxml.id="d27e1927" staff="1" startid="#note_11970" xml:id="dynam_12282">f</dynam>
+              <dynam doxml.id="d27e2040" staff="2" startid="#note_12102" xml:id="dynam_12294">f</dynam>
+              <dynam doxml.id="d27e2118" staff="3" startid="#note_12222" xml:id="dynam_12306">f</dynam>
+              <dynam doxml.id="d27e2172" staff="4" startid="#note_12258" xml:id="dynam_12318">f</dynam>
+              <supplied resp="#NMA-editors" xml:id="supplied_12330">
+                <dir doxml.id="d27e1931" place="above" staff="1" tstamp="1.33333" xml:id="dir_12336">3</dir>
+              </supplied>
+              <supplied resp="#NMA-editors" xml:id="supplied_12348">
+                <dir doxml.id="d27e1940" place="above" staff="1" tstamp="2.33333" xml:id="dir_12354">3</dir>
+              </supplied>
+              <supplied resp="#NMA-editors" xml:id="supplied_12366">
+                <dir doxml.id="d27e1948" place="above" staff="1" tstamp="3.33333" xml:id="dir_12372">3</dir>
+              </supplied>
+              <supplied resp="#NMA-editors" xml:id="supplied_12390">
+                <dir doxml.id="d27e1957" place="above" staff="1" tstamp="4.33333" xml:id="dir_12396">3</dir>
+              </supplied>
+
+                <dir doxml.id="d27e2044" place="above" staff="2" tstamp="1.33333" xml:id="dir_12414">3</dir>
+              
+              <supplied resp="#NMA-editors" xml:id="supplied_12426">
+                <dir doxml.id="d27e2053" place="above" staff="2" tstamp="2.33333" xml:id="dir_12432">3</dir>
+              </supplied>
+              <supplied resp="#NMA-editors" xml:id="supplied_12444">
+                <dir doxml.id="d27e2061" place="above" staff="2" tstamp="3.33333" xml:id="dir_12450">3</dir>
+              </supplied>
+              <supplied resp="#NMA-editors" xml:id="supplied_12462">
+                <dir doxml.id="d27e2069" place="above" staff="2" tstamp="4.33333" xml:id="dir_12468">3</dir>
+              </supplied>
+            </measure>
+          </section>
+        </score>
+      </mdiv>
+    </body>
+  </music>
+</mei>

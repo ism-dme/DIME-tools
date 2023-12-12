@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grammar ns="http://www.mozarteum.at/ns/dme" xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+  <start>
+    <element name="lists">
+      <oneOrMore>
+        <element name="list">
+          <optional>
+            <attribute name="used-by"/>
+          </optional>
+          <attribute>
+            <name ns="http://www.w3.org/XML/1998/namespace">id</name>
+            <data type="NCName"/>
+          </attribute>
+          <oneOrMore>
+            <element name="item">
+              <optional>
+                <attribute name="class"/>
+              </optional>
+              <optional>
+                <attribute name="href">
+                  <data type="anyURI"/>
+                </attribute>
+              </optional>
+              <optional>
+                <attribute>
+                  <name ns="http://www.w3.org/XML/1998/namespace">id</name>
+                  <data type="NCName"/>
+                </attribute>
+              </optional>
+              <oneOrMore>
+                <choice>
+                  <text/>
+                  <element name="entity">
+                    <attribute name="class">
+                      <data type="NCName"/>
+                    </attribute>
+                    <text/>
+                  </element>
+                  <element name="name">
+                    <optional>
+                      <attribute name="label.abbr">
+                        <data type="NCName"/>
+                      </attribute>
+                    </optional>
+                    <attribute>
+                      <name ns="http://www.w3.org/XML/1998/namespace">lang</name>
+                      <data type="NCName"/>
+                    </attribute>
+                    <oneOrMore>
+                      <choice>
+                        <text/>
+                        <element name="class">
+                          <data type="NCName"/>
+                        </element>
+                      </choice>
+                    </oneOrMore>
+                  </element>
+                  <element name="rendering">
+                    <data type="NCName"/>
+                  </element>
+                  <element name="transposition">
+                    <optional>
+                      <attribute name="label.abbr"/>
+                    </optional>
+                    <optional>
+                      <attribute name="trans.diat">
+                        <data type="integer"/>
+                      </attribute>
+                    </optional>
+                    <optional>
+                      <attribute name="trans.semi">
+                        <data type="integer"/>
+                      </attribute>
+                    </optional>
+                    <attribute>
+                      <name ns="http://www.w3.org/XML/1998/namespace">id</name>
+                      <data type="NCName"/>
+                    </attribute>
+                    <text/>
+                  </element>
+                </choice>
+              </oneOrMore>
+            </element>
+          </oneOrMore>
+        </element>
+      </oneOrMore>
+    </element>
+  </start>
+</grammar>

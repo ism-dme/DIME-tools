@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<x:description stylesheet="../../DOXconvX.xsl" xmlns:mei="http://www.music-encoding.org/ns/mei" xmlns:x="http://www.jenitennison.com/xslt/xspec">
+
+ 
+  
+  
+  
+  <!--In order to test scenarios for the whole transformation, you need to make the following changes in DOXconvX.xsl: do not use module applicationChanges    
+   -->
+  <x:scenario label="Function trackChanges" pending="make changes in DOXconvX for this scenario">
+    <x:variable href="../input/309_3836/dmeref_309-001_3837.xml" name="K309_001" select="/"/>
+    <!--    <x:call template="trackChanges"/>-->
+    <x:context select="$K309_001"/>
+    <x:expect href="../output/309_3836/dmeref_309-001_3837.mei" label="whole transformation" select="/"/>
+  </x:scenario>
+  
+</x:description>

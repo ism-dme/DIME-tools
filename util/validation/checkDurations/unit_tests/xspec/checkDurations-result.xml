@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report xmlns="http://www.jenitennison.com/xslt/xspec"
+        xspec="file:/C:/Users/sapov/Documents/dime-mei-tools/util/validation/checkDurations/unit_tests/checkDurations.xspec"
+        stylesheet="file:/C:/Users/sapov/Documents/dime-mei-tools/util/validation/checkDurations/checkDurations.xsl"
+        date="2023-12-06T11:29:09.5264541+01:00">
+   <scenario id="xe8ba4612-621c-34ea-8935-388635356503"
+             xspec="file:/C:/Users/sapov/Documents/dime-mei-tools/util/validation/checkDurations/unit_tests/checkDurations.xspec">
+      <label>Main output</label>
+      <scenario id="x95ff1ba0-a224-38ac-8386-80a11b1a4e50"
+                xspec="file:/C:/Users/sapov/Documents/dime-mei-tools/util/validation/checkDurations/unit_tests/checkDurations.xspec">
+         <label>Metrum 2/4, tuplets (3/2, whole measure and partial)</label>
+         <input-wrap xmlns="">
+            <x:context xmlns="http://www.jenitennison.com/xslt/xspec"
+                       xmlns:dme="http://www.mozarteum.at/ns/dme"
+                       xmlns:x="http://www.jenitennison.com/xslt/xspec"
+                       href="file:/C:/Users/sapov/Documents/dime-mei-tools/util/validation/checkDurations/unit_tests/input/metrum_2-4_tuplet_3-2.mei"
+                       select="/"/>
+         </input-wrap>
+         <result select="()"/>
+         <test id="x95ff1ba0-a224-38ac-8386-80a11b1a4e50-expect1" successful="true">
+            <label>All durations are correct.</label>
+            <expect select="()"/>
+         </test>
+      </scenario>
+      <scenario id="x399b8a4b-8144-34d8-baab-1181ce364e19"
+                xspec="file:/C:/Users/sapov/Documents/dime-mei-tools/util/validation/checkDurations/unit_tests/checkDurations.xspec">
+         <label>Metrtum: 4/4, tuplets (6/4, whole measure and partial)</label>
+         <input-wrap xmlns="">
+            <x:context xmlns="http://www.jenitennison.com/xslt/xspec"
+                       xmlns:dme="http://www.mozarteum.at/ns/dme"
+                       xmlns:x="http://www.jenitennison.com/xslt/xspec"
+                       href="file:/C:/Users/sapov/Documents/dime-mei-tools/util/validation/checkDurations/unit_tests/input/metrum_4-4_tuplet_6-4.mei"
+                       select="/"/>
+         </input-wrap>
+         <result select="'layer_18360'"/>
+         <test id="x399b8a4b-8144-34d8-baab-1181ce364e19-expect1" successful="true">
+            <label>Wrong durations: note_18441 (16 -&gt; 32)</label>
+            <expect select="'layer_18360'"/>
+         </test>
+      </scenario>
+      <scenario id="xc5dfa061-6a89-342f-a523-65a6f4580899"
+                xspec="file:/C:/Users/sapov/Documents/dime-mei-tools/util/validation/checkDurations/unit_tests/checkDurations.xspec">
+         <label>Metrum 6/8, tuplets (3/2, whole measure and partial)</label>
+         <input-wrap xmlns="">
+            <x:context xmlns="http://www.jenitennison.com/xslt/xspec"
+                       xmlns:dme="http://www.mozarteum.at/ns/dme"
+                       xmlns:x="http://www.jenitennison.com/xslt/xspec"
+                       href="file:/C:/Users/sapov/Documents/dime-mei-tools/util/validation/checkDurations/unit_tests/input/metrum_6-8_triplets.mei"
+                       select="/"/>
+         </input-wrap>
+         <result select="'layer_11004'"/>
+         <test id="xc5dfa061-6a89-342f-a523-65a6f4580899-expect1" successful="true">
+            <label>Wrong durations: added @dots=2 (at note_10950)</label>
+            <expect select="'layer_11004'"/>
+         </test>
+      </scenario>
+      <scenario id="x7ce41b05-9d65-3dc6-a2f1-0783bfb8ec23"
+                xspec="file:/C:/Users/sapov/Documents/dime-mei-tools/util/validation/checkDurations/unit_tests/checkDurations.xspec">
+         <label>@dot</label>
+         <scenario id="x9ae62798-0260-3aee-81c5-dda30bf8cc9c"
+                   xspec="file:/C:/Users/sapov/Documents/dime-mei-tools/util/validation/checkDurations/unit_tests/checkDurations.xspec">
+            <label>+ Metrum change: 6/8 -&gt; 4/4</label>
+            <input-wrap xmlns="">
+               <x:context xmlns="http://www.jenitennison.com/xslt/xspec"
+                          xmlns:dme="http://www.mozarteum.at/ns/dme"
+                          xmlns:x="http://www.jenitennison.com/xslt/xspec"
+                          href="file:/C:/Users/sapov/Documents/dime-mei-tools/util/validation/checkDurations/unit_tests/input/metrum_change_6-8_to_4-4.mei"
+                          select="/"/>
+            </input-wrap>
+            <result select="'layer_3990'"/>
+            <test id="x9ae62798-0260-3aee-81c5-dda30bf8cc9c-expect1" successful="true">
+               <label>Wrong durations: one dot is absent (at note_3960)</label>
+               <expect select="'layer_3990'"/>
+            </test>
+         </scenario>
+      </scenario>
+      <scenario id="x51768405-a558-308f-824f-6e47a523b23f"
+                xspec="file:/C:/Users/sapov/Documents/dime-mei-tools/util/validation/checkDurations/unit_tests/checkDurations.xspec">
+         <label>@sameas</label>
+         <scenario id="x80c2a5fa-4fe8-3946-be22-c54ece858322"
+                   xspec="file:/C:/Users/sapov/Documents/dime-mei-tools/util/validation/checkDurations/unit_tests/checkDurations.xspec">
+            <label>With @dots</label>
+            <input-wrap xmlns="">
+               <context xmlns="http://www.jenitennison.com/xslt/xspec"
+                        xmlns:dme="http://www.mozarteum.at/ns/dme"
+                        xmlns:x="http://www.jenitennison.com/xslt/xspec"
+                        href="file:/C:/Users/sapov/Documents/dime-mei-tools/util/validation/checkDurations/unit_tests/input/@sameas_@dots.mei"
+                        select="/"/>
+            </input-wrap>
+            <result select="()"/>
+            <test id="x80c2a5fa-4fe8-3946-be22-c54ece858322-expect1" successful="true">
+               <label>rest_160176 references to a rest with @dots</label>
+               <expect select="()"/>
+            </test>
+         </scenario>
+         <scenario id="xf9fc165a-9981-34a9-938f-bd7b05d7158c"
+                   xspec="file:/C:/Users/sapov/Documents/dime-mei-tools/util/validation/checkDurations/unit_tests/checkDurations.xspec">
+            <label>Inside tuplet</label>
+            <input-wrap xmlns="">
+               <x:context xmlns="http://www.jenitennison.com/xslt/xspec"
+                          xmlns:dme="http://www.mozarteum.at/ns/dme"
+                          xmlns:x="http://www.jenitennison.com/xslt/xspec"
+                          href="file:/C:/Users/sapov/Documents/dime-mei-tools/util/validation/checkDurations/unit_tests/input/@sameas_tuplet.mei"
+                          select="/"/>
+            </input-wrap>
+            <result select="()"/>
+            <test id="xf9fc165a-9981-34a9-938f-bd7b05d7158c-expect1" successful="true">
+               <label>All durations are correct (layer_26862 is the @sameas-in-tuplet-case)</label>
+               <expect select="()"/>
+            </test>
+         </scenario>
+      </scenario>
+      <scenario id="x4508b32e-f79c-3e30-b627-c2d9fb4a41b0"
+                xspec="file:/C:/Users/sapov/Documents/dime-mei-tools/util/validation/checkDurations/unit_tests/checkDurations.xspec">
+         <label>@copyof</label>
+         <scenario id="xae7d91f2-0c48-31fe-8db8-3974e7612a6b"
+                   xspec="file:/C:/Users/sapov/Documents/dime-mei-tools/util/validation/checkDurations/unit_tests/checkDurations.xspec">
+            <label>beam@copyof correct</label>
+            <input-wrap xmlns="">
+               <context xmlns="http://www.jenitennison.com/xslt/xspec"
+                        xmlns:dme="http://www.mozarteum.at/ns/dme"
+                        xmlns:x="http://www.jenitennison.com/xslt/xspec"
+                        href="file:/C:/Users/sapov/Documents/dime-mei-tools/util/validation/checkDurations/unit_tests/input/@copyof.mei"
+                        select="/"/>
+            </input-wrap>
+            <result select="()"/>
+            <test id="xae7d91f2-0c48-31fe-8db8-3974e7612a6b-expect1" successful="true">
+               <label>layer_99852 contains beam@copyof</label>
+               <expect select="()"/>
+            </test>
+         </scenario>
+         <scenario id="x34d08147-79a3-39c8-a122-0ff33e77241e"
+                   xspec="file:/C:/Users/sapov/Documents/dime-mei-tools/util/validation/checkDurations/unit_tests/checkDurations.xspec">
+            <label>beam@copyof wrong</label>
+            <input-wrap xmlns="">
+               <x:context xmlns="http://www.jenitennison.com/xslt/xspec"
+                          xmlns:dme="http://www.mozarteum.at/ns/dme"
+                          xmlns:x="http://www.jenitennison.com/xslt/xspec"
+                          href="file:/C:/Users/sapov/Documents/dime-mei-tools/util/validation/checkDurations/unit_tests/input/@copyof_wrong.mei"
+                          select="/"/>
+            </input-wrap>
+            <result select="'layer_99762&#xA;layer_99852'"/>
+            <test id="x34d08147-79a3-39c8-a122-0ff33e77241e-expect1" successful="true">
+               <label>note_99792 was changed from 16 to 32</label>
+               <expect select="'layer_99762&#xA;layer_99852'"/>
+            </test>
+         </scenario>
+      </scenario>
+      <scenario id="x896827b1-e500-3de5-8ff8-f39d0e26df90"
+                xspec="file:/C:/Users/sapov/Documents/dime-mei-tools/util/validation/checkDurations/unit_tests/checkDurations.xspec">
+         <label>app</label>
+         <scenario id="xbbc7e7c7-1c45-3cd6-b247-13bec580dbbe"
+                   xspec="file:/C:/Users/sapov/Documents/dime-mei-tools/util/validation/checkDurations/unit_tests/checkDurations.xspec">
+            <label>normal case and @sameas case </label>
+            <input-wrap xmlns="">
+               <x:context xmlns="http://www.jenitennison.com/xslt/xspec"
+                          xmlns:dme="http://www.mozarteum.at/ns/dme"
+                          xmlns:x="http://www.jenitennison.com/xslt/xspec"
+                          href="file:/C:/Users/sapov/Documents/dime-mei-tools/util/validation/checkDurations/unit_tests/input/app.mei"
+                          select="/"/>
+            </input-wrap>
+            <result select="'layer_57276&#xA;layer_57390'"/>
+            <test id="xbbc7e7c7-1c45-3cd6-b247-13bec580dbbe-expect1" successful="true">
+               <label>Wrong values: (note_57306: 8 -&gt; 16) (note_57444: 8 -&gt; 4)</label>
+               <expect select="'layer_57276&#xA;layer_57390'"/>
+            </test>
+         </scenario>
+      </scenario>
+      <scenario id="xe21774c8-dcd9-3839-b0cc-1d564f23509c"
+                xspec="file:/C:/Users/sapov/Documents/dime-mei-tools/util/validation/checkDurations/unit_tests/checkDurations.xspec">
+         <label>artic</label>
+         <scenario id="x8c8f74b6-c9fa-3f3c-991f-a1745496d145"
+                   xspec="file:/C:/Users/sapov/Documents/dime-mei-tools/util/validation/checkDurations/unit_tests/checkDurations.xspec">
+            <label>supplied artic</label>
+            <input-wrap xmlns="">
+               <x:context xmlns="http://www.jenitennison.com/xslt/xspec"
+                          xmlns:dme="http://www.mozarteum.at/ns/dme"
+                          xmlns:x="http://www.jenitennison.com/xslt/xspec"
+                          href="file:/C:/Users/sapov/Documents/dime-mei-tools/util/validation/checkDurations/unit_tests/input/artic.mei"
+                          select="/"/>
+            </input-wrap>
+            <result select="()"/>
+            <test id="x8c8f74b6-c9fa-3f3c-991f-a1745496d145-expect1" successful="true">
+               <label>All values are correct</label>
+               <expect select="()"/>
+            </test>
+         </scenario>
+      </scenario>
+      <scenario id="x682c4159-6b9b-3b2b-bb08-80b1913ab9ee"
+                xspec="file:/C:/Users/sapov/Documents/dime-mei-tools/util/validation/checkDurations/unit_tests/checkDurations.xspec">
+         <label>graceGrp</label>
+         <input-wrap xmlns="">
+            <x:context xmlns="http://www.jenitennison.com/xslt/xspec"
+                       xmlns:dme="http://www.mozarteum.at/ns/dme"
+                       xmlns:x="http://www.jenitennison.com/xslt/xspec"
+                       href="file:/C:/Users/sapov/Documents/dime-mei-tools/util/validation/checkDurations/unit_tests/input/graceGrp.mei"
+                       select="/"/>
+         </input-wrap>
+         <result select="()"/>
+         <test id="x682c4159-6b9b-3b2b-bb08-80b1913ab9ee-expect1" successful="true">
+            <label>All values are correct</label>
+            <expect select="()"/>
+         </test>
+      </scenario>
+   </scenario>
+</report>

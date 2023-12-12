@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<?xml-stylesheet type="text/css" href="../../frameworks/styleguide/css/styleguideActions.css"?>
+<topic id="tuplet">
+	<title>&lt;tuplet&gt;</title>
+	<body>
+    <p/>
+    <p>
+      <dl audience="rules">
+        <dlhead>
+          <dthd>Rule</dthd>
+          <ddhd>matchesAttributeValue_optionalAttribute</ddhd>
+        </dlhead>
+        <dlentry>
+          <dt>element</dt>
+          <dd>mei:tuplet</dd>
+        </dlentry>
+        <dlentry>
+          <dt>attribute</dt>
+          <dd>type</dd>
+        </dlentry>
+        <dlentry>
+          <dt>RegEx</dt>
+          <dd>num_supplied_(NMA-editors|DME-editors)</dd>
+        </dlentry>
+        <dlentry>
+          <dt>phase</dt>
+          <dd>refTexts_v3, refTexts_v4</dd>
+        </dlentry>
+      </dl>
+    </p>
+  </body>
+</topic>

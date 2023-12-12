@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<x:description run-as="external" stylesheet="../../main.xsl" xmlns:test-helper="x-urn:tutorial:helper:ws-only-text:test-helper" xmlns:dme="http://www.mozarteum.at/ns/dme" xmlns:mei="http://www.music-encoding.org/ns/mei" xmlns:x="http://www.jenitennison.com/xslt/xspec">
+
+  <x:import href="test-data-vars.xspec"/>
+
+  <x:scenario  label="scoreDef">
+    
+    <x:scenario label="Extract Oboe II ( |2.2| )">
+      <x:param name="P_REQUESTED_PARTS">|2.2|</x:param>
+      <x:context  select="$dmeref_551-001_m93" />
+      <x:expect test="//mei:scoreDef" select="$code-snippets//dme:output//dme:item[@n=1]/mei:scoreDef" label="staffGrp with no staffDef is deleted."/>
+    </x:scenario>
+
+    <x:scenario  label="Extract Oboe II, Corni, Violino I ( |2.2|4|7| )">
+      <x:param name="P_REQUESTED_PARTS">|2.2|4|7|</x:param>
+      <x:variable href="../data/dmeref_551-001_m93.mei" name="dmeref_551-001_m93" select="/"/>
+      <x:context  select="$dmeref_551-001_m93" />
+      <x:expect test="//mei:scoreDef" select="$code-snippets//dme:output/dme:item[@n=2]/mei:scoreDef" label="Oboe: @symbol=none, Corni: symbol=bracket, Violino: parent staffGrp deleted, @symbol=none"/>
+    </x:scenario>
+  </x:scenario>
+</x:description>

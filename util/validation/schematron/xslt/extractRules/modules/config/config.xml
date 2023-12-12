@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.mozarteum.at/ns/dme">
+	<rulesFolderPath>../../src/rules/</rulesFolderPath>
+	<publishBaseURL>file:///K:/PROJEKTE/DMEDME/Praktisches_(Howto)/dime-tools_documentation/schematron/webhelp-responsive/</publishBaseURL>
+</config>

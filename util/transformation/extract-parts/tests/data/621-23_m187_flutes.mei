@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://dme.mozarteum.at/DME/schemata/mei-DME.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://dme.mozarteum.at/DME/schemata/mei-DME.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei meiversion="3.0.0" xmlns="http://www.music-encoding.org/ns/mei">
+  <meiHead>
+    <fileDesc>
+      <titleStmt>
+        <title label="NMA digital" type="unit">Test data based on W. A. Mozart, K. 621/23, m127, flutes.</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>
+          <title>Digital Mozart Edition</title>
+        </edition>
+      </editionStmt>
+      <pubStmt>
+        <publisher>
+          <corpName>Mozarteum</corpName>
+          <ptr target="https://www.mozarteum.at"/>
+        </publisher>
+        <availability>
+          <useRestrict label="license">CC BY-NC-SA 4.0</useRestrict>
+        </availability>
+      </pubStmt>
+    </fileDesc>
+    <workDesc>
+      <work>
+        <perfMedium>
+          <perfResList authURI="https://www.loc.gov/standards/valuelist/marcmusperf.html" authority="marcmusperf">
+            <perfRes codedval="wa" label="flute" n="1" xml:id="instrVoice_1" xml:lang="EN">flute-1</perfRes>
+            <perfRes codedval="wa" label="flute" n="2" xml:id="instrVoice_2" xml:lang="EN">flute-2</perfRes>
+          </perfResList>
+        </perfMedium>
+      </work>
+    </workDesc>
+  </meiHead>
+  <music meiversion="3.0.0">
+    <body>
+      <mdiv label="Andante maestoso" n="2" xml:id="mdiv_andante_maestoso">
+        <score xml:id="score_621023-2">
+          <scoreDef key.mode="major" key.pname="d" key.sig="1f" meter.count="2" meter.sym="cut" meter.unit="2" n="3" xml:id="scoreDef_03">
+            <staffGrp barthru="true" symbol="none" xml:id="staffGrp_08">
+              <staffDef clef.line="2" clef.shape="G" dme.parts="1,2" label.abbr="Fl." lines="5" n="1" xml:id="staffDef_P11">
+                <label xml:id="label_p01b">Flauto I, II</label>
+                <layerDef decls="#instrVoice_1" n="1" xml:id="layerDef_309"/>
+                <layerDef decls="#instrVoice_2" n="2" xml:id="layerDef_312"/>
+              </staffDef>
+            </staffGrp>
+          </scoreDef>
+          <section xml:id="section_andante_maestoso">
+            <section xml:id="section_C_m181-189">
+              <measure n="187" xml:id="m187_k621_023">
+                <staff dme.parts="1,2" n="1" xml:id="staff_2190">
+                  <layer n="1" xml:id="layer_2193">
+                    <note doxml.id="d28e765" dur="4" oct="6" pname="d" tstamp="1" xml:id="note_2196"/>
+                    <rest doxml.id="d28e769" dur="4" tstamp="1.5" xml:id="rest_2199"/>
+                    <note doxml.id="d28e773" dur="4" oct="6" pname="d" tstamp="2" xml:id="note_2202"/>
+                    <beam xml:id="beam_2205">
+                      <note doxml.id="d28e775" dur="16" oct="6" pname="d" tstamp="2.5" xml:id="note_2208"/>
+                      <note accid="s" doxml.id="d28e777" dur="32" oct="6" pname="c" tstamp="2.625" xml:id="note_2211"/>
+                      <note doxml.id="d28e779" dur="32" oct="5" pname="b" tstamp="2.6875" xml:id="note_2214">
+                        <supplied xml:id="supplied_2214">
+                          <accid accid="n" xml:id="accid_2214"/>
+                        </supplied>
+                      </note>
+                      <note doxml.id="d28e781" dur="32" oct="5" pname="a" tstamp="2.75" xml:id="note_2217"/>
+                      <note doxml.id="d28e784" dur="32" oct="5" pname="g" tstamp="2.8125" xml:id="note_2220"/>
+                      <note accid="s" doxml.id="d28e786" dur="32" oct="5" pname="f" tstamp="2.875" xml:id="note_2223"/>
+                      <note doxml.id="d28e788" dur="32" oct="5" pname="e" tstamp="2.9375" xml:id="note_2226"/>
+                    </beam>
+                  </layer>
+                  <layer n="2" xml:id="layer_2229">
+                    <note accid="s" doxml.id="d28e767" dur="4" oct="5" pname="f" tstamp="1" xml:id="note_2232"/>
+                    <rest doxml.id="d28e769" sameas="#rest_2199" tstamp="1.5" xml:id="rest_2235"/>
+                    <note doxml.id="d28e773" sameas="#note_2202" tstamp="2" xml:id="note_2238"/>
+                    <beam sameas="#beam_2205" xml:id="beam_2241"/>
+                  </layer>
+                </staff>
+                <dir doxml.id="d28e771" layer="1 2" place="above" staff="1" tstamp="2" xml:id="dir_2649">
+                  <rend fontstyle="normal" xml:id="rend_2649">a&#8198;2</rend>
+                </dir>
+                <slur layer="1 2" staff="1" startid="#note_2208" tstamp2="0m+2.99" xml:id="slur_2669"/>
+                <tie endid="#note_2208" layer="1 2" staff="1" startid="#note_2202" xml:id="tie_2699"/>
+              </measure>
+            </section>
+          </section>
+        </score>
+      </mdiv>
+    </body>
+  </music>
+</mei>

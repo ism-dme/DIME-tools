@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="main.css"?>
+<dimeTools xmlns="http://www.mozarteum.at/ns/dme">
+  <div>
+    <h1>DIME Tools Options</h1>
+    <contents class="contents">
+      <ul class="contents__ul">
+        <li>
+          <a href="#DOXconvX"> DOXconvX</a>
+        </li>
+        <li>
+          <a href="#create-IDs"> create-IDs</a>
+        </li>
+        <li>
+          <a href="#doxml"> Enhance from doxml</a>
+        </li>
+        <li>
+          <a href="#extract_parts"> Extract Parts</a>
+        </li>
+        <li>
+          <a href="#updateVersion"> updateVersion</a>
+        </li>
+        <li>
+          <a href="#mergeStaves"> merge staves</a>
+        </li>
+        <li>
+          <a href="#figuredBass"> figured bass</a>
+        </li>
+        <li>
+          <a href="#diff"> DIFF for alternative texts</a>
+        </li>
+      </ul>
+    </contents>
+  </div>
+  <div xml:id="DOXconvX">
+    <h2>DOXconvX (DOX conversion extended)</h2>
+    <parameters>
+      <parameter xml:id="meiHead">1</parameter>
+      <parameter xml:id="genre">chamber</parameter>
+      <parameter xml:id="pages"/>
+      <parameter xml:id="Clarinetto"/>
+      <parameter xml:id="Clarino"/>
+      <parameter xml:id="Corno"/>
+    </parameters>
+  </div>
+  <div xml:id="create-IDs">
+    <h2>CREATE-IDs</h2>
+    <parameters>
+      <parameter xml:id="recount_measures">YES</parameter>
+      <parameter xml:id="all">YES</parameter>
+      <parameter xml:id="els2apply"/>
+      <parameter xml:id="els2exclude"/>
+      <parameter xml:id="addSuffix">NO</parameter>
+      <parameter xml:id="suffix"/>
+    </parameters>
+  </div>
+  <div xml:id="doxml">
+    <h2>Enhance from doxml</h2>
+    <parameters>
+      <parameter class="urlChooser" file="../example.xml"/>
+    </parameters>
+  </div>
+  <div xml:id="extract_parts">
+    <h2>Extract Parts</h2>
+    <p>Usage: '1' extracts first &lt;staff&gt; (e. g. Flutes), '3.2' extracts third &lt;staff&gt;, second &lt;layer&gt; (e. g. Clarinet II.), etc.</p>
+    <parameters>
+      <parameter xml:id="staff-1"/>
+      <parameter xml:id="staff-2">3.1</parameter>
+      <parameter xml:id="staff-3"/>
+      <parameter xml:id="staff-4"/>
+      <parameter xml:id="staff-5"/>
+      <parameter xml:id="staff-6"/>
+      <parameter xml:id="staff-7"/>
+      <parameter xml:id="staff-8"/>
+      <parameter xml:id="staff-9"/>
+      <parameter xml:id="staff-10"/>
+      <parameter xml:id="staff-11"/>
+      <parameter xml:id="staff-12"/>
+      <parameter xml:id="staff-13"/>
+      <parameter xml:id="staff-14"/>
+      <parameter xml:id="staff-15"/>
+    </parameters>
+  </div>
+  <div xml:id="updateVersion">
+    <h2>UPDATE VERSION</h2>
+    <parameters>
+      <parameter xml:id="freeInput"/>
+      <parameter type="patch" xml:id="update"/>
+    </parameters>
+    <p>For more information see the ticket #6081.</p>
+  </div>
+  <div xml:id="mergeStaves">
+    <h2>MERGE STAVES</h2>
+    <parameters>
+      <file class="transform" file="../example.xml"/>
+      <parameter n="1" xml:id="staff_min"/>
+      <parameter n="2" xml:id="staff_max"/>
+      <button name="mergeStaves"/>
+    </parameters>
+  </div>
+  <div xml:id="figuredBass">
+    <h2>Figured Bass</h2>
+    <parameters>
+      <file class="config" file="../example.dita"/>
+    </parameters>
+  </div>
+  <div xml:id="diff">
+    <h2>DIFF</h2>
+    <parameters>
+      <file class="base" file="../example.xml"/>
+      <file class="compare" file="../example.xml"/>
+      <button name="diff"/>
+    </parameters>
+  </div>
+</dimeTools>

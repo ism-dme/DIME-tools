@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<x:description run-as="external" stylesheet="../dir2num.xsl" xmlns:mei="http://www.music-encoding.org/ns/mei" xmlns:x="http://www.jenitennison.com/xslt/xspec">
+
+
+  <x:scenario label="Scenario for testing template with match 'dir'">
+
+    <x:scenario label="tstamp (for files processed with dir_tstamp.xsl)">
+      <x:scenario label="deleted">
+        <x:param href="input/input_1.xml" name="global-context-item"/>
+        <x:context href="input/input_1.xml" mode="mode.1" select="id('dir_14466')"/>
+        <x:expect href="input/output_1.xml" label="triad" select="()"/>
+      </x:scenario>
+
+      <x:scenario label="preserved">
+        <x:param href="input/input_3.xml" name="global-context-item"/>
+        <x:context href="input/input_3.xml" mode="mode.1" select="id('dir_26964')"/>
+        <x:expect label="m. s.">
+          <mei:dir doxml.id="d27e5135" place="above" staff="1" tstamp="1.5" xml:id="dir_26964">
+            <mei:rend fontstyle="normal" xml:id="rend_26970">m.&#8198;s.</mei:rend>
+          </mei:dir>
+        </x:expect>
+      </x:scenario>
+    </x:scenario>
+
+
+    <x:scenario label="startid (for files after dox2mei)">
+
+      <x:scenario label="preserved">
+        <x:param href="input/input_4.xml" name="global-context-item"/>
+        <x:context href="input/input_4.xml" mode="mode.1" select="id('dir_22245')"/>
+        <x:expect label="Ob. I">
+          <mei:dir doxml.id="d28e9162" layer="1" place="below" staff="1" startid="#rest_21828" xml:id="dir_22245">
+            <mei:rend fontstyle="normal" xml:id="rend_22245">Ob. I</mei:rend>
+          </mei:dir>
+        </x:expect>
+      </x:scenario>
+
+      <x:scenario label="deleted">
+
+        <x:scenario label="poins to a note">
+          <x:param href="input/input_2.xml" name="global-context-item"/>
+          <x:context href="input/input_2.xml" mode="mode.1" select="id('dir_31104')"/>
+          <x:expect href="input/output_2.xml" label="sixtuplet" select="()"/>
+        </x:scenario>
+
+        <x:scenario label="points to a chord">
+          <x:param href="input/input_7.xml" name="global-context-item"/>
+          <x:context href="input/input_7.xml" mode="mode.1" select="id('di_d1990e335')"/>
+          <x:expect href="input/output_7.xml" label="chord" select="()"/>
+        </x:scenario>
+
+      </x:scenario>
+    </x:scenario>
+
+  </x:scenario>
+
+</x:description>

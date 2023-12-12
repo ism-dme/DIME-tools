@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<x:description xmlns:mei="http://www.music-encoding.org/ns/mei" schematron="../src/rules/main.sch" xmlns:params="http://oxygenxml.com/ns/schematron/params" xmlns:x="http://www.jenitennison.com/xslt/xspec">
+  <x:param name="phase">refTexts_v3</x:param>
+  <x:scenario label="chord">
+    
+    <x:context>
+      <mei:chord artic="spicc" dots="1" doxml.id="d27e411" dur="4" tstamp="1" xml:id="chord_5712" xmlns:mei="http://www.music-encoding.org/ns/mei">
+        <mei:note accid="s" doxml.id="d27e411" oct="5" pname="g" xml:id="note_5718"/>
+        <mei:note doxml.id="d27e413" oct="5" pname="d" xml:id="note_5724"/>
+      </mei:chord>
+    </x:context>
+    <!--      <x:expect-assert id="chord_2"/>-->
+    <x:expect-assert id="chord_2"/>
+    
+  </x:scenario>
+  
+  <x:scenario label="clef">
+    <!--<x:context href="clef.mei" select="/"/>-->
+    <!--was tested inside <x:context/>
+      <x:param name="element" select="mei:clef[not(@sameas)]"/>
+      <x:param name="attributes" select="'shape', 'line'"/>
+      <x:param name="phase" select="'refTexts_v3'"/>-->
+    <x:context>
+      <mei:clef line="2" shape="G" xml:id="clef_in3_gcj_ntb"/>
+    </x:context>
+    <x:expect-not-assert id="clef_1"/>
+  </x:scenario>
+<!--  <x:param name="phase">refTexts_v3</x:param>-->
+  
+  
+  <!--<x:scenario label="chord">
+    
+    
+      <x:context>
+        <chord artic="spicc" dots="1" doxml.id="d27e411" dur="4" tstamp="1" xml:id="chord_5712" xmlns="http://www.music-encoding.org/ns/mei">
+          <note accid="s" doxml.id="d27e411" oct="5" pname="g" xml:id="note_5718"/>
+          <note doxml.id="d27e413" oct="5" pname="d" xml:id="note_5724"/>
+        </chord>
+      </x:context>
+<!-\-      <x:expect-assert id="chord_2"/>-\->
+      <x:expect-not-assert id="chord_2"/>
+    
+
+    <!-\-<x:scenario label="Short descriptions should be concise">
+      <x:scenario label="Proper description">
+        <x:context>
+          <book>
+            <shortdesc>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</shortdesc>
+          </book>
+        </x:context>
+        <x:expect-not-assert id="shortdesc-too-long"/>
+        <x:expect-not-assert id="shortdesc-too-short"/>
+      </x:scenario>
+
+      <x:scenario label="Short description">
+        <x:context>
+          <book>
+            <shortdesc>Lorem ipsum dolor</shortdesc>
+          </book>
+        </x:context>
+
+        <x:expect-assert id="shortdesc-too-short" label="Short description is too short"/>
+      </x:scenario>
+
+      <x:scenario label="Long description">
+        <x:context>
+          <book>
+            <shortdesc>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse dolor nisl, fringilla sit amet tellus eget, dignissim efficitur tortor. Mauris in iaculis magna. Morbi sagittis risus nunc, at viverra sapien rhoncus a. Sed placerat consequat elit, vel interdum nisi luctus volutpat. Nunc non ligula tortor. Ut convallis enim a leo faucibus feugiat. Aenean in ultrices odio, eu dignissim lectus. Etiam porta dui at dapibus pulvinar. Mauris commodo justo non nisi facilisis auctor. Morbi nulla dolor, interdum sit amet justo at, hendrerit mattis odio. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque convallis ex vitae nisi interdum aliquet. In sagittis dolor sit amet urna laoreet gravida. Vestibulum libero odio, sollicitudin vitae facilisis sed, mattis finibus urna. Nullam vel sem vel enim ornare consequat et at felis. Integer nulla nisi, aliquet at massa eget, viverra aliquet odio. </shortdesc>
+          </book>
+        </x:context>
+        <x:expect-assert id="shortdesc-too-long" label="Short description is too long" location="/book[1]/shortdesc[1]"/>
+      </x:scenario>
+
+
+    </x:scenario>-\->
+  </x:scenario>-->
+  
+  
+</x:description>

@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mei meiversion="3.0.0" xmlns="http://www.music-encoding.org/ns/mei">
+  <meiHead>
+    <fileDesc>
+      <titleStmt>
+        <title label="NMA digital" type="unit">Test data based on W. A. Mozart, K. 543/01, mm. 70-71.</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>
+          <title>Digital Mozart Edition</title>
+        </edition>
+      </editionStmt>
+      <pubStmt>
+        <publisher>
+          <corpName>Mozarteum</corpName>
+          <ptr target="https://www.mozarteum.at"/>
+        </publisher>
+        <availability>
+          <useRestrict label="license">CC BY-NC-SA 4.0</useRestrict>
+        </availability>
+      </pubStmt>
+    </fileDesc>
+    <workDesc>
+      <work>
+        <perfMedium>
+          <perfResList authURI="http://www.loc.gov/standards/valuelist/marcmusperf.html" authority="marcmusperf">
+            <perfRes codedval="wa" label="flute" n="1" xml:id="instrVoice_1" xml:lang="EN">flute</perfRes>
+            <perfRes codedval="wc" label="clarinet" n="2" xml:id="instrVoice_2" xml:lang="EN">clarinet-1</perfRes>
+            <perfRes codedval="wc" label="clarinet" n="3" xml:id="instrVoice_3" xml:lang="EN">clarinet-2</perfRes>
+            <perfRes codedval="wd" label="bassoon" n="4" xml:id="instrVoice_4" xml:lang="EN">bassoon-1</perfRes>
+            <perfRes codedval="wd" label="bassoon" n="5" xml:id="instrVoice_5" xml:lang="EN">bassoon-2</perfRes>
+            <perfRes codedval="ba" label="horn" n="6" xml:id="instrVoice_6" xml:lang="EN">horn-1</perfRes>
+            <perfRes codedval="ba" label="horn" n="7" xml:id="instrVoice_7" xml:lang="EN">horn-2</perfRes>
+            <perfRes codedval="bb" label="trumpet" n="8" xml:id="instrVoice_8" xml:lang="EN">trumpet-1</perfRes>
+            <perfRes codedval="bb" label="trumpet" n="9" xml:id="instrVoice_9" xml:lang="EN">trumpet-2</perfRes>
+            <perfRes codedval="pa" label="timpani" n="10" xml:id="instrVoice_10" xml:lang="EN">timpani</perfRes>
+            <perfRes codedval="sa" label="violin" n="11" xml:id="instrVoice_11" xml:lang="EN">violin-1</perfRes>
+            <perfRes codedval="sa" label="violin" n="12" xml:id="instrVoice_12" xml:lang="EN">violin-2</perfRes>
+            <perfRes codedval="sb" label="viola" n="13" xml:id="instrVoice_13" xml:lang="EN">viola</perfRes>
+            <perfRes codedval="sc" label="violoncello" n="14" xml:id="instrVoice_14" xml:lang="EN">violoncello</perfRes>
+            <perfRes codedval="sd" label="bass" n="15" xml:id="instrVoice_15" xml:lang="EN">double bass</perfRes>
+          </perfResList>
+        </perfMedium>
+      </work>
+    </workDesc>
+  </meiHead>
+  <music>
+    <body>
+      <mdiv n="1" xml:id="mdiv_1986">
+        <score xml:id="score_1992">
+          <scoreDef key.accid="f" key.mode="major" key.pname="e" key.sig="3f" meter.count="2" meter.sym="cut" meter.unit="2" xml:id="scoreDef_01">
+            <staffGrp barthru="false" xml:id="staffGrp_01">
+              <staffGrp barthru="true" symbol="bracket" xml:id="staffGrp_02">
+                <staffDef clef.line="2" clef.shape="G" decls="#instrVoice_1" dme.parts="1" doxml.id="d28e58" label.abbr="Fl." lines="5" n="1" xml:id="staffDef_P1">
+                  <label xml:id="label_P1">Flauto</label>
+                </staffDef>
+                <staffDef clef.line="2" clef.shape="G" dme.parts="2,3" doxml.id="d28e94" key.sig="1f" label.abbr="Clar." lines="5" n="2" trans.diat="-1" trans.semi="-2" xml:id="staffDef_P2">
+                  <label xml:id="label_P2">Clarinetti<lb xml:id="lb_P2"/> in Si♭/B</label>
+                  <layerDef decls="#instrVoice_2" n="1" xml:id="layerDef_Clar1"/>
+                  <layerDef decls="#instrVoice_3" n="2" xml:id="layerDef_Clar2"/>
+                </staffDef>
+                <staffDef clef.line="4" clef.shape="F" dme.parts="4,5" doxml.id="d28e152" label.abbr="Fag." lines="5" n="3" xml:id="staffDef_P3">
+                  <label xml:id="label_P3">Fagotti</label>
+                  <layerDef decls="#instrVoice_4" n="1" xml:id="layerDef_Fag1"/>
+                  <layerDef decls="#instrVoice_5" n="2" xml:id="layerDef_Fag2"/>
+                </staffDef>
+              </staffGrp>
+              <staffGrp barthru="true" symbol="bracket" xml:id="staffGrp_03">
+                <staffDef clef.line="2" clef.shape="G" dme.parts="6,7" doxml.id="d28e211" key.sig="0" label.abbr="Cor." lines="5" n="4" trans.diat="-5" trans.semi="-9" xml:id="staffDef_P4">
+                  <label xml:id="label_P4">Corni<lb xml:id="lb_P4"/> in Mi♭/Es</label>
+                  <layerDef decls="#instrVoice_6" n="1" xml:id="layerDef_Cor1"/>
+                  <layerDef decls="#instrVoice_7" n="2" xml:id="layerDef_Cor2"/>
+                </staffDef>
+                <staffDef clef.line="2" clef.shape="G" dme.parts="8,9" doxml.id="d28e269" key.sig="0" label.abbr="Cl." lines="5" n="5" trans.diat="2" trans.semi="3" xml:id="staffDef_P5">
+                  <label xml:id="label_P5">Clarini<lb xml:id="lb_P5"/> in Mi♭/Es</label>
+                  <layerDef decls="#instrVoice_8" n="1" xml:id="layerDef_Cl1"/>
+                  <layerDef decls="#instrVoice_9" n="2" xml:id="layerDef_Cl2"/>
+                </staffDef>
+              </staffGrp>
+              <staffDef clef.line="4" clef.shape="F" decls="#instrVoice_10" dme.parts="10" doxml.id="d28e311" key.sig="0" label.abbr="Timp." lines="5" n="6" trans.diat="2" trans.semi="3" xml:id="staffDef_P6">
+                <label xml:id="label_P6">Timpani<lb xml:id="lb_P6"/> in Mi♭-Si♭/Es-B</label>
+              </staffDef>
+              <staffGrp barthru="true" symbol="bracket" xml:id="staffGrp_04">
+                <staffGrp symbol="brace" xml:id="staffGrp_05">
+                  <staffDef clef.line="2" clef.shape="G" decls="#instrVoice_11" dme.parts="11" doxml.id="d28e355" label.abbr="Vl.I" lines="5" n="7" xml:id="staffDef_P7">
+                    <label xml:id="label_P7">Violino I</label>
+                  </staffDef>
+                  <staffDef clef.line="2" clef.shape="G" decls="#instrVoice_12" dme.parts="12" doxml.id="d28e424" label.abbr="Vl.II" lines="5" n="8" xml:id="staffDef_P8">
+                    <label xml:id="label_P8">Violino II</label>
+                  </staffDef>
+                </staffGrp>
+                <staffDef clef.line="3" clef.shape="C" decls="#instrVoice_13" dme.parts="13" doxml.id="d28e493" label.abbr="Va." lines="5" n="9" xml:id="staffDef_P9">
+                  <label xml:id="label_P9">Viola</label>
+                </staffDef>
+                <staffDef clef.line="4" clef.shape="F" dme.parts="14,15" doxml.id="d28e518" label.abbr="Vc./Bs." lines="5" n="10" xml:id="staffDef_P10">
+                  <label xml:id="label_P10">Violoncello<lb xml:id="lb_P10"/> e Basso</label>
+                  <layerDef decls="#instrVoice_14" n="1" xml:id="layerDef_Vc"/>
+                  <layerDef decls="#instrVoice_15" n="2" xml:id="layerDef_Bs"/>
+                </staffDef>
+              </staffGrp>
+            </staffGrp>
+          </scoreDef>
+          <section xml:id="section_">
+            <section xml:id="section_A_m-"/>
+            <section xml:id="section_B_m-">
+              <scoreDef meter.count="3" meter.unit="4" n="2" xml:id="scoreDef_02"/>
+              <section xml:id="section_A_m1-2">
+                <measure n="1" xml:id="m1">
+                  <staff n="1" xml:id="staff_2370">
+                    <layer n="1" xml:id="layer_2376">
+                      <rest dur="4" tstamp="1" xml:id="rest_2382"/>
+                      <note dur="4" oct="5" pname="g" tstamp="2" xml:id="note_2388">
+                        <artic artic="spicc" place="below" xml:id="artic_2394"/>
+                      </note>
+                      <note dur="4" oct="5" pname="f" tstamp="3" xml:id="note_2400">
+                        <artic artic="spicc" place="below" xml:id="artic_2406"/>
+                      </note>
+                    </layer>
+                  </staff>
+                  <staff n="2" xml:id="staff_2412">
+                    <layer n="1" xml:id="layer_2418">
+                      <rest dur="4" tstamp="1" xml:id="rest_2424"/>
+                      <note dur="4" oct="5" pname="a" tstamp="2" xml:id="note_2430">
+                        <artic artic="spicc" place="below" xml:id="artic_2436"/>
+                      </note>
+                      <note dur="4" oct="5" pname="g" tstamp="3" xml:id="note_2442">
+                        <artic artic="spicc" place="below" xml:id="artic_2448"/>
+                      </note>
+                    </layer>
+                    <layer n="2" xml:id="layer_2454">
+                      <rest sameas="#rest_2424" tstamp="1" xml:id="rest_2460"/>
+                      <note dur="4" oct="5" pname="f" tstamp="1" xml:id="note_2466">
+                        <artic artic="spicc" xml:id="artic_2472"/>
+                      </note>
+                      <note dur="4" oct="5" pname="e" tstamp="2" xml:id="note_2478">
+                        <artic artic="spicc" xml:id="artic_2484"/>
+                      </note>
+                    </layer>
+                  </staff>
+                  <staff n="3" xml:id="staff_2490">
+                    <layer n="1" xml:id="layer_2496">
+                      <rest dur="4" tstamp="1" xml:id="rest_2502"/>
+                      <note dur="4" oct="3" pname="b" tstamp="2" xml:id="note_2508">
+                        <artic artic="spicc" xml:id="artic_2514"/>
+                        <accid accid.ges="f" xml:id="accid_2520"/>
+                      </note>
+                      <note dur="4" oct="2" pname="b" tstamp="3" xml:id="note_2526">
+                        <artic artic="spicc" xml:id="artic_2532"/>
+                        <accid accid.ges="f" xml:id="accid_2538"/>
+                      </note>
+                    </layer>
+                    <layer n="2" sameas="#layer_2496" xml:id="layer_2544"/>
+                  </staff>
+                  <staff n="4" xml:id="staff_2550">
+                    <layer n="1" xml:id="layer_2556">
+                      <rest dur="4" tstamp="1" xml:id="rest_2562"/>
+                      <note dur="4" oct="5" pname="e" tstamp="2" xml:id="note_2568">
+                        <supplied resp="#NMA-editors" xml:id="supplied_2574">
+                          <artic artic="spicc" xml:id="artic_2580"/>
+                        </supplied>
+                      </note>
+                      <note dur="4" oct="5" pname="d" tstamp="3" xml:id="note_2586">
+                        <supplied resp="#NMA-editors" xml:id="supplied_2592">
+                          <artic artic="spicc" xml:id="artic_2598"/>
+                        </supplied>
+                      </note>
+                    </layer>
+                    <layer n="2" xml:id="layer_2604">
+                      <rest sameas="#rest_2562" tstamp="1" xml:id="rest_2610"/>
+                      <note dur="4" oct="5" pname="c" tstamp="1" xml:id="note_2616">
+                        <supplied resp="#NMA-editors" xml:id="supplied_2622">
+                          <artic artic="spicc" xml:id="artic_2628"/>
+                        </supplied>
+                      </note>
+                      <note dur="4" oct="4" pname="g" tstamp="2" xml:id="note_2634">
+                        <supplied resp="#NMA-editors" xml:id="supplied_2640">
+                          <artic artic="spicc" xml:id="artic_2646"/>
+                        </supplied>
+                      </note>
+                    </layer>
+                  </staff>
+                  <staff n="5" xml:id="staff_2652">
+                    <layer n="1" xml:id="layer_2658">
+                      <rest dur="4" tstamp="1" xml:id="rest_2664"/>
+                      <note dur="4" oct="4" pname="g" tstamp="2" xml:id="note_2670">
+                        <supplied sameas="#supplied_2718" resp="#NMA-editors" xml:id="supplied_2676"/>
+                      </note>
+                      <note dur="4" oct="4" pname="g" tstamp="3" xml:id="note_2694">
+                        <supplied sameas="#supplied_2730" xml:id="supplied_2688"/>
+                      </note>
+                    </layer>
+                    <layer n="2" xml:id="layer_2700">
+                      <rest sameas="#rest_2664" tstamp="1" xml:id="rest_2706"/>
+                      <note dur="4" oct="3" pname="g" stem.sameas="#note_2670" tstamp="1" xml:id="note_2712">
+                        <supplied resp="#NMA-editors" xml:id="supplied_2718">
+                          <artic artic="spicc" xml:id="artic_2718"/>
+                        </supplied>
+                      </note>
+                      <note dur="4" oct="3" pname="g" stem.sameas="#note_2694" tstamp="2" xml:id="note_2724">
+                        <supplied resp="#NMA-editors" xml:id="supplied_2730">
+                          <artic artic="spicc" xml:id="artic_2736"/>
+                        </supplied>
+                      </note>
+                    </layer>
+                  </staff>
+                  <staff n="6" xml:id="staff_2742">
+                    <layer n="1" xml:id="layer_2748">
+                      <rest dur="4" tstamp="1" xml:id="rest_2754"/>
+                      <note dur="4" oct="2" pname="g" tstamp="2" xml:id="note_2760"/>
+                      <note dur="4" oct="2" pname="g" tstamp="3" xml:id="note_2766"/>
+                    </layer>
+                  </staff>
+                  <staff n="7" xml:id="staff_2772">
+                    <layer n="1" xml:id="layer_2778">
+                      <note dur="4" oct="3" pname="b" tstamp="1" xml:id="note_2784">
+                        <accid accid.ges="f" xml:id="accid_2790"/>
+                      </note>
+                      <chord dur="4" tstamp="2" xml:id="chord_2796">
+                        <supplied resp="#NMA-editors" xml:id="supplied_2802">
+                          <artic artic="spicc" xml:id="artic_2808"/>
+                        </supplied>
+                        <note dur="4" oct="5" pname="g" xml:id="note_2814"/>
+                        <note dur="4" oct="4" pname="b" xml:id="note_2820">
+                          <accid accid.ges="f" xml:id="accid_2826"/>
+                        </note>
+                        <note dur="4" oct="4" pname="e" xml:id="note_2832">
+                          <accid accid.ges="f" xml:id="accid_2838"/>
+                        </note>
+                      </chord>
+                      <chord dur="4" tstamp="3" xml:id="chord_2844">
+                        <supplied resp="#NMA-editors" xml:id="supplied_2850">
+                          <artic artic="spicc" xml:id="artic_2856"/>
+                        </supplied>
+                        <note dur="4" oct="5" pname="f" xml:id="note_2862"/>
+                        <note dur="4" oct="4" pname="b" xml:id="note_2868">
+                          <accid accid.ges="f" xml:id="accid_2874"/>
+                        </note>
+                        <note dur="4" oct="4" pname="d" xml:id="note_2880"/>
+                      </chord>
+                    </layer>
+                  </staff>
+                  <staff n="8" xml:id="staff_2886">
+                    <layer n="1" xml:id="layer_2892">
+                      <note dur="4" oct="3" pname="b" tstamp="1" xml:id="note_2898">
+                        <accid accid.ges="f" xml:id="accid_2904"/>
+                      </note>
+                      <chord dur="4" tstamp="2" xml:id="chord_2910">
+                        <supplied resp="#NMA-editors" xml:id="supplied_2916">
+                          <artic artic="spicc" xml:id="artic_2922"/>
+                        </supplied>
+                        <note dur="4" oct="5" pname="g" xml:id="note_2928"/>
+                        <note dur="4" oct="4" pname="b" xml:id="note_2934">
+                          <accid accid.ges="f" xml:id="accid_2940"/>
+                        </note>
+                        <note dur="4" oct="4" pname="e" xml:id="note_2946">
+                          <accid accid.ges="f" xml:id="accid_2952"/>
+                        </note>
+                      </chord>
+                      <chord dur="4" tstamp="3" xml:id="chord_2958">
+                        <supplied resp="#NMA-editors" xml:id="supplied_2964">
+                          <artic artic="spicc" xml:id="artic_2970"/>
+                        </supplied>
+                        <note dur="4" oct="5" pname="f" xml:id="note_2976"/>
+                        <note dur="4" oct="4" pname="b" xml:id="note_2982">
+                          <accid accid.ges="f" xml:id="accid_2988"/>
+                        </note>
+                        <note dur="4" oct="4" pname="d" xml:id="note_2994"/>
+                      </chord>
+                    </layer>
+                  </staff>
+                  <staff n="9" xml:id="staff_3000">
+                    <layer n="1" xml:id="layer_3006">
+                      <rest dur="4" tstamp="1" xml:id="rest_3012"/>
+                      <note dur="4" oct="4" pname="b" tstamp="2" xml:id="note_3018">
+                        <supplied resp="#NMA-editors" xml:id="supplied_3024">
+                          <artic artic="spicc" xml:id="artic_3030"/>
+                        </supplied>
+                        <accid accid.ges="f" xml:id="accid_3036"/>
+                      </note>
+                      <note dur="4" oct="3" pname="b" tstamp="3" xml:id="note_3042">
+                        <supplied resp="#NMA-editors" xml:id="supplied_3048">
+                          <artic artic="spicc" xml:id="artic_3054"/>
+                        </supplied>
+                        <accid accid.ges="f" xml:id="accid_3060"/>
+                      </note>
+                    </layer>
+                  </staff>
+                  <staff n="10" xml:id="staff_3066">
+                    <layer n="1" xml:id="layer_3072">
+                      <rest dur="4" tstamp="1" xml:id="rest_3078"/>
+                      <note dur="4" oct="3" pname="b" tstamp="2" xml:id="note_3084">
+                        <artic artic="spicc" xml:id="artic_3090"/>
+                        <accid accid.ges="f" xml:id="accid_3096"/>
+                      </note>
+                      <note dur="4" oct="2" pname="b" tstamp="3" xml:id="note_3102">
+                        <artic artic="spicc" xml:id="artic_3108"/>
+                        <accid accid.ges="f" xml:id="accid_3114"/>
+                      </note>
+                    </layer>
+                  </staff>
+                  <dir layer="1 2" place="above" staff="3" tstamp="2" xml:id="dir_3120">
+                    <rend fontstyle="normal" xml:id="rend_3126">a&#8198;2</rend>
+                  </dir>
+                </measure>
+                <measure n="2" xml:id="m2">
+                  <staff n="1" xml:id="staff_3144">
+                    <layer n="1" xml:id="layer_3150">
+                      <note dur="4" oct="5" pname="e" tstamp="1" xml:id="note_3156">
+                        <accid accid.ges="f" xml:id="accid_3162"/>
+                      </note>
+                      <note dur="4" oct="5" pname="b" tstamp="2" xml:id="note_3168">
+                        <accid accid.ges="f" xml:id="accid_3174"/>
+                      </note>
+                      <note dur="4" oct="5" pname="b" tstamp="3" xml:id="note_3180">
+                        <accid accid.ges="f" xml:id="accid_3186"/>
+                      </note>
+                    </layer>
+                  </staff>
+                  <staff n="2" xml:id="staff_3192">
+                    <layer n="1" xml:id="layer_3198">
+                      <note dur="4" oct="5" pname="f" tstamp="1" xml:id="note_3204"/>
+                      <note dur="4" oct="5" pname="a" tstamp="2" xml:id="note_3210"/>
+                      <note dur="4" oct="5" pname="a" tstamp="3" xml:id="note_3216"/>
+                    </layer>
+                    <layer n="2" xml:id="layer_3222">
+                      <note dur="4" oct="5" pname="f" tstamp="1" xml:id="note_3228"/>
+                      <note dur="4" oct="5" pname="c" tstamp="2" xml:id="note_3234"/>
+                      <note dur="4" oct="5" pname="c" tstamp="3" xml:id="note_3240"/>
+                    </layer>
+                  </staff>
+                  <staff n="3" xml:id="staff_3246">
+                    <layer n="1" xml:id="layer_3252">
+                      <beam xml:id="beam_3258">
+                        <note dur="8" oct="3" pname="e" tstamp="1" xml:id="note_3264">
+                          <supplied resp="#NMA-editors" xml:id="supplied_3270">
+                            <artic artic="stacc" xml:id="artic_3276"/>
+                          </supplied>
+                          <accid accid.ges="f" xml:id="accid_3282"/>
+                        </note>
+                        <note dur="8" oct="3" pname="g" tstamp="1.5" xml:id="note_3288">
+                          <supplied resp="#NMA-editors" xml:id="supplied_3294">
+                            <artic artic="stacc" xml:id="artic_3300"/>
+                          </supplied>
+                        </note>
+                        <note dur="8" oct="3" pname="e" tstamp="2" xml:id="note_3306">
+                          <supplied resp="#NMA-editors" xml:id="supplied_3312">
+                            <artic artic="stacc" xml:id="artic_3318"/>
+                          </supplied>
+                          <accid accid.ges="f" xml:id="accid_3324"/>
+                        </note>
+                        <note dur="8" oct="3" pname="g" tstamp="2.5" xml:id="note_3330">
+                          <supplied resp="#NMA-editors" xml:id="supplied_3336">
+                            <artic artic="stacc" xml:id="artic_3342"/>
+                          </supplied>
+                        </note>
+                        <note dur="8" oct="3" pname="e" tstamp="3" xml:id="note_3348">
+                          <supplied resp="#NMA-editors" xml:id="supplied_3354">
+                            <artic artic="stacc" xml:id="artic_3360"/>
+                          </supplied>
+                          <accid accid.ges="f" xml:id="accid_3366"/>
+                        </note>
+                        <note dur="8" oct="3" pname="g" tstamp="3.5" xml:id="note_3372">
+                          <supplied resp="#NMA-editors" xml:id="supplied_3378">
+                            <artic artic="stacc" xml:id="artic_3384"/>
+                          </supplied>
+                        </note>
+                      </beam>
+                    </layer>
+                    <layer n="2" sameas="#layer_3252" xml:id="layer_3390"/>
+                  </staff>
+                  <staff n="4" xml:id="staff_3396">
+                    <layer n="1" xml:id="layer_3402">
+                      <note dur="4" oct="5" pname="c" tstamp="1" xml:id="note_3408"/>
+                      <note dur="4" oct="5" pname="c" tstamp="2" xml:id="note_3414"/>
+                      <note dur="4" oct="5" pname="c" tstamp="3" xml:id="note_3420"/>
+                    </layer>
+                    <layer n="2" xml:id="layer_3426">
+                      <note dur="4" oct="4" pname="e" tstamp="1" xml:id="note_3432"/>
+                      <note dur="4" oct="4" pname="c" stem.sameas="#note_3414" tstamp="2" xml:id="note_3438"/>
+                      <note dur="4" oct="4" pname="c" stem.sameas="#note_3420" tstamp="3" xml:id="note_3444"/>
+                    </layer>
+                  </staff>
+                  <staff n="5" xml:id="staff_3450">
+                    <layer n="1" xml:id="layer_3456">
+                      <note dur="4" oct="4" pname="e" tstamp="1" xml:id="note_3462"/>
+                      <note dur="4" oct="5" pname="c" tstamp="2" xml:id="note_3468"/>
+                      <note dur="4" oct="5" pname="c" tstamp="3" xml:id="note_3474"/>
+                    </layer>
+                    <layer n="2" xml:id="layer_3480">
+                      <note dur="4" oct="4" pname="c" tstamp="1" xml:id="note_3486"/>
+                      <note dur="4" oct="4" pname="c" stem.sameas="#note_3468" tstamp="2" xml:id="note_3492"/>
+                      <note dur="4" oct="4" pname="c" stem.sameas="#note_3474" tstamp="3" xml:id="note_3498"/>
+                    </layer>
+                  </staff>
+                  <staff n="6" xml:id="staff_3504">
+                    <layer n="1" xml:id="layer_3510">
+                      <note dur="4" oct="3" pname="c" tstamp="1" xml:id="note_3516"/>
+                      <note dur="4" oct="3" pname="c" tstamp="2" xml:id="note_3522"/>
+                      <note dur="4" oct="3" pname="c" tstamp="3" xml:id="note_3528"/>
+                    </layer>
+                  </staff>
+                  <staff n="7" xml:id="staff_3534">
+                    <layer n="1" xml:id="layer_3540">
+                      <chord dots="1" dur="2" tstamp="1" xml:id="chord_3546">
+                        <note dots="1" dur="2" oct="5" pname="e" xml:id="note_3552">
+                          <accid accid.ges="f" xml:id="accid_3558"/>
+                        </note>
+                        <note dots="0" dur="4" oct="4" pname="e" xml:id="note_3564">
+                          <accid accid.ges="f" xml:id="accid_3570"/>
+                        </note>
+                        <note dots="0" dur="4" oct="3" pname="g" xml:id="note_3576"/>
+                      </chord>
+                    </layer>
+                  </staff>
+                  <staff n="8" xml:id="staff_3582">
+                    <layer n="1" xml:id="layer_3588">
+                      <chord dots="1" dur="2" tstamp="1" xml:id="chord_3594">
+                        <note dots="1" dur="2" oct="5" pname="e" xml:id="note_3600">
+                          <accid accid.ges="f" xml:id="accid_3606"/>
+                        </note>
+                        <note dots="0" dur="4" oct="4" pname="e" xml:id="note_3612">
+                          <accid accid.ges="f" xml:id="accid_3618"/>
+                        </note>
+                        <note dots="0" dur="4" oct="3" pname="g" xml:id="note_3624"/>
+                      </chord>
+                    </layer>
+                  </staff>
+                  <staff n="9" xml:id="staff_3630">
+                    <layer n="1" xml:id="layer_3636">
+                      <beam xml:id="beam_3642">
+                        <note dur="8" oct="3" pname="g" tstamp="1" xml:id="note_3648">
+                          <supplied resp="#NMA-editors" xml:id="supplied_3654">
+                            <artic artic="stacc" xml:id="artic_3660"/>
+                          </supplied>
+                        </note>
+                        <note dur="8" oct="3" pname="b" tstamp="1.5" xml:id="note_3666">
+                          <supplied resp="#NMA-editors" xml:id="supplied_3672">
+                            <artic artic="stacc" xml:id="artic_3678"/>
+                          </supplied>
+                          <accid accid.ges="f" xml:id="accid_3684"/>
+                        </note>
+                        <note dur="8" oct="3" pname="g" tstamp="2" xml:id="note_3690">
+                          <supplied resp="#NMA-editors" xml:id="supplied_3696">
+                            <artic artic="stacc" xml:id="artic_3702"/>
+                          </supplied>
+                        </note>
+                        <note dur="8" oct="3" pname="b" tstamp="2.5" xml:id="note_3708">
+                          <supplied resp="#NMA-editors" xml:id="supplied_3714">
+                            <artic artic="stacc" xml:id="artic_3720"/>
+                          </supplied>
+                          <accid accid.ges="f" xml:id="accid_3726"/>
+                        </note>
+                        <note dur="8" oct="3" pname="g" tstamp="3" xml:id="note_3732">
+                          <supplied resp="#NMA-editors" xml:id="supplied_3738">
+                            <artic artic="stacc" xml:id="artic_3744"/>
+                          </supplied>
+                        </note>
+                        <note dur="8" oct="3" pname="b" tstamp="3.5" xml:id="note_3750">
+                          <supplied resp="#NMA-editors" xml:id="supplied_3756">
+                            <artic artic="stacc" xml:id="artic_3762"/>
+                          </supplied>
+                          <accid accid.ges="f" xml:id="accid_3768"/>
+                        </note>
+                      </beam>
+                    </layer>
+                  </staff>
+                  <staff n="10" xml:id="staff_3774">
+                    <layer n="1" xml:id="layer_3780">
+                      <beam xml:id="beam_3786">
+                        <note dur="8" oct="3" pname="e" tstamp="1" xml:id="note_3792">
+                          <supplied resp="#NMA-editors" xml:id="supplied_3798">
+                            <artic artic="stacc" xml:id="artic_3804"/>
+                          </supplied>
+                          <accid accid.ges="f" xml:id="accid_3810"/>
+                        </note>
+                        <note dur="8" oct="3" pname="g" tstamp="1.5" xml:id="note_3816">
+                          <supplied resp="#NMA-editors" xml:id="supplied_3822">
+                            <artic artic="stacc" xml:id="artic_3828"/>
+                          </supplied>
+                        </note>
+                        <note dur="8" oct="3" pname="e" tstamp="2" xml:id="note_3834">
+                          <supplied resp="#NMA-editors" xml:id="supplied_3840">
+                            <artic artic="stacc" xml:id="artic_3846"/>
+                          </supplied>
+                          <accid accid.ges="f" xml:id="accid_3852"/>
+                        </note>
+                        <note dur="8" oct="3" pname="g" tstamp="2.5" xml:id="note_3858">
+                          <supplied resp="#NMA-editors" xml:id="supplied_3864">
+                            <artic artic="stacc" xml:id="artic_3870"/>
+                          </supplied>
+                        </note>
+                        <note dur="8" oct="3" pname="e" tstamp="3" xml:id="note_3876">
+                          <supplied resp="#NMA-editors" xml:id="supplied_3882">
+                            <artic artic="stacc" xml:id="artic_3888"/>
+                          </supplied>
+                          <accid accid.ges="f" xml:id="accid_3894"/>
+                        </note>
+                        <note dur="8" oct="3" pname="g" tstamp="3.5" xml:id="note_3900">
+                          <supplied resp="#NMA-editors" xml:id="supplied_3906">
+                            <artic artic="stacc" xml:id="artic_3912"/>
+                          </supplied>
+                        </note>
+                      </beam>
+                    </layer>
+                  </staff>
+                </measure>
+              </section>
+              <section xml:id="section_B_m-"/>
+            </section>
+          </section>
+        </score>
+      </mdiv>
+    </body>
+  </music>
+</mei>

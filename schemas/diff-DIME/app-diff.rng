@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grammar ns="http://www.mozarteum.at/ns/dme" xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+  <start>
+    <element name="appDiff">
+      <element name="appGrp">
+        <attribute>
+          <name ns="http://www.w3.org/XML/1998/namespace">id</name>
+          <data type="NCName"/>
+        </attribute>
+        <oneOrMore>
+          <element name="app">
+            <attribute>
+              <name ns="http://www.w3.org/XML/1998/namespace">id</name>
+              <data type="NCName"/>
+            </attribute>
+            <oneOrMore>
+              <element name="rdg">
+                <attribute name="n">
+                  <data type="integer"/>
+                </attribute>
+                <attribute name="target"/>
+              </element>
+            </oneOrMore>
+          </element>
+        </oneOrMore>
+      </element>
+    </element>
+  </start>
+</grammar>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map id="keydefs">
+	<title>Archive keys</title>
+	<keydef format="html" href="../../../archive/tie/tie.html" keys="tie" navtitle="tie" scope="peer">
+		<topicmeta>
+			<linktext>tie</linktext>
+		</topicmeta>
+	</keydef>
+	<keydef format="html" href="../../../archive/splitted_dynams_2parts/splitted_dynams_2parts.html" keys="splitted_dynams_2parts" navtitle="splitted_dynams_2parts" scope="peer">
+		<topicmeta>
+			<linktext>splitted_dynams_2parts</linktext>
+		</topicmeta>
+	</keydef>
+	<keydef format="html" href="../../../archive/score2parts/score2parts.html" keys="score2parts" navtitle="score2parts" scope="peer">
+		<topicmeta>
+			<linktext>score2parts</linktext>
+		</topicmeta>
+	</keydef>
+	<keydef format="html" href="../../../archive/remove-false-beams/remove-false-beams.html" keys="remove-false-beams" navtitle="remove-false-beams" scope="peer">
+		<topicmeta>
+			<linktext>remove-false-beams</linktext>
+		</topicmeta>
+	</keydef>
+	<keydef format="html" href="../../../archive/choiceTrill/choiceTrill.html" keys="choiceTrill" navtitle="choiceTrill" scope="peer">
+		<topicmeta>
+			<linktext>choiceTrill</linktext>
+		</topicmeta>
+	</keydef>
+	<keydef format="html" href="../../../archive/brushUp_haydnQ/brushUp_haydnQ.html" keys="brushUp_haydnQ" navtitle="brushUp_haydnQ" scope="peer">
+		<topicmeta>
+			<linktext>brushUp_haydnQ</linktext>
+		</topicmeta>
+	</keydef>
+	<keydef format="html" href="../../../archive/KV550/KV550.html" keys="KV550" navtitle="KV550" scope="peer">
+		<topicmeta>
+			<linktext>KV550</linktext>
+		</topicmeta>
+	</keydef>
+</map>

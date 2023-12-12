@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<?xml-stylesheet type="text/css" href="../../frameworks/styleguide/css/styleguideActions.css"?>
+<topic id="mrest">
+    <title>&lt;mRest&gt;</title>
+    <body>
+        <p>
+			<dl audience="rules">
+				<dlhead>
+					<dthd>Rule</dthd>
+					<ddhd>checkAttributeValue</ddhd>
+				</dlhead>
+				<dlentry>
+					<dt>element</dt>
+					<dd>mei:mRest</dd>
+				</dlentry>
+				<dlentry>
+					<dt>attribute</dt>
+					<dd>tstamp</dd>
+				</dlentry>
+				<dlentry>
+					<dt>attrValue</dt>
+					<dd>1</dd>
+				</dlentry>
+				<dlentry>
+					<dt>phase</dt>
+					<dd>refTexts_v3, altTexts_v3, refTexts_v4, altTexts_v4</dd>
+				</dlentry>
+				<dlentry>
+					<dt>message</dt>
+					<dd>.</dd>
+				</dlentry>
+			</dl>
+		</p>
+    </body>
+</topic>
