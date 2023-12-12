@@ -1,3 +1,0 @@
-dme.mozarteum.at/DME/music/schemas/mei-DME.rng
-dme.mozarteum.at/DME/music/schemas/mei-CMN_3.0.0.rng
-dme.mozarteum.at/DME/music/schemas/mei-CMN_4.0.0.rng
