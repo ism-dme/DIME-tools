@@ -9936,6 +9936,10 @@ Note: If it is not defined then the element at the caret position or the current
                         <Boolean>true</Boolean>
                     </entry>
                     <entry>
+                        <String>key.xpath.option.pane</String>
+                        <Boolean>true</Boolean>
+                    </entry>
+                    <entry>
                         <String>key.xslt.saxon8.option.pane</String>
                         <Boolean>true</Boolean>
                     </entry>
@@ -10096,6 +10100,25 @@ Note: If it is not defined then the element at the caret position or the current
                                 </field>
                             </validationScenario>
                         </validationScenario-array>
+                    </entry>
+                    <entry>
+                        <String>xpath.proxy.ns.mappings</String>
+                        <String-array>
+                            <String>xs</String>
+                            <String>http://www.w3.org/2001/XMLSchema</String>
+                            <String>fn</String>
+                            <String>http://www.w3.org/2005/xpath-functions</String>
+                            <String>err</String>
+                            <String>http://www.w3.org/2005/xqt-errors</String>
+                            <String>math</String>
+                            <String>http://www.w3.org/2005/xpath-functions/math</String>
+                            <String>map</String>
+                            <String>http://www.w3.org/2005/xpath-functions/map</String>
+                            <String>array</String>
+                            <String>http://www.w3.org/2005/xpath-functions/array</String>
+                            <String>mei</String>
+                            <String>http://www.music-encoding.org/ns/mei</String>
+                        </String-array>
                     </entry>
                 </serializableOrderedMap>
             </serialized>
