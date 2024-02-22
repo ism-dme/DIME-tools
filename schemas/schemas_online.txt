@@ -1,4 +1,0 @@
-https://dme.mozarteum.at/DME/schemata/mei-DME-4.0.rng	[v4.0.1]
-https://dme.mozarteum.at/DME/schemata/mei-DME.rng		[v3.0.0]
-dme.mozarteum.at/DME/music/schemas/mei-CMN_3.0.0.rng
-dme.mozarteum.at/DME/music/schemas/mei-CMN_4.0.0.rng
