@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="../../frameworks/styleguide/css/styleguideActions.css"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="note" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/">
+  <title>&lt;note&gt;</title>
+  <body>
+    <p>Required:<ol id="ol_cmm_ps3_tgb">
+        <li>@dur <ul id="ul_bzr_vxj_tgb">
+            <li>Exceptions:<ul id="ul_sf2_wxj_tgb">
+                <li>ancestor::chord</li>
+                <li>ancestor::chord but notes have different @dur values</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>@dots (if at least one other &lt;note/&gt; or &lt;rest/&gt; of the same chord have @dots. The value of current element ist then @dots="0")</li>
+      </ol>
+    </p>
+    <p>Optional: <ol id="ol_zfb_ltj_tgb">
+        <li/>
+      </ol>
+    </p>
+  </body>
+</topic>

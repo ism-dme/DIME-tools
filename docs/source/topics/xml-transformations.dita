@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="xml_transformations">
+  <title>Transformation</title>
+  <body>
+    <p><b>DOX conversion</b>: <ol>
+      <li><xref keyref="enhanceFromDoxml">enhanceFromDoxml</xref>
+          <ul>
+            <li><b>slurs and ties</b> (+ <b>del_curvedir</b>): re-inserts slurs and ties. Deletes slur@curvedir except those slurs which point to a chord, grace or chord note.</li>
+            <li><b>chordPointers</b>: If &lt;slur> or &lt;dynam> points to a &lt;note> which is a descendant of a &lt;chord>, the pointer value will be replaced by the reference to chord@xml:id </li>
+            <li><b>keysigs and accidentals</b> + <b>secondTiedNote</b>: re-inserts @accid and @accid.ges </li>
+            <li><xref keyref="enhanceFromDoxml_artic"><b>artic</b></xref>: deletes wrong articulation (usually staccato)</li>
+          </ul></li>
+        <li>
+          <xref keyref="DOXconvX">DOXconvX</xref>
+        </li>
+      
+        <li><b>DOXconvX_piano:</b>
+          <ul>
+            <li><xref keyref="swapLayers">swapLayers</xref></li>
+            <li><xref keyref="rest2space">rest2space</xref></li>
+            <li><xref keyref="piano_replace-note-with-chord">piano_replace-note-with-chord</xref></li>
+          </ul></li>
+        <li><xref keyref="unsupplied-dir_@num-visible">unsupplied-dir_@num-visible</xref></li>
+      </ol>
+    </p>
+    <p><b>General</b>: <ol id="ul_l2r_5vp_t2b">
+        <li>
+          <xref keyref="count-measures">count_measures</xref>
+        </li>
+        <li>
+          <xref keyref="create-IDs">create-IDs</xref>
+        </li>
+        <li>
+          <xref keyref="addTstamps">addTstamps</xref>
+        </li>
+        <li>
+          <xref keyref="updateVersion">updateVersion</xref>
+        </li>
+        <li>
+          <xref keyref="chordPointers">chordPointers</xref>
+        </li>
+        <li>
+          <xref keyref="dir_tstamp">dir_tstamp</xref>
+        </li>
+        <li>
+          <xref keyref="fb">fb</xref>
+        </li>
+        <li>
+          <xref keyref="mre">mre</xref>
+        </li>
+        <li>
+          <xref keyref="extractMeasures">extractMeasure(s) (=MoVi's diff-overlay)</xref>
+        </li>
+      </ol>
+    </p>
+    <p><b>Orchestral</b>:<ol>
+        <li>
+          <xref keyref="extractParts">extractParts</xref>
+        </li>
+        <li>
+          <xref keyref="secondLayer">secondLayer</xref>
+        </li>
+        <li>
+          <xref keyref="@layer_1-2">@layer_1-2</xref>
+        </li>
+        <li>
+          <xref keyref="resolve_bTrems">resolve_bTrems</xref>
+        </li>
+        <li>
+          <xref keyref="mergeStaves">mergeStaves</xref>
+        </li>
+        <li>
+          <xref keyref="attr2elem_accid-artic">attr2elem_accid-artic</xref>
+        </li>
+      </ol>
+    </p>
+    <p><b>Editorial</b>: <ul id="ol_u2f_d1v_53b">
+        <li>
+          <xref keyref="prepare_edition">prepare_edition</xref>
+        </li>
+        <li>
+          <xref keyref="diff-DIME">diff-DIME</xref>
+          <ul>
+            <li>
+              <xref keyref="poster_diff-DIME">poster MEC2019</xref>
+            </li>
+          </ul>
+        </li>
+        <li><xref keyref="K550_extract-version">K550_extract-version</xref></li>
+        <li><xref keyref="del_editorial_info">del_editorial_info</xref></li>
+      </ul>
+    </p>
+
+
+  </body>
+</topic>

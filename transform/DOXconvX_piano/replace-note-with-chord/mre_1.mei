@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.1/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.1/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei meiversion="4.0.0" xmlns="http://www.music-encoding.org/ns/mei">
+	<meiHead>
+		<fileDesc>
+			<titleStmt>
+				<title label="NMA digital" type="unit">an example</title>
+			</titleStmt>
+			<pubStmt/>
+		</fileDesc>
+	</meiHead>
+	<music>
+		<body>
+			<mdiv>
+				<score>
+					<scoreDef key.accid="f" key.mode="major" key.pname="b" key.sig="2f" meter.count="4" meter.unit="4" xml:id="scoreDef_01">
+						<staffGrp bar.thru="false" xml:id="staffGrp_01">
+							<staffGrp bar.thru="true" doxml.id="d28e31" label="" symbol="brace" xml:id="staffGrp_02">
+								<staffDef clef.line="2" clef.shape="G" decls="#instrVoice_1" key.sig="2f" lines="5" n="1" xml:id="staffDef_P1"/>
+								<staffDef clef.line="4" clef.shape="F" decls="#instrVoice_2" key.sig="2f" lines="5" n="2" xml:id="staffDef_P2"/>
+							</staffGrp>
+						</staffGrp>
+					</scoreDef>
+					<section>
+						<measure facs="#zoneOf_m40_k332_002" n="40" right="end" xml:id="m40_k332_002">
+							<staff n="1" xml:id="staff_16416">
+								<layer n="1" xml:id="layer_16422">
+									<note accid.ges="f" artic="spicc" doxml.id="d28e4867" dur="16" layer="1" oct="4" pname="b" tstamp="1" xml:id="note_16428"/>
+									<rest doxml.id="d28e4869" dur="16" tstamp="1.25" xml:id="rest_16434"/>
+									<beam xml:id="beam_16440">
+										<note accid.ges="f" dots="1" doxml.id="d28e4871" dur="16" layer="1" oct="5" pname="e" tstamp="1.5" xml:id="note_16446"/>
+										<note doxml.id="d28e4873" dur="32" layer="1" oct="4" pname="a" tstamp="1.875" xml:id="note_16452"/>
+									</beam>
+									<note accid.ges="f" artic="spicc" doxml.id="d28e4875" dur="16" layer="1" oct="4" pname="b" tstamp="2" xml:id="note_16458"/>
+									<rest doxml.id="d28e4878" dur="16" tstamp="2.25" xml:id="rest_16464"/>
+									<beam xml:id="beam_16470">
+										<note dots="1" doxml.id="d28e4880" dur="16" layer="1" oct="5" pname="g" tstamp="2.5" xml:id="note_16476"/>
+										<note doxml.id="d28e4882" dur="32" layer="1" oct="4" pname="a" tstamp="2.875" xml:id="note_16482"/>
+									</beam>
+									<chord doxml.id="d28e4884" dur="4" tstamp="3" xml:id="chord_16488">
+										<note doxml.id="d28e4884" layer="1" oct="4" pname="a" xml:id="note_16494"/>
+										<note doxml.id="d28e4886" layer="1" oct="4" pname="f" xml:id="note_16500"/>
+										<note accid.ges="f" doxml.id="d28e4888" layer="1" oct="4" pname="e" xml:id="note_16506"/>
+										<note doxml.id="d28e4890" layer="1" oct="4" pname="c" xml:id="note_16512"/>
+									</chord>
+									<chord doxml.id="d28e4892" dur="8" tstamp="4" xml:id="chord_16518">
+										<note accid.ges="f" doxml.id="d28e4892" layer="1" oct="4" pname="b" xml:id="note_16524"/>
+										<note doxml.id="d28e4894" layer="1" oct="4" pname="f" xml:id="note_16530"/>
+										<note doxml.id="d28e4896" layer="1" oct="4" pname="d" xml:id="note_16536"/>
+									</chord>
+									<rest doxml.id="d28e4898" dur="8" tstamp="4.5" xml:id="rest_16542"/>
+								</layer>
+							</staff>
+							<staff n="2" xml:id="staff_16548">
+								<layer n="1" xml:id="layer_16554">
+									<rest doxml.id="d28e4905" dur="16" layer="7" tstamp="1" xml:id="rest_16638"/>
+									<beam xml:id="beam_16644">
+										<chord doxml.id="d28e4907" dur="16" tstamp="1.25" xml:id="chord_16650">
+											<note accid="n" doxml.id="d28e4907" layer="7" oct="4" pname="f" xml:id="note_16656"/>
+											<note doxml.id="d28e4909" layer="7" oct="4" pname="d" xml:id="note_16662"/>
+										</chord>
+										<chord doxml.id="d28e4911" dur="16" tstamp="1.5" xml:id="chord_16668">
+											<note doxml.id="d28e4911" layer="7" oct="4" pname="g" xml:id="note_16674"/>
+											<note accid.ges="f" doxml.id="d28e4913" layer="7" oct="4" pname="e" xml:id="note_16680"/>
+										</chord>
+										<chord doxml.id="d28e4915" dur="16" tstamp="1.75" xml:id="chord_16686">
+											<note accid.ges="f" doxml.id="d28e4915" layer="7" oct="4" pname="e" xml:id="note_16692"/>
+											<note doxml.id="d28e4917" layer="7" oct="4" pname="c" xml:id="note_16698"/>
+										</chord>
+									</beam>
+									<beam xml:id="beam_16704">
+										<note doxml.id="d28e4921" dur="16" layer="7" oct="4" pname="d" tstamp="2" xml:id="note_16710"/>
+										<chord doxml.id="d28e4924" dur="16" tstamp="2.25" xml:id="chord_16716">
+											<note doxml.id="d28e4924" layer="7" oct="4" pname="f" xml:id="note_16722"/>
+											<note doxml.id="d28e4926" layer="7" oct="4" pname="d" xml:id="note_16728"/>
+										</chord>
+										<chord doxml.id="d28e4928" dur="16" tstamp="2.5" xml:id="chord_16734">
+											<note doxml.id="d28e4928" layer="7" oct="4" pname="g" xml:id="note_16740"/>
+											<note accid.ges="f" doxml.id="d28e4930" layer="7" oct="4" pname="e" xml:id="note_16746"/>
+										</chord>
+										<chord doxml.id="d28e4932" dur="16" tstamp="2.75" xml:id="chord_16752">
+											<note accid.ges="f" doxml.id="d28e4932" layer="7" oct="4" pname="e" xml:id="note_16758"/>
+											<note doxml.id="d28e4934" layer="7" oct="4" pname="c" xml:id="note_16764"/>
+										</chord>
+									</beam>
+									<clef doxml.id="d28e4936" line="4" shape="F" xml:id="clef_16572"/>
+									<note accid.ges="f" doxml.id="d28e4938" dur="4" layer="6" oct="3" pname="b" tstamp="3" xml:id="note_16770"/>
+									<note accid.ges="f" doxml.id="d28e4942" dur="8" layer="6" oct="3" pname="b" tstamp="4" xml:id="note_16776"/>
+									<rest doxml.id="d28e4951" dur="8" tstamp="4.5" xml:id="rest_16782"/>
+								</layer>
+								<layer n="2" xml:id="layer_16632">
+									<note accid.ges="f" doxml.id="d28e4903" dur="4" layer="6" oct="3" pname="b" tstamp="1" xml:id="note_16560"/>
+									<note accid.ges="f" doxml.id="d28e4919" dur="4" layer="6" oct="3" pname="b" tstamp="2" xml:id="note_16566"/>
+									<chord doxml.id="d28e4938" dur="4" tstamp="3" xml:id="chord_16578">
+										<note accid.ges="f" doxml.id="d28e4938" layer="6" oct="3" pname="b" xml:id="note_16584"/>
+										<note accid.ges="f" doxml.id="d28e4940" layer="6" oct="2" pname="b" xml:id="note_16590"/>
+									</chord>
+									<chord doxml.id="d28e4942" dur="8" tstamp="4" xml:id="chord_16596">
+										<note accid.ges="f" doxml.id="d28e4942" layer="6" oct="3" pname="b" xml:id="note_16602"/>
+										<note doxml.id="d28e4944" layer="6" oct="3" pname="f" xml:id="note_16608"/>
+										<note doxml.id="d28e4947" layer="6" oct="3" pname="d" xml:id="note_16614"/>
+										<note accid.ges="f" doxml.id="d28e4949" layer="6" oct="2" pname="b" xml:id="note_16620"/>
+									</chord>
+									<space doxml.id="d28e4951" dur="8" tstamp="4.5" xml:id="space_16626"/>
+								</layer>
+							</staff>
+							<slur endid="#note_16452" staff="1" startid="#note_16446" xml:id="slur_16788"/>
+							<slur endid="#note_16482" staff="1" startid="#note_16476" xml:id="slur_16794"/>
+							<slur endid="#note_16524" staff="1" startid="#note_16494" xml:id="slur_16800"/>
+							<fermata place="below" staff="2" tstamp="5" xml:id="fermata_16806"/>
+						</measure>
+					</section>
+				</score>
+			</mdiv>
+		</body>
+	</music>
+</mei>

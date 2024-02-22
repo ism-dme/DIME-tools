@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="chengelog" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/">
+  <title>changeLog</title>
+  <body>
+    <div>
+      <!--template-->
+      <!--<p>
+        <b>2022-12-21</b>
+        <ul id="2022_12_21">
+          <li>tuplet@type, dme/dime/dime-mei#26</li>
+        </ul>
+      </p>-->
+      <p>
+        <b>2024-02-14</b>
+        <ul id="2024_02_14">
+          <li>Check <codeph>scoreDef@optimize</codeph>, <xref format="html" href="https://gitlab.mozarteum.at/dme/dime/dime-mei/-/issues/124" scope="external">dme/dime/dime-mei#124</xref></li>
+        </ul>
+      </p>
+      <p>
+        <b>2024-01-29</b>
+        <ul id="2024_01_29">
+          <li>Add schematron phase for MEI 5.0.</li>
+        </ul>
+      </p>
+      <p>
+        <b>2022-12-21</b>
+        <ul id="2022_12_21">
+          <li><codeph>tuplet@type</codeph>, <xref format="html" href="https://gitlab.mozarteum.at/dme/dime/dime-mei/-/issues/26" scope="external">dme/dime/dime-mei#26</xref></li>
+        </ul>
+      </p>
+      <p>
+        <b>2022-05-13</b>
+        <ul id="2022_05_13">
+          <li>Improve the rule <i>The &lt;chord&gt; must have @tstamp and match the regular expression \d(\.(\d){1,7})?.</i>: exclude <codeph>chord[ancestor::graceGrp]</codeph>
+          </li>
+          <li>Add the rule: <codeph>chord[ancestor::graceGrp]</codeph> must not contain all or one of the following attribute(s): <codeph>@tstamp</codeph>.</li>
+          <li>Add License File</li>
+        </ul>
+      </p>
+      <p>
+        <b>2021-05-04</b>
+        <ul id="ul_dhh_fkt_mpb">
+          <li>Add The rule for <codeph>//body//tempo</codeph>: <i>The value for @type should match the regular expression tempo|heading.</i> (<codeph>@type</codeph> remains optional) </li>
+          <li>For the rule <i>The &lt;chord&gt; must have @tstamp and match the regular expression \d(\.(\d){1,7})?.</i>: exclude <codeph>//chord[@grace]</codeph>
+          </li>
+          <li>For the rule: <i>The values slur/tie@staff attribute should match either note/@staff</i> or note/ancestor::staff/@n: allow multiple values for <codeph>slur/tie@staff</codeph>
+          </li>
+          <li>For the rule: <i>The note linked by @startid should not be placed before the note linked by @endid.</i>: restrict the check for the same layer</li>
+        </ul>
+      </p>
+      <p>
+        <b>2021-01-29</b>
+        <ul>
+          <li>Improve the rule: <i>&lt;note&gt;'s pointed by @startid or @endid of a &lt;slur&gt;; should be in the same staff/@n or have the same @staff value as the &lt;slur&gt; or &lt;tie&gt;</i> (except cross hand cases). </li>
+        </ul>
+      </p>
+      <p>
+        <b>2020-11-17</b>
+        <ul>
+          <li>Deprecate the rule <i>&lt;clef&gt; must contain @tstamp</i>
+          </li>
+        </ul>
+      </p>
+      <p>
+        <b>2020-11-02</b>
+        <ul>
+          <li>Adopted the phases for the MEI v4.0.0</li>
+          <li>Internal: move the rules for <codeph>mei:work/mei:identifier</codeph> to the abstract patterns</li>
+        </ul>
+      </p>
+      <p>
+        <b>2020-10-27</b>
+        <ul id="2020-10-28">
+          <li>Add: clef[not(@sameas)] must contain @shape, @line.</li>
+          <li>Add: clef must contain @tstamp</li>
+          <li>Restrict the rule <i>The name of the element with @sameas and the name of the pointed element must match.</i> to the <codeph>mei:body//*</codeph>
+          </li>
+          <li>Restrict the rule <i>The @tstamp of the elements (note, rest, mRest, chord) linked by @sameas should have the same value.</i> to the elements which are not descendant of an <codeph>&lt;app&gt;</codeph>.</li>
+        </ul>
+      </p>
+      <p>
+        <b>2020-08-27</b>
+        <ul id="2020-07-30">
+          <li>Improve abstract pattern <i>matchesAttributeValue</i>
+          </li>
+          <li>Add sqf:fix <i>addAttributeUserValue</i>
+          </li>
+          <li>Replace abstract patterns <i>minAttributeValueDescendants</i>, <i>maxAttributeValueDescendants</i> by <i>attributeValueDescendants</i> and update rules for chord</li>
+        </ul>
+      </p>
+      <p>
+        <b>2020-07-30</b>
+        <ul id="ul_clh_c4x_j">
+          <li>add: for the phase check_references, add check for //music//ref/@target </li>
+        </ul>
+      </p>
+      <p>
+        <b>2020-07-13</b>
+        <ul id="ul_clh_c4x_jlb">
+          <li>deprecate: &lt;lem&gt;, &lt;rdg&gt; must have @source with the prefedined value</li>
+          <li>add: <ul id="ul_c4w_kwg_3mb">
+              <li>Checks if &lt;tie&gt; should be a &lt;slur&gt; (because its reference has &lt;artic&gt; or @artic. )</li>
+              <li>The name of the element with @sameas and the name of the pointed element must match.</li>
+            </ul>
+          </li>
+          <li>internal: <ul id="ul_f3g_mwg_3mb">
+              <li>reorganized the transformation <i>extractRules</i>
+              </li>
+              <li>reorganized documentation</li>
+            </ul>
+          </li>
+        </ul>
+      </p>
+    </div>
+    <div>
+      <p>
+        <b> 2020-04-17</b>
+        <ul id="ul_clh_c4x_jl2">
+          <li>deprecate the rule <i>supplied &lt;slur&gt; may have @lform</i>
+          </li>
+          <li>&lt;corr&gt; must have @resp. Values: #DME-editors, #NMA-editors</li>
+        </ul>
+      </p>
+    </div>
+  </body>
+</topic>

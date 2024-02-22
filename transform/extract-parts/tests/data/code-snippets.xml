@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dme:root xmlns:dme="http://www.mozarteum.at/ns/dme">
+  <dme:input>
+    <dme:item n="1">551-001_m93.mei</dme:item>
+    <dme:item n="2">551-001_m93.mei</dme:item>
+    <dme:item n="3">551-001_m93.mei</dme:item>
+    <dme:item n="4">551-001_m93.mei</dme:item>
+  </dme:input>
+  <dme:output>
+    <dme:item n="1">
+      <scoreDef key.mode="major" key.pname="c" key.sig="0" meter.count="4" meter.sym="common" meter.unit="4" optimize="false" xml:id="scoreDef_01" xmlns="http://www.music-encoding.org/ns/mei">
+        <staffGrp barthru="false" xml:id="staffGrp_01">
+          <staffGrp barthru="true" symbol="none" xml:id="staffGrp_02">
+            <staffDef clef.line="2" clef.shape="G" dme.parts="2,3" doxml.id="d27e142" lines="5" n="2" xml:id="staffDef_P2">
+              <label xml:id="label_P2">Oboe II</label>
+              <labelAbbr xml:id="label_P2">Ob</labelAbbr>
+            </staffDef>
+          </staffGrp>
+        </staffGrp>
+      </scoreDef>
+    </dme:item>
+    <dme:item n="2">
+      <scoreDef key.mode="major" key.pname="c" key.sig="0" meter.count="4" meter.sym="common" meter.unit="4" optimize="false" xml:id="scoreDef_01" xmlns="http://www.music-encoding.org/ns/mei">
+        <staffGrp barthru="false" xml:id="staffGrp_01">
+          <staffGrp barthru="true" symbol="none" xml:id="staffGrp_02">
+            <staffDef clef.line="2" clef.shape="G" dme.parts="2,3" doxml.id="d27e142" lines="5" n="2" xml:id="staffDef_P2">
+              <label xml:id="label_P2">Oboe II</label>
+              <labelAbbr xml:id="label_P2">Ob</labelAbbr>
+            </staffDef>
+          </staffGrp>
+          <staffGrp barthru="true" symbol="bracket" xml:id="staffGrp_03">
+            <staffDef clef.line="2" clef.shape="G" dme.parts="6,7" doxml.id="d27e309" key.sig="0" lines="5" n="4" trans.diat="-7" trans.semi="-12" xml:id="staffDef_P4">
+              <label xml:id="label_P4">Corni<lb xml:id="lb_P4"/> in Do/C</label>
+              <labelAbbr xml:id="labelAbbr_P4">Cor.</labelAbbr>
+              <layerDef decls="#instrVoice_6" n="1" xml:id="layerDef_Cor1"/>
+              <layerDef decls="#instrVoice_6" n="2" xml:id="layerDef_Cor2"/>
+            </staffDef>
+          </staffGrp>
+          <staffGrp symbol="none" xml:id="staffGrp_05">
+            <staffDef clef.line="2" clef.shape="G" decls="#instrVoice_11" dme.parts="11" doxml.id="d27e466" lines="5" n="7" xml:id="staffDef_P7">
+              <label xml:id="label_P7">Violino I</label>
+              <labelAbbr xml:id="labelAbbr_P4">Vl. I</labelAbbr>
+            </staffDef>
+          </staffGrp>
+        </staffGrp>
+      </scoreDef>
+    </dme:item>
+    <dme:item n="3">
+      <scoreDef key.mode="major" key.pname="c" key.sig="0" meter.count="4" meter.sym="common" meter.unit="4" optimize="false" xml:id="scoreDef_01" xmlns="http://www.music-encoding.org/ns/mei">
+        <staffGrp barthru="false" xml:id="staffGrp_01">
+          <staffGrp barthru="true" symbol="none" xml:id="staffGrp_02">
+            <staffDef clef.line="4" clef.shape="F" dme.parts="4,5" doxml.id="d27e225" lines="5" n="3" xml:id="staffDef_P3">
+              <label xml:id="label_P3">Fagott I</label>
+              <labelAbbr xml:id="label_P3">Fag</labelAbbr>
+            </staffDef>
+          </staffGrp>
+        </staffGrp>
+      </scoreDef>
+    </dme:item>
+    <dme:item n="4">
+      <scoreDef key.mode="major" key.pname="c" key.sig="0" meter.count="4" meter.sym="common" meter.unit="4" optimize="false" xml:id="scoreDef_01" xmlns="http://www.music-encoding.org/ns/mei">
+        <staffGrp barthru="false" xml:id="staffGrp_01">
+          <staffGrp barthru="true" symbol="none" xml:id="staffGrp_04">
+            <staffDef clef.line="4" clef.shape="F" dme.parts="14,15" doxml.id="d27e758" lines="5" n="10" xml:id="staffDef_P10">
+              <label xml:id="label_P10">Violoncello</label>
+              <labelAbbr xml:id="label_P10">Vc</labelAbbr>
+            </staffDef>
+          </staffGrp>
+        </staffGrp>
+      </scoreDef>
+    </dme:item>
+  </dme:output>
+</dme:root>

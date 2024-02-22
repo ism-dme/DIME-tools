@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grammar datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes" ns="http://www.mozarteum.at/ns/dme" xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <element name="list">
+      <attribute>
+        <name ns="http://www.w3.org/XML/1998/namespace">id</name>
+        <data type="NCName"/>
+      </attribute>
+      <oneOrMore>
+        <element name="class">
+          <attribute name="label">
+            <data type="NCName"/>
+          </attribute>
+          <oneOrMore>
+            <ref name="item"/>
+          </oneOrMore>
+        </element>
+      </oneOrMore>
+    </element>
+  </start>
+  <define name="item">
+    <element name="item">
+      <attribute>
+        <name ns="http://www.w3.org/XML/1998/namespace">id</name>
+      </attribute>
+      <optional>
+        <zeroOrMore>
+          <ref name="item"/>
+        </zeroOrMore>
+      </optional>
+      <zeroOrMore>
+        <element name="name">
+          <optional>
+            <attribute name="label.abbr"/>
+          </optional>
+          <attribute>
+            <name ns="http://www.w3.org/XML/1998/namespace">lang</name>
+            <data type="NCName"/>
+          </attribute>
+          <text/>
+        </element>
+      </zeroOrMore>
+      <zeroOrMore>
+        <element name="transposition">
+          <attribute name="trans.diat">
+            <data type="integer"/>
+          </attribute>
+          <attribute name="trans.semi">
+            <data type="integer"/>
+          </attribute>
+          <optional>
+            <attribute>
+              <name ns="http://www.w3.org/XML/1998/namespace">id</name>
+              <data type="NCName"/>
+            </attribute>
+          </optional>
+          <oneOrMore>
+            <element name="label">
+              <attribute name="label.abbr"/>
+              <attribute>
+                <name ns="http://www.w3.org/XML/1998/namespace">lang</name>
+                <data type="NCName"/>
+              </attribute>
+              <text/>
+            </element>
+          </oneOrMore>
+        </element>
+      </zeroOrMore>
+    </element>
+  </define>
+</grammar>

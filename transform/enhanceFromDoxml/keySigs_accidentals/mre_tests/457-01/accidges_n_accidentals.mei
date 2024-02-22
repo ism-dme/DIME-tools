@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://dme.mozarteum.at/DME/schemata/mei-DME-4.0.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://dme.mozarteum.at/DME/schemata/mei-DME-4.0.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei meiversion="4.0.1" xmlns="http://www.music-encoding.org/ns/mei">
+  <meiHead>
+    <fileDesc>
+      <titleStmt>
+        <title label="NMA digital" type="unit">an example</title>
+      </titleStmt>
+      <pubStmt/>
+    </fileDesc>
+  </meiHead>
+  <music>
+    <body>
+      <mdiv>
+        <score>
+          <scoreDef key.mode="minor" key.pname="c" key.sig="3f" meter.count="4" meter.sym="common" meter.unit="4" xml:id="scoreDef_01">
+            <staffGrp bar.thru="true" decls="#instrVoice_1" doxml.id="d28e39" symbol="brace" xml:id="staffGrp_01">
+              <staffDef clef.line="2" clef.shape="G" decls="#upper" lines="5" n="1" xml:id="staffDef_P1"/>
+              <staffDef clef.line="4" clef.shape="F" decls="#lower" lines="5" n="2" xml:id="staffDef_P2"/>
+            </staffGrp>
+          </scoreDef>
+          <section>
+            <measure facs="#zoneOf_m124_k457_001" n="124" xml:id="m124_k457_001">
+              <staff decls="#upper" n="1" xml:id="staff_22728">
+                <layer n="1" xml:id="layer_24234">
+                  <note accid.ges="f" dots="1" doxml.id="d27e4413" dur="4" oct="5" pname="a" stem.dir="up" tstamp="1" xml:id="note_22740"/>
+                  <note doxml.id="d27e4415" dur="8" oct="5" pname="f" stem.dir="up" tstamp="2.5" xml:id="note_22746"/>
+                  <note accid="f" doxml.id="d27e4418" dur="4" oct="5" pname="d" stem.dir="up" tstamp="3" xml:id="note_22752"/>
+                  <note accid.ges="f" doxml.id="d27e4420" dur="4" oct="5" pname="d" stem.dir="up" tstamp="4" xml:id="note_22758"/>
+                </layer>
+              </staff>
+              <staff decls="#lower" n="2" xml:id="staff_22764">
+                <layer n="1" xml:id="layer_24270">
+                  <beam xml:id="beam_22776">
+                    <note accid.ges="f" doxml.id="d27e4424" dur="8" oct="3" pname="a" staff="1" tstamp="1" xml:id="note_22782"/>
+                    <note doxml.id="d27e4426" dur="8" oct="4" pname="f" staff="1" tstamp="1.5" xml:id="note_22788"/>
+                    <note accid="f" doxml.id="d27e4428" dur="8" oct="4" pname="d" staff="1" tstamp="2" xml:id="note_22794"/>
+                    <note doxml.id="d27e4430" dur="8" oct="4" pname="f" staff="1" tstamp="2.5" xml:id="note_22800"/>
+                  </beam>
+                  <beam xml:id="beam_22806">
+                    <note accid.ges="f" doxml.id="d27e4432" dur="8" oct="3" pname="a" staff="1" tstamp="3" xml:id="note_22812"/>
+                    <note doxml.id="d27e4434" dur="8" oct="4" pname="f" staff="1" tstamp="3.5" xml:id="note_22818"/>
+                    <note accid.ges="f" doxml.id="d27e4436" dur="8" oct="4" pname="d" staff="1" tstamp="4" xml:id="note_22824"/>
+                    <note doxml.id="d27e4438" dur="8" oct="4" pname="f" staff="1" tstamp="4.5" xml:id="note_22830"/>
+                  </beam>
+                </layer>
+              </staff>
+              <slur curvedir="above" endid="#note_22746" staff="1" startid="#note_22740" xml:id="slur_22836"/>
+              <tie curvedir="above" endid="#note_22872" staff="1" startid="#note_22758" xml:id="tie_22842"/>
+            </measure>
+            <measure facs="#zoneOf_m125_k457_001" n="125" xml:id="m125_k457_001">
+              <staff decls="#upper" n="1" xml:id="staff_22854">
+                <layer n="1" xml:id="layer_24360">
+                  <beam xml:id="beam_22866">
+                    <note accid.ges="f" doxml.id="d27e4445" dur="8" oct="5" pname="d" stem.dir="up" tstamp="1" xml:id="note_22872"/>
+                    <note accid="n" doxml.id="d27e4447" dur="8" oct="4" pname="b" stem.dir="up" tstamp="1.5" xml:id="note_22878"/>
+                    <note doxml.id="d27e4449" dur="8" oct="5" pname="c" stem.dir="up" tstamp="2" xml:id="note_22884"/>
+                    <note accid="n" doxml.id="d27e4451" dur="8" oct="5" pname="d" stem.dir="up" tstamp="2.5" xml:id="note_22890"/>
+                  </beam>
+                  <beam xml:id="beam_22896">
+                    <note doxml.id="d27e4453" dur="8" oct="5" pname="f" stem.dir="up" tstamp="3" xml:id="note_22902"/>
+                    <note accid.ges="f" doxml.id="d27e4455" dur="8" oct="5" pname="e" stem.dir="up" tstamp="3.5" xml:id="note_22908"/>
+                    <note doxml.id="d27e4457" dur="8" oct="5" pname="d" stem.dir="up" tstamp="4" xml:id="note_22914"/>
+                    <note doxml.id="d27e4459" dur="8" oct="5" pname="c" stem.dir="up" tstamp="4.5" xml:id="note_22920"/>
+                  </beam>
+                </layer>
+              </staff>
+              <staff decls="#lower" n="2" xml:id="staff_22926">
+                <layer n="1" xml:id="layer_24432">
+                  <chord doxml.id="d27e4464" dur="1" staff="1" tstamp="1" xml:id="chord_22938">
+                    <note accid="s" doxml.id="d27e4464" oct="4" pname="f" xml:id="note_22944"/>
+                    <note accid.ges="f" doxml.id="d27e4466" oct="4" pname="e" xml:id="note_22950"/>
+                  </chord>
+                </layer>
+                <layer n="2" xml:id="layer_24456">
+                  <chord doxml.id="d27e4464" dur="1" tstamp="1" xml:id="chord_22962">
+                    <note doxml.id="d27e4468" oct="4" pname="c" xml:id="note_22968"/>
+                    <note accid="n" doxml.id="d27e4470" oct="3" pname="a" xml:id="note_22974"/>
+                  </chord>
+                </layer>
+              </staff>
+              <dynam doxml.id="d27e4443" place="between" staff="1 2" startid="#note_22872" xml:id="dynam_22980">fp</dynam>
+              <slur curvedir="above" endid="#note_22920" staff="1" startid="#note_22878" xml:id="slur_22992"/>
+            </measure>
+          </section>
+        </score>
+      </mdiv>
+    </body>
+  </music>
+</mei>

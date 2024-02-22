@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<x:description run-as="external" stylesheet="../../main.xsl" xmlns:dme="http://www.mozarteum.at/ns/dme" xmlns:mei="http://www.music-encoding.org/ns/mei" xmlns:test-helper="x-urn:tutorial:helper:ws-only-text:test-helper" xmlns:x="http://www.jenitennison.com/xslt/xspec">
+
+<x:import href="test-data-vars.xspec"/>
+
+  <x:scenario label="scoreDef">
+
+    <x:scenario label="Extract Oboe II ( |2.2| )">
+      <x:param name="P_REQUESTED_PARTS">|2.2|</x:param>
+
+      <x:context select="$K551-001_m93"/>
+      <x:expect label="staffGrp with no staffDef is deleted." select="$code-snippets//dme:output//dme:item[@n = 1]/mei:scoreDef" test="//mei:scoreDef"/>
+    </x:scenario>
+
+    <x:scenario label="Extract Oboe II, Corni, Violino I ( |2.2|4|7| )">
+      <x:param name="P_REQUESTED_PARTS">|2.2|4|7|</x:param>
+
+      <x:context select="$K551-001_m93"/>
+      <x:expect label="Oboe: @symbol=none, Corni: symbol=bracket, Violino: parent staffGrp deleted, @symbol=none" select="$code-snippets//dme:output/dme:item[@n = 2]/mei:scoreDef" test="//mei:scoreDef"/>
+    </x:scenario>
+
+    <x:scenario label="Extract Fagott I.">
+      <x:param name="P_REQUESTED_PARTS">|3.1|</x:param>
+      <x:param name="P_LANGUAGE">DE</x:param>
+
+      <x:context select="$K551-001_m93"/>
+      <x:expect label="Fagott (deutsche Bezeichnung)" select="$code-snippets//dme:output/dme:item[@n = 3]/mei:scoreDef" test="//mei:scoreDef"/>
+    </x:scenario>
+
+    <x:scenario label="Extract Violoncello.">
+      <x:param name="P_REQUESTED_PARTS">|10.1|</x:param>
+
+      <x:context select="$K551-001_m93"/>
+      <x:expect label="Violoncello (no Roman integer)" select="$code-snippets//dme:output/dme:item[@n = 4]/mei:scoreDef" test="//mei:scoreDef"/>
+    </x:scenario>
+
+
+
+  </x:scenario>
+</x:description>

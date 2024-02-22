@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="validation_scenarios">
+  <title>Validation Scenarios</title>
+  <body>
+    <p>When using the oXygen project <i>DIME</i>, following validation may be applied:<ul id="ul_w3l_c2d_mnb">
+        <li><b>Default validation</b> (no validation scenario is specified) uses the detected schema association from the MEI-file, e.g.: <codeblock>&lt;?xml-model href="../../schemas/mei-DME-4.0.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?></codeblock>In order to activate the schematron rules, this should be associated explicitly, e.g.:<codeblock>&lt;?xml-model href="../../schemas/mei-DME-4.0.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?></codeblock></li>
+        <li><b>MEI-v3.0.0_DIME</b> applies RNG Schema + Embedded Schematron Rules of the DIME-customized MEI-schema, v.3.0.0 (<codeph>**/trunk/schemas/mei-DME.rng</codeph>). </li>
+        <li><b>MEI-v4.0.0_DIME</b> applies RNG Schema + Embedded Schematron Rules of the DIME-customized MEI-schema, v.4.0.0 ( <codeph>**/trunk/schemas/mei-DME-4.0.rng</codeph>).</li>
+        <li><b>File schema + DIME schematron (reference texts _v3.0.0)</b> applies schema/schematron associations from the MEI-file + <i>DIME schematron</i> ( <codeph>**/trunk/uril/validation/schematron/src/rules/main.sch</codeph>) with the activated phase <codeph>refTexts_v3</codeph>.</li>
+        <li><b>File schema + DIME schematron (reference texts _v4.0.0)</b> applies schema/schematron associations from the MEI-file + <i>DIME schematron</i> ( <codeph>**/trunk/uril/validation/schematron/src/rules/main.sch</codeph>) with the activated phase <codeph>refTexts_v4</codeph>.</li>
+        <li><b>File schema + DIME schematron (alternative texts _v3.0.0)</b> applies schema/schematron associations from the MEI-file + <i>DIME schematron</i> with the activated phase <codeph>altTexts_v3</codeph>.</li>
+        <li><b>File schema + DIME schematron (alternative texts _v4.0.0)</b> applies schema/schematron associations from the MEI-file + <i>DIME schematron</i> with the activated phase <codeph>altTexts_v4</codeph>.</li>
+        <li><b>check references</b> applies <i>DIME schematron</i> with the activated phase <codeph>checkReferences</codeph>.</li>
+      </ul></p>
+    <p>For more information about XML validation see <xref format="html" href="https://www.oxygenxml.com/doc/versions/20.1/ug-editor/topics/validating-XML-documents.html" scope="external">oXygen documentation</xref>.</p>
+    <p>Developer notes: The validation behaviour can be changed in the <i>DIME</i> framework: <codeph>Options >> Preferences >> Document Type Associations >> DIME</codeph></p>
+  </body>
+</topic>

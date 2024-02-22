@@ -1,0 +1,10 @@
+﻿* text=auto eol=crlf
+# Set line endings to LF for .sh files
+*.sh text eol=lf
+
+# Pictures
+*.png binary
+*.jpg binary
+*.gif binary
+# Documents
+*.pdf binary

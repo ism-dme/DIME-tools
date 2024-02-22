@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mei meiversion="3.0.0" xmlns="http://www.music-encoding.org/ns/mei">
+  <meiHead>
+    <fileDesc>
+      <titleStmt>
+        <title label="NMA digital" type="unit">Test data based on W. A. Mozart, K. 551001, m. 23 and m. 313.</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>
+          <title>Digital Mozart Edition</title>
+        </edition>
+      </editionStmt>
+      <pubStmt>
+        <publisher>
+          <corpName>Mozarteum</corpName>
+          <ptr target="https://www.mozarteum.at"/>
+        </publisher>
+        <availability>
+          <useRestrict label="license">CC BY-NC-SA 4.0</useRestrict>
+        </availability>
+      </pubStmt>
+    </fileDesc>
+    <workDesc>
+      <work>
+        <perfMedium>
+          <perfResList analog="marc:048" authURI="https://www.loc.gov/standards/valuelist/marcmusperf.html" authority="marcmusperf">
+            <perfRes codedval="wa" label="flute" n="1" xml:id="instrVoice_1">flute</perfRes>
+            <perfRes codedval="wb" label="oboe" n="2" xml:id="instrVoice_2">oboe-1</perfRes>
+            <perfRes codedval="wb" label="oboe" n="3" xml:id="instrVoice_3">oboe-2</perfRes>
+            <perfRes codedval="wd" label="bassoon" n="4" xml:id="instrVoice_4">bassoon-1</perfRes>
+            <perfRes codedval="wd" label="bassoon" n="5" xml:id="instrVoice_5">bassoon-2</perfRes>
+            <perfRes codedval="ba" label="horn" n="6" xml:id="instrVoice_6">horn-1</perfRes>
+            <perfRes codedval="ba" label="horn" n="7" xml:id="instrVoice_7">horn-2</perfRes>
+            <perfRes codedval="bb" label="trumpet" n="8" xml:id="instrVoice_8">trumpet-1</perfRes>
+            <perfRes codedval="bb" label="trumpet" n="9" xml:id="instrVoice_9">trumpet-2</perfRes>
+            <perfRes codedval="pa" label="timpani" n="10" xml:id="instrVoice_10">timpani</perfRes>
+            <perfRes codedval="sa" label="violin" n="11" xml:id="instrVoice_11">violin-1</perfRes>
+            <perfRes codedval="sa" label="violin" n="12" xml:id="instrVoice_12">violin-2</perfRes>
+            <perfRes codedval="sb" label="viola" n="13" xml:id="instrVoice_13">viola</perfRes>
+            <perfRes codedval="sc" label="violoncello" n="14" xml:id="instrVoice_14">violoncello</perfRes>
+            <perfRes codedval="sd" label="double bass" n="15" xml:id="instrVoice_15">double bass</perfRes>
+          </perfResList>
+        </perfMedium>
+      </work>
+    </workDesc>
+  </meiHead>
+  <music>
+    <body>
+      <mdiv n="1" xml:id="mdiv_551001">
+        <score xml:id="score_551001">
+          <scoreDef key.mode="major" key.pname="c" key.sig="0" meter.count="4" meter.sym="common" meter.unit="4" optimize="false" xml:id="scoreDef_01">
+            <staffGrp barthru="false" xml:id="staffGrp_01">
+              <staffGrp barthru="true" symbol="bracket" xml:id="staffGrp_02">
+                <staffDef clef.line="2" clef.shape="G" decls="#instrVoice_1" dme.parts="1" doxml.id="d27e60" label.abbr="Fl." lines="5" n="1" xml:id="staffDef_P1">
+                  <label xml:id="label_P1">Flauto</label>
+                </staffDef>
+                <staffDef clef.line="2" clef.shape="G" dme.parts="2,3" doxml.id="d27e142" label.abbr="Ob." lines="5" n="2" xml:id="staffDef_P2">
+                  <label xml:id="label_P2">Oboi</label>
+                  <layerDef decls="#instrVoice_2" label.abbr="Ob. I" n="1" xml:id="layerDef_Ob1"/>
+                  <layerDef decls="#instrVoice_3" label.abbr="Ob. II" n="2" xml:id="layerDef_Ob2"/>
+                </staffDef>
+                <staffDef clef.line="4" clef.shape="F" dme.parts="4,5" doxml.id="d27e225" label.abbr="Fag." lines="5" n="3" xml:id="staffDef_P3">
+                  <label xml:id="label_P3">Fagotti</label>
+                  <layerDef decls="#instrVoice_4" label.abbr="Fag. I" n="1" xml:id="layerDef_Fag1"/>
+                  <layerDef decls="#instrVoice_5" label.abbr="Fag. II" n="2" xml:id="layerDef_Fag2"/>
+                </staffDef>
+              </staffGrp>
+              <staffGrp barthru="true" symbol="bracket" xml:id="staffGrp_03">
+                <staffDef clef.line="2" clef.shape="G" dme.parts="6,7" doxml.id="d27e309" key.sig="0" label.abbr="Cor." lines="5" n="4" trans.diat="-7" trans.semi="-12" xml:id="staffDef_P4">
+                  <label xml:id="label_P4">Corni<lb xml:id="lb_P4"/> in Do/C</label>
+                  <layerDef decls="#instrVoice_6" label.abbr="Cor. I" n="1" xml:id="layerDef_Cor1"/>
+                  <layerDef decls="#instrVoice_7" label.abbr="Cor. I" n="2" xml:id="layerDef_Cor2"/>
+                </staffDef>
+                <staffDef clef.line="2" clef.shape="G" dme.parts="8,9" doxml.id="d27e363" key.sig="0" label.abbr="Cl." lines="5" n="5" trans.diat="0" trans.semi="0" xml:id="staffDef_P5">
+                  <label xml:id="label_P5">Clarini<lb xml:id="lb_P5"/> in Do/C</label>
+                  <layerDef decls="#instrVoice_8" label.abbr="Cl. I" n="1" xml:id="layerDef_Cl1"/>
+                  <layerDef decls="#instrVoice_9" label.abbr="Cl. II" n="2" xml:id="layerDef_Cl2"/>
+                </staffDef>
+              </staffGrp>
+              <staffDef clef.line="4" clef.shape="F" decls="#instrVoice_10" dme.parts="10" doxml.id="d27e418" key.sig="0" label.abbr="Timp." lines="5" n="6" xml:id="staffDef_P6">
+                <label xml:id="label_P6">Timpani<lb xml:id="lb_P6"/> in Do-Sol/C-G</label>
+              </staffDef>
+              <staffGrp barthru="true" symbol="bracket" xml:id="staffGrp_04">
+                <staffGrp symbol="brace" xml:id="staffGrp_05">
+                  <staffDef clef.line="2" clef.shape="G" decls="#instrVoice_11" dme.parts="11" doxml.id="d27e466" label.abbr="Vl. I" lines="5" n="7" xml:id="staffDef_P7">
+                    <label xml:id="label_P7">Violino I</label>
+                  </staffDef>
+                  <staffDef clef.line="2" clef.shape="G" decls="#instrVoice_12" dme.parts="12" doxml.id="d27e574" label.abbr="Vl. II" lines="5" n="8" xml:id="staffDef_P8">
+                    <label xml:id="label_P8">Violino II</label>
+                  </staffDef>
+                </staffGrp>
+                <staffDef clef.line="3" clef.shape="C" decls="#instrVoice_13" dme.parts="13" doxml.id="d27e669" label.abbr="Va." lines="5" n="9" xml:id="staffDef_P9">
+                  <label xml:id="label_P9">Viola</label>
+                </staffDef>
+                <staffDef clef.line="4" clef.shape="F" dme.parts="14,15" doxml.id="d27e758" label.abbr="Vc. e Bs." lines="5" n="10" xml:id="staffDef_P10">
+                  <label xml:id="label_P10">Violoncello<lb xml:id="lb_P10"/> e Basso</label>
+                  <layerDef decls="#instrVoice_14" label.abbr="Vc." n="1" xml:id="layerDef_Vc."/>
+                  <layerDef decls="#instrVoice_15" label.abbr="Bs." n="2" xml:id="layerDef_Bs."/>
+                </staffDef>
+              </staffGrp>
+            </staffGrp>
+          </scoreDef>
+          <section>
+            <measure n="23" xml:id="m23_k551_001">
+              <staff dme.parts="1" n="1" xml:id="staff_20208">
+                <layer n="1" xml:id="layer_20214">
+                  <note doxml.id="d27e2814" dur="1" oct="5" pname="g" tstamp="1" xml:id="note_20220"/>
+                </layer>
+              </staff>
+              <staff dme.parts="2,3" n="2" xml:id="staff_20226">
+                <layer n="1" xml:id="layer_20232">
+                  <note doxml.id="d27e2929" dur="1" oct="5" pname="g" tstamp="1" xml:id="note_20238"/>
+                </layer>
+                <layer n="2" xml:id="layer_20244">
+                  <note doxml.id="d27e2931" dur="1" oct="4" pname="g" tstamp="1" xml:id="note_20250"/>
+                </layer>
+              </staff>
+              <staff dme.parts="4,5" n="3" xml:id="staff_20256">
+                <layer n="1" xml:id="layer_20262">
+                  <note doxml.id="d27e3050" dur="1" oct="3" pname="g" tstamp="1" xml:id="note_20268"/>
+                </layer>
+                <layer n="2" xml:id="layer_20274">
+                  <note doxml.id="d27e3052" dur="1" oct="2" pname="g" tstamp="1" xml:id="note_20280"/>
+                </layer>
+              </staff>
+              <staff dme.parts="6,7" n="4" xml:id="staff_20286">
+                <layer n="1" xml:id="layer_20292">
+                  <note doxml.id="d27e3148" dur="1" oct="4" pname="g" tstamp="1" xml:id="note_20298"/>
+                </layer>
+                <layer n="2" xml:id="layer_20304">
+                  <note doxml.id="d27e3150" dur="1" oct="3" pname="g" tstamp="1" xml:id="note_20310"/>
+                </layer>
+              </staff>
+              <staff dme.parts="8,9" n="5" xml:id="staff_20316">
+                <layer n="1" xml:id="layer_20322">
+                  <note doxml.id="d27e3270" dur="1" oct="4" pname="g" tstamp="1" xml:id="note_20328"/>
+                </layer>
+                <layer n="2" xml:id="layer_20334">
+                  <note doxml.id="d27e3272" dur="1" oct="3" pname="g" tstamp="1" xml:id="note_20340"/>
+                </layer>
+              </staff>
+              <staff dme.parts="10" n="6" xml:id="staff_20346">
+                <layer n="1" xml:id="layer_20352">
+                  <note doxml.id="d27e3328" dur="1" oct="2" pname="g" tstamp="1" xml:id="note_20358"/>
+                </layer>
+              </staff>
+              <staff dme.parts="11" n="7" xml:id="staff_20364">
+                <layer n="1" xml:id="layer_20370">
+                  <chord doxml.id="d27e3410" dur="1" tstamp="1" xml:id="chord_20376">
+                    <note doxml.id="d27e3410" oct="4" pname="g" xml:id="note_20382"/>
+                    <note doxml.id="d27e3412" oct="3" pname="g" xml:id="note_20388"/>
+                  </chord>
+                </layer>
+              </staff>
+              <staff dme.parts="12" n="8" xml:id="staff_20394">
+                <layer n="1" xml:id="layer_20400">
+                  <chord doxml.id="d27e3527" dur="1" tstamp="1" xml:id="chord_20406">
+                    <note doxml.id="d27e3527" oct="4" pname="g" xml:id="note_20412"/>
+                    <note doxml.id="d27e3529" oct="3" pname="g" xml:id="note_20418"/>
+                  </chord>
+                </layer>
+              </staff>
+              <staff dme.parts="13" n="9" xml:id="staff_20424">
+                <layer n="1" xml:id="layer_20430">
+                  <note doxml.id="d27e3636" dur="1" oct="3" pname="g" tstamp="1" xml:id="note_20436"/>
+                </layer>
+              </staff>
+              <staff dme.parts="14,15" n="10" xml:id="staff_20442">
+                <layer n="1" xml:id="layer_20448">
+                  <note doxml.id="d27e3709" dur="1" oct="2" pname="g" tstamp="1" xml:id="note_20454"/>
+                </layer>
+                <layer n="2" sameas="#layer_20448" xml:id="layer_20448b"/>
+              </staff>
+              <fermata doxml.id="d27e2812" startid="#note_20220" xml:id="fermata_20460"/>
+              <fermata doxml.id="d27e2927" layer="1 2" startid="#note_20238" xml:id="fermata_20472"/>
+              <fermata doxml.id="d27e3048" layer="1 2" startid="#note_20268" xml:id="fermata_20478"/>
+              <fermata doxml.id="d27e3146" layer="1 2" startid="#note_20298" xml:id="fermata_20484"/>
+              <fermata doxml.id="d27e3268" layer="1 2" startid="#note_20328" xml:id="fermata_20490"/>
+              <fermata doxml.id="d27e3326" startid="#note_20358" xml:id="fermata_20496"/>
+              <fermata doxml.id="d27e3408" startid="#note_20382" xml:id="fermata_20502"/>
+              <fermata doxml.id="d27e3525" startid="#note_20412" xml:id="fermata_20508"/>
+              <fermata doxml.id="d27e3633" startid="#note_20436" xml:id="fermata_20514"/>
+              <fermata doxml.id="d27e3707" layer="1 2" startid="#note_20454" xml:id="fermata_20520"/>
+            </measure>
+            <measure n="313" right="end" xml:id="m313_k551_001">
+              <mNum>313</mNum>
+              <staff dme.parts="1" n="1" xml:id="staff_166728">
+                <layer n="1" xml:id="layer_166734">
+                  <note doxml.id="d27e36488" dur="4" oct="6" pname="c" tstamp="1" xml:id="note_166740"/>
+                  <rest doxml.id="d27e36490" dur="4" tstamp="2" xml:id="rest_166746"/>
+                  <rest doxml.id="d27e36492" dur="2" tstamp="3" xml:id="rest_166752"/>
+                </layer>
+              </staff>
+              <staff dme.parts="2,3" n="2" xml:id="staff_166758">
+                <layer n="1" xml:id="layer_166764">
+                  <note doxml.id="d27e36582" dur="4" oct="5" pname="g" tstamp="1" xml:id="note_166770"/>
+                  <rest doxml.id="d27e36586" dur="4" tstamp="2" xml:id="rest_166776"/>
+                  <rest doxml.id="d27e36588" dur="2" tstamp="3" xml:id="rest_166782"/>
+                </layer>
+                <layer n="2" xml:id="layer_166788">
+                  <note doxml.id="d27e36584" dur="4" oct="5" pname="e" stem.sameas="#note_166770" tstamp="1" xml:id="note_166794"/>
+                  <rest doxml.id="d27e36586" sameas="#rest_166776" tstamp="2" xml:id="rest_166800"/>
+                  <rest doxml.id="d27e36588" sameas="#rest_166782" tstamp="3" xml:id="rest_166806"/>
+                </layer>
+              </staff>
+              <staff dme.parts="4,5" n="3" xml:id="staff_166812">
+                <layer n="1" xml:id="layer_166818">
+                  <note doxml.id="d27e36668" dur="4" oct="3" pname="c" tstamp="1" xml:id="note_166824"/>
+                  <rest doxml.id="d27e36670" dur="4" tstamp="2" xml:id="rest_166830"/>
+                  <rest doxml.id="d27e36672" dur="2" tstamp="3" xml:id="rest_166836"/>
+                </layer>
+                <layer n="2" sameas="#layer_166818" xml:id="layer_166818b"/>
+              </staff>
+              <staff dme.parts="6,7" n="4" xml:id="staff_166842">
+                <layer n="1" xml:id="layer_166848">
+                  <note doxml.id="d27e36804" dur="4" oct="4" pname="e" tstamp="1" xml:id="note_166854"/>
+                  <rest doxml.id="d27e36808" dur="4" tstamp="2" xml:id="rest_166860"/>
+                  <rest doxml.id="d27e36810" dur="2" tstamp="3" xml:id="rest_166866"/>
+                </layer>
+                <layer n="2" xml:id="layer_166872">
+                  <note doxml.id="d27e36806" dur="4" oct="4" pname="c" stem.sameas="#note_166854" tstamp="1" xml:id="note_166878"/>
+                  <rest doxml.id="d27e36808" sameas="#rest_166860" tstamp="2" xml:id="rest_166884"/>
+                  <rest doxml.id="d27e36810" sameas="#rest_166866" tstamp="3" xml:id="rest_166890"/>
+                </layer>
+              </staff>
+              <staff dme.parts="8,9" n="5" xml:id="staff_166896">
+                <layer n="1" xml:id="layer_166902">
+                  <note doxml.id="d27e36942" dur="4" oct="4" pname="e" tstamp="1" xml:id="note_166908"/>
+                  <rest doxml.id="d27e36946" dur="4" tstamp="2" xml:id="rest_166914"/>
+                  <rest doxml.id="d27e36948" dur="2" tstamp="3" xml:id="rest_166920"/>
+                </layer>
+                <layer n="2" xml:id="layer_166926">
+                  <note doxml.id="d27e36944" dur="4" oct="4" pname="c" stem.sameas="#note_166908" tstamp="1" xml:id="note_166932"/>
+                  <rest doxml.id="d27e36946" sameas="#rest_166914" tstamp="2" xml:id="rest_166938"/>
+                  <rest doxml.id="d27e36948" sameas="#rest_166920" tstamp="3" xml:id="rest_166944"/>
+                </layer>
+              </staff>
+              <staff dme.parts="10" n="6" xml:id="staff_166950">
+                <layer n="1" xml:id="layer_166956">
+                  <note doxml.id="d27e37000" dur="4" oct="3" pname="c" tstamp="1" xml:id="note_166962"/>
+                  <rest doxml.id="d27e37002" dur="4" tstamp="2" xml:id="rest_166968"/>
+                  <rest doxml.id="d27e37004" dur="2" tstamp="3" xml:id="rest_166974"/>
+                </layer>
+              </staff>
+              <staff dme.parts="11" n="7" xml:id="staff_166980">
+                <layer n="1" xml:id="layer_166986">
+                  <chord doxml.id="d27e37115" dur="4" tstamp="1" xml:id="chord_166992">
+                    <note doxml.id="d27e37115" oct="6" pname="c" xml:id="note_166998"/>
+                    <note doxml.id="d27e37117" oct="5" pname="e" xml:id="note_167004"/>
+                    <note doxml.id="d27e37119" oct="4" pname="g" xml:id="note_167010"/>
+                  </chord>
+                  <rest doxml.id="d27e37121" dur="4" tstamp="2" xml:id="rest_167016"/>
+                  <rest doxml.id="d27e37124" dur="2" tstamp="3" xml:id="rest_167022"/>
+                </layer>
+              </staff>
+              <staff dme.parts="12" n="8" xml:id="staff_167028">
+                <layer n="1" xml:id="layer_167034">
+                  <chord doxml.id="d27e37226" dur="4" tstamp="1" xml:id="chord_167040">
+                    <note doxml.id="d27e37226" oct="6" pname="c" xml:id="note_167046"/>
+                    <note doxml.id="d27e37228" oct="5" pname="e" xml:id="note_167052"/>
+                    <note doxml.id="d27e37230" oct="4" pname="g" xml:id="note_167058"/>
+                  </chord>
+                  <rest doxml.id="d27e37232" dur="4" tstamp="2" xml:id="rest_167064"/>
+                  <rest doxml.id="d27e37234" dur="2" tstamp="3" xml:id="rest_167070"/>
+                </layer>
+              </staff>
+              <staff dme.parts="13" n="9" xml:id="staff_167076">
+                <layer n="1" xml:id="layer_167082">
+                  <note doxml.id="d27e37308" dur="4" oct="4" pname="c" tstamp="1" xml:id="note_167088"/>
+                  <rest doxml.id="d27e37310" dur="4" tstamp="2" xml:id="rest_167094"/>
+                  <rest doxml.id="d27e37312" dur="2" tstamp="3" xml:id="rest_167100"/>
+                </layer>
+              </staff>
+              <staff dme.parts="14,15" n="10" xml:id="staff_167106">
+                <layer n="1" xml:id="layer_167112">
+                  <note doxml.id="d27e37385" dur="4" oct="3" pname="c" tstamp="1" xml:id="note_167118"/>
+                  <rest doxml.id="d27e37387" dur="4" tstamp="2" xml:id="rest_167124"/>
+                  <rest doxml.id="d27e37389" dur="2" tstamp="3" xml:id="rest_167130"/>
+                </layer>
+                <layer n="2" sameas="#layer_167112" xml:id="layer_167112b"/>
+              </staff>
+              <fermata part="%all" place="above" staff="1" tstamp="5" xml:id="fermata_167136"/>
+              <fermata part="%all" place="below" staff="10" tstamp="5" xml:id="fermata_167148"/>
+            </measure>
+          </section>
+        </score>
+      </mdiv>
+    </body>
+  </music>
+</mei>

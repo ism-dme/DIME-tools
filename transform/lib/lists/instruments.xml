@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list xml:id="instruments" xmlns="http://www.mozarteum.at/ns/dme">
+  <class label="brass">
+    <item xml:id="Corno">
+      <name label.abbr="Cor" xml:lang="IT">Corno</name>
+      <name label.abbr="Hr" xml:lang="DE">Horn</name>
+      <name label.abbr="Hr" xml:lang="EN">Horn</name>
+      <transposition trans.diat="-7" trans.semi="-12">
+        <label label.abbr="(Do)" xml:lang="IT">in Do</label>
+        <label label.abbr="(C)" xml:lang="DE">in C</label>
+        <label label.abbr="(C)" xml:lang="EN">in C</label>
+      </transposition>
+      <transposition trans.diat="0" trans.semi="0">
+        <label label.abbr="(Do)" xml:lang="IT">in Do alto</label>
+        <label label.abbr="(C)" xml:lang="DE">in C hoch</label>
+        <label label.abbr="(C)" xml:lang="EN">in high C</label>
+      </transposition>
+      <transposition trans.diat="-1" trans.semi="-2">
+        <label label.abbr="(Si&#9837;)" xml:lang="IT">in Si&#9837; alto</label>
+        <label label.abbr="(B)" xml:lang="DE">in B hoch</label>
+        <label label.abbr="(B&#9837;)" xml:lang="EN">in high B&#9837;</label>
+      </transposition>
+      <transposition trans.diat="-8" trans.semi="-14">
+        <label label.abbr="(Si&#9837;)" xml:lang="IT">in Si&#9837;</label>
+        <label label.abbr="(B)" xml:lang="DE">in B</label>
+        <label label.abbr="(B&#9837;)" xml:lang="EN">in B&#9837;</label>
+      </transposition>
+      <transposition trans.diat="-3" trans.semi="-5">
+        <label label.abbr="(Sol)" xml:lang="IT">in Sol</label>
+        <label label.abbr="(G)" xml:lang="DE">in G</label>
+        <label label.abbr="(G)" xml:lang="EN">in G</label>
+      </transposition>
+      <transposition trans.diat="-4" trans.semi="-7">
+        <label label.abbr="(Fa)" xml:lang="IT">in Fa</label>
+        <label label.abbr="(F)" xml:lang="DE">in F</label>
+        <label label.abbr="(F)" xml:lang="EN">in F</label>
+      </transposition>
+      <transposition trans.diat="-5" trans.semi="-9">
+        <label label.abbr="(Mi&#9837;)" xml:lang="IT">in Mi&#9837;</label>
+        <label label.abbr="(Es)" xml:lang="DE">in Es</label>
+        <label label.abbr="(E&#9837;)" xml:lang="EN">in E&#9837;</label>
+      </transposition>
+    </item>
+    <item xml:id="Clarino">
+      <name label.abbr="Clar" xml:lang="IT">Clarino</name>
+      <name label.abbr="Clar" xml:lang="DE">Clarino</name>
+      <name label.abbr="Clar" xml:lang="EN">Clarino</name>
+      <transposition trans.diat="-1" trans.semi="-2">
+        <label label.abbr="(Si&#9837;)" xml:lang="IT">in Si&#9837;</label>
+        <label label.abbr="(B)" xml:lang="DE">in B</label>
+        <label label.abbr="(B&#9837;)" xml:lang="EN">in B&#9837;</label>
+      </transposition>
+      <transposition trans.diat="2" trans.semi="3">
+        <label label.abbr="(Mi&#9837;)" xml:lang="IT">in Mi&#9837;</label>
+        <label label.abbr="(Es)" xml:lang="DE">in Es</label>
+        <label label.abbr="(E&#9837;)" xml:lang="EN">in E&#9837;</label>
+      </transposition>
+      <transposition trans.diat="1" trans.semi="2">
+        <label label.abbr="(Re)" xml:lang="IT">in Re</label>
+        <label label.abbr="(D)" xml:lang="DE">in D</label>
+        <label label.abbr="(D)" xml:lang="EN">in D</label>
+      </transposition>
+      <transposition trans.diat="0" trans.semi="0">
+        <label label.abbr="(C)" xml:lang="IT">in Do</label>
+        <label label.abbr="(C)" xml:lang="DE">in C</label>
+        <label label.abbr="(C)" xml:lang="EN">in C</label>
+      </transposition>
+    </item>
+    <item xml:id="Tromba">
+      <name label.abbr="Tr" xml:lang="IT">Tromba</name>
+      <name label.abbr="Tr" xml:lang="DE">Trompete</name>
+      <name label.abbr="Tr" xml:lang="EN">Trumpet</name>
+      <transposition trans.diat="-1" trans.semi="-2">
+        <label label.abbr="(Si&#9837;)" xml:lang="IT">in Si&#9837;</label>
+        <label label.abbr="(B)" xml:lang="DE">in B</label>
+        <label label.abbr="(B&#9837;)" xml:lang="EN">in B&#9837;</label>
+      </transposition>
+      <transposition trans.diat="2" trans.semi="3">
+        <label label.abbr="(Mi&#9837;)" xml:lang="IT">in Mi&#9837;</label>
+        <label label.abbr="(Es)" xml:lang="DE">in Es</label>
+        <label label.abbr="(E&#9837;)" xml:lang="EN">in E&#9837;</label>
+      </transposition>
+      <transposition trans.diat="1" trans.semi="2">
+        <label label.abbr="(Re)" xml:lang="IT">in Re</label>
+        <label label.abbr="(D)" xml:lang="DE">in D</label>
+        <label label.abbr="(D)" xml:lang="EN">in D</label>
+      </transposition>
+      <transposition trans.diat="0" trans.semi="0">
+        <label label.abbr="(C)" xml:lang="IT">in Do</label>
+        <label label.abbr="(C)" xml:lang="DE">in C</label>
+        <label label.abbr="(C)" xml:lang="EN">in C</label>
+      </transposition>
+    </item>
+    <item xml:id="Trombone">
+      <item xml:id="Trombone alto">
+        <name label.abbr="Tbn (alto)" xml:lang="IT">Trombone alto</name>
+        <name label.abbr="Pos (alt)" xml:lang="DE">Altposaune</name>
+        <name label.abbr="Tbn (alto)" xml:lang="EN">Alto Trombone</name>
+      </item>
+      <item xml:id="Trombone tenore">
+        <name label.abbr="Tbn (ten)" xml:lang="IT">Trombone tenore</name>
+        <name label.abbr="Pos (etn)" xml:lang="DE">Tenorposaune</name>
+        <name label.abbr="Tbn (ten)" xml:lang="EN">Tenor Trombone</name>
+      </item>
+      <item xml:id="Trombone basso">
+        <name label.abbr="Tbn (basso)" xml:lang="IT">Trombone basso</name>
+        <name label.abbr="Pos (bass)" xml:lang="DE">Bassposaune</name>
+        <name label.abbr="Tbn (bass)" xml:lang="EN">Bass Trombone</name>
+      </item>
+    </item>
+  </class>
+  <class label="keyboard">
+    <item xml:id="Pianoforte">
+      <!--RMG: zu überprüfen; Issue #106-->
+      <name label.abbr="Pf" xml:lang="IT">Pianoforte</name>
+      <name label.abbr="Clav" xml:lang="DE">Clavier</name>
+      <name label.abbr="Kbd" xml:lang="EN">Keyboard</name>
+    </item>
+    <item xml:id="Organo">
+      <name label.abbr="Org" xml:lang="IT">Organo</name>
+      <name label.abbr="Org" xml:lang="EN">Orgel</name>
+      <name label.abbr="Org" xml:lang="EN">Organ</name>
+    </item>
+    <item xml:id="Harpsichord">
+      <name xml:lang="EN">Harpsichord</name>
+    </item>
+    <item xml:id="Clavichord">
+      <name xml:lang="EN">Clavichord</name>
+    </item>
+    <item xml:id="Continuo">
+      <name xml:lang="EN">Continuo</name>
+    </item>
+    <item xml:id="Celeste">
+      <name xml:lang="EN">Celeste</name>
+    </item>
+  </class>
+  <class label="percussion">
+    <item xml:id="Timpani">
+      <name label.abbr="Timp" xml:lang="IT">Timpani</name>
+      <name label.abbr="Pk" xml:lang="DE">Pauken</name>
+      <name label.abbr="Timp" xml:lang="EN">Timpani</name>
+      <transposition trans.diat="0" trans.semi="0">
+        <label label.abbr="(Do-Sol)" xml:lang="IT">in Do-Sol</label>
+        <label label.abbr="(C-G)" xml:lang="DE">in C-G</label>
+        <label label.abbr="(C-G)" xml:lang="EN">in C-G</label>
+      </transposition>
+      <transposition trans.diat="2" trans.semi="3">
+        <label label.abbr="(Mi&#9837;-Si&#9837;)" xml:lang="IT">in Mi&#9837;-Si&#9837;</label>
+        <label label.abbr="(Es-B)" xml:lang="DE">in Es-B</label>
+        <label label.abbr="(E&#9837;-B&#9837;)" xml:lang="EN">in E&#9837;-B&#9837;</label>
+      </transposition>
+    </item>
+  </class>
+  <class label="strings">
+    <item xml:id="Violino">
+      <name label.abbr="Vl" xml:lang="IT">Violino</name>
+      <name label.abbr="Vl" xml:lang="DE">Violine</name>
+      <name label.abbr="Vl" xml:lang="EN">Violin</name>
+    </item>
+    <item xml:id="Viola">
+      <name label.abbr="Va" xml:lang="IT">Viola</name>
+      <name label.abbr="Va" xml:lang="DE">Viola</name>
+      <name label.abbr="Va" xml:lang="EN">Viola</name>
+    </item>
+    <item xml:id="Violoncello">
+      <name label.abbr="Vc" xml:lang="IT">Violoncello</name>
+      <name label.abbr="Vc" xml:lang="DE">Violoncello</name>
+      <name label.abbr="Vc" xml:lang="EN">Violoncello</name>
+    </item>
+    <item xml:id="Basso">
+      <name label.abbr="Bs" xml:lang="IT">Basso</name>
+      <!--RMG: oder Bass-->
+      <name label.abbr="Bs" xml:lang="DE">Kontrabass</name>
+      <name label.abbr="Bs" xml:lang="EN">Double Bass</name>
+    </item>
+    <item xml:id="Arpa">
+      <name label.abbr="Arp" xml:lang="IT">Arpa</name>
+      <name label.abbr="Har" xml:lang="DE">Harfe</name>
+      <name label.abbr="Har" xml:lang="EN">Harp</name>
+    </item>
+  </class>
+  <class label="voices">
+    <item xml:id="Soprano">
+      <name label.abbr="S" xml:lang="IT">Soprano</name>
+      <name label.abbr="S" xml:lang="DE">Sopran</name>
+      <name label.abbr="S" xml:lang="EN">Soprano</name>
+    </item>
+    <item xml:id="Mezzo Soprano">
+      <name xml:lang="EN">mezzo soprano</name>
+    </item>
+    <item xml:id="Alto">
+      <name label.abbr="A" xml:lang="IT">Alto</name>
+      <name label.abbr="A" xml:lang="DE">Alt</name>
+      <name label.abbr="A" xml:lang="EN">Alto</name>
+    </item>
+    <item xml:id="Tenore">
+      <name label.abbr="T" xml:lang="IT">Tenore</name>
+      <name label.abbr="T" xml:lang="DE">Tenor</name>
+      <name label.abbr="T" xml:lang="EN">Tenor</name>
+    </item>
+    <item xml:id="Baritone">
+      <name xml:lang="EN">baritone</name>
+    </item>
+    <item xml:id="Basso">
+      <name label.abbr="B" xml:lang="IT">Basso</name>
+      <name label.abbr="B" xml:lang="DE">Bass</name>
+      <name label.abbr="B" xml:lang="EN">Bass</name>
+    </item>
+    <item xml:id="Counter Tenor">
+      <name xml:lang="EN">counter tenor</name>
+    </item>
+  </class>
+  <class label="woodwinds">
+    <item xml:id="Flauto">
+      <name label.abbr="Fl" xml:lang="IT">Flauto</name>
+      <name label.abbr="Fl" xml:lang="DE">Flöte</name>
+      <name label.abbr="Fl" xml:lang="EN">Flute</name>
+    </item>
+    <item xml:id="Oboe">
+      <name label.abbr="Ob" xml:lang="IT">Oboe</name>
+      <name label.abbr="Ob" xml:lang="DE">Oboe</name>
+      <name label.abbr="Ob" xml:lang="EN">Oboe</name>
+    </item>
+    <item xml:id="Clarinetto">
+      <name label.abbr="Cl" xml:lang="IT">Clarinetto</name>
+      <name label.abbr="Kl" xml:lang="DE">Klarinette</name>
+      <name label.abbr="Cl" xml:lang="EN">Clarinet</name>
+      <transposition trans.diat="-2" trans.semi="-3">
+        <label label.abbr="(La)" xml:lang="IT">in La</label>
+        <label label.abbr="(A)" xml:lang="DE">in A</label>
+        <label label.abbr="(A)" xml:lang="EN">in A</label>
+      </transposition>
+      <transposition trans.diat="-1" trans.semi="-2">
+        <label label.abbr="(Si&#9837;)" xml:lang="IT">in Si&#9837;</label>
+        <label label.abbr="(B)" xml:lang="DE">in B</label>
+        <label label.abbr="(B&#9837;)" xml:lang="EN">in B&#9837;</label>
+      </transposition>
+      <transposition trans.diat="0" trans.semi="0">
+        <label label.abbr="(Do)" xml:lang="IT">in Do</label>
+        <label label.abbr="(C)" xml:lang="DE">in C</label>
+        <label label.abbr="(C)" xml:lang="EN">in C</label>
+      </transposition>
+      <transposition trans.diat="-1" trans.semi="-1">
+        <label label.abbr="(Si)" xml:lang="IT">in Si</label>
+        <label label.abbr="(H)" xml:lang="DE">in H</label>
+        <label label.abbr="(B)" xml:lang="EN">in B</label>
+      </transposition>
+    </item>
+    <item xml:id="Fagotto">
+      <name label.abbr="Fag" xml:lang="IT">Fagotto</name>
+      <name label.abbr="Fag" xml:lang="DE">Fagott</name>
+      <name label.abbr="Bsn" xml:lang="EN">Bassoon</name>
+    </item>
+    <!--RMG: mögliche Transpositionen überprüfen-->
+    <item xml:id="Flauto piccolo">
+      <name label.abbr="Pic" xml:lang="IT">Flauto piccolo</name>
+      <name label.abbr="Pic" xml:lang="DE">Piccolo</name>
+      <name label.abbr="Pic" xml:lang="EN">Piccolo</name>
+    </item>
+    <item xml:id="English Horn">
+      <name xml:lang="EN">english horn</name>
+    </item>
+    <item xml:id="Bass Clarinet">
+      <name xml:lang="EN">bass clarinet</name>
+    </item>
+    <item xml:id="Corno di Bassetto">
+      <!--RMG: Abkürzungen für DE/EN überprüfen-->
+      <name label.abbr="CorB" xml:lang="IT">Corno di Bassetto</name>
+      <name label.abbr="CorB" xml:lang="DE">Bassetthorn</name>
+      <name label.abbr="CorB" xml:lang="EN">Basset Horn</name>
+      <transposition trans.diat="-5" trans.semi="-7" xml:id="wz_f">
+        <label label.abbr="(Fa)" xml:lang="IT">in Fa</label>
+        <label label.abbr="(F)" xml:lang="DE">in F</label>
+        <label label.abbr="(F)" xml:lang="EN">in F</label>
+      </transposition>
+    </item>
+  </class>
+</list>

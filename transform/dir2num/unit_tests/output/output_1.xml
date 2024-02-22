@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mei meiversion="4.0.1" xmlns="http://www.music-encoding.org/ns/mei">
+  <music>
+    <body>
+      <mdiv n="1" xml:id="mdiv_282001">
+        <score xml:id="score_282001">
+          <scoreDef key.accid="f" key.mode="major" key.pname="e" key.sig="3f" meter.count="4" meter.sym="common" meter.unit="4" xml:id="scoreDef_01">
+            <staffGrp bar.thru="true" decls="#instrVoice_1" doxml.id="d28e35" symbol="brace" xml:id="staffGrp_01">
+              <staffDef clef.line="2" clef.shape="G" decls="#upper" key.sig="3f" lines="5" n="1" xml:id="staffDef_P1"/>
+              <staffDef clef.line="4" clef.shape="F" decls="#lower" key.sig="3f" lines="5" n="2" xml:id="staffDef_P2"/>
+            </staffGrp>
+          </scoreDef>
+          <section xml:id="section_adagio">
+            <measure facs="#zoneOf_m35_k282_001" n="35" xml:id="m35_k282_001">
+              <staff decls="#upper" n="1" xml:id="staff_14154">
+                <layer n="1" xml:id="layer_14160">
+                  <note doxml.id="d28e2670" dur="16" grace="acc" oct="5" pname="f" stem.dir="up" xml:id="note_14166"/>
+                  <note accid.ges="f" doxml.id="d28e2672" dur="8" oct="5" pname="e" tstamp="1" xml:id="note_14172"/>
+                  <note doxml.id="d28e2676" dur="4" oct="5" pname="d" tstamp="1.5" xml:id="note_14178"/>
+                  <note doxml.id="d28e2678" dur="8" oct="5" pname="c" tstamp="2.5" xml:id="note_14184"/>
+                  <beam xml:id="beam_14190">
+                    <tuplet bracket.visible="false" num="3" num.visible="true" numbase="2" type="num_supplied_NMA-editors" xml:id="tuplet_14196">
+                      <note doxml.id="d28e2680" dur="16" oct="5" pname="c" tstamp="3" xml:id="note_14202"/>
+                      <note accid="f" doxml.id="d28e2684" dur="16" oct="4" pname="b" tstamp="3.16667" xml:id="note_14208"/>
+                      <note doxml.id="d28e2686" dur="16" oct="5" pname="d" tstamp="3.33333" xml:id="note_14214"/>
+                    </tuplet>
+                  </beam>
+                  <beam xml:id="beam_14220">
+                    <tuplet bracket.visible="false" num="3" num.visible="true" numbase="2" xml:id="tuplet_14226">
+                      <note accid.ges="f" doxml.id="d28e2688" dur="16" oct="5" pname="e" tstamp="3.5" xml:id="note_14232"/>
+                      <note doxml.id="d28e2693" dur="16" oct="5" pname="g" tstamp="3.66667" xml:id="note_14238"/>
+                      <note accid="n" doxml.id="d28e2695" dur="16" oct="4" pname="b" tstamp="3.83333" xml:id="note_14244"/>
+                    </tuplet>
+                  </beam>
+                  <beam xml:id="beam_14250">
+                    <tuplet bracket.visible="false" num="3" num.visible="false" numbase="2" xml:id="tuplet_14256">
+                      <note doxml.id="d28e2697" dur="16" oct="5" pname="c" tstamp="4" xml:id="note_14262"/>
+                      <note accid.ges="f" doxml.id="d28e2699" dur="16" oct="5" pname="e" tstamp="4.16667" xml:id="note_14268"/>
+                      <note doxml.id="d28e2701" dur="16" oct="4" pname="g" tstamp="4.33333" xml:id="note_14274"/>
+                    </tuplet>
+                  </beam>
+                  <beam place="below" xml:id="beam_14280">
+                    <tuplet bracket.visible="false" num="3" num.visible="false" numbase="2" xml:id="tuplet_14286">
+                      <note accid.ges="f" doxml.id="d28e2703" dur="16" oct="4" pname="a" tstamp="4.5" xml:id="note_14292"/>
+                      <note doxml.id="d28e2705" dur="16" oct="5" pname="c" tstamp="4.66667" xml:id="note_14298"/>
+                      <note doxml.id="d28e2707" dur="16" oct="4" pname="f" tstamp="4.83333" xml:id="note_14304"/>
+                    </tuplet>
+                  </beam>
+                </layer>
+              </staff>
+              <staff decls="#lower" n="2" xml:id="staff_14310">
+                <layer n="1" xml:id="layer_14316">
+                  <note accid.ges="f" doxml.id="d28e2713" dur="4" oct="4" pname="b" tstamp="1" xml:id="note_14322"/>
+                  <note accid="f" doxml.id="d28e2718" dur="4" oct="4" pname="a" tstamp="2" xml:id="note_14328"/>
+                  <note doxml.id="d28e2722" dur="8" oct="4" pname="g" tstamp="3" xml:id="note_14334"/>
+                  <rest doxml.id="d28e2726" dur="8" tstamp="3.5" xml:id="rest_14340"/>
+                  <chord dur="8" tstamp="4" xml:id="chord_14346">
+                    <note accid.ges="f" doxml.id="d28e2728" oct="4" pname="a" xml:id="note_14352"/>
+                    <note accid.ges="f" oct="3" pname="a" xml:id="note_14358"/>
+                  </chord>
+                  <rest doxml.id="d28e2732" dur="8" tstamp="4.5" xml:id="rest_14364"/>
+                  <app xml:id="app_14370">
+                    <lem source="#source_2" xml:id="lem_14370">
+                      <supplied resp="#NMA-editors" xml:id="supplied_14370a">
+                        <clef line="4" shape="F" xml:id="clef_14370a"/>
+                      </supplied>
+                    </lem>
+                    <rdg source="#source_1" xml:id="rdg_14370">
+                      <clef line="4" shape="F" xml:id="clef_14370b"/>
+                    </rdg>
+                  </app>
+                </layer>
+                <layer n="2" xml:id="layer_14376">
+                  <note accid.ges="f" doxml.id="d28e2711" dur="4" oct="3" pname="b" tstamp="1" xml:id="note_14382"/>
+                  <note doxml.id="d28e2720" dur="4" oct="4" pname="d" tstamp="2" xml:id="note_14388"/>
+                  <note accid.ges="f" doxml.id="d28e2724" dur="8" oct="4" pname="e" tstamp="3" xml:id="note_14394"/>
+                  <space doxml.id="d28e2726" dur="8" tstamp="3.5" xml:id="space_14400"/>
+                  <space doxml.id="d28e2732" dur="4" tstamp="4" xml:id="space_14406"/>
+                </layer>
+              </staff>
+              <dynam doxml.id="d28e2674" staff="1" startid="#note_14178" xml:id="dynam_14418">p</dynam>
+              <dynam doxml.id="d28e2716" staff="2" startid="#note_14328" xml:id="dynam_14430">p</dynam>
+              <slur curvedir="below" endid="#note_14172" staff="1" startid="#note_14166" xml:id="slur_14478"/>
+              <slur endid="#note_14304" staff="1" startid="#note_14208" xml:id="slur_14484"/>
+              <tie endid="#note_14202" staff="1" startid="#note_14184" xml:id="tie_14490"/>
+            </measure>
+          </section>
+        </score>
+      </mdiv>
+    </body>
+  </music>
+</mei>

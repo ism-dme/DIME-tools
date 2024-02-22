@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<x:description stylesheet="../main.xsl" xmlns:x="http://www.jenitennison.com/xslt/xspec">
+
+
+  <x:scenario label="rest2space">
+    <x:context href="input/mre-1_i.mei" select="id('rest_6012')"/>
+    <x:expect href="expect/mre-1_e.mei" label="Rest should be converted to space" select="id('space_6012')"/>
+  </x:scenario>
+
+  <x:scenario label="clef@sameas">
+
+    <x:scenario label="The layer number exists in the following measures.">
+      <x:context href="input/mre-2_i.mei" select="id('cl_d25e416')"/>
+      <x:expect href="expect/mre-2_e.mei" label="Clef should have @sameas" select="id('cl_d25e416')"/>
+    </x:scenario>
+
+    <x:scenario label="The layer number DOES NOT exists in the following measures but there are following elements.">
+      <x:context href="input/mre-2_i.mei" select="id('cl_d25e3500')"/>
+      <x:expect href="expect/mre-2_e.mei" label="Clef should have @sameas" select="id('cl_d25e3500')"/>
+    </x:scenario>
+    
+    <x:scenario label="The layer number DOES NOT exists in the following measures and there are no following elements after the clef.">
+      <x:context href="input/mre-3_i.mei" select="id('clef_2552')"/>
+      <x:expect  label="Clef should not be copied" select="()"/>
+    </x:scenario>
+    
+  </x:scenario>
+
+</x:description>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="../../frameworks/styleguide/css/styleguideActions.css"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="tie" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/">
+  <title>&lt;tie&gt;/&lt;slur&gt;</title>
+  <body>
+    <p>Checks if &lt;tie&gt; should be a &lt;slur&gt; because its reference has &lt;artic&gt; or @artic. [unique_rules.sch#slur-tie]</p>
+    <p>The values for @staff attribute should match either to staff/@n or note/@staff. [unique_rules.sch#slur.staff]</p>
+    <p>The note linked by @startid should not be placed before the note linked by @endid. [unique_rules.sch#slur.staff]</p>
+  </body>
+</topic>

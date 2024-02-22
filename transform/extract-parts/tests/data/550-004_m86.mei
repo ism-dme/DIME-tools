@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mei meiversion="3.0.0" xmlns="http://www.music-encoding.org/ns/mei">
+  <meiHead>
+    <fileDesc>
+      <titleStmt>
+        <title label="NMA digital" type="unit">Test data based on W. A. Mozart, K. 550/04, mm. 0-124a.</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>
+          <title>Digital Mozart Edition</title>
+        </edition>
+      </editionStmt>
+      <pubStmt>
+        <publisher>
+          <corpName>Mozarteum</corpName>
+          <ptr target="https://www.mozarteum.at"/>
+        </publisher>
+        <availability>
+          <useRestrict label="license">CC BY-NC-SA 4.0</useRestrict>
+        </availability>
+      </pubStmt>
+    </fileDesc>
+    <workDesc>
+      <work>
+        <perfMedium>
+          <perfResList analog="marc:048" authURI="https://www.loc.gov/standards/valuelist/marcmusperf.html" authority="marcmusperf">
+            <perfRes codedval="wa" label="flute" n="1" xml:id="instrVoice_1">flute</perfRes>
+            <perfRes codedval="wb" label="oboe" n="2" xml:id="instrVoice_2">oboe-1</perfRes>
+            <perfRes codedval="wb" label="oboe" n="3" xml:id="instrVoice_3">oboe-2</perfRes>
+            <perfRes codedval="wc" label="clarinet" n="4" xml:id="instrVoice_4">clarinet-1</perfRes>
+            <perfRes codedval="wc" label="clarinet" n="5" xml:id="instrVoice_5">clarinet-2</perfRes>
+            <perfRes codedval="wd" label="bassoon" n="6" xml:id="instrVoice_6">bassoon-1</perfRes>
+            <perfRes codedval="wd" label="bassoon" n="7" xml:id="instrVoice_7">bassoon-2</perfRes>
+            <perfRes codedval="ba" label="horn" n="8" xml:id="instrVoice_8">horn-1</perfRes>
+            <perfRes codedval="ba" label="horn" n="9" xml:id="instrVoice_9">horn-2</perfRes>
+            <perfRes codedval="sa" label="violin" n="10" xml:id="instrVoice_10">violin-1</perfRes>
+            <perfRes codedval="sa" label="violin" n="11" xml:id="instrVoice_11">violin-2</perfRes>
+            <perfRes codedval="sb" label="viola" n="12" xml:id="instrVoice_12">viola</perfRes>
+            <perfRes codedval="sc" label="violoncello" n="13" xml:id="instrVoice_13">violoncello</perfRes>
+            <perfRes codedval="sd" label="double bass" n="14" xml:id="instrVoice_14">double bass</perfRes>
+          </perfResList>
+        </perfMedium>
+      </work>
+    </workDesc>
+  </meiHead>
+  <music>
+    <body>
+      <mdiv n="4" xml:id="mdiv_550004">
+        <score xml:id="score_550004">
+          <scoreDef key.mode="minor" key.pname="g" key.sig="2f" meter.count="2" meter.sym="cut" meter.unit="2" optimize="false" xml:id="scoreDef_01-02">
+            <staffGrp barthru="false" xml:id="staffGrp_01-02">
+              <staffGrp barthru="true" symbol="bracket" xml:id="staffGrp_02-02">
+                <staffDef clef.line="2" clef.shape="G" decls="#instrVoice_1" dme.parts="1" doxml.id="d28e66" label.abbr="Fl." lines="5" n="1" xml:id="staffDef_P1-02">
+                  <label xml:id="label_P1-02">Flauto</label>
+                </staffDef>
+                <staffDef clef.line="2" clef.shape="G" dme.parts="2,3" doxml.id="d28e127" label.abbr="Ob." lines="5" n="2" xml:id="staffDef_P2-02">
+                  <label xml:id="label_P2-02">Oboi</label>
+                  <layerDef decls="#instrVoice_2" n="1" xml:id="layerDef_Ob1"/>
+                  <layerDef decls="#instrVoice_3" n="2" xml:id="layerDef_Ob2"/>
+                </staffDef>
+                <staffDef clef.line="2" clef.shape="G" dme.parts="4,5" doxml.id="d28e211" key.sig="0" label.abbr="Clar." lines="5" n="3" trans.diat="-1" trans.semi="-2" xml:id="staffDef_P3-02">
+                  <label xml:id="label_P3-02">Clarinetti<lb xml:id="lb_P3"/> in Si♭/B</label>
+                  <layerDef decls="#instrVoice_4" n="1" xml:id="layerDef_Clar1"/>
+                  <layerDef decls="#instrVoice_5" n="2" xml:id="layerDef_Clar2"/>
+                </staffDef>
+                <staffDef clef.line="4" clef.shape="F" dme.parts="6,7" doxml.id="d28e294" label.abbr="Fag." lines="5" n="4" xml:id="staffDef_P4-02">
+                  <label xml:id="label_P4-02">Fagotti</label>
+                  <layerDef decls="#instrVoice_6" n="1" xml:id="layerDef_Fag1"/>
+                  <layerDef decls="#instrVoice_7" n="2" xml:id="layerDef_Fag2"/>
+                </staffDef>
+              </staffGrp>
+              <staffGrp barthru="true" symbol="bracket" xml:id="staffGrp_03-02">
+                <staffGrp symbol="brace" xml:id="staffGrp_04-02">
+                  <staffDef clef.line="2" clef.shape="G" decls="#instrVoice_8" dme.parts="8" doxml.id="d28e365" key.sig="0" label.abbr="Cor. (B)" lines="5" n="5" trans.diat="-1" trans.semi="-2" xml:id="staffDef_P5-02">
+                    <label xml:id="label_P5-02">Corno<lb xml:id="lb_P5"/> in Si♭ alto/B hoch</label>
+                  </staffDef>
+                  <staffDef clef.line="2" clef.shape="G" decls="#instrVoice_9" dme.parts="9" doxml.id="d28e422" key.sig="0" label.abbr="Cor. (G)" lines="5" n="6" trans.diat="-3" trans.semi="-5" xml:id="staffDef_P6-02">
+                    <label xml:id="label_P6-02">Corno<lb xml:id="lb_P6"/> in Sol/G</label>
+                  </staffDef>
+                </staffGrp>
+              </staffGrp>
+              <staffGrp barthru="true" symbol="bracket" xml:id="staffGrp_05-02">
+                <staffGrp symbol="brace" xml:id="staffGrp_06-02">
+                  <staffDef clef.line="2" clef.shape="G" decls="#instrVoice_10" dme.parts="10" doxml.id="d28e482" label.abbr="Vl. I" lines="5" n="7" xml:id="staffDef_P7-02">
+                    <label xml:id="label_P7-02">Violino I</label>
+                  </staffDef>
+                  <staffDef clef.line="2" clef.shape="G" decls="#instrVoice_11" dme.parts="11" doxml.id="d28e583" label.abbr="Vl. II" lines="5" n="8" xml:id="staffDef_P8-02">
+                    <label xml:id="label_P8-02">Violino II</label>
+                  </staffDef>
+                </staffGrp>
+                <staffDef clef.line="3" clef.shape="C" decls="#instrVoice_12" dme.parts="12" doxml.id="d28e685" label.abbr="Va." lines="5" n="9" xml:id="staffDef_P9-02">
+                  <label xml:id="label_P9-02">Viola</label>
+                </staffDef>
+                <staffDef clef.line="4" clef.shape="F" dme.parts="13,14" doxml.id="d28e763" label.abbr="Vc. e Bs." lines="5" n="10" xml:id="staffDef_P10-02">
+                  <label xml:id="label_P10-02">Violoncello<lb xml:id="lb_P10"/> e Basso</label>
+                  <layerDef decls="#instrVoice_13" n="1" xml:id="layerDef_Vc"/>
+                  <layerDef decls="#instrVoice_14" n="2" xml:id="layerDef_Bs"/>
+                </staffDef>
+              </staffGrp>
+            </staffGrp>
+          </scoreDef>
+          <app xml:id="app_scoreDef">
+            <rdg corresp="#ISMIDW6309" label="version-2_6309" n="2" source="#source_2 #source_4" xml:id="rdg2_scoreDef"/>
+            <rdg corresp="#ISMIDW6318" label="version-1_6318" n="1" source="#source_1 #source_3" xml:id="rdg1_scoreDef">
+              <scoreDef key.mode="minor" key.pname="g" key.sig="2f" meter.count="2" meter.sym="cut" meter.unit="2" optimize="false" xml:id="scoreDef_01-01">
+                <pgHead xml:id="pghead_550004_01">
+                  <rend halign="center" valign="middle" xml:id="rend_pghead_01_title_DE">
+                    <rend fontsize="x-large" xml:id="rend_pghead_01_title_DE_frontsize">Sinfonie in g, 4. Satz, KV 550/04</rend>
+                  </rend>
+                  <rend halign="center" valign="middle" xml:id="rend_pghead_01_version_DE">
+                    <rend fontsize="x-large" xml:id="rend_pghead_01_version_DE_frontsize">Erste Fassung</rend>
+                  </rend>
+                  <rend halign="center" valign="middle" xml:id="rend_pghead_01_title_EN">
+                    <rend fontsize="small" xml:id="rend_pghead_01_title_EN_frontsize">Symphony in g, 4th mvt., K. 550/04</rend>
+                  </rend>
+                  <rend halign="center" valign="middle" xml:id="rend_pghead_01_version_EN">
+                    <rend fontsize="small" xml:id="rend_pghead_01_version_EN_frontsize">First Version</rend>
+                  </rend>
+                  <rend halign="center" valign="middle" xml:id="rend_pghead_01_subtitle">
+                    <rend fontsize="large" xml:id="rend_pghead_01_subtitle_frontsize">A digital edition</rend>
+                  </rend>
+                </pgHead>
+                <staffGrp barthru="false" xml:id="staffGrp_01-01">
+                  <staffGrp barthru="true" symbol="bracket" xml:id="staffGrp_02-01">
+                    <staffDef n="1" xml:id="staffDef_P1-01"/>
+                    <staffDef n="2" xml:id="staffDef_P2-01"/>
+                    <staffDef n="4" xml:id="staffDef_P4-01"/>
+                  </staffGrp>
+                  <staffGrp barthru="true" symbol="bracket" xml:id="staffGrp_03-01">
+                    <staffGrp symbol="brace" xml:id="staffGrp_04-01">
+                      <staffDef key.sig="0" n="5" xml:id="staffDef_P5-01"/>
+                      <staffDef key.sig="0" n="6" xml:id="staffDef_P6-01"/>
+                    </staffGrp>
+                  </staffGrp>
+                  <staffGrp barthru="true" symbol="bracket" xml:id="staffGrp_05-01">
+                    <staffGrp symbol="brace" xml:id="staffGrp_06-01">
+                      <staffDef n="7" xml:id="staffDef_P7-01"/>
+                      <staffDef n="8" xml:id="staffDef_P8-01"/>
+                    </staffGrp>
+                    <staffDef n="9" xml:id="staffDef_P9-01"/>
+                    <staffDef n="10" xml:id="staffDef_P10-01"/>
+                  </staffGrp>
+                </staffGrp>
+              </scoreDef>
+            </rdg>
+          </app>
+          <section xml:id="section_allegro_assai">
+            <section xml:id="section_A_m86">
+              <measure n="86" xml:id="m86_k550_004">
+                <staff dme.parts="1" n="1" xml:id="staff_40122">
+                  <layer n="1" xml:id="layer_40128">
+                    <mRest tstamp="1" xml:id="mRest_40134"/>
+                  </layer>
+                </staff>
+                <staff dme.parts="2,3" n="2" xml:id="staff_40140">
+                  <app xml:id="app_40152">
+                    <rdg corresp="#ISMIDW6309" label="version-2_6309" n="2" source="#source_2 #source_4" xml:id="rdg2_40152">
+                      <layer n="1" xml:id="layer_40146">
+                        <mRest tstamp="1" xml:id="mRest_40152"/>
+                      </layer>
+                      <layer n="2" sameas="#layer_40146" xml:id="layer_40146b"/>
+                    </rdg>
+                    <rdg corresp="#ISMIDW6318" label="version-1_6318" n="1" source="#source_1 #source_3" xml:id="rdg1_40152">
+                      <layer n="1" xml:id="layer_40146a">
+                        <note artic="stacc" doxml.id="d27e7309" dur="4" oct="5" pname="d" tstamp="1" xml:id="note_33456a"/>
+                        <note accid.ges="f" doxml.id="d27e7311" dur="4" oct="4" pname="b" tstamp="1.5" xml:id="note_33462a"/>
+                        <note doxml.id="d27e7316" dur="4" oct="5" pname="d" tstamp="2" xml:id="note_33468a"/>
+                        <note accid.ges="f" doxml.id="d27e7318" dur="4" oct="5" pname="e" tstamp="2.5" xml:id="note_33474a"/>
+                      </layer>
+                      <layer n="2" xml:id="layer_33480">
+                        <mRest oloc="4" ploc="e" tstamp="1" xml:id="mRest_33486"/>
+                      </layer>
+                    </rdg>
+                  </app>
+                </staff>
+                <app xml:id="app_40158">
+                  <rdg corresp="#ISMIDW6309" label="version-2_6309" n="2" source="#source_2 #source_4" xml:id="rdg2_40158">
+                    <staff dme.parts="4,5" n="3" xml:id="staff_40158">
+                      <layer n="1" xml:id="layer_40164">
+                        <note artic="stacc" doxml.id="d28e8129" dur="4" oct="5" pname="e" tstamp="1" xml:id="note_40170"/>
+                        <note doxml.id="d28e8131" dur="4" oct="5" pname="c" tstamp="1.5" xml:id="note_40176"/>
+                        <note doxml.id="d28e8135" dur="4" oct="5" pname="e" tstamp="2" xml:id="note_40182"/>
+                        <note doxml.id="d28e8137" dur="4" oct="5" pname="f" tstamp="2.5" xml:id="note_40188"/>
+                      </layer>
+                      <layer n="2" xml:id="layer_40194">
+                        <mRest oloc="4" ploc="e" tstamp="1" xml:id="mRest_40200"/>
+                      </layer>
+                    </staff>
+                  </rdg>
+                  <rdg corresp="#ISMIDW6318" label="version-1_6318" n="1" source="#source_1 #source_3" xml:id="rdg1_40158"/>
+                </app>
+                <staff dme.parts="6,7" n="4" xml:id="staff_40206">
+                  <layer n="1" xml:id="layer_40212">
+                    <rest doxml.id="d28e8196" dur="4" tstamp="1" xml:id="rest_40218"/>
+                    <note doxml.id="d28e8200" dur="4" oct="3" pname="f" tstamp="1.5" xml:id="note_40224"/>
+                    <note accid.ges="f" doxml.id="d28e8204" dur="4" oct="3" pname="b" tstamp="2" xml:id="note_40230"/>
+                    <note doxml.id="d28e8206" dur="4" oct="4" pname="c" tstamp="2.5" xml:id="note_40236"/>
+                  </layer>
+                  <layer n="2" xml:id="layer_40242">
+                    <mRest oloc="2" ploc="a" tstamp="1" xml:id="mRest_40248"/>
+                  </layer>
+                </staff>
+                <staff dme.parts="8" n="5" xml:id="staff_40254">
+                  <layer n="1" xml:id="layer_40260">
+                    <mRest tstamp="1" xml:id="mRest_40266"/>
+                  </layer>
+                </staff>
+                <staff dme.parts="9" n="6" xml:id="staff_40272">
+                  <layer n="1" xml:id="layer_40278">
+                    <mRest tstamp="1" xml:id="mRest_40284"/>
+                  </layer>
+                </staff>
+                <staff dme.parts="10" n="7" xml:id="staff_40290">
+                  <layer n="1" xml:id="layer_40296">
+                    <mRest tstamp="1" xml:id="mRest_40302"/>
+                  </layer>
+                </staff>
+                <staff dme.parts="11" n="8" xml:id="staff_40308">
+                  <layer n="1" xml:id="layer_40314">
+                    <mRest tstamp="1" xml:id="mRest_40320"/>
+                  </layer>
+                </staff>
+                <staff dme.parts="12" n="9" xml:id="staff_40326">
+                  <layer n="1" xml:id="layer_40332">
+                    <mRest tstamp="1" xml:id="mRest_40338"/>
+                  </layer>
+                </staff>
+                <staff dme.parts="13,14" n="10" xml:id="staff_40344">
+                  <layer n="1" xml:id="layer_40350">
+                    <mRest tstamp="1" xml:id="mRest_40356"/>
+                  </layer>
+                  <layer n="2" sameas="#layer_40350" xml:id="layer_40350b"/>
+                </staff>
+                <dynam doxml.id="d28e8198" layer="1" place="above" staff="4" startid="#note_40224" xml:id="dynam_40362">p</dynam>
+                <app xml:id="app_33666">
+                  <rdg corresp="#ISMIDW6309" label="version-2_6309" n="2" source="#source_2 #source_4" xml:id="rdg2_33666"/>
+                  <rdg corresp="#ISMIDW6318" label="version-1_6318" n="1" source="#source_1 #source_3" xml:id="rdg1_33666">
+                    <slur endid="#note_33474a" staff="2" startid="#note_33462a" xml:id="slur_33666"/>
+                  </rdg>
+                </app>
+                <app xml:id="app_40380">
+                  <rdg corresp="#ISMIDW6309" label="version-2_6309" n="2" source="#source_2 #source_4" xml:id="rdg2_40380">
+                    <slur endid="#note_40188" staff="3" startid="#note_40176" xml:id="slur_40380"/>
+                  </rdg>
+                  <rdg corresp="#ISMIDW6318" label="version-1_6318" n="1" source="#source_1 #source_3" xml:id="rdg1_40380"/>
+                </app>
+                <slur endid="#note_40236" staff="4" startid="#note_40224" xml:id="slur_40386"/>
+              </measure>
+            </section>
+          </section>
+        </score>
+      </mdiv>
+    </body>
+  </music>
+</mei>

@@ -1,0 +1,6 @@
+https://raw.githubusercontent.com/ism-dme/DIME-tools/main/schemas/mei-DME-3.0.rng
+https://raw.githubusercontent.com/ism-dme/DIME-tools/main/schemas/mei-DME-4.0.rng
+https://dme.mozarteum.at/DME/schemata/mei-DME-4.0.rng	[v4.0.1]
+https://dme.mozarteum.at/DME/schemata/mei-DME.rng		[v3.0.0]
+https://raw.githubusercontent.com/ism-dme/DIME-tools/main/schemas/mei-CMN_3.0.0.rng
+https://raw.githubusercontent.com/ism-dme/DIME-tools/main/schemas/mei-CMN_4.0.0.rng

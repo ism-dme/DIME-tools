@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<x:description run-as="external" stylesheet="../dir2num.xsl" xmlns:mei="http://www.music-encoding.org/ns/mei" xmlns:x="http://www.jenitennison.com/xslt/xspec">
+
+
+  <x:scenario label="Scenario for testing template with match supplied[not(*)][not(normalize-space())] and mode 'mode.2'">
+
+    <x:scenario label="Preserved">
+      <x:param href="input/input_2.xml" name="global-context-item"/>
+      <x:context mode="mode.2">
+        <mei:supplied resp="#NMA-editors" xml:id="supplied_14442">
+          <mei:dir doxml.id="d28e2682" place="above" staff="1" tstamp="3.1666666666666665" xml:id="dir_14448">3</mei:dir>
+        </mei:supplied>
+      </x:context>
+      <x:expect label="supplied with content will be preserved.">
+        <mei:supplied resp="#NMA-editors" xml:id="supplied_14442">
+          <mei:dir doxml.id="d28e2682" place="above" staff="1" tstamp="3.1666666666666665" xml:id="dir_14448">3</mei:dir>
+        </mei:supplied>
+      </x:expect>
+    </x:scenario>
+
+    <x:scenario label="Deleted">
+      <x:context mode="mode.2">
+        <mei:supplied resp="#NMA-editors" xml:id="supplied_14442"> </mei:supplied>
+      </x:context>
+      <x:expect href="input/output_2.xml" label="Supplied with whitespace-only text node." select="()"/>
+    </x:scenario>
+
+  </x:scenario>
+
+</x:description>

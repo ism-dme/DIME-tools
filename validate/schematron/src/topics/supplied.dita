@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="../../frameworks/styleguide/css/styleguideActions.css"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="supplied" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/">
+  <title>&lt;supplied&gt;</title>
+  <body>
+    <p>-required: @xml:id, @resp</p>
+    <p>contains: another &lt;element&gt; </p>
+    <p>@resp: must be defined in the header; in reference texts usually @resp="#NMA-editors", in alternative texts usally @resp="#DME-editors"</p>
+    <p>- optional: @reason</p>
+    <p>If a feature is supplied based on the reading of a source other than the main source (usually the autograph score in reference texts) the attribute @reason is used, value is the xml:id of the source identified in the MEI-header; in refenece texts, these sources may be described as "NMAsource..." in the workDesc</p>
+    <p>Rule of thumb regarding granularity: The mapping is done at the lowest possible level, which means that the &lt;supplied&gt; should be assigned to the element that is effectively being changed. If, for example, an accidental is added, only the &lt;accid&gt; is nested into a &lt;supplied&gt; element, not the &lt;note&gt;.</p>
+    <p>Only in cases where the feature that is added is not available as an element (e.g. @extender), the next higher node (e.g. &lt;trill&gt;) is used. (May involve coding with --&gt; &lt;choice&gt;&lt;corr&gt;&lt;orig&gt; !)</p>
+    <p>
+      <dl audience="rules">
+        <dlhead>
+          <dthd>Rule</dthd>
+          <ddhd>matchesAttributeValue</ddhd>
+        </dlhead>
+        <dlentry>
+          <dt>element</dt>
+          <dd>mei:supplied</dd>
+        </dlentry>
+        <dlentry>
+          <dt>attribute</dt>
+          <dd>resp</dd>
+        </dlentry>
+        <dlentry>
+          <dt>RegEx</dt>
+          <dd>(#NMA-editors)|(#DME-editors)</dd>
+        </dlentry>
+        <dlentry>
+          <dt>phase</dt>
+          <dd>refTexts_v3, refTexts_v4, altTexts_v3, altTexts_v4, refTexts_v5</dd>
+        </dlentry>
+      </dl>
+    </p>
+    <p/>
+  </body>
+</topic>

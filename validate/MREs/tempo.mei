@@ -1,0 +1,576 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://dme.mozarteum.at/DME/schemata/mei-DME-4.0.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://dme.mozarteum.at/DME/schemata/mei-DME-4.0.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei meiversion="4.0.1" xmlns="http://www.music-encoding.org/ns/mei">
+  <meiHead>
+    <fileDesc>
+      <titleStmt>
+        <title auth="KVonline" auth.uri="https://dme.mozarteum.at" label="NMA digital" type="unit" xml:id="fd_tit_1" xml:lang="DE">Sonate in c für Clavier, 3. Satz, KV 457/03</title>
+        <title auth="KVonline" auth.uri="https://dme.mozarteum.at" label="NMA digital" type="unit" xml:id="fd_tit_2" xml:lang="EN">Clavier Sonata in c, 3rd mvt., K. 457/03</title>
+        <title type="file" xml:id="fd_tit_3">
+          <ref target="https://dme.mozarteum.at/movi/file/457/3" targettype="file_location">dmeref_457-003_5490.xml</ref>
+        </title>
+        <title label="NMA digital" type="subordinate" xml:id="fd_tit_4" xml:lang="EN">A digital edition</title>
+        <composer>
+          <persName auth="GND" auth.uri="https://d-nb.info/gnd/118584596" codedval="118584596" label="MI-PID_39409" xml:id="WAM">Wolfgang Amadé Mozart</persName>
+        </composer>
+        <funder n="1" xml:id="ISM">
+          <corpName auth="GND" auth.uri="https://d-nb.info/gnd/37019-8" codedval="37019-8">Internationale Stiftung Mozarteum Salzburg</corpName>
+          <address>
+            <addrLine>
+              <settlement auth="GeoNames" auth.uri="https://www.geonames.org/2766824">Salzburg</settlement>
+            </addrLine>
+            <addrLine>
+              <country>Austria</country>
+            </addrLine>
+          </address>
+        </funder>
+        <funder n="2" xml:id="PHI">
+          <corpName auth="GND" auth.uri="https://d-nb.info/dnbn/330242865" codedval="330242865">The Packard Humanities Institute</corpName>
+          <address>
+            <addrLine>
+              <settlement auth="GeoNames" auth.uri="https://www.geonames.org/5368335">Los Altos</settlement>
+            </addrLine>
+            <addrLine>
+              <country>California, USA</country>
+            </addrLine>
+          </address>
+        </funder>
+        <respStmt>
+          <corpName role="editor" xml:id="NMA-editors">
+            <persName auth="GND" auth.uri="https://d-nb.info/gnd/121083039" codedval="121083039" label="MI-PID_64730" role="editor" xml:id="WoPla">Wolfgang Plath</persName>
+            <persName auth="GND" auth.uri="https://d-nb.info/gnd/118898191" codedval="118898191" label="MI-PID_39459" role="editor" xml:id="WoReh">Wolfgang Rehm</persName>
+          </corpName>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>
+          <identifier type="version">1.0.0</identifier>
+          <date isodate="2021-03-31" label="first release"/>
+          <!--<date isodate="2021-11-30" label="update"/>-->
+        </edition>
+        <respStmt n="1">
+          <resp>Digital remastering by:</resp>
+          <persName sameas="#OS" xml:id="ed.p1"/>
+        </respStmt>
+        <respStmt n="2">
+          <resp>Proofreading by:</resp>
+          <persName sameas="#NN" xml:id="pr.p1"/>
+          <persName sameas="#NN" xml:id="pr.p2"/>
+        </respStmt>
+      </editionStmt>
+      <pubStmt>
+        <publisher>
+          <corpName sameas="#ISM"/>
+        </publisher>
+        <respStmt>
+          <corpName role="sponsor" sameas="#ISM">Internationale Stiftung Mozarteum</corpName>
+        </respStmt>
+        <availability>
+          <useRestrict label="license">CC BY-NC-SA 4.0</useRestrict>
+        </availability>
+      </pubStmt>
+      <seriesStmt>
+        <title>Digital Interactive Mozart Edition (DIME)</title>
+        <respStmt>
+          <corpName label="Digital Mozart Edition Editorial Office" role="project execution" xml:id="DME-editors">
+            <persName auth="GND" auth.uri="https://d-nb.info/gnd/1041960638" codedval="1041960638" label="MI-PID_65157" role="rth edt" xml:id="ND">Norbert Dubowy</persName>
+            <persName auth="GND" auth.uri="https://d-nb.info/gnd/1161430091" codedval="1161430091" label="MI-PID_84342" role="edt mrk" xml:id="MB">Mirijam Beier</persName>
+            <persName auth="GND" auth.uri="https://d-nb.info/gnd/1083841270" codedval="1083841270" label="MI-PID_84344" role="edt mrk" xml:id="IC">Iacopo Cividini</persName>
+            <persName auth="GND" auth.uri="https://d-nb.info/gnd/135494575" codedval="135494575" label="MI-PID_84343" role="edt mrk" xml:id="TR">Till Reininghaus</persName>
+            <persName auth="GND" auth.uri="https://d-nb.info/gnd/1161423672" codedval="1161423672" label="MI-PID_84341" role="edt mrk" xml:id="OS">Oleksii Sapov</persName>
+            <persName auth="GND" auth.uri="https://d-nb.info/gnd/1061093409" codedval="1061093409" label="MI-PID_27802" role="led dtm" xml:id="FK">Franz Kelnreiter</persName>
+            <persName label="MI-PID_83688" role="dtm" xml:id="FG">Felix Gründer</persName>
+            <persName xml:id="NN"/>
+          </corpName>
+        </respStmt>
+      </seriesStmt>
+      <notesStmt>
+        <annot xml:lang="EN">This is the encoding of the 3rd movement of K. 457 according to the Neue Mozart-Ausgabe IX/25/2.</annot>
+      </notesStmt>
+      <sourceDesc>
+        <source label="NMA1" n="1" xml:id="source_1">
+          <bibl>
+            <identifier auth="Bärenreiter" auth.uri="https://www.baerenreiter.com" type="catalog_number">BA 4601-01</identifier>
+            <title type="volume">Neue Ausgabe sämtlicher Werke, Serie IX, Werkgruppe 25: Klaviersonaten Band 2</title>
+            <title type="work">Sonate in c</title>
+            <title type="unit">Allegro assai</title>
+            <composer sameas="#WAM"/>
+            <editor corresp="#NMA-editors">
+              <persName sameas="#WoPla"/>
+              <persName sameas="#WoReh"/>
+            </editor>
+            <edition xml:lang="DE">[Erste Auflage]</edition>
+            <edition xml:lang="EN">[First edition]</edition>
+            <edition xml:id="digital_image">
+              <ref target="https://dme.mozarteum.at/DME/nma/nma_cont.php?vsep=197&amp;p1=91&amp;l=1" targettype="website">
+                <repository>NMA Online</repository>
+              </ref>
+            </edition>
+            <publisher>
+              <corpName auth="GND" auth.uri="https://d-nb.info/gnd/2005573-0" codedval="2005573-0" xml:id="BV">Bärenreiter</corpName>
+            </publisher>
+            <pubPlace>Kassel</pubPlace>
+            <date>1986</date>
+            <biblScope unit="page">91-97</biblScope>
+          </bibl>
+        </source>
+        <source label="NMA-KB" n="2" xml:id="source_2">
+          <bibl>
+            <identifier auth="Bärenreiter" auth.uri="https://www.baerenreiter.com" type="catalog_number">BA 4600-41</identifier>
+            <title>Wolfgang Amadeus Mozart, Neue Ausgabe sämtlicher Werke, Kritische Berichte, Serie IX, Werkgruppe 25: Klaviersonaten, Band 1 und 2.</title>
+            <author sameas="#WoReh"/>
+            <edition xml:lang="DE">[Auf Seite 203-207 Berichtigungen und Ergänzungen zu den Notenbänden.]</edition>
+            <edition xml:lang="EN">[Addenda and corrigenda to the music editions reported on pp. 203-207.]</edition>
+            <publisher sameas="#BV"/>
+            <pubPlace>Kassel</pubPlace>
+            <date>1998</date>
+            <edition xml:id="digital_image_KB">
+              <ref target="https://dme.mozarteum.at/DME/nma/nma_cont.php?vsep=198&amp;p1=117&amp;l=1" targettype="website">
+                <repository>NMA Online</repository>
+              </ref>
+            </edition>
+          </bibl>
+        </source>
+        <source label="NMA: source A" sameas="#NMAsource_A" xml:id="source_A"/>
+        <source label="NMA: source A1" sameas="#NMAsource_A1" xml:id="source_A1"/>
+        <source label="NMA: source A2" sameas="#NMAsource_A2" xml:id="source_A2"/>
+        <source label="NMA: source B1" sameas="#NMAsource_B1" xml:id="source_B1"/>
+        <source label="NMA: source B2" sameas="#NMAsource_B2" xml:id="source_B2"/>
+        <source label="NMA: source B3" sameas="#NMAsource_B3" xml:id="source_B3"/>
+        <source label="NMA: source B4" sameas="#NMAsource_B4" xml:id="source_B4"/>
+        <source label="NMA: source C" sameas="#NMAsource_C" xml:id="source_C"/>
+        <source label="NMA: source D1" sameas="#NMAsource_D1" xml:id="source_D1"/>
+        <source label="NMA: source D2" sameas="#NMAsource_D2" xml:id="source_D2"/>
+        <source label="NMA: source D3" sameas="#NMAsource_D3" xml:id="source_D3"/>
+        <source label="NMA: source D4" sameas="#NMAsource_D4" xml:id="source_D4"/>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <appInfo>
+        <application n="1" version="0.2.0" xml:id="parseDox2XML.xsl_v0.2.0">
+          <name>parseDox2XML.xsl</name>
+        </application>
+        <application n="2" version="0.9.6" xml:id="doxml2mei.xsl_v0.9.6">
+          <name>doxml2mei.xsl</name>
+          <p>This converter is a reasonably large collection of XSLT stylesheets (utilizing XSLT 3.0), developed by <persName auth="GND" auth.uri="https://d-nb.info/gnd/174032757" codedval="174032757" xml:id="JoKep">Johannes Kepper</persName> (<ref target="https://edirom.de">
+              <corpName auth="GND" auth.uri="https://d-nb.info/gnd/1095564986" codedval="1095564986">ViFE</corpName>
+            </ref>) on behalf of and assisted by the <ref target="https://mozarteum.at">Salzburg Mozarteum Foundation</ref> staff, with revisions and extensions by <persName sameas="#FK">Franz Kelnreiter</persName>.</p>
+        </application>
+        <application n="3" version="1.0.1" xml:id="enhanceFromDoxml.xsl_v1.0.1">
+          <name>enhanceFromDoxml.xsl</name>
+          <p>Corrects the MEI after the base conversion from DOX using respective data from doxml. Developed by <persName sameas="#OS">Oleksii Sapov</persName>.</p>
+        </application>
+        <application n="4" version="2.4.3" xml:id="DOXconvX.xsl_v2.4.3">
+          <name>DOXconvX.xsl</name>
+          <p>This is an extension of the DOX conversion process. Among other corrections, it enriches the encoding by the project specific features. Developed by <persName sameas="#OS">Oleksii Sapov</persName>.</p>
+        </application>
+      </appInfo>
+      <editorialDecl label="Editor’s Note" xml:lang="EN">
+        <p>This is the encoding of the 3rd movement of K. 457 according to the <rend rend="italic">Neue Mozart-Ausgabe</rend> IX/25/2 (ed. Wolfgang Plath and Wolfgang Rehm, 1986). In the digital edition, this publication is encoded as 'source_1', while the corresponding Critical Report (Wolfgang Rehm, 1998) is listed as 'source_2'.</p>
+        <p>The NMA edition is based on the first print edition by Artaria &amp; Co. (1785), the early print edition by Breitkopf &amp; Härtel (1799) and the early print edition by Johann André (1802). The autograph score was considered lost since 1889 and was rediscovered only in 1990, so it was not available for the edition. For the Critical Report, which was only published in 1998, the autograph, now held at the Internationale Stiftung Mozarteum, Salzburg, call number <rend fontstyle="italic">Autogr 475</rend>, was consulted. The editors found most of their decisions confirmed by the autograph, which made a new edition unnecessary. The following sources were used for the NMA edition:</p>
+        <p>&#160;&#160; - Autograph thematic catalog (NMA siglum A<rend rend="sup">1</rend>)</p>
+        <p>&#160;&#160; - Dedication copy (NMA siglum A<rend rend="sup">2</rend>)</p>
+        <p>&#160;&#160; - First print edition, Artaria &amp; Co. Vienna (1785) (NMA siglum B<rend rend="sup">1</rend>)</p>
+        <p>&#160;&#160; - First print edition, Artaria &amp; Co. Vienna, 2nd copy (NMA siglum B<rend rend="sup">2</rend>)</p>
+        <p>&#160;&#160; - First print edition, Artaria &amp; Co. Vienna, 3rd-6th copy (NMA siglum B<rend rend="sup">3</rend>)</p>
+        <p>&#160;&#160; - First print edition, Artaria &amp; Co. Vienna, 7th copy, entirely new engraved (NMA siglum B<rend rend="sup">4</rend>)</p>
+        <p>&#160;&#160; - Early print edition, Breitkopf &amp; Härtel (1799) (NMA siglum C)</p>
+        <p>&#160;&#160; - Early print edition, Johann André Offenbach am Main (1802) (NMA siglum D<rend rend="sup">1</rend>)</p>
+        <p>&#160;&#160; - Early print edition, Johann André Offenbach am Main (c. 1829) (NMA siglum D<rend rend="sup">2</rend>)</p>
+        <p>&#160;&#160; - Early print edition, Johann André Offenbach am Main (1841) (NMA siglum D<rend rend="sup">3</rend>)</p>
+        <p>&#160;&#160; - Early print edition, Johann André Offenbach am Main (probably after 1841) (NMA siglum D<rend rend="sup">4</rend>)</p>
+        <p>For more information on the sources see the <ref target="https://dme.mozarteum.at/DME/nma/nma_cont.php?vsep=198&amp;p1=117&amp;l=1" targettype="website">Critical Report</ref>.</p>
+        <p>In the digital edition, the diacritic markup of editorial interventions used in the NMA print edition (i.e. small size, italics, brackets, dashed line form) are coded as additions; as such they are marked as decisions by the editors of the NMA (@resp). Wherever possible the markup of additions affects the smallest unit that can be individually addressed, usually an element. In some cases, a distinction between supplied and un-supplied elements is made through a &lt;choice&gt; element. With the exception of possible corrections of obvious printing errors (marked in the code as such) the coding of the musical text is faithful to the aforementioned NMA editions. Some normalizations have been applied; for a full description of the editorial principles see the <ref target="https://dme.mozarteum.at/musik/edition/#200" targettype="website">Editorial Guidelines of the DME Music Editions</ref>.</p>
+        <p>The present encoding in MEI 4.0.1 (with some minor customizations) is based on a previous encoding in DOX format. The DOX data were gained from optical music recognition (OMR) and proofreading processes developed and carried out by <corpName sameas="#PHI">The Packard Humanities Institute</corpName>, Los Altos, CA.</p>
+        <p>For technical reasons, it is possible that some of the original editorial markup not captured by OMR (e.g. small staccato signs) is not represented in the encoded versions.</p>
+        <p>Lacunae may be reported to the <ref target="dme@mozarteum.at" targettype="email">Editorial Office of the DME</ref>.</p>
+        <p>
+          <biblList>
+            <head>
+              <rend fontweight="bold">Bibliography</rend>
+            </head>
+            <bibl>Mozart, Wolfgang Amadeus. Neue Ausgabe sämtlicher Werke, Serie IX, Werkgruppe 25: Klaviersonaten Band 2. Ed. Wolfgang Plath and Wolfgang Rehm. Kassel: Bärenreiter, 1986.</bibl>
+            <bibl>Rehm, Wolfgang. Wolfgang Amadeus Mozart, Neue Ausgabe sämtlicher Werke, Kritische Berichte, Serie IX, Werkgruppe 25: Klaviersonaten Band 1 und 2. Kassel: Bärenreiter, 1998.</bibl>
+          </biblList>
+        </p>
+        <p>First release: <date isodate="2021-03-31"/>
+        </p>
+        <!--<p>Last revision: <date isodate="2021-12-22"/>
+        </p>-->
+      </editorialDecl>
+      <projectDesc>
+        <p>The DOX data results from an optical music recognition (OMR) software and proofreading processes developed and realised by <corpName sameas="#PHI">The Packard Humanities Institute, Los Altos, CA</corpName>.</p>
+      </projectDesc>
+      <classDecls>
+        <taxonomy>
+          <bibl xml:id="classification_GND">classification_GND</bibl>
+          <category auth="GND" auth.uri="http://d-nb.info/gnd/4153682-4" xml:id="GND-genre"/>
+        </taxonomy>
+      </classDecls>
+    </encodingDesc>
+    <workList>
+      <work label="individual movement">
+        <identifier auth="ISM-IDW" type="work" xml:id="idw-5487">5487</identifier>
+        <identifier auth="ISM-IDW" type="movement" xml:id="idw-5490">5490</identifier>
+        <identifier auth="KVonline" label="KVonline" type="work" xml:id="kv457">457</identifier>
+        <identifier auth="KVonline" label="KVonline" type="movement" xml:id="kv457003">457/03</identifier>
+        <identifier auth="GND" auth.uri="https://d-nb.info/gnd/300111355" type="work" xml:id="gnd-work">300111355</identifier>
+        <title type="main" xml:id="titleDE" xml:lang="DE">
+          <titlePart>Sonate in c für Clavier</titlePart>
+          <identifier auth="KVonline" label="KV">KV 457</identifier>
+          <titlePart type="subordinate" xml:lang="DE">3. Satz</titlePart>
+        </title>
+        <title type="main" xml:id="titleEN" xml:lang="EN">
+          <titlePart>Clavier Sonata in c</titlePart>
+          <identifier auth="KVonline" label="KV">K. 457</identifier>
+          <titlePart type="subordinate" xml:lang="EN">3rd mvt.</titlePart>
+        </title>
+        <expressionList>
+          <expression n="1" xml:id="expression_K457">
+            <title>Mozart’s composition of the piano sonata in c</title>
+            <title sameas="#tempo" type="movementHeading" xml:id="mvt_heading"/>
+            <composer sameas="#WAM">Wolfgang Amadé Mozart</composer>
+            <tempo xml:id="tempo">Allegro assai</tempo>
+            <key mode="minor" pname="c"/>
+            <meter count="3" unit="4"/>
+            <perfMedium>
+              <perfResList>
+                <perfRes analog="marc:048" auth="marcmusperf" auth.uri="https://www.loc.gov/standards/valuelist/marcmusperf.html" codedval="ka" label="piano" n="1" type="instrument" xml:id="instrVoice_1">
+                  <perfRes n="1.1" xml:id="upper"/>
+                  <perfRes n="1.2" xml:id="lower"/>
+                </perfRes>
+                <perfRes type="player">
+                  <perfRes corresp="#upper" n="1" xml:id="right_hand"/>
+                  <perfRes corresp="#lower" n="2" xml:id="left_hand"/>
+                </perfRes>
+              </perfResList>
+            </perfMedium>
+            <classification>
+              <termList>
+                <term class="#GND-genre">Klaviersonate</term>
+              </termList>
+            </classification>
+          </expression>
+        </expressionList>
+        <componentList>
+          <work label="complete work" n="1">
+            <identifier sameas="#idw-5487"/>
+            <title corresp="#titleDE #titleEN"/>
+            <contents>
+              <contentItem n="1">
+                <identifier auth="ISM-IDW" type="movement">5488</identifier>
+                <ref target="https://dme.mozarteum.at/movi/navigator/457/001/01" targettype="file_location"/>
+              </contentItem>
+              <contentItem n="2">
+                <identifier auth="ISM-IDW" type="movement">5489</identifier>
+                <ref target="https://dme.mozarteum.at/movi/navigator/457/002/01" targettype="file_location"/>
+              </contentItem>
+              <contentItem n="3">
+                <identifier auth="ISM-IDW" type="movement">5490</identifier>
+                <ref target="https://dme.mozarteum.at/movi/navigator/457/003/01" targettype="file_location"/>
+              </contentItem>
+            </contents>
+            <relationList>
+              <relation rel="hasPart" target="#idw-5490"/>
+              <relation rel="isSuccessorOf" target="#idw-5581"/>
+            </relationList>
+          </work>
+          <work label="individual movement" n="2">
+            <identifier sameas="#idw-5490"/>
+            <title corresp="#mvt_heading"/>
+            <relationList>
+              <relation rel="isPartOf" target="#idw-5487"/>
+            </relationList>
+          </work>
+        </componentList>
+      </work>
+    </workList>
+    <manifestationList label="NMA sources">
+      <manifestation label="Autograph" n="1" xml:id="NMAsource_A">
+        <identifier auth="ISM-IDQ">10712</identifier>
+        <titleStmt>
+          <title xml:lang="DE">[Von unbekannter Hand:] 1784 [Von unbekannter Hand:] K. 457 (NMA Quelle A)</title>
+          <title xml:lang="EN">[By unknown hand:] 1784 [unknown hand::] K. 457 (NMA Source A)</title>
+        </titleStmt>
+        <biblList>
+          <bibl n="1">
+            <repository>
+              <identifier auth="ISM" auth.uri="https://www.mozarteum.at" type="library_siglum">Autogr 475</identifier>
+              <ptr target="https://digital.obvsg.at/urn/urn:nbn:at:at-moz:x2-37202" targettype="website"/>
+            </repository>
+          </bibl>
+        </biblList>
+        <relationList>
+          <relation rel="isEmbodimentOf" target="#expression_K457"/>
+        </relationList>
+      </manifestation>
+      <manifestation label="Autograph thematic catalog" n="2" xml:id="NMAsource_A1">
+        <identifier auth="ISM-IDQ">28042</identifier>
+        <titleStmt>
+          <title xml:lang="DE">Eigenhändiges Werkverzeichnis (NMA Quelle A1)</title>
+          <title xml:lang="EN">Autograph thematic catalog (NMA Source A1)</title>
+        </titleStmt>
+        <biblList>
+          <bibl n="1">
+            <repository>
+              <identifier auth="RISM" auth.uri="https://www.rism.info/" type="library_siglum">GB-Lbl</identifier>
+              <ptr target="https://www.bl.uk/manuscripts/Viewer.aspx?ref=zweig_ms_63_f002r" targettype="website"/>
+            </repository>
+          </bibl>
+        </biblList>
+        <relationList>
+          <relation rel="isEmbodimentOf" target="#expression_K457"/>
+        </relationList>
+      </manifestation>
+      <manifestation label="Dedication copy" n="3" xml:id="NMAsource_A2">
+        <identifier auth="ISM-IDQ">13777</identifier>
+        <titleStmt>
+          <title xml:lang="DE">Widmungskopie (NMA Quelle A2)</title>
+          <title xml:lang="EN">Dedication copy (NMA Source A2)</title>
+        </titleStmt>
+        <biblList>
+          <bibl n="1">
+            <repository>
+              <identifier auth="RISM" auth.uri="https://www.rism.info/" type="library_siglum">IL-J</identifier>
+            </repository>
+          </bibl>
+        </biblList>
+        <relationList>
+          <relation rel="isEmbodimentOf" target="#expression_K457"/>
+        </relationList>
+      </manifestation>
+      <manifestation label="First print edition" n="4" xml:id="NMAsource_B1">
+        <identifier auth="ISM-IDQ">28086</identifier>
+        <titleStmt>
+          <title xml:lang="DE">Erstdruck (NMA Quelle B1)</title>
+          <title xml:lang="EN">First print edition (NMA Source B1)</title>
+        </titleStmt>
+        <biblList>
+          <bibl>
+            <repository label="copy_used_by_NMA">
+              <identifier auth="RISM" auth.uri="https://www.rism.info/" type="library_siglum">A-Wn</identifier>
+            </repository>
+          </bibl>
+        </biblList>
+        <relationList>
+          <relation rel="isEmbodimentOf" target="#expression_K457"/>
+        </relationList>
+      </manifestation>
+      <manifestation label="First print edition, 2nd copy" n="5" xml:id="NMAsource_B2">
+        <identifier auth="ISM-IDQ">28087</identifier>
+        <titleStmt>
+          <title xml:lang="DE">Erstdruck, 2. Abzug (NMA Quelle B2)</title>
+          <title xml:lang="EN">First print edition, 2nd copy (NMA Source B2)</title>
+        </titleStmt>
+        <biblList>
+          <bibl>
+            <repository label="copy_used_by_NMA">
+              <identifier auth="RISM" auth.uri="https://www.rism.info/" type="library_siglum">A-Wn</identifier>
+            </repository>
+          </bibl>
+        </biblList>
+        <relationList>
+          <relation rel="isEmbodimentOf" target="#expression_K457"/>
+        </relationList>
+      </manifestation>
+      <manifestation label="First print edition, 3rd-6th copy" n="6" xml:id="NMAsource_B3">
+        <identifier auth="ISM-IDQ">28088</identifier>
+        <titleStmt>
+          <title xml:lang="DE">Erstdruck, 3. bis 6. Abzug (NMA Quelle B3)</title>
+          <title xml:lang="EN">First print edition, 3rd-6th copy (NMA Source B3)</title>
+        </titleStmt>
+        <biblList>
+          <bibl>
+            <repository label="copy_used_by_NMA">
+              <identifier auth="RISM" auth.uri="https://www.rism.info/" type="library_siglum">F-Pn</identifier>
+              <identifier auth="RISM" auth.uri="https://www.rism.info/" type="library_siglum">A-Wn</identifier>
+              <identifier auth="RISM" auth.uri="https://www.rism.info/" type="library_siglum">A-Wgm</identifier>
+              <identifier auth="RISM" auth.uri="https://www.rism.info/" type="library_siglum">I-Mc</identifier>
+            </repository>
+          </bibl>
+        </biblList>
+        <relationList>
+          <relation rel="isEmbodimentOf" target="#expression_K457"/>
+        </relationList>
+      </manifestation>
+      <manifestation label="First print edition, 7th copy" n="7" xml:id="NMAsource_B4">
+        <identifier auth="ISM-IDQ">28089</identifier>
+        <titleStmt>
+          <title xml:lang="DE">Erstdruck, 7., völlig neu gestochener Abzug (NMA Quelle B4)</title>
+          <title xml:lang="EN">First print edition, 7th copy, entirely new engraved (NMA Source B4)</title>
+        </titleStmt>
+        <biblList>
+          <bibl>
+            <repository label="copy_used_by_NMA">
+              <identifier auth="RISM" auth.uri="https://www.rism.info/" type="library_siglum">A-Wn</identifier>
+            </repository>
+          </bibl>
+        </biblList>
+        <relationList>
+          <relation rel="isEmbodimentOf" target="#expression_K457"/>
+        </relationList>
+      </manifestation>
+      <manifestation label="Early print edition" n="8" xml:id="NMAsource_C">
+        <identifier auth="ISM-IDQ">28090</identifier>
+        <titleStmt>
+          <title xml:lang="DE">Frühdruck (NMA Quelle C)</title>
+          <title xml:lang="EN">Early print edition (NMA Source C)</title>
+        </titleStmt>
+        <biblList>
+          <bibl>
+            <repository label="copy_used_by_NMA">
+              <identifier auth="RISM" auth.uri="https://www.rism.info/" type="library_siglum">A-Sm</identifier>
+            </repository>
+          </bibl>
+        </biblList>
+        <relationList>
+          <relation rel="isEmbodimentOf" target="#expression_K457"/>
+        </relationList>
+      </manifestation>
+      <manifestation label="Early print edition, 1802" n="9" xml:id="NMAsource_D1">
+        <identifier auth="ISM-IDQ">28091</identifier>
+        <titleStmt>
+          <title xml:lang="DE">Frühdruck, 1802 (NMA Quelle D1)</title>
+          <title xml:lang="EN">Early print edition, 1802 (NMA Source D1)</title>
+        </titleStmt>
+        <biblList>
+          <bibl>
+            <repository label="copy_used_by_NMA">
+              <identifier auth="RISM" auth.uri="https://www.rism.info/" type="library_siglum">DK-Kk</identifier>
+            </repository>
+          </bibl>
+        </biblList>
+        <relationList>
+          <relation rel="isEmbodimentOf" target="#expression_K457"/>
+        </relationList>
+      </manifestation>
+      <manifestation label="Early print edition, 1829" n="10" xml:id="NMAsource_D2">
+        <identifier auth="ISM-IDQ">28092</identifier>
+        <titleStmt>
+          <title xml:lang="DE">Frühdruck, ca. 1829 (NMA Quelle D2)</title>
+          <title xml:lang="EN">Early print edition, c. 1829 (NMA Source D2)</title>
+        </titleStmt>
+        <biblList>
+          <bibl>
+            <repository label="copy_used_by_NMA">
+              <identifier auth="RISM" auth.uri="https://www.rism.info/" type="library_siglum">NL-At</identifier>
+            </repository>
+          </bibl>
+        </biblList>
+        <relationList>
+          <relation rel="isEmbodimentOf" target="#expression_K457"/>
+        </relationList>
+      </manifestation>
+      <manifestation label="Early print edition, 1841" n="11" xml:id="NMAsource_D3">
+        <identifier auth="ISM-IDQ">28093</identifier>
+        <titleStmt>
+          <title xml:lang="DE">Frühdruck, 1841 (NMA Quelle D3)</title>
+          <title xml:lang="EN">Early print edition, 1841 (NMA Source D3)</title>
+        </titleStmt>
+        <biblList>
+          <bibl>
+            <repository label="copy_used_by_NMA">
+              <identifier auth="RISM" auth.uri="https://www.rism.info/" type="library_siglum">D-F</identifier>
+            </repository>
+          </bibl>
+        </biblList>
+        <relationList>
+          <relation rel="isEmbodimentOf" target="#expression_K457"/>
+        </relationList>
+      </manifestation>
+      <manifestation label="Early print edition, after 1841" n="12" xml:id="NMAsource_D4">
+        <identifier auth="ISM-IDQ">28094</identifier>
+        <titleStmt>
+          <title xml:lang="DE">Frühdruck, vermutlich nach 1841 (NMA Quelle D4)</title>
+          <title xml:lang="EN">Early print edition, probably after 1841 (NMA Source D4)</title>
+        </titleStmt>
+        <biblList>
+          <bibl>
+            <repository label="copy_used_by_NMA">
+              <identifier auth="RISM" auth.uri="https://www.rism.info/" type="library_siglum">D-F</identifier>
+            </repository>
+          </bibl>
+        </biblList>
+        <relationList>
+          <relation rel="isEmbodimentOf" target="#expression_K457"/>
+        </relationList>
+      </manifestation>
+    </manifestationList>
+    <revisionDesc>
+      <change isodate="2021-01-20" n="1" resp="#FK">
+        <changeDesc>
+          <p>File converted from Dox to DoxML and MEI using <ptr target="#parseDox2XML.xsl_v0.2.0"/> and <ptr target="#doxml2mei.xsl_v0.9.6"/>.</p>
+        </changeDesc>
+      </change>
+      <change isodate="2021-03-19" n="2" resp="#OS">
+        <changeDesc>
+          <p>Processed with <ptr target="#enhanceFromDoxml.xsl_v1.0.1"/>.</p>
+        </changeDesc>
+      </change>
+      <change isodate="2021-03-19" n="3" resp="#OS">
+        <changeDesc>
+          <p>Processed with <ptr target="#DOXconvX.xsl_v2.4.3"/>.</p>
+        </changeDesc>
+      </change>
+      <!--		<change isodate="2020-03-13" n="3" resp="#NN">
+				<changeDesc>
+					<p>Revised and updated according to workflow_1.1.</p>
+				</changeDesc>
+			</change>-->
+      <!--Korrekurlesen-->
+      <!--<change isodate="2020-03-13" n="4" resp="#NN">
+				<changeDesc>
+					<p>Proofreading according to workflow_1.2.</p>
+				</changeDesc>
+			</change>-->
+      <!-- Abnahme -->
+      <!--<change n="5">
+				<changeDesc>
+					<p/>
+				</changeDesc>
+			</change>-->
+      <!-- Release -->
+      <!--<change n="6">
+				<changeDesc>
+					<p/>
+				</changeDesc>
+			</change>-->
+    </revisionDesc>
+  </meiHead>
+  <music>
+    <body>
+      <mdiv n="1" xml:id="mdiv_3606">
+        <score xml:id="score_3612">
+          <scoreDef meter.count="4" meter.sym="common" meter.unit="4" xml:id="scoreDef_01">
+            <staffGrp xml:id="staffGrp_01">
+              <staffDef clef.line="2" clef.shape="G" lines="5" n="1" xml:id="staffDef_P1"/>
+            </staffGrp>
+          </scoreDef>
+          <section xml:id="section_A_m-">
+            <measure xml:id="m">
+              <tempo doxml.id="d27e16_d27e25" midi.bpm="208" place="above" staff="1" tstamp="1" type="heading" xml:id="tempo01b">Allegro assai</tempo>
+              <tempo doxml.id="d27e16_d27e25" midi.bpm="208" place="above" staff="1" tstamp="1" type="headin" xml:id="tempo01c">Allegro assai</tempo>
+              <app type="ossia" xml:id="app_3648">
+                <lem source="#source_B1" xml:id="lem_3654">
+                  <tempo doxml.id="d27e16_d27e25" midi.bpm="208" place="above" staff="1" tstamp="1" type="tempo" xml:id="tempo01">Allegro assai</tempo>
+                </lem>                
+                <rdg source="#source_A #source_A2 #source_A #source_D1 #source_D2" xml:id="rdg_3672">
+                  <tempo doxml.id="d27e16_d27e25" midi.bpm="208" place="above" staff="1" tstamp="1" xml:id="tempo02">Molto allegro</tempo>
+                </rdg>
+              </app>
+              <staff n="1" xml:id="staff_3690">
+                <layer n="1" xml:id="layer_3696">
+                  <note dur="4" oct="4" pname="c" xml:id="note_3702"/>
+                  <note dur="4" oct="4" pname="c" xml:id="note_3708"/>
+                  <note dur="4" oct="4" pname="c" xml:id="note_3714"/>
+                  <note dur="4" oct="4" pname="c" xml:id="note_3720"/>
+                </layer>
+              </staff>
+            </measure>
+          </section>
+        </score>
+      </mdiv>
+    </body>
+  </music>
+</mei>

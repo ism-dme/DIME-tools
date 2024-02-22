@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mei meiversion="3.0.0" xmlns="http://www.music-encoding.org/ns/mei">
+  <meiHead>
+    <fileDesc>
+      <titleStmt>
+        <title label="NMA digital" type="unit">Test data based on W. A. Mozart, K. 165/01, m. 28.</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>
+          <title>Digital Mozart Edition</title>
+        </edition>
+      </editionStmt>
+      <pubStmt>
+        <publisher>
+          <corpName>Mozarteum</corpName>
+          <ptr target="https://www.mozarteum.at"/>
+        </publisher>
+        <availability>
+          <useRestrict label="license">CC BY-NC-SA 4.0</useRestrict>
+        </availability>
+      </pubStmt>
+    </fileDesc>
+    <workDesc>
+      <work>
+        <perfMedium>
+          <perfResList analog="marc:048" auth="marcmusperf" auth.uri="https://www.loc.gov/standards/valuelist/marcmusperf.html">
+            <perfRes codedval="wb" label="oboe" n="1" xml:id="instrVoice_1">Oboe I</perfRes>
+            <perfRes codedval="wb" label="oboe" n="2" xml:id="instrVoice_2">Oboe II</perfRes>
+            <perfRes codedval="ba" label="horn" n="3" xml:id="instrVoice_3">Corno I</perfRes>
+            <perfRes codedval="ba" label="horn" n="4" xml:id="instrVoice_4">Corno II</perfRes>
+            <perfRes codedval="sa" label="violin" n="5" xml:id="instrVoice_5">Violino I</perfRes>
+            <perfRes codedval="sa" label="violin" n="6" xml:id="instrVoice_6">Violino II</perfRes>
+            <perfRes codedval="sb" label="viola" n="7" xml:id="instrVoice_7">Viola I</perfRes>
+            <perfRes codedval="va" label="soprano" n="8" xml:id="vocalVoice_1">Soprano</perfRes>
+            <perfRes codedval="sc" label="violoncello" n="9" xml:id="instrVoice_8">Violoncello</perfRes>
+            <perfRes codedval="sd" label="double bass" n="10" xml:id="instrVoice_9">Basso</perfRes>
+            <perfRes codedval="kb" label="organ" n="11" xml:id="instrVoice_10">Organo</perfRes>
+            <perfRes codedval="sb" label="viola" n="12" xml:id="instrVoice_11">Viola II</perfRes>
+          </perfResList>
+        </perfMedium>
+      </work>
+    </workDesc>
+  </meiHead>
+  <music>
+    <body>
+      <mdiv n="1" xml:id="mdiv_551002">
+        <score xml:id="score_551002">
+          <scoreDef key.mode="major" key.pname="f" key.sig="1f" meter.count="4" meter.sym="common" meter.unit="4" optimize="false" xml:id="scoreDef_01-A">
+            <staffGrp bar.thru="false" xml:id="staffGrp_01-A">
+              <staffGrp symbol="bracket" xml:id="staffGrp_02-A">
+                <staffDef clef.line="2" clef.shape="G" dme.parts="1,2" lines="5" n="1" xml:id="staffDef_P1-A">
+                  <label xml:id="label_staffP1-A">Oboe I, II</label>
+                  <labelAbbr xml:id="labelAbbrP1-A">Ob.</labelAbbr>
+                  <layerDef decls="#instrVoice_1" n="1" xml:id="layerDef_Ob1-A"/>
+                  <layerDef decls="#instrVoice_2" n="2" xml:id="layerDef_Ob2-A"/>
+                </staffDef>
+              </staffGrp>
+              <staffGrp symbol="bracket" xml:id="staffGrp_03-A">
+                <staffDef clef.line="2" clef.shape="G" dme.parts="3,4" key.sig="0" lines="5" n="2" trans.diat="-4" trans.semi="-7" xml:id="staffDef_P2-A">
+                  <label xml:id="label_staffP2-A">Corno I, II in Fa/F</label>
+                  <labelAbbr xml:id="labelAbbrP2-A">Cor.</labelAbbr>
+                  <layerDef decls="#instrVoice_3" n="1" xml:id="layerDef_Cor1-A"/>
+                  <layerDef decls="#instrVoice_4" n="2" xml:id="layerDef_Cor2-A"/>
+                </staffDef>
+              </staffGrp>
+              <staffGrp bar.thru="true" symbol="bracket" xml:id="staffGrp_04-A">
+                <staffGrp symbol="brace" xml:id="staffGrp_05-A">
+                  <staffDef clef.line="2" clef.shape="G" decls="#instrVoice_5" dme.parts="5" lines="5" n="3" xml:id="staffDef_P3-A">
+                    <label xml:id="label_staffP3-A">Violino I</label>
+                    <labelAbbr xml:id="labelAbbrP3-A">Vl. I</labelAbbr>
+                  </staffDef>
+                  <staffDef clef.line="2" clef.shape="G" decls="#instrVoice_6" dme.parts="6" lines="5" n="4" xml:id="staffDef_P4-A">
+                    <label xml:id="label_staffP4-A">Violino II</label>
+                    <labelAbbr xml:id="labelAbbrP4-A">Vl. II</labelAbbr>
+                  </staffDef>
+                </staffGrp>
+                <staffDef clef.line="3" clef.shape="C" decls="#instrVoice_7 #instrVoice_11" dme.parts="7,12" lines="5" n="5" xml:id="staffDef_P5-A">
+                  <label xml:id="label_staffP5-A">Viola I, II</label>
+                  <labelAbbr xml:id="labelAbbrP5-A">Va.</labelAbbr>
+                </staffDef>
+              </staffGrp>
+              <staffDef clef.line="2" clef.shape="G" decls="#vocalVoice_1" dme.parts="8" lines="5" n="6" xml:id="staffDef_P6-A">
+                <label xml:id="label_staffP6-A">Soprano</label>
+                <labelAbbr xml:id="labelAbbrP6-A">S</labelAbbr>
+              </staffDef>
+              <staffGrp symbol="bracket" xml:id="staffGrp_06-A">
+                <staffDef clef.line="4" clef.shape="F" decls="#instrVoice_8 #instrVoice_9 #instrVoice_10" dme.parts="9,10,11" lines="5" n="7" xml:id="staffDef_P7-A">
+                  <label xml:id="label_staffP7-A">Violoncello, Basso <!--<lb xml:id="lb_P7-A"/>--> ed Organo</label>
+                  <labelAbbr xml:id="labelAbbrP7-A">Vc./Bs./Org.</labelAbbr>
+                </staffDef>
+              </staffGrp>
+            </staffGrp>
+          </scoreDef>
+          <section>
+            <measure n="28" xml:id="m28_k165_001-A">
+              <staff dme.parts="1,2" n="1" xml:id="staff_8124-A">
+                <layer n="1" xml:id="layer_8127-A">
+                  <rest dur="4" tstamp="1" xml:id="rest_8130-A"/>
+                  <note dots="1" dur="4" oct="5" pname="f" tstamp="2" xml:id="note_8133-A"/>
+                  <note dur="8" oct="5" pname="e" tstamp="3.5" xml:id="note_8136-A">
+                    <supplied corresp="#accid_7938-A #accid_8040-A" reason="regularization" resp="#DME-editors" xml:id="supplied_8136-A">
+                      <accid accid="n" func="caution" xml:id="accid_8136-A"/>
+                    </supplied>
+                  </note>
+                  <note dur="4" oct="5" pname="d" tstamp="4" xml:id="note_8139-A"/>
+                </layer>
+                <layer n="2" xml:id="layer_8142-A">
+                  <rest sameas="#rest_8130-A" tstamp="1" xml:id="rest_8145-A"/>
+                  <note dots="1" dur="4" oct="5" pname="d" tstamp="2" xml:id="note_8148-A"/>
+                  <note dur="8" oct="5" pname="c" tstamp="3.5" xml:id="note_8151-A"/>
+                  <note accid.ges="f" dur="4" oct="4" pname="b" tstamp="4" xml:id="note_8154-A"/>
+                </layer>
+              </staff>
+              <staff dme.parts="3,4" n="2" xml:id="staff_8157-A">
+                <layer n="1" xml:id="layer_8160-A">
+                  <supplied reason="regularization" resp="#DME-editors" xml:id="supplied_8163-A">
+                    <mRest tstamp="1" xml:id="mRest_8163-A"/>
+                  </supplied>
+                </layer>
+                <layer n="2" xml:id="layer_8160b-A">
+                  <supplied reason="regularization" resp="#DME-editors" xml:id="supplied_8163b-A">
+                    <mRest sameas="#mRest_8163-A" tstamp="1" xml:id="mRest_8163b-A"/>
+                  </supplied>
+                </layer>
+              </staff>
+              <staff dme.parts="5" n="3" xml:id="staff_8166-A">
+                <layer n="1" xml:id="layer_8169-A">
+                  <note dur="4" oct="4" pname="d" tstamp="1" xml:id="note_8172-A"/>
+                  <rest dur="4" tstamp="2" xml:id="rest_8175-A"/>
+                  <rest dur="4" tstamp="3" xml:id="rest_8178-A"/>
+                  <rest dur="8" tstamp="4" xml:id="rest_8181-A"/>
+                  <note dur="8" oct="5" pname="d" tstamp="4.5" xml:id="note_8184-A"/>
+                </layer>
+              </staff>
+              <staff dme.parts="6" n="4" xml:id="staff_8187-A">
+                <layer n="1" xml:id="layer_8190-A">
+                  <note accid.ges="f" dur="4" oct="3" pname="b" tstamp="1" xml:id="note_8193-A"/>
+                  <rest dur="4" tstamp="2" xml:id="rest_8196-A"/>
+                  <rest dur="4" tstamp="3" xml:id="rest_8199-A"/>
+                  <rest dur="8" tstamp="4" xml:id="rest_8202-A"/>
+                  <note accid.ges="f" dur="8" oct="3" pname="b" tstamp="4.5" xml:id="note_8205-A"/>
+                </layer>
+              </staff>
+              <staff dme.parts="7,12" n="5" xml:id="staff_8208-A">
+                <layer n="1" xml:id="layer_8211-A">
+                  <note dur="4" oct="3" pname="f" tstamp="1" xml:id="note_8214-A"/>
+                  <rest dur="4" tstamp="2" xml:id="rest_8217-A"/>
+                  <rest dur="2" tstamp="3" xml:id="rest_8220-A"/>
+                </layer>
+              </staff>
+              <staff dme.parts="8" n="6" xml:id="staff_8223-A">
+                <layer n="1" xml:id="layer_8226-A">
+                  <choice xml:id="choice_8229-A">
+                    <reg resp="#DME-editors" type="editorial_normalization" xml:id="reg_8229-A">
+                      <note dots="1" dur="4" oct="4" pname="d" tstamp="1" xml:id="note_8229-A">
+                        <verse xml:id="verse_8232-A">
+                          <syl con="d" wordpos="i" xml:id="syl_8235-A">a</syl>
+                        </verse>
+                      </note>
+                    </reg>
+                    <orig xml:id="orig_8229-A">
+                      <note dots="1" dur="4" oct="4" pname="d" tstamp="1" xml:id="note_8229a-A">
+                        <verse xml:id="verse_823a2-A">
+                          <syl wordpos="i" xml:id="syl_8235a-A">a</syl>
+                        </verse>
+                      </note>
+                    </orig>
+                  </choice>
+                  <choice xml:id="choice_8241-A">
+                    <reg resp="#DME-editors" type="editorial_normalization" xml:id="reg_8241-A">
+                      <note dur="8" oct="4" pname="d" tstamp="2.5" xml:id="note_8241-A">
+                        <verse xml:id="verse_8244-A">
+                          <syl con="d" wordpos="m" xml:id="syl_8247-A">ni</syl>
+                        </verse>
+                      </note>
+                    </reg>
+                    <orig xml:id="orig_8241-A">
+                      <note dur="8" oct="4" pname="d" tstamp="2.5" xml:id="note_8241a-A">
+                        <verse xml:id="verse_8244a-A">
+                          <syl wordpos="m" xml:id="syl_8247a-A">ni</syl>
+                        </verse>
+                      </note>
+                    </orig>
+                  </choice>
+                  <choice xml:id="choice_8253-A">
+                    <reg resp="#DME-editors" type="editorial_normalization" xml:id="reg_8253-A">
+                      <note dur="4" oct="4" pname="d" tstamp="3" xml:id="note_8253-A">
+                        <verse xml:id="verse_8256-A">
+                          <syl wordpos="t" xml:id="syl_8259-A">mae,</syl>
+                        </verse>
+                      </note>
+                    </reg>
+                    <orig xml:id="orig_8253-A">
+                      <note dur="4" oct="4" pname="d" tstamp="3" xml:id="note_8253a-A">
+                        <verse xml:id="verse_8256a-A">
+                          <syl wordpos="t" xml:id="syl_8259a-A">mæ</syl>
+                        </verse>
+                      </note>
+                    </orig>
+                  </choice>
+                  <rest dur="4" tstamp="4" xml:id="rest_8265-A"/>
+                </layer>
+              </staff>
+              <staff dme.parts="9,10,11" n="7" xml:id="staff_8268-A">
+                <layer n="1" xml:id="layer_8271-A">
+                  <note accid.ges="f" dur="4" oct="2" pname="b" tstamp="1" xml:id="note_8274-A"/>
+                  <rest dur="4" tstamp="2" xml:id="rest_8277-A"/>
+                  <rest dur="2" tstamp="3" xml:id="rest_8280-A"/>
+                </layer>
+              </staff>
+              <choice xml:id="choice_8283-A">
+                <reg resp="#DME-editors" type="shorthand" xml:id="reg_8283-A">
+                  <dynam layer="1 2" staff="1" startid="#note_8133-A" xml:id="dynam_8283-A">p</dynam>
+                </reg>
+                <orig xml:id="orig_8283-A">
+                  <dynam layer="1 2" staff="1" tstamp="2" xml:id="dynam_8283a-A">pia:</dynam>
+                </orig>
+              </choice>
+              <slur endid="#note_8139-A" layer="1" staff="1" startid="#note_8133-A" xml:id="slur_8289-A"/>
+              <slur endid="#note_8154-A" layer="2" staff="1" startid="#note_8148-A" xml:id="slur_8292-A"/>
+              <slur endid="#note_8343-A" staff="3" startid="#note_8184-A" xml:id="slur_8295-A"/>
+              <slur endid="#note_8379-A" staff="4" startid="#note_8205-A" xml:id="slur_8301-A"/>
+            </measure>
+          </section>
+        </score>
+      </mdiv>
+    </body>
+  </music>
+</mei>

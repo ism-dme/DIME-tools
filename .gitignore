@@ -1,0 +1,8 @@
+/**/xspec
+/**/*-report.html
+.idea
+**/venv
+/**/__pycache__
+node_modules/
+/**/debug
+.vscode

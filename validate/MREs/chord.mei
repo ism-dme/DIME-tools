@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mei meiversion="4.0.1" xmlns="http://www.music-encoding.org/ns/mei">
+  <meiHead>
+    <fileDesc>
+      <titleStmt>
+        <title label="NMA digital" type="unit">an example</title>
+      </titleStmt>
+      <pubStmt/>
+    </fileDesc>
+  </meiHead>
+  <music>
+    <body>
+      <mdiv n="1" xml:id="mdiv_72">
+        <score xml:id="score_78">
+          <scoreDef key.mode="minor" key.pname="a" key.sig="0" meter.count="2" meter.unit="4" xml:id="scoreDef_01">
+            <staffGrp bar.thru="true" decls="#instrVoice_1" doxml.id="d27e39" symbol="brace" xml:id="staffGrp_01">
+              <staffDef clef.line="2" clef.shape="G" decls="#upper" lines="5" n="1" xml:id="staffDef_P1_sc01"/>
+              <staffDef clef.line="4" clef.shape="F" decls="#lower" lines="5" n="2" xml:id="staffDef_P2_sc01"/>
+            </staffGrp>
+          </scoreDef>
+          <section xml:id="section_A_m1-1">
+            <measure facs="#zoneOf_m18_k310_003" n="18" xml:id="m18_k310_003">
+              <staff decls="#upper" n="1" xml:id="staff_5700">
+                <layer n="1" xml:id="layer_5706">
+                  <chord artic="spicc" dots="1" doxml.id="d27e411" dur="4" tstamp="1" xml:id="chord_5712">
+                    <note accid="s" doxml.id="d27e411" oct="5" pname="g" xml:id="note_5718"/>
+                    <note doxml.id="d27e413" oct="5" pname="d" xml:id="note_5724"/>
+                  </chord>
+                  <chord artic="spicc" doxml.id="d27e416" dur="8" tstamp="2.5" xml:id="chord_5730">
+                    <note doxml.id="d27e416" oct="5" pname="a" xml:id="note_5736"/>
+                    <note accid="n" doxml.id="d27e418" oct="5" pname="c" xml:id="note_5742"/>
+                  </chord>
+                </layer>
+              </staff>
+              <staff decls="#lower" n="2" xml:id="staff_5748">
+                <layer n="1" xml:id="layer_5754">
+                  <rest doxml.id="d27e422" dur="8" tstamp="1" xml:id="rest_5760"/>
+                  <beam xml:id="beam_5766">
+                    <note doxml.id="d27e424" dur="8" oct="2" pname="b" tstamp="1.5" xml:id="note_5772"/>
+                    <note doxml.id="d27e426" dur="8" oct="3" pname="b" tstamp="2" xml:id="note_5778"/>
+                    <note doxml.id="d27e428" dur="8" oct="3" pname="a" tstamp="2.5" xml:id="note_5784"/>
+                  </beam>
+                </layer>
+              </staff>
+            </measure>
+            <measure facs="#zoneOf_m19_k310_003" n="19" xml:id="m19_k310_003">
+              <staff decls="#upper" n="1" xml:id="staff_5802">
+                <layer n="1" xml:id="layer_5808">
+                  <graceGrp grace="unknown" xml:id="graceGrp_5814">
+                    <chord dur="8" tstamp="2"  stem.dir="up" xml:id="chord_5820">
+                      <note doxml.id="d27e455" oct="5" pname="e" xml:id="note_5826"/>
+                      <note oct="5" pname="c" xml:id="note_5832"/>
+                    </chord>
+                  </graceGrp>
+                  <chord doxml.id="d27e457" dur="4" tstamp="1" xml:id="chord_5838">
+                    <note doxml.id="d27e457" oct="5" pname="d" xml:id="note_5844"/>
+                    <note doxml.id="d27e459" oct="4" pname="b" xml:id="note_5850"/>
+                  </chord>
+                  <beam xml:id="beam_5856">
+                    <chord doxml.id="d27e462" dur="8" tstamp="2" xml:id="chord_5862">
+                      <note doxml.id="d27e462" oct="5" pname="c" xml:id="note_5868"/>
+                      <note doxml.id="d27e464" oct="4" pname="a" xml:id="note_5874"/>
+                    </chord>
+                    <chord doxml.id="d27e466" dur="8" tstamp="2.5" xml:id="chord_5880">
+                      <note doxml.id="d27e466" oct="4" pname="b" xml:id="note_5886"/>
+                      <note accid="s" doxml.id="d27e468" oct="4" pname="g" xml:id="note_5892"/>
+                    </chord>
+                  </beam>
+                </layer>
+              </staff>
+              <staff decls="#lower" n="2" xml:id="staff_5898">
+                <layer n="1" xml:id="layer_5904">
+                  <note doxml.id="d27e472" dur="4" oct="4" pname="d" tstamp="1" xml:id="note_5910"/>
+                  <note doxml.id="d27e474" dur="4" oct="4" pname="e" tstamp="2" xml:id="note_5916"/>
+                </layer>
+              </staff>
+              <slur curvedir="below" endid="#chord_5838" staff="1" startid="#chord_5820" xml:id="slur_5928"/>
+            </measure>
+          </section>
+        </score>
+      </mdiv>
+    </body>
+  </music>
+</mei>

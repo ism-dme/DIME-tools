@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="../../frameworks/styleguide/css/styleguideActions.css"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="scoreDef" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/">
+  <title>&lt;scoreDef&gt;</title>
+  <body>
+    <p>
+      <dl audience="rules">
+        <dlhead>
+          <dthd>Rule</dthd>
+          <ddhd>matchesAttributeValue</ddhd>
+        </dlhead>
+        <dlentry>
+          <dt>element</dt>
+          <dd>mei:scoreDef</dd>
+        </dlentry>
+        <dlentry>
+          <dt>attribute</dt>
+          <dd>optimize</dd>
+        </dlentry>
+        <dlentry>
+          <dt>RegEx</dt>
+          <dd>true|false</dd>
+        </dlentry>
+        <dlentry>
+          <dt>phase</dt>
+          <dd>refTexts_v3, altTexts_v3, refTexts_v4, altTexts_v4, refTexts_v5</dd>
+        </dlentry>
+      </dl>
+    </p>
+  </body>
+</topic>

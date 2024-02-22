@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+	<title>Documentation for DIME-tools</title>
+	<topicref href="topics/xml-transformations.dita"/>
+  <topicref href="topics/validation/validation.dita">
+    <topicref href="topics/validation/checkDurations.dita"/>
+    <topicref href="topics/validation/schematron.dita"/>
+    <topicref href="topics/validation/validatedc.dita"/>
+  </topicref>
+	<topicref href="topics/user_guides.dita">
+		<topicref href="topics/oxygen.dita"/>
+		<topicref href="topics/gvim.dita"/>
+		<topicref href="topics/xpath.dita"/>
+	</topicref>
+	<topicref href="topics/archive.dita"/>
+	<topicref format="ditamap" href="maps/archive_keys.ditamap"/>
+	<topicref format="ditamap" href="maps/xslt_keys.ditamap"/>
+	<topicref format="ditamap" href="maps/var_keys.ditamap"/>
+	<topicref format="ditamap" href="maps/user_guides_keys.ditamap"/>
+</map>

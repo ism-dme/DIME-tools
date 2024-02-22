@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="../../frameworks/styleguide/css/styleguideActions.css"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="sameas" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/">
+  <title>@sameas</title>
+  <body>
+    <p>The name of the element with <codeph>@sameas</codeph> and the name of the pointed element must match. [unique_rules.sch#sameAs]</p>
+    <p>The <codeph>@tstamp</codeph> of the elements (<codeph>&lt;note&gt;, &lt;rest&gt;, &lt;mRest&gt;, &lt;chord&gt;</codeph>) referenced by <codeph>@sameas</codeph> must have the same value as the <codeph>@tstamp</codeph> of the pointer element. [unique_rules.sch#sameAs]</p>
+  </body>
+</topic>

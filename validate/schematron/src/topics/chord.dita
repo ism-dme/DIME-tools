@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="../../frameworks/styleguide/css/styleguideActions.css"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="chord" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/">
+  <title>&lt;chord&gt;</title>
+  <body>
+    <p>Required<ol id="ol_gjf_313_tgb">
+        <li>@staff?</li>
+        <li>@dur="the 'longest' (= the minimum) value of the descendants &lt;note/&gt;/@dur or &lt;rest/&gt;/@dur" (the case when they have different values). Example:<codeblock>&lt;chord dur="8"&gt; &lt;note dur="8"/&gt; &lt;note dur="16"/&gt; &lt;/chord&gt;</codeblock>
+          <p>
+            <dl audience="rules">
+              <dlhead>
+                <dthd>Rule</dthd>
+                <ddhd>attributeValueDescendants</ddhd>
+              </dlhead>
+              <dlentry>
+                <dt>element</dt>
+                <dd>mei:chord[not(@sameas) or not(@copyof)]</dd>
+              </dlentry>
+              <dlentry>
+                <dt>attribute</dt>
+                <dd>dur</dd>
+              </dlentry>
+              <dlentry>
+                <dt>descendants</dt>
+                <dd>(descendant::mei:note or descendant::mei:rest)</dd>
+              </dlentry>
+              <dlentry>
+                <dt>fence</dt>
+                <dd>min</dd>
+              </dlentry>
+              <dlentry>
+                <dt>phase</dt>
+                <dd>refTexts_v3, altTexts_v3, refTexts_v4, altTexts_v4, refTexts_v5</dd>
+              </dlentry>
+            </dl>
+          </p>
+        </li>
+        <li>@tstamp with the value '*(.*******), e.g '3.25'.<p>
+            <dl audience="rules">
+              <dlhead>
+                <dthd>Rule</dthd>
+                <ddhd>matchesAttributeValue</ddhd>
+              </dlhead>
+              <dlentry>
+                <dt>element</dt>
+                <dd>mei:chord[not((@grace, @copyof, @sameas, ancestor::mei:graceGrp))]</dd>
+              </dlentry>
+              <dlentry>
+                <dt>attribute</dt>
+                <dd>tstamp</dd>
+              </dlentry>
+              <dlentry>
+                <dt>RegEx</dt>
+                <dd>\d(\.(\d){1,7})?</dd>
+              </dlentry>
+              <dlentry>
+                <dt>phase</dt>
+                <dd>refTexts_v3, altTexts_v3, refTexts_v4, altTexts_v4, refTexts_v5</dd>
+              </dlentry>
+            </dl>
+          </p>
+        </li>
+      </ol>
+    </p>
+    <p>
+      <dl audience="rules">
+        <dlhead>
+          <dthd>Rule</dthd>
+          <ddhd>doesNotContainsAttributes</ddhd>
+        </dlhead>
+        <dlentry>
+          <dt>element</dt>
+          <dd>mei:chord[ancestor::mei:graceGrp]</dd>
+        </dlentry>
+        <dlentry>
+          <dt>attributes</dt>
+          <dd>tstamp</dd>
+        </dlentry>
+        <dlentry>
+          <dt>phase</dt>
+          <dd>refTexts_v3, altTexts_v3, refTexts_v4, altTexts_v4, refTexts_v5</dd>
+        </dlentry>
+      </dl>
+    </p>
+    <p>Optional:<ol id="ol_r2c_3b3_tgb">
+        <li>@dots="the highest value of @dots the descendants &lt;note/&gt; or &lt;rest/&gt;". Example:<codeblock>&lt;chord dots="1"&gt; &lt;note dots="1"/&gt; &lt;note dots="0"/&gt; &lt;/chord&gt;</codeblock>
+          <p>
+            <dl audience="rules">
+              <dlhead>
+                <dthd>Rule</dthd>
+                <ddhd>attributeValueDescendants</ddhd>
+              </dlhead>
+              <dlentry>
+                <dt>element</dt>
+                <dd>mei:chord[not(@sameas) or not(@copyof)]</dd>
+              </dlentry>
+              <dlentry>
+                <dt>attribute</dt>
+                <dd>dots</dd>
+              </dlentry>
+              <dlentry>
+                <dt>descendants</dt>
+                <dd>(descendant::mei:note[@dots] or descendant::mei:rest[@dots])</dd>
+              </dlentry>
+              <dlentry>
+                <dt>fence</dt>
+                <dd>max</dd>
+              </dlentry>
+              <dlentry>
+                <dt>phase</dt>
+                <dd>refTexts_v3, altTexts_v3, refTexts_v4, altTexts_v4, refTexts_v5</dd>
+              </dlentry>
+            </dl>
+          </p>
+        </li>
+      </ol>
+    </p>
+  </body>
+</topic>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="../../frameworks/styleguide/css/styleguideActions.css"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="unclear" xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/">
+  <title>&lt;unclear&gt;</title>
+  <body>
+    <p>
+      <dl audience="rules">
+        <dlhead>
+          <dthd>Rule</dthd>
+          <ddhd>checkAttributeValue</ddhd>
+        </dlhead>
+        <dlentry>
+          <dt>element</dt>
+          <dd>mei:unclear[mei:slur | mei:tie]</dd>
+        </dlentry>
+        <dlentry>
+          <dt>attribute</dt>
+          <dd>reason</dd>
+        </dlentry>
+        <dlentry>
+          <dt>attrValue</dt>
+          <dd>
+            <ol id="ol_qwr_p15_ngb">
+              <li>
+                <b>ambiguous_start</b> explanation test</li>
+              <li>
+                <b>ambiguous_ending</b>
+              </li>
+              <li>
+                <b>split</b>
+              </li>
+              <li>
+                <b>system_break</b>
+              </li>
+              <li>
+                <b>ambiguous_start ambiguous_ending</b>
+              </li>
+              <li>
+                <b>illegible</b>
+              </li>
+            </ol>
+          </dd>
+        </dlentry>
+        <dlentry>
+          <dt>phase</dt>
+          <dd>altTexts_v3, altTexts_v4</dd>
+        </dlentry>
+        <dlentry>
+          <dt>message</dt>
+          <dd>.</dd>
+        </dlentry>
+      </dl>
+    </p>
+    <?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>
+    <p>Hier auch!<?oxy_custom_end?></p>
+    <p>
+      <dl audience="rules">
+        <dlhead>
+          <dthd>Rule</dthd>
+          <ddhd>checkAttributeValue</ddhd>
+        </dlhead>
+        <dlentry>
+          <dt>element</dt>
+          <dd>mei:unclear[mei:note]</dd>
+        </dlentry>
+        <dlentry>
+          <dt>attribute</dt>
+          <dd>reason</dd>
+        </dlentry>
+        <dlentry>
+          <dt>attrValue</dt>
+          <dd>
+            <ol id="ol_efz_qrb_4gb">
+              <li>
+                <b>pitch</b>
+              </li>
+              <li>
+                <b>duration</b>
+              </li>
+              <li>
+                <b>illegible</b>
+              </li>
+            </ol>
+          </dd>
+        </dlentry>
+        <dlentry>
+          <dt>phase</dt>
+          <dd>altTexts_v3, altTexts_v3</dd>
+        </dlentry>
+        <dlentry>
+          <dt>message</dt>
+          <dd>.</dd>
+        </dlentry>
+      </dl>
+    </p>
+    <p/>
+  </body>
+</topic>

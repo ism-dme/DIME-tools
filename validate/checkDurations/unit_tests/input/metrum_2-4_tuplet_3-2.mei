@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://dme.mozarteum.at/DME/schemata/mei-DME-4.0.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://dme.mozarteum.at/DME/schemata/mei-DME-4.0.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei meiversion="4.0.1" xmlns="http://www.music-encoding.org/ns/mei">
+  <meiHead>
+    <fileDesc>
+      <titleStmt>
+        <title label="NMA digital" type="unit">an example</title>
+      </titleStmt>
+      <pubStmt/>
+    </fileDesc>
+  </meiHead>
+  <music>
+    <body>
+      <mdiv>
+        <score>
+          <scoreDef key.mode="major" key.pname="c" key.sig="0" meter.count="2" meter.unit="4" xml:id="scoreDef_01">
+            <staffGrp bar.thru="true" decls="#instrVoice_1" symbol="brace" xml:id="staffGrp_01">
+              <staffDef clef.line="2" clef.shape="G" decls="#upper" lines="5" n="1" xml:id="staffDef_P1"/>
+              <staffDef clef.line="4" clef.shape="F" decls="#lower" lines="5" n="2" xml:id="staffDef_P2"/>
+            </staffGrp>
+          </scoreDef>
+          <section>
+            <measure facs="#zoneOf_m75_k309_003" n="75" xml:id="m75_k309_003">
+              <staff decls="#upper" n="1" xml:id="staff_17346">
+                <layer n="1" xml:id="layer_17352">
+                  <beam xml:id="beam_17358">
+                    <tuplet bracket.visible="false" num="3" num.visible="false" numbase="2" xml:id="tuplet_17364">
+                      <note accid="n" doxml.id="d27e3054" dur="16" oct="5" pname="b" tstamp="1" xml:id="note_17370"/>
+                      <note doxml.id="d27e3058" dur="16" oct="6" pname="d" tstamp="1.16667" xml:id="note_17376"/>
+                      <note doxml.id="d27e3061" dur="16" oct="5" pname="b" tstamp="1.33333" xml:id="note_17382"/>
+                    </tuplet>
+                  </beam>
+                  <beam xml:id="beam_17388">
+                    <tuplet bracket.visible="false" num="3" num.visible="false" numbase="2" xml:id="tuplet_17394">
+                      <note doxml.id="d27e3063" dur="16" oct="5" pname="g" tstamp="1.5" xml:id="note_17400"/>
+                      <note doxml.id="d27e3067" dur="16" oct="5" pname="d" tstamp="1.66667" xml:id="note_17406"/>
+                      <note doxml.id="d27e3069" dur="16" oct="4" pname="b" tstamp="1.83333" xml:id="note_17412">
+                        <supplied resp="#NMA-editors" xml:id="supplied_17418">
+                          <accid accid="n" xml:id="accid_17424"/>
+                        </supplied>
+                      </note>
+                    </tuplet>
+                  </beam>
+                  <beam xml:id="beam_17430">
+                    <tuplet bracket.visible="false" num="3" num.visible="false" numbase="2" xml:id="tuplet_17436">
+                      <note doxml.id="d27e3071" dur="16" oct="4" pname="g" tstamp="2" xml:id="note_17442"/>
+                      <note doxml.id="d27e3075" dur="16" oct="4" pname="b" tstamp="2.16667" xml:id="note_17448"/>
+                      <note doxml.id="d27e3077" dur="16" oct="4" pname="g" tstamp="2.33333" xml:id="note_17454"/>
+                    </tuplet>
+                  </beam>
+                  <beam xml:id="beam_17460">
+                    <tuplet bracket.visible="false" num="3" num.visible="false" numbase="2" xml:id="tuplet_17466">
+                      <note doxml.id="d27e3079" dur="16" oct="4" pname="d" tstamp="2.5" xml:id="note_17472"/>
+                      <note doxml.id="d27e3084" dur="16" oct="3" pname="b" tstamp="2.66667" xml:id="note_17478"/>
+                      <note doxml.id="d27e3086" dur="16" oct="3" pname="g" tstamp="2.83333" xml:id="note_17484"/>
+                    </tuplet>
+                  </beam>
+                </layer>
+              </staff>
+              <staff decls="#lower" n="2" xml:id="staff_17490">
+                <layer n="1" xml:id="layer_17496">
+                  <chord doxml.id="d27e3090" dur="8" tstamp="1" xml:id="chord_17502">
+                    <note doxml.id="d27e3090" oct="3" pname="g" xml:id="note_17508"/>
+                    <note doxml.id="d27e3092" oct="3" pname="d" xml:id="note_17514"/>
+                  </chord>
+                  <rest doxml.id="d27e3094" dur="8" tstamp="1.5" xml:id="rest_17520"/>
+                  <tuplet bracket.visible="true" num="3" num.visible="true" numbase="2" xml:id="tuplet_17526">
+                    <rest doxml.id="d27e3096" dur="16" tstamp="2" xml:id="rest_17532"/>
+                    <beam xml:id="beam_17538">
+                      <note doxml.id="d27e3100" dur="16" oct="3" pname="b" tstamp="2.16667" xml:id="note_17544"/>
+                      <note doxml.id="d27e3102" dur="16" oct="3" pname="g" tstamp="2.33333" xml:id="note_17550"/>
+                    </beam>
+                  </tuplet>
+                  <beam xml:id="beam_17556">
+                    <tuplet bracket.visible="false" num="3" num.visible="false" numbase="2" xml:id="tuplet_17562">
+                      <note doxml.id="d27e3104" dur="16" oct="3" pname="d" tstamp="2.5" xml:id="note_17568"/>
+                      <note doxml.id="d27e3109" dur="16" oct="2" pname="b" tstamp="2.66667" xml:id="note_17574"/>
+                      <note doxml.id="d27e3111" dur="16" oct="2" pname="g" tstamp="2.83333" xml:id="note_17580"/>
+                    </tuplet>
+                  </beam>
+                </layer>
+              </staff>
+              <supplied resp="#NMA-editors" xml:id="supplied_17586">
+                <dir doxml.id="d27e3056" place="above" staff="1" tstamp="1.16667" xml:id="dir_17592">3</dir>
+              </supplied>
+              <supplied resp="#NMA-editors" xml:id="supplied_17604">
+                <dir doxml.id="d27e3065" place="above" staff="1" tstamp="1.66667" xml:id="dir_17610">3</dir>
+              </supplied>
+              <supplied resp="#NMA-editors" xml:id="supplied_17622">
+                <dir doxml.id="d27e3073" place="above" staff="1" tstamp="2.16667" xml:id="dir_17628">3</dir>
+              </supplied>
+              <supplied resp="#NMA-editors" xml:id="supplied_17640">
+                <dir doxml.id="d27e3081" place="above" staff="1" tstamp="2.66667" xml:id="dir_17646">3</dir>
+              </supplied>
+              <supplied resp="#NMA-editors" xml:id="supplied_17658">
+                <dir doxml.id="d27e3107" place="above" staff="2" tstamp="2.66667" xml:id="dir_17664">3</dir>
+              </supplied>
+            </measure>
+          </section>
+        </score>
+      </mdiv>
+    </body>
+  </music>
+</mei>
