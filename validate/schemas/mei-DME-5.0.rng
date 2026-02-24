@@ -5,7 +5,7 @@
           xmlns:xlink="http://www.w3.org/1999/xlink"
           datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
           ns="http://www.music-encoding.org/ns/mei"><!--
-Schema generated from ODD source 2024-02-21T15:05:25Z. .
+Schema generated from ODD source 2026-02-19T15:39:35Z. .
 TEI Edition: Version 5.0
 TEI Edition Location: https://www.tei-c.org/Vault/P5//
   
@@ -10965,6 +10965,12 @@ Suggested values include: 1] sustain; 2] soft; 3] sostenuto; 4] silent</a:docume
          <ref name="mei_att.repeatMark.vis.attributes"/>
          <ref name="mei_att.repeatMark.ges.attributes"/>
          <ref name="mei_att.repeatMark.anl.attributes"/>
+         <optional>
+            <attribute name="doxml.id">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A pointer to the original element in the DOXML structure</a:documentation>
+               <data type="NMTOKEN"/>
+            </attribute>
+         </optional>
          <empty/>
       </element>
    </define>
